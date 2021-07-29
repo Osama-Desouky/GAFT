@@ -12063,10 +12063,9 @@ footer .copySection a:last-child {
 .navigator {
   position: fixed;
   top: calc(50% - (228px / 2));
-  height: 100px;
   left: 40px;
   padding: 0;
-  z-index: 999;
+  z-index: 999999999;
   list-style: none;
 }
 
@@ -12101,7 +12100,7 @@ footer .copySection a:last-child {
 }
 
 .about-hay2a {
-  margin-top: 90px;
+  padding-top: 90px;
   text-align: center;
 }
 
@@ -12881,13 +12880,13 @@ footer .copySection a:last-child {
   content: "";
   position: absolute;
   width: 100%;
-  height: 188px;
+  height: 110px;
   bottom: 65px;
   left: 0;
   background: white;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(#f1f1f1));
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #f1f1f1 100%);
-  z-index: 99999;
+  z-index: 99;
 }
 
 .versions .heading h2 {

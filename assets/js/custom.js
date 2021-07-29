@@ -5,7 +5,7 @@ var scrollTo = function (sectionEl = "", callback = function () {}) {
     {
       scrollTop: sectionEl ? calculateOffset(sectionEl) : 0,
     },
-    800,
+    700,
     "swing",
     callback()
   );
@@ -36,24 +36,24 @@ $(function () {
   });
   $(document).scroll(function () {
     var scroll = $(this).scrollTop();
-    var navbar = $(".main-navbar");
-    var scrollUpBtn = $(".scroll-up");
-    if (scroll > 0) {
-      scrollUpBtn.fadeIn();
-    } else {
-      scrollUpBtn.fadeOut();
-    }
-    if ($(window).width() >= 992) {
-      if (scroll > 140) {
-        if (!navbar.hasClass("fixed")) {
-          $("body").css({ "padding-top": navbar.height() + "px" });
-          navbar.addClass("fixed");
-        }
-      } else {
-        navbar.removeClass("fixed");
-        $("body").css({ "padding-top": "0px" });
-      }
-    }
+    // var navbar = $(".main-navbar");
+    // var scrollUpBtn = $(".scroll-up");
+    // if (scroll > 0) {
+    //   scrollUpBtn.fadeIn();
+    // } else {
+    //   scrollUpBtn.fadeOut();
+    // }
+    // if ($(window).width() >= 992) {
+    //   if (scroll > 140) {
+    //     if (!navbar.hasClass("fixed")) {
+    //       $("body").css({ "padding-top": navbar.height() + "px" });
+    //       navbar.addClass("fixed");
+    //     }
+    //   } else {
+    //     navbar.removeClass("fixed");
+    //     $("body").css({ "padding-top": "0px" });
+    //   }
+    // }
     if (scroll == 0) {
       $("ul.navigator li").removeClass("active");
       $("#navIntro").addClass("active");
