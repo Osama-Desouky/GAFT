@@ -1,0 +1,8 @@
+<svg id="Play_Circle" data-name="Play Circle" xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160">
+  <g id="Ellipse_2" data-name="Ellipse 2" fill="none" stroke="#cca079" stroke-width="2" opacity="0">
+    <circle cx="80" cy="80" r="80" stroke="none"/>
+    <circle cx="80" cy="80" r="79" fill="none"/>
+  </g>
+  <circle id="Ellipse_164" data-name="Ellipse 164" cx="43" cy="43" r="43" transform="translate(37 37)" fill="#cca079"/>
+  <path id="Path_5" data-name="Path 5" d="M13,8,0,0V16Z" transform="translate(75.789 72)" fill="#fff"/>
+</svg>

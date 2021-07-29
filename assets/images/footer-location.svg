@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="14" height="20" viewBox="0 0 14 20">
+  <g id="Page-1" transform="translate(-0.276 -0.707)">
+    <g id="Icon-Set" transform="translate(0 1)">
+      <path id="location" d="M111.276,419.707c-1,0-2,0-2-1a2,2,0,0,1,4,0c0,1-1,1-2,1Zm0-4a3,3,0,1,0,3,3,2.978,2.978,0,0,0-3-3Zm0,13c-1.008.005-6-7.465-6-10a6,6,0,0,1,12,0c0,2.5-5.007,10.005-6,10Zm0-18c-4.018,0-7,3.982-7,8,0,3.043,5.79,12.007,7,12,1.191.007,7-9,7-12,0-4.018-2.982-8-7-8Z" transform="translate(-104 -411)" fill="#fff" fill-rule="evenodd"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="94" height="94" viewBox="0 0 94 94">
+  <g id="video" transform="translate(-1267 -447.077)">
+    <g id="Play_Circle" data-name="Play Circle" transform="translate(1267 447.077)">
+      <g id="Ellipse_2" data-name="Ellipse 2" fill="none" stroke="#cca079" stroke-width="2">
+        <circle cx="47" cy="47" r="47" stroke="none"/>
+        <circle cx="47" cy="47" r="46" fill="none"/>
+      </g>
+      <circle id="Ellipse_164" data-name="Ellipse 164" cx="33" cy="33" r="33" transform="translate(14 14)" fill="#cca079"/>
+      <path id="Path_5" data-name="Path 5" d="M13,8,0,0V16Z" transform="translate(42.789 39)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

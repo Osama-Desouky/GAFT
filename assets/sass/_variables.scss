@@ -1,0 +1,51 @@
+$font-ar: "DINNextLT";
+$font-en: "montserrat";
+
+$font-path: "../fonts/";
+$img-path: "../images/";
+
+// colors
+$color-default: #949486;
+$primary-color: #90426f;
+$secondary-color: #c9b27a;
+$gray-color: #9297a1;
+$green-color: #23a56d;
+$orange-color: #ed4c21;
+$bright-orange-color: #f36b21;
+$extra-bright-orange-color:#FE9E36;
+$dark-orange-color:#BF675D;
+$red-color: #d5313a;
+$dark-red-color: #cd2233;
+$yellow-color: #b29f56;
+$biege-color:#C8C1B1;
+$brown-color: #9a6a3c;
+$light-brown-color: #9b636f;
+$lighter-brown-color:#AE8268;
+$title-color-2: #ae9d96;
+$border-color: #aaaaaa;
+$gray-bg: #f3f6fb;
+
+$p-color: #666666;
+$golden-color:#CCA079;
+$black-color: #012D29;
+$light-blue-hover:#00FFE8;
+$dark-green: #007066;
+
+$theme-colors: (
+  "primary": $primary-color,
+  "warning": $orange-color,
+  "success": $green-color,
+  "gray": $gray-color,
+  "red": $red-color
+);
+
+// font weight
+$w-thin: 100; // (Hairline)
+$w-extra-light: 200; // (Ultra Light)
+$w-light: 300;
+$w-normal: 500; // (Regular)
+$w-medium: 500;
+$w-semi-bold: 600; // (Demi Bold)
+$w-bold: 700;
+$w-extra-bold: 800; // (Ultra Bold)
+$w-black: 900; //(Heavy)
