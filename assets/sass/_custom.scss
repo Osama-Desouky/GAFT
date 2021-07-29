@@ -196,7 +196,7 @@ body.header-popup-open {
     // box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.1);
     // background: rgba(0,0,0,.8) !important;
     display: none;
-    position: fixed !important;
+    position: absolute !important;
     top: 135px !important;
     #{$end-direction}: 0 !important;
     #{$start-direction}: 0 !important;
@@ -1262,7 +1262,9 @@ footer {
             overflow: hidden;
             img{
               max-width: 100%;
-              border-radius: 50%;
+              height: 100%;
+              object-fit: cover;
+              // border-radius: 50%;
               transition: 500ms;
             }
           }

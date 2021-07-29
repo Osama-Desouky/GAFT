@@ -124,7 +124,7 @@ $(function () {
 
     $(".search-box").toggleClass("open-search");
 
-    $("body").toggleClass("header-popup-open");
+    // $("body").toggleClass("header-popup-open");
     e.stopPropagation();
    
     
