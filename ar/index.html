@@ -53,11 +53,11 @@
           </div>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav">
-              <!-- <li class="nav-item show-on-fixed">
+              <li class="nav-item show-on-fixed">
                 <a class="nav-link home-btn" href="#">
                   <img src="../assets/images/Home.svg" alt="">
                 </a>
-              </li> -->
+              </li>
               <li class="nav-item d-block d-sm-none">
                 <div class="form-group">
                   <input type="text" class="form-control" name="search-here" id="search" placeholder="search ..">
@@ -925,7 +925,7 @@
               <div class="item">
                 <div class="ads-card">
                  <div class="img-box">
-                  <img src="../assets/images/ads-img.jpg" alt="">
+                  <img src="../assets/images/ads-img.png" alt="">
                  </div>
                  <div class="content-box">
                    <h5>
@@ -944,7 +944,7 @@
               <div class="item">
                 <div class="ads-card">
                  <div class="img-box">
-                  <img src="../assets/images/ads-img.jpg" alt="">
+                  <img src="../assets/images/ads-img.png" alt="">
                  </div>
                  <div class="content-box">
                    <h5>
@@ -963,7 +963,7 @@
               <div class="item">
                 <div class="ads-card">
                  <div class="img-box">
-                  <img src="../assets/images/ads-img.jpg" alt="">
+                  <img src="../assets/images/ads-img.png" alt="">
                  </div>
                  <div class="content-box">
                    <h5>
@@ -982,7 +982,7 @@
               <div class="item">
                 <div class="ads-card">
                  <div class="img-box">
-                  <img src="../assets/images/ads-img.jpg" alt="">
+                  <img src="../assets/images/ads-img.png" alt="">
                  </div>
                  <div class="content-box">
                    <h5>
@@ -1001,7 +1001,7 @@
               <div class="item">
                 <div class="ads-card">
                  <div class="img-box">
-                  <img src="../assets/images/ads-img.jpg" alt="">
+                  <img src="../assets/images/ads-img.png" alt="">
                  </div>
                  <div class="content-box">
                    <h5>
@@ -1624,9 +1624,6 @@
   <script src="../node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
   <!-- AOS -->
   <script src="../node_modules/aos/dist/aos.js"></script>
-
-  <script src="../assets/js/snap-scroll.js"></script>
-
   <!-- inline -->
   <script>
     $(function () {
@@ -1781,56 +1778,6 @@
 
 
 });
-
-    });
-
-
-
-    // snapScroll
-    $(function(){
-
-      $("section").SnapScroll({
-
-          // Add classes to elements
-          classes:true,                   
-
-          // Class applied to snap point elements
-          classSnap:"snap-scroll",              
-
-          // Class applied to a snap point element when within the window
-          classVisible:"snap-scroll-visible",         
-
-          // Class applied to a snap point element when snapped
-          classActive:"snap-scroll-active",         
-
-          // Use element id in hash
-          hashes:false,                   
-
-          // Delay between scroll events needed to trigger scroll action
-          scrollDelay:300,                  
-
-          // Interval used for wheel to trigger scroll action
-          wheelInterval:1000,                 
-
-          // The amount of time it takes to animate to a snap point
-          animateDuration:700,       
-
-          // The amount of time to wait after an animation is complete before scrolling can be triggered         
-          animateTimeBuffer:100,                
-
-          // Snap to the top of page regardless of there being an element
-          snapTop:true,           
-
-          // Snap to the bottom of page regardless of there being an element        
-          snapBottom:true,                  
-
-          // Extra snap points not tied to an element
-          snaps:[],                     
-
-          // Deviation in milliseconds from the average needed to separate wheel events
-          maxWheelDeviation:100       
-
-      });
 
     });
   </script>
