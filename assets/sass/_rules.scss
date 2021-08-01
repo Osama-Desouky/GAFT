@@ -1,6 +1,6 @@
 body {
   font-family: $font-en;
-  color: $color-default;
+  // color: $color-default;
   direction: $direction;
   text-align: $start-direction;
 }
@@ -18,13 +18,12 @@ a:hover {
 }
 p {
   font-size: 15px;
-  color: #48494c;
+  color: #666;
   line-height: 30px;
 }
 h4 {
   font-size: 22px;
   font-weight: bold;
-  color: $color-default;
 }
 label{
   font-family: Roboto;
@@ -32,18 +31,6 @@ label{
   font-weight: $w-bold;
    color: $black-color;
    line-height: 28px;
-}
-.primary-color {
-  color: $primary-color;
-}
-.green-color {
-  color: $green-color;
-}
-.brown-color {
-  color: $brown-color;
-}
-.default-color {
-  color: $color-default;
 }
 .mb-20 {
   margin-bottom: 20px !important;
@@ -86,7 +73,7 @@ ul.blue-dots {
   line-height: 32px;
   li::before {
     content: "";
-    background-color: $primary-color;
+    // background-color: $primary-color;
     display: inline-block;
     width: 8px;
     height: 8px;
