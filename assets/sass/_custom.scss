@@ -10,6 +10,7 @@ body.header-popup-open {
 .main-navbar {
   max-height: 135px;
   box-shadow: 0px 1px 2px rgba($color: #000000, $alpha: 0.06);
+  background-color: #fff;
   .navbar-brand {
     padding-top: 20px;
     &.brand-2{
@@ -670,6 +671,11 @@ footer {
 
 
 //////////////////////////////
+
+/*
+  index page styles
+*/
+
 // about-hay2a
 .about-hay2a{
   padding-top: 90px;
@@ -1672,14 +1678,218 @@ footer {
 
 
 
+/*
+  about styles
+*/
 
+// about-hay2a
+.about-hayaa{
+  margin-top: 35px;
+  margin-bottom: 40px;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  background-image: url(../images/dots.svg);
+  background-position: 3.5% top;
+  background-repeat: no-repeat;
+ 
+  .about-hay2a-content{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h3{
+      font-size: 35px;
+      font-weight: $w-medium;
+      color: $black-color-two;
+      line-height: 50px;
+      margin-bottom: 20px;
+      text-align: right;
+    }
+    p{
+      font-size: 18px;
+      font-weight: $w-normal;
+      color: $p-color;
+      line-height: 36px;
+      margin-bottom: 0;
+      text-align: right;
+    }
+  }
+  .about-hay2a-img{
+    border-radius: 16px;
+    overflow: hidden;
+    img{
+      max-width: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+// about-details
+.about-details{
+  &.white-card{
+    padding-top: 75px;
+    padding-bottom: 80px;
+    padding-#{$start-direction}:70px ;
+    padding-#{$end-direction}: 140px ;
+  }
+  .details-item{
+    display: flex;
+    align-items: flex-start;
+    padding-bottom: 50px;
+    position: relative;
+    .details-img{
+      flex: 0 0 80px;
+      margin-#{$end-direction}: 85px;
+      margin-top: 25px;
+      img{
+        max-width: 100%;
+      }
+    }
+    .details-content{
+      display: flex;
+      flex-direction: column;
+
+      h3{
+        font-size: 35px;
+        font-weight: $w-medium;
+        line-height: 51px;
+        color: $black-color-two;
+        margin-bottom: 30px;
+      }
+      p{
+        font-size: 18px;
+        font-weight: $w-medium;
+        color: $p-color;
+        line-height: 36px;
+        margin-bottom: 0;
+      }
+      ul{
+        list-style: none;
+        padding: 0;
+        margin-bottom: 0;
+        li{
+          font-size: 18px;
+          font-weight: $w-medium;
+          color: $p-color;
+          // line-height: 36px;
+          margin-bottom: 30px;
+          position: relative;
+          padding-#{$start-direction}: 27px ;
+          &:last-child{
+            margin-bottom: 0;
+          }
+          &::before{
+            content: "";
+            position: absolute;
+            width: 14px;
+            height: 11px;
+            top: 15px;
+            #{$start-direction}:0;
+            background-image: url(../images/arrow.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+          }
+        }
+      }
+    }
+    &::after{
+      content: "";
+      position: absolute;
+      // width: 535px;
+      width: 44.5%;
+      height: 2px;
+      // #{$start-direction}: calc(50% - 267px);
+      #{$start-direction}: calc(50% - 22%);
+      bottom: 0;
+      background-color: #ececec;
+
+    }
+    &:last-child{
+      padding-bottom: 0;
+      &::after{
+        display: none;
+      }
+    }
+  }
+}
+
+p.on-space{
+  font-size: 18px;
+  font-weight: $w-normal;
+  color: $p-color;
+  // line-height: 36px;
+  margin-bottom: 55px;
+  margin-top: 55px;
+  padding-#{$end-direction}: 60px;
+}
+
+// about-note
+.about-note{
+  // margin-top: 35px;
+  margin-bottom: 210px;
+  background-image: url(../images/about-note-art.svg);
+  background-position: center -30px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-top: 100px;
+  padding-#{$start-direction}: 199px;
+  padding-#{$end-direction}: 199px;
+  .white-card{
+    padding: 40px 125px 50px;
+    box-shadow: 0 20px 35px rgba($color: #3E3E3E, $alpha: 0.10);
+    position: relative;
+    h5{
+      font-size: 20px;
+      font-weight: $w-bold;
+      color: $black-color-two;
+      line-height: 45px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    p{
+      font-size: 17px;
+      font-weight: $w-medium;
+      color: #007066;
+      line-height: 36px;
+      text-align: #{$end-direction};
+      margin-bottom: 0;
+    }
+    &::before{
+      content: "";
+      position: absolute;
+      width: 71px;
+      height: 53px;
+      top: -15px;
+      #{$start-direction}:30px;
+      background-image: url(../images/about-note-quote-top.svg);
+      background-repeat: no-repeat;
+      // background-size: ;
+    }
+    &::after{
+      content: "";
+      position: absolute;
+      width: 71px;
+      height: 53px;
+      bottom: -15px;
+      #{$end-direction}:30px;
+      background-image: url(../images/about-note-quote-bottom.svg);
+      background-repeat: no-repeat;
+    }
+    
+  }
+}
 
 
 
 
 // main classes
-
-
+.bg-2{
+  background-color: #F1F1F1;
+}
+.white-card{
+  background-color: #fff;
+  border-radius: 16px;
+}
 
 // RTL
 // html[dir="rtl"] {

@@ -8,26 +8,36 @@ this UI is made desktop first.
     max-width: 1260px;
   }
   .custom-container{
-    max-width: 1640px;
+    max-width: 1340px;
   }
   .mx-lg-140 {
     padding-left: 70px;
     padding-right: 70px;
-}
+  }
+  .inner-container{
+    max-width: 1340px;
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 1650px) {
   .container {
     max-width: 1446px;
   }
   .mx-lg-140 {
     padding-left: 140px;
     padding-right: 140px;
-}
-.custom-container{
-  max-width: 1640px;
-  margin: 0 auto;
-}
+  }
+  .custom-container{
+    max-width: 1640px;
+    margin: 0 auto;
+  }
+  .inner-container{
+    max-width: 1640px;
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 

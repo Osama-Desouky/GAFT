@@ -11377,6 +11377,7 @@ body.header-popup-open {
   max-height: 135px;
   -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.06);
           box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.06);
+  background-color: #fff;
 }
 
 .main-navbar .navbar-brand {
@@ -12099,6 +12100,9 @@ footer .copySection a:last-child {
   color: #BF675D;
 }
 
+/*
+  index page styles
+*/
 .about-hay2a {
   padding-top: 90px;
   text-align: center;
@@ -13240,6 +13244,243 @@ footer .copySection a:last-child {
 }
 
 /*
+  about styles
+*/
+.about-hayaa {
+  margin-top: 35px;
+  margin-bottom: 40px;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  background-image: url(../images/dots.svg);
+  background-position: 3.5% top;
+  background-repeat: no-repeat;
+}
+
+.about-hayaa .about-hay2a-content {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.about-hayaa .about-hay2a-content h3 {
+  font-size: 35px;
+  font-weight: 500;
+  color: #1D1D1B;
+  line-height: 50px;
+  margin-bottom: 20px;
+  text-align: right;
+}
+
+.about-hayaa .about-hay2a-content p {
+  font-size: 18px;
+  font-weight: 500;
+  color: #666666;
+  line-height: 36px;
+  margin-bottom: 0;
+  text-align: right;
+}
+
+.about-hayaa .about-hay2a-img {
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.about-hayaa .about-hay2a-img img {
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.about-details.white-card {
+  padding-top: 75px;
+  padding-bottom: 80px;
+  padding-left: 70px;
+  padding-right: 140px;
+}
+
+.about-details .details-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-bottom: 50px;
+  position: relative;
+}
+
+.about-details .details-item .details-img {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 80px;
+          flex: 0 0 80px;
+  margin-right: 85px;
+  margin-top: 25px;
+}
+
+.about-details .details-item .details-img img {
+  max-width: 100%;
+}
+
+.about-details .details-item .details-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.about-details .details-item .details-content h3 {
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 51px;
+  color: #1D1D1B;
+  margin-bottom: 30px;
+}
+
+.about-details .details-item .details-content p {
+  font-size: 18px;
+  font-weight: 500;
+  color: #666666;
+  line-height: 36px;
+  margin-bottom: 0;
+}
+
+.about-details .details-item .details-content ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.about-details .details-item .details-content ul li {
+  font-size: 18px;
+  font-weight: 500;
+  color: #666666;
+  margin-bottom: 30px;
+  position: relative;
+  padding-left: 27px;
+}
+
+.about-details .details-item .details-content ul li:last-child {
+  margin-bottom: 0;
+}
+
+.about-details .details-item .details-content ul li::before {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 11px;
+  top: 15px;
+  left: 0;
+  background-image: url(../images/arrow.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.about-details .details-item::after {
+  content: "";
+  position: absolute;
+  width: 44.5%;
+  height: 2px;
+  left: calc(50% - 22%);
+  bottom: 0;
+  background-color: #ececec;
+}
+
+.about-details .details-item:last-child {
+  padding-bottom: 0;
+}
+
+.about-details .details-item:last-child::after {
+  display: none;
+}
+
+p.on-space {
+  font-size: 18px;
+  font-weight: 500;
+  color: #666666;
+  margin-bottom: 55px;
+  margin-top: 55px;
+  padding-right: 60px;
+}
+
+.about-note {
+  margin-bottom: 210px;
+  background-image: url(../images/about-note-art.svg);
+  background-position: center -30px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-top: 100px;
+  padding-left: 199px;
+  padding-right: 199px;
+}
+
+.about-note .white-card {
+  padding: 40px 125px 50px;
+  -webkit-box-shadow: 0 20px 35px rgba(62, 62, 62, 0.1);
+          box-shadow: 0 20px 35px rgba(62, 62, 62, 0.1);
+  position: relative;
+}
+
+.about-note .white-card h5 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1D1D1B;
+  line-height: 45px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.about-note .white-card p {
+  font-size: 17px;
+  font-weight: 500;
+  color: #007066;
+  line-height: 36px;
+  text-align: right;
+  margin-bottom: 0;
+}
+
+.about-note .white-card::before {
+  content: "";
+  position: absolute;
+  width: 71px;
+  height: 53px;
+  top: -15px;
+  left: 30px;
+  background-image: url(../images/about-note-quote-top.svg);
+  background-repeat: no-repeat;
+}
+
+.about-note .white-card::after {
+  content: "";
+  position: absolute;
+  width: 71px;
+  height: 53px;
+  bottom: -15px;
+  right: 30px;
+  background-image: url(../images/about-note-quote-bottom.svg);
+  background-repeat: no-repeat;
+}
+
+.bg-2 {
+  background-color: #F1F1F1;
+}
+
+.white-card {
+  background-color: #fff;
+  border-radius: 16px;
+}
+
+/*
 this UI is made desktop first.
 */
 @media (min-width: 1400px) {
@@ -13247,15 +13488,20 @@ this UI is made desktop first.
     max-width: 1260px;
   }
   .custom-container {
-    max-width: 1640px;
+    max-width: 1340px;
   }
   .mx-lg-140 {
     padding-left: 70px;
     padding-right: 70px;
   }
+  .inner-container {
+    max-width: 1340px;
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 1650px) {
   .container {
     max-width: 1446px;
   }
@@ -13266,6 +13512,11 @@ this UI is made desktop first.
   .custom-container {
     max-width: 1640px;
     margin: 0 auto;
+  }
+  .inner-container {
+    max-width: 1640px;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
