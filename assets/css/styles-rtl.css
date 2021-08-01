@@ -11592,7 +11592,7 @@ body.header-popup-open {
 .main-navbar .search-box {
   left: 0;
   display: none;
-  position: absolute !important;
+  position: fixed !important;
   top: 135px !important;
   left: 0 !important;
   right: 0 !important;
@@ -12063,9 +12063,10 @@ footer .copySection a:last-child {
 .navigator {
   position: fixed;
   top: calc(50% - (228px / 2));
+  height: 100px;
   right: 40px;
   padding: 0;
-  z-index: 999999999;
+  z-index: 999;
   list-style: none;
 }
 
@@ -12100,7 +12101,7 @@ footer .copySection a:last-child {
 }
 
 .about-hay2a {
-  padding-top: 90px;
+  margin-top: 90px;
   text-align: center;
 }
 
@@ -12767,9 +12768,7 @@ footer .copySection a:last-child {
 
 .ads .tabs .tab-content #jobs .ads-card .img-box img {
   max-width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  border-radius: 50%;
   -webkit-transition: 500ms;
   transition: 500ms;
 }
@@ -12882,13 +12881,13 @@ footer .copySection a:last-child {
   content: "";
   position: absolute;
   width: 100%;
-  height: 110px;
+  height: 188px;
   bottom: 65px;
   left: 0;
   background: white;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(#f1f1f1));
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #f1f1f1 100%);
-  z-index: 99;
+  z-index: 99999;
 }
 
 .versions .heading h2 {
@@ -13237,6 +13236,455 @@ footer .copySection a:last-child {
 .sharekna-elraay .sharekna-elray-card a:hover img {
   -webkit-transform: translate(-10px);
           transform: translate(-10px);
+}
+
+.headerOfBox, .systemSection .boxSearch .titleBox {
+  font-size: 24px;
+  color: #012D29;
+  font-family: "DINNextLTArabicMedium";
+}
+
+.paragraphOfBox, .systemSection .boxSearch .praghBox {
+  font-size: 18px;
+  color: #666666;
+  margin: 0;
+  line-height: 2;
+}
+
+.viewBtn {
+  padding: 14px 45px;
+  background: #CCA079;
+  display: inline-block;
+  border-radius: 50px;
+  color: #fff;
+}
+
+.viewBtn img {
+  margin-right: 10px;
+}
+
+.viewBtn span {
+  font-size: 14px;
+  font-family: "DINNextLTArabicMedium";
+}
+
+.viewBtn:hover {
+  background: #007066;
+  color: #fff;
+}
+
+.DowloadBTn {
+  padding: 14px 45px;
+  background: transparent;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  border-radius: 50px;
+  border: 2px solid #007066;
+  color: #007066;
+}
+
+.DowloadBTn img {
+  margin-right: 10px;
+}
+
+.DowloadBTn span {
+  font-size: 14px;
+  font-family: "DINNextLTArabicMedium";
+}
+
+.DowloadBTn:hover {
+  background: #007066;
+  color: #fff;
+}
+
+.DowloadBTn:hover img {
+  -webkit-filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(253deg) brightness(110%) contrast(230%);
+          filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(253deg) brightness(110%) contrast(230%);
+}
+
+@font-face {
+  font-family: "DINNextLTRegular";
+  src: url("../fonts/DIN-Next-LT-Arabic-Regular.ttf");
+}
+
+@font-face {
+  font-family: "DINNextLTArabicMedium";
+  src: url("../fonts/DINNextLTArabic-Medium.ttf");
+}
+
+body {
+  background-color: #F1F1F1;
+}
+
+.breadcrumbScetion {
+  font-family: "DINNextLTRegular";
+  position: relative;
+  height: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.breadcrumbScetion::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  background: #005b53;
+  background: linear-gradient(77deg, rgba(0, 91, 83, 0.964023) 0%, rgba(46, 120, 114, 0.770746) 100%, rgba(255, 255, 255, 0) 100%, rgba(37, 41, 56, 0.297356) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#005b53",endColorstr="#252938",GradientType=1);
+}
+
+.breadcrumbScetion > img {
+  width: 100%;
+  height: 250px;
+  position: absolute;
+}
+
+.breadcrumbScetion .container {
+  position: relative;
+  z-index: 9;
+}
+
+.breadcrumbScetion .breadcrumbCustom {
+  list-style: none;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.breadcrumbScetion .breadcrumbCustom li {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.breadcrumbScetion .breadcrumbCustom li:not(:last-of-type)::after {
+  content: "\f0d9";
+  font-family: "Font Awesome\ 5 Free";
+  font-weight: 900;
+  padding-left: 15px;
+  font-size: 20px;
+  color: #CCA079;
+}
+
+.breadcrumbScetion .breadcrumbCustom li a {
+  color: #fff;
+  font-family: "DINNextLT";
+  font-weight: 400;
+  padding-left: 10px;
+}
+
+.breadcrumbScetion .heading {
+  font-size: 40px;
+  padding-top: 10px;
+  color: #fff;
+}
+
+.breadcrumbScetion .readspeakerSec {
+  text-align: left;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.breadcrumbScetion .readspeakerSec a {
+  padding: 4px 4px;
+  background: #fff;
+  border-radius: 8px;
+  margin-right: 12px;
+}
+
+.breadcrumbScetion .readspeakerSec a:first-of-type {
+  padding: 4px 12px 4px 10px;
+  margin-right: 0px;
+}
+
+.breadcrumbScetion .readspeakerSec a:first-of-type > span {
+  font-size: 16px;
+  color: #1d1d1b;
+  font-weight: 400;
+  padding-left: 9px;
+}
+
+.systemSection {
+  font-family: "DINNextLTRegular";
+}
+
+.systemSection .formSearch {
+  margin: 48px 0 30px;
+  border-radius: 8px;
+  background: #ffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 24px;
+}
+
+.systemSection .formSearch .boxSearchEvent {
+  width: 526px;
+  background: #F1F1F1;
+  padding: 10px 12px;
+  border-radius: 8px;
+}
+
+.systemSection .formSearch .boxSearchEvent input {
+  background: unset;
+  border: unset;
+  padding-right: 12px;
+  width: 80%;
+  color: #BBBBBB;
+  font-size: 18px;
+}
+
+.systemSection .formSearch .boxSearchEvent ::-webkit-input-placeholder {
+  color: #BBBBBB;
+  font-size: 18px;
+}
+
+.systemSection .formSearch .boxSearchEvent :-ms-input-placeholder {
+  color: #BBBBBB;
+  font-size: 18px;
+}
+
+.systemSection .formSearch .boxSearchEvent ::-ms-input-placeholder {
+  color: #BBBBBB;
+  font-size: 18px;
+}
+
+.systemSection .formSearch .boxSearchEvent ::placeholder {
+  color: #BBBBBB;
+  font-size: 18px;
+}
+
+.systemSection .boxSearch {
+  padding: 32px 20px;
+  background: #fff;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.systemSection .boxSearch:hover {
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.systemSection .boxSearch:hover .showBox {
+  bottom: 0px;
+}
+
+.systemSection .boxSearch .dateBox span {
+  font-size: 14px;
+  color: #CCA079;
+  padding-right: 3px;
+}
+
+.systemSection .boxSearch .titleBox {
+  margin: 13px 0 17px;
+  height: 30px;
+  overflow: hidden;
+}
+
+.systemSection .boxSearch .praghBox {
+  height: 110px;
+  overflow: hidden;
+}
+
+.systemSection .boxSearch .showBox {
+  position: absolute;
+  background: #ffffffe6;
+  width: 100%;
+  left: 0;
+  bottom: -130px;
+  border-radius: 0 0 8px 8px;
+  height: calc(100% - 115px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: bottom .5s;
+  transition: bottom .5s;
+}
+
+.systemSection .boxSearch .showBox .DowloadBTn {
+  margin-right: 14px;
+}
+
+.pagentaaionCustom {
+  padding: 40px 0 120px;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.pagentaaionCustom a, .pagentaaionCustom span {
+  margin: 0 12px;
+  width: 51px;
+  height: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #fff;
+  border-radius: 8px;
+  color: #244B5A;
+  font-size: 20px;
+  font-family: "DINNextLTArabicMedium";
+}
+
+.pagentaaionCustom .current {
+  background: #007F75;
+  color: #fff;
+}
+
+.pagentaaionCustom .NextPagi,
+.pagentaaionCustom .prePagi {
+  width: auto;
+  background: unset;
+}
+
+.pagentaaionCustom .prePagi img {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.pagentaaionCustom .aspNetDisabled img {
+  -webkit-filter: invert(85%) sepia(0%) saturate(1%) hue-rotate(173deg) brightness(105%) contrast(132%);
+          filter: invert(85%) sepia(0%) saturate(1%) hue-rotate(173deg) brightness(105%) contrast(132%);
+}
+
+.viewSystem .headOfView {
+  text-align: center;
+  padding-top: 51px;
+  font-family: "DINNextLTRegular";
+}
+
+.viewSystem .headOfView .dateBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 16px;
+}
+
+.viewSystem .headOfView .dateBox img {
+  width: 24px;
+}
+
+.viewSystem .headOfView .dateBox span {
+  font-size: 18px;
+  color: #CCA079;
+  padding-right: 3px;
+}
+
+.viewSystem .headOfView .title {
+  font-size: 28px;
+  color: #012D29;
+  font-family: "DINNextLTArabicMedium";
+  margin: 0 0 28px 0;
+}
+
+.viewSystem .headOfView .paragraphOfBox, .viewSystem .headOfView .systemSection .boxSearch .praghBox, .systemSection .boxSearch .viewSystem .headOfView .praghBox {
+  margin-bottom: 27px;
+}
+
+.viewSystem .headOfView .DowloadBTn img {
+  margin-right: 13px;
+}
+
+.viewSystem .card-body {
+  padding: 0 21px 27px 80px;
+}
+
+.viewSystem .card-body .faq-section {
+  margin-top: 50px !important;
+}
+
+.viewSystem .card-body .card {
+  margin-bottom: 48px;
+  border-radius: 8px;
+  border: unset;
+}
+
+.viewSystem .card-body .card .card-header {
+  background-color: #fff;
+  border: unset;
+  padding: unset;
+  border-radius: 8px;
+}
+
+.viewSystem .card-body .praghBox {
+  font-family: "DINNextLTArabicMedium";
+}
+
+.viewSystem .faq-section .mb-0 > a {
+  display: block;
+  position: relative;
+  padding: 24px 24px 33px 24px;
+  font-size: 24px;
+  color: #012D29;
+  font-family: "DINNextLTArabicMedium";
+}
+
+.viewSystem .faq-section .mb-0 > a:after {
+  content: "";
+  position: absolute;
+  left: 24px;
+  background-image: url(../images/innerPages/plusQ.svg);
+  height: 40px;
+  width: 40px;
+  background-repeat: no-repeat;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.viewSystem .faq-section .mb-0 > a[aria-expanded="true"]:after {
+  content: "";
+  -webkit-transition: .4s;
+  transition: .4s;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 /*
