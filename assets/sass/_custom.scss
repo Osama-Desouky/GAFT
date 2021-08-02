@@ -1709,7 +1709,8 @@ footer {
     flex-direction: column;
     justify-content: center;
     h3{
-      font-size: 35px;
+      // font-size: 35px;
+      font-size: 2.187rem;
       font-weight: $w-medium;
       color: $black-color-two;
       line-height: 50px;
@@ -1717,7 +1718,7 @@ footer {
       text-align: right;
     }
     p{
-      font-size: 18px;
+      font-size: 1.125rem;
       font-weight: $w-normal;
       color: $p-color;
       line-height: 36px;
@@ -1761,14 +1762,14 @@ footer {
       flex-direction: column;
 
       h3{
-        font-size: 35px;
+        font-size: 2.187rem;
         font-weight: $w-medium;
         line-height: 51px;
         color: $black-color-two;
         margin-bottom: 30px;
       }
       p{
-        font-size: 18px;
+        font-size: 1.125rem;
         font-weight: $w-medium;
         color: $p-color;
         line-height: 36px;
@@ -1779,7 +1780,7 @@ footer {
         padding: 0;
         margin-bottom: 0;
         li{
-          font-size: 18px;
+          font-size: 1.125rem;
           font-weight: $w-medium;
           color: $p-color;
           // line-height: 36px;
@@ -1825,7 +1826,7 @@ footer {
 }
 
 p.on-space{
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: $w-normal;
   color: $p-color;
   line-height: 36px;
@@ -1850,7 +1851,7 @@ p.on-space{
     box-shadow: 0 20px 35px rgba($color: #3E3E3E, $alpha: 0.10);
     position: relative;
     h5{
-      font-size: 20px;
+      font-size: 1.25rem;
       font-weight: $w-bold;
       color: $black-color-two;
       line-height: 45px;
@@ -1858,7 +1859,7 @@ p.on-space{
       text-align: center;
     }
     p{
-      font-size: 17px;
+      font-size: 1.06rem;
       font-weight: $w-medium;
       color: #007066;
       line-height: 36px;
