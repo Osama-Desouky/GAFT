@@ -1,13 +1,42 @@
 $mainColor : #CCA079;
 $placeholderInput : #BBBBBB;
 $creenColor:#007066;
+
+$font40: 40px;
+$font35: 35px;
+$font18: 18px;
+
+
+.selectBox {
+  select {
+    height: 45px;
+    min-width: 124px;
+    border: unset;
+    background: #f1f1f1;
+    padding: 0 24px;
+    color: #BBBBBB;
+    font-weight: 400;
+    border-radius: 8px;
+    font-size: 14px;
+    appearance:none;
+    background-image: url(../images/innerPages/chevron-down.svg);
+    background-repeat: no-repeat;
+    background-position: 15px 12px;
+  }
+  label {
+    font-size: $font18;
+    font-family: "DINNextLTArabicMedium";
+    margin: 0;
+    color: $mainColor ;
+  }
+}
 .headerOfBox {
   font-size: 24px;
   color: #012D29;
   font-family: "DINNextLTArabicMedium";
 }
 .paragraphOfBox {
-  font-size: 18px;
+  font-size: $font18;
   color: #666666;
   margin: 0;
   line-height: 2;
@@ -64,6 +93,13 @@ $creenColor:#007066;
 body {
   background-color: #F1F1F1;
 }
+
+
+
+
+
+//=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= {END} =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
 .breadcrumbScetion {
   font-family: "DINNextLTRegular";
   position: relative;
@@ -114,12 +150,13 @@ body {
         font-family: "DINNextLT";
         font-weight: 400;
         padding-left: 10px;
+        font-size: $font18;
       }
     }
 
   }
   .heading {
-    font-size: 40px;
+    font-size: $font40;
     padding-top: 10px;
     color: #fff;
   }
@@ -151,6 +188,7 @@ body {
     
   }
 }
+
 .systemSection {
   font-family: "DINNextLTRegular";
   .formSearch {
@@ -289,7 +327,7 @@ body {
         width: 24px;
       }
       span {
-          font-size: 18px;
+          font-size: $font18;
         color: #CCA079;
         padding-right: 3px;
       }
@@ -308,7 +346,7 @@ body {
     }
     
   }
-
+ 
   .card-body {
     .faq-section{
       margin-top: 50px !important;
@@ -329,6 +367,7 @@ body {
     font-family: "DINNextLTArabicMedium";
     }
   }
+  .resetPadding {padding: 0;} 
 
   .faq-section .mb-0 > a {
     display: block;
@@ -358,4 +397,98 @@ body {
   }
 
 }
+
+.reportPage {
+
+  .previewReports {
+    text-align: center;
+    .headerOfBox {
+      margin:50px 0 20px 0;
+      font-size: $font35;
+    }
+  }
+
+  .formSearch {
+    display: flex;
+    justify-content: space-between;
+    .boxSearchEvent {
+      width: 339px;
+    }
+    .selectSection {
+      display: flex;
+       align-items: center;
+       .selectBox {
+         &:first-of-type {
+           margin-left: 13px;
+         }
+       }
+    }
+  }
+
+  .boxSearch {
+    padding: 0;
+    .greenBox {
+      height: 230px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: $creenColor;
+      .boxG {
+        img {
+          max-width: 100%;
+        }
+        p {
+          color: $mainColor;
+          text-align: center;
+          margin: 23px 0 0 0;
+          font-size: 30px;
+          font-weight: 600;
+        }
+      }
+    }
+    .dateBox {
+      display: flex;
+      justify-content: space-between;
+      padding: 26px 24px 15px 30px;
+      .dateS {
+        img {
+          transform: translateY(-1px);
+        }
+      }
+      & > span {
+        font-size: 14px;
+        padding: 5px 15px;
+        background: $creenColor;
+        border-radius: 40px;
+        color: #fff;
+       }
+    }
+    .titleBox {
+      margin: 0px 0 12px;
+      padding: 0px 24px 0px 30px;
+    }
+    .praghBox {
+      height: 200px;
+      padding: 0px 24px 20px 30px;
+
+    }
+
+    .showBox {
+      height: calc(100% - 340px);
+      bottom: -200px;
+    }
+    &:hover {
+      .titleBox {
+        text-decoration: underline;
+      }
+      .showBox {
+       
+      }
+    }
+  }
+
+
+}
+
+
 

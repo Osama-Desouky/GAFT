@@ -13250,6 +13250,31 @@ p.on-space {
   border-radius: 16px;
 }
 
+.selectBox select {
+  height: 45px;
+  min-width: 124px;
+  border: unset;
+  background: #f1f1f1;
+  padding: 0 24px;
+  color: #BBBBBB;
+  font-weight: 400;
+  border-radius: 8px;
+  font-size: 14px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-image: url(../images/innerPages/chevron-down.svg);
+  background-repeat: no-repeat;
+  background-position: 15px 12px;
+}
+
+.selectBox label {
+  font-size: 18px;
+  font-family: "DINNextLTArabicMedium";
+  margin: 0;
+  color: #CCA079;
+}
+
 .headerOfBox, .systemSection .boxSearch .titleBox {
   font-size: 24px;
   color: #012D29;
@@ -13392,6 +13417,7 @@ body {
   font-family: "DINNextLT";
   font-weight: 400;
   padding-left: 10px;
+  font-size: 18px;
 }
 
 .breadcrumbScetion .heading {
@@ -13668,6 +13694,10 @@ body {
   font-family: "DINNextLTArabicMedium";
 }
 
+.viewSystem .resetPadding {
+  padding: 0;
+}
+
 .viewSystem .faq-section .mb-0 > a {
   display: block;
   position: relative;
@@ -13697,6 +13727,113 @@ body {
   transition: .4s;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
+}
+
+.reportPage .previewReports {
+  text-align: center;
+}
+
+.reportPage .previewReports .headerOfBox, .reportPage .previewReports .systemSection .boxSearch .titleBox, .systemSection .boxSearch .reportPage .previewReports .titleBox {
+  margin: 50px 0 20px 0;
+  font-size: 35px;
+}
+
+.reportPage .formSearch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.reportPage .formSearch .boxSearchEvent {
+  width: 339px;
+}
+
+.reportPage .formSearch .selectSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.reportPage .formSearch .selectSection .selectBox:first-of-type {
+  margin-left: 13px;
+}
+
+.reportPage .boxSearch {
+  padding: 0;
+}
+
+.reportPage .boxSearch .greenBox {
+  height: 230px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #007066;
+}
+
+.reportPage .boxSearch .greenBox .boxG img {
+  max-width: 100%;
+}
+
+.reportPage .boxSearch .greenBox .boxG p {
+  color: #CCA079;
+  text-align: center;
+  margin: 23px 0 0 0;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.reportPage .boxSearch .dateBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 26px 24px 15px 30px;
+}
+
+.reportPage .boxSearch .dateBox .dateS img {
+  -webkit-transform: translateY(-1px);
+          transform: translateY(-1px);
+}
+
+.reportPage .boxSearch .dateBox > span {
+  font-size: 14px;
+  padding: 5px 15px;
+  background: #007066;
+  border-radius: 40px;
+  color: #fff;
+}
+
+.reportPage .boxSearch .titleBox {
+  margin: 0px 0 12px;
+  padding: 0px 24px 0px 30px;
+}
+
+.reportPage .boxSearch .praghBox {
+  height: 200px;
+  padding: 0px 24px 20px 30px;
+}
+
+.reportPage .boxSearch .showBox {
+  height: calc(100% - 340px);
+  bottom: -200px;
+}
+
+.reportPage .boxSearch:hover .titleBox {
+  text-decoration: underline;
 }
 
 /*

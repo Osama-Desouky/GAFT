@@ -234,3 +234,9 @@ $(function () {
     // console.log(currentFontSize);
 
   }
+
+  /* --- print Function --- */
+$("#print").on("click", function () {
+  window.print();
+});
+
