@@ -197,7 +197,7 @@ body.header-popup-open {
     // box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.1);
     // background: rgba(0,0,0,.8) !important;
     display: none;
-    position: fixed !important;
+    position: absolute !important;
     top: 135px !important;
     #{$end-direction}: 0 !important;
     #{$start-direction}: 0 !important;
@@ -2037,8 +2037,11 @@ p.on-space{
   .img-box{
     border-radius: 8px;
     overflow: hidden;
+    width: 100%;
     img{
-      max-width: 100%;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
       transition: 500ms;
     }
   }
@@ -2120,6 +2123,152 @@ p.on-space{
           transform:  scale(1.2);
         }
       }
+    }
+  }
+}
+
+
+.main-member-inner{
+  background-color: #E5ECEC;
+  padding-top: 70px;
+  padding-bottom: 40px;
+  border-radius: 8px;
+  .content-wrapper{
+    display: flex;
+    // align-items: center;
+
+  
+    .right-section{
+      flex: 0 0 441px;
+      margin-#{$end-direction}:45px ;
+
+      .img-box{
+        width: 100%;
+        border-radius: 8px;
+        overflow: hidden;
+        img{
+          width: 100%;
+          object-fit: cover;
+          transition: 500ms;
+        }
+      }
+      .share{
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        span{
+          font-size: 1.125rem;
+          font-weight: $w-normal;
+          color: $black-color-two;
+          line-height: 29px;
+          margin-#{$end-direction}:30px ;
+        }
+        a{
+          background-color: #fff;
+          width: 34px;
+          height: 34px;
+          border-radius: 8px;
+          background-repeat: no-repeat;
+          background-position: center;
+          display: inline-block;
+          margin-#{$end-direction}:15px ;
+          transition: 500ms;
+          &:last-child{
+            margin-#{$end-direction}:0 ;
+          }
+        }
+        .twitter-share{
+          background-image: url(../images/twitter1.svg);
+          &:hover{
+            background-image: url(../images/twitter2.svg);
+          }
+        }
+        .linkedin-share{
+          background-image: url(../images/linkedin1.svg);
+          &:hover{
+            background-image: url(../images/linkedin2.svg);
+          }
+        }
+      }
+    }
+    .left-section{
+      padding-#{$end-direction}:50px ;
+      .content-box{
+        h3{
+        font-size: 2.187rem;
+        font-weight: $w-bold;
+        color: $dark-green;
+        line-height: 51px;
+        margin-bottom: 15px;
+        transition: 500ms;
+        }
+        h5{
+          font-size: 1.5rem;
+          font-weight: $w-normal;
+          color: $black-color-two;
+          line-height: 35px;
+          margin-bottom: 35px;
+        }
+        p{
+          font-size: 1.125rem;
+          font-weight: $w-normal;
+          color: $p-color;
+          line-height: 35px;
+          margin-bottom: 20px;
+          &:last-child{
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+.lamha-tare5ia{
+  padding-top: 55px;
+  padding-bottom: 250px;
+  padding-#{$end-direction}:40px ;
+  h3{
+    font-size: 1.93rem;
+    font-weight: $w-bold;
+    color: $dark-green;
+    line-height: 45px;
+    margin-bottom: 30px;
+  }
+  ul{
+    list-style: none;
+    max-width: 1200px;
+    padding-#{$start-direction}:40px ;
+    // padding-#{$end-direction}:40px ;
+    margin-bottom: 40px;
+    li{
+      font-size: 1.125rem;
+      font-weight: 500;
+      color: $black-color-two;
+      margin-bottom: 30px;
+      position: relative;
+      padding-right: 27px;
+      &::before{
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        top: 12px;
+        right: 0;
+        background-image: url(../images/arrow.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+    }
+  }
+  p{
+    font-size: 1.125rem;
+    font-weight: $w-normal;
+    color: $black-color-two;
+    line-height: 36px;
+    margin-bottom: 35px;
+    &:last-child{
+      margin-bottom: 0;
     }
   }
 }
