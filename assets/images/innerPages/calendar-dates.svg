@@ -1,0 +1,3 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+  <path id="calendar-dates" d="M18.2,7.4V4.7H16.4v.9H14.6V4.7H7.4v.9H5.6V4.7H3.8V7.4Zm0,1.8H3.8v9H18.2ZM16.4,2.9h1.8A1.8,1.8,0,0,1,20,4.7V18.2A1.8,1.8,0,0,1,18.2,20H3.8A1.8,1.8,0,0,1,2,18.2V4.7A1.8,1.8,0,0,1,3.8,2.9H5.6V2H7.4v.9h7.2V2h1.8ZM8.3,12.8H6.5V11H8.3Zm3.6,0H10.1V11h1.8Zm3.6,0H13.7V11h1.8ZM8.3,16.4H6.5V14.6H8.3Zm3.6,0H10.1V14.6h1.8Z" transform="translate(-2 -2)" fill="#cca079" fill-rule="evenodd"/>
+</svg>

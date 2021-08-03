@@ -1,12 +1,52 @@
 $mainColor : #CCA079;
 $placeholderInput : #BBBBBB;
 $creenColor:#007066;
-
-$font40: 40px;
-$font35: 35px;
-$font18: 18px;
-
-
+$titleColor:#1D1D1B;
+$titleColorD29:#012D29;
+$font40: 2.5rem;
+$font35: 2.188rem;
+$font18: 1.125rem;
+.btnForm {
+  border: unset;
+  background: $mainColor;
+  padding: 15px 64px;
+  border-radius: 50px;
+  font-size: 16px;
+  color: #fff;
+  font-weight: $w-medium;
+  &:hover {
+    color: #fff;
+  }
+}
+label {
+  font-size: $font18;
+  font-weight: $w-medium;
+  margin: 0;
+  color: $mainColor ;
+}
+::placeholder {
+  color: $placeholderInput;
+  font-size: 0.875rem;
+}
+.InputStyle {
+  input[type=text],input[type=email],input[type=number] {
+    width: 100%;
+    height: 45px;
+    border-radius: 8px;
+    padding: 0 20px;
+    border: unset;
+  } 
+}
+.textareaStyle {
+  textarea {
+    width: 100%;
+    min-height: 84px;
+    border-radius: 8px;
+    padding: 20px 24px;
+    resize: unset;
+    border: unset;
+  }
+}
 .selectBox {
   select {
     height: 45px;
@@ -23,17 +63,17 @@ $font18: 18px;
     background-repeat: no-repeat;
     background-position: 15px 12px;
   }
-  label {
-    font-size: $font18;
-    font-family: "DINNextLTArabicMedium";
-    margin: 0;
-    color: $mainColor ;
-  }
+
 }
 .headerOfBox {
-  font-size: 24px;
+font-size: 1.5rem;
   color: #012D29;
-  font-family: "DINNextLTArabicMedium";
+  font-weight: $w-medium;
+}
+.headerOfBoxFont35 {
+  font-size: $font35;
+  color: $titleColor;
+  font-weight: $w-medium;
 }
 .paragraphOfBox {
   font-size: $font18;
@@ -53,7 +93,7 @@ $font18: 18px;
   }
   span {
     font-size: 14px;
-    font-family: "DINNextLTArabicMedium";
+    font-weight: $w-medium;
   }
   &:hover {
     background: $creenColor;
@@ -72,7 +112,7 @@ $font18: 18px;
   }
   span {
     font-size: 14px;
-    font-family: "DINNextLTArabicMedium";
+    font-weight: $w-medium;
   }
   &:hover {
     background: $creenColor;
@@ -243,9 +283,13 @@ body {
       margin: 13px 0 17px;
       height: 30px;
       overflow: hidden;
+      // remove ro rem
+      font-size:24px;
     }
     .praghBox {
       @extend .paragraphOfBox;
+       // remove ro rem
+      font-size:18px;
       height: 110px;
       overflow: hidden;
     }
@@ -289,7 +333,7 @@ body {
     border-radius: 8px;
     color: #244B5A;
     font-size: 20px;
-    font-family: "DINNextLTArabicMedium";
+    font-weight: $w-medium;
   }
   .current {
     background: #007F75;
@@ -333,9 +377,9 @@ body {
       }
     }
     .title {
-      font-size: 28px;
+      font-size: 1.75rem;
       color: #012D29;
-      font-family: "DINNextLTArabicMedium";
+      font-weight: $w-medium;
       margin: 0 0 28px 0;
     }
     .paragraphOfBox {
@@ -364,7 +408,7 @@ body {
     }
    }
    .praghBox {
-    font-family: "DINNextLTArabicMedium";
+    font-weight: $w-medium;
     }
   }
   .resetPadding {padding: 0;} 
@@ -373,9 +417,9 @@ body {
     display: block;
     position: relative;
     padding: 24px 24px 33px 24px;
-    font-size: 24px;
+    font-size: 1.5rem;
     color: #012D29;
-    font-family: "DINNextLTArabicMedium";
+    font-weight: $w-medium;
   }
  
   .faq-section .mb-0 > a:after {
@@ -456,7 +500,7 @@ body {
         }
       }
       & > span {
-        font-size: 14px;
+        font-size: 0.875rem;
         padding: 5px 15px;
         background: $creenColor;
         border-radius: 40px;
@@ -487,8 +531,187 @@ body {
     }
   }
 
-
 }
 
+.backgroundOrImage {
+  padding: 84px 0 89px;
+  .container {
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      width: 300px;
+      height: 300px;
+      // background-color: green;
+      background-image: url(../images/innerPages/dots.svg);
+      left: -52px;
+      top: -52px;
+    }
+  }
+  .formContactUs {
+    display: flex;
+    align-items: center;
+    margin-bottom: 52px;
+    .textFrom {
+      width: calc(100% - 630px);
+      background: #fff;
+      padding: 69px 24px 69px 17%;
+      box-shadow: 0 0 10px rgba(0,0,0,.1);
+      border-radius: 0px 8px 8px 0px;
+      height: 685px;
+      .headerOfBoxFont35 {
+        margin-bottom: 30px;
+      }
+      .paragraphOfBox {
+        padding-bottom: 24px;
+      }
+      .ContacT {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        li {
+          a {
+            display: inline-block;
+            font-size: 16px;
+            color: $creenColor;
+            margin-bottom: 24px;
+            img {
+              padding-#{$end-direction}: 9px ;
+            }
+          }
+        }
+      }
+      .qrCode {
+        .paragraphOfBox {
+          color: #012D29;
+          font-weight: $w-medium;
+          padding-bottom: 12px;
+          margin:0;
+        }
+        .QRbox {
+          height: 150px;
+          width: 150px;
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+    .FromInputs {
+      // background-image: url();
+      // background: url(../images/innerPages/BGForm.svg), $creenColor;
+      width: 630px;
+      background-color: $creenColor;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,.1);
+      padding: 51px 48px;
+      position: relative;
+      &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: url(../images/innerPages/BGForm.svg);
+        inset: 0;
+        opacity: .4;
+      }
+      .forZindex {
+        position: relative;
+        z-index: 2;
+      }
+      .formGroup {
+        padding-bottom: 10px;
+        label {
+           display: block;
+           margin-bottom: 5px;
+        }
+        select {
+          width: 100%;
+          background-color: #fff;
+        }
+      }
+      .FixPadding {
+        padding: 0 15px;
+        .text-left,.text-right {
+          padding-top: 14px;
+        }
+      }
+    }
+  }
+  .col-md-12 {
+    & > {
+      .headerOfBoxFont35 {
+        text-align: center;
+        padding-bottom: 27px;
+      }
+    }
+  }
+  .mapFrom {
+    width: 100%;
+    height: 446px;
+    iframe{
+      border: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,.1);
+    }
+  }
+}
 
+.NewsPage {
+  .formSearch {
+    margin: 0 0 44px;
+  }
+  .boxNewsPage {
+    box-shadow: 0 0px 25px rgba($color: #332e2e, $alpha: 0.1);
+    display: flex;
+    background-color: #fff;
+    width: 82%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    &:hover {
+      .boxImgNew {
+        img {
+          transform: scale(1.1);
+        }
+      }
+    }
+    .boxImgNew {
+      width: 526px;
+      overflow: hidden;
+      img {
+        border-radius: 10px;
+        width: 526px;
+        height: 100%;
+        object-fit: cover;
+        transition: .4s;
+      }
+    }
+    .textNew {
+      padding: 45px 30px 39px;
+      width: calc(100% - 526px);
+      .dateNew {
+        margin: 0 0 27px 0;
+        &:first-of-type {
+          span {
+            font-size: 16px;
+            padding-#{$end-direction}: 10px;
+            color: #CCA079;
+          }
+        }
+      }
+      .headerOfBox {
+        margin-bottom: 12px;
+        color: $mainColor;
+      }
+      .btnForm {
+        display: inline-block;
+        margin-top: 27px;
+        padding: 10px 37px;
+      }
+    }
 
+  }
+}

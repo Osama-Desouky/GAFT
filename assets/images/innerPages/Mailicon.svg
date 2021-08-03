@@ -1,0 +1,5 @@
+<svg id="Mailicon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
+  <path id="Path_52797" data-name="Path 52797" d="M0,0H28V28H0Z" fill="none"/>
+  <path id="Path_52798" data-name="Path 52798" d="M22.667,6.882V.709H4V6.882L13.333,12.7Z" transform="translate(0.667 4.624)" fill="#cca079" opacity="0.77"/>
+  <path id="Path_52799" data-name="Path 52799" d="M4.333,22.667H23a2.34,2.34,0,0,0,2.333-2.333v-14A2.34,2.34,0,0,0,23,4H4.333A2.34,2.34,0,0,0,2,6.333v14A2.34,2.34,0,0,0,4.333,22.667ZM23,6.333l-9.333,5.822L4.333,6.333ZM4.333,8.667,13.667,14.5,23,8.667V20.333H4.333Z" transform="translate(0.333 0.667)" fill="#007066"/>
+</svg>
