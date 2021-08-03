@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+  <g id="media-img" transform="translate(0 -3)">
+    <g id="image" transform="translate(-3)">
+      <rect id="Rectangle_11809" data-name="Rectangle 11809" width="18" height="18" transform="translate(3 3)" fill="#cca079" opacity="0"/>
+      <path id="Path_52857" data-name="Path 52857" d="M18,3H6A3,3,0,0,0,3,6V18a3,3,0,0,0,3,3H18a3,3,0,0,0,3-3V6A3,3,0,0,0,18,3ZM6,5H18a1,1,0,0,1,1,1v8.36l-3.2-2.73a2.77,2.77,0,0,0-3.52,0L5,17.7V6A1,1,0,0,1,6,5ZM18,19H6.56l7-5.84a.78.78,0,0,1,.93,0L19,17v1A1,1,0,0,1,18,19Z" fill="#cca079"/>
+      <circle id="Ellipse_210" data-name="Ellipse 210" cx="1.5" cy="1.5" r="1.5" transform="translate(6.5 7)" fill="#cca079"/>
+    </g>
+  </g>
+</svg>
