@@ -13398,6 +13398,64 @@ p.on-space {
   border-radius: 16px;
 }
 
+.btnForm {
+  border: unset;
+  background: #CCA079;
+  padding: 15px 64px;
+  border-radius: 50px;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.btnForm:hover {
+  color: #fff;
+}
+
+label {
+  font-size: 1.125rem;
+  font-weight: 500;
+  margin: 0;
+  color: #CCA079;
+}
+
+::-webkit-input-placeholder {
+  color: #BBBBBB;
+  font-size: 0.875rem;
+}
+
+:-ms-input-placeholder {
+  color: #BBBBBB;
+  font-size: 0.875rem;
+}
+
+::-ms-input-placeholder {
+  color: #BBBBBB;
+  font-size: 0.875rem;
+}
+
+::placeholder {
+  color: #BBBBBB;
+  font-size: 0.875rem;
+}
+
+.InputStyle input[type=text], .InputStyle input[type=email], .InputStyle input[type=number] {
+  width: 100%;
+  height: 45px;
+  border-radius: 8px;
+  padding: 0 20px;
+  border: unset;
+}
+
+.textareaStyle textarea {
+  width: 100%;
+  min-height: 84px;
+  border-radius: 8px;
+  padding: 20px 24px;
+  resize: unset;
+  border: unset;
+}
+
 .selectBox select {
   height: 45px;
   min-width: 124px;
@@ -13416,21 +13474,20 @@ p.on-space {
   background-position: 15px 12px;
 }
 
-.selectBox label {
-  font-size: 18px;
-  font-family: "DINNextLTArabicMedium";
-  margin: 0;
-  color: #CCA079;
+.headerOfBox, .systemSection .boxSearch .titleBox {
+  font-size: 1.5rem;
+  color: #012D29;
+  font-weight: 500;
 }
 
-.headerOfBox, .systemSection .boxSearch .titleBox {
-  font-size: 24px;
-  color: #012D29;
-  font-family: "DINNextLTArabicMedium";
+.headerOfBoxFont35 {
+  font-size: 2.188rem;
+  color: #1D1D1B;
+  font-weight: 500;
 }
 
 .paragraphOfBox, .systemSection .boxSearch .praghBox {
-  font-size: 18px;
+  font-size: 1.125rem;
   color: #666666;
   margin: 0;
   line-height: 2;
@@ -13450,7 +13507,7 @@ p.on-space {
 
 .viewBtn span {
   font-size: 14px;
-  font-family: "DINNextLTArabicMedium";
+  font-weight: 500;
 }
 
 .viewBtn:hover {
@@ -13475,7 +13532,7 @@ p.on-space {
 
 .DowloadBTn span {
   font-size: 14px;
-  font-family: "DINNextLTArabicMedium";
+  font-weight: 500;
 }
 
 .DowloadBTn:hover {
@@ -13565,11 +13622,11 @@ body {
   font-family: "DINNextLT";
   font-weight: 400;
   padding-left: 10px;
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 
 .breadcrumbScetion .heading {
-  font-size: 40px;
+  font-size: 2.5rem;
   padding-top: 10px;
   color: #fff;
 }
@@ -13688,9 +13745,11 @@ body {
   margin: 13px 0 17px;
   height: 30px;
   overflow: hidden;
+  font-size: 24px;
 }
 
 .systemSection .boxSearch .praghBox {
+  font-size: 18px;
   height: 110px;
   overflow: hidden;
 }
@@ -13752,7 +13811,7 @@ body {
   border-radius: 8px;
   color: #244B5A;
   font-size: 20px;
-  font-family: "DINNextLTArabicMedium";
+  font-weight: 500;
 }
 
 .pagentaaionCustom .current {
@@ -13797,15 +13856,15 @@ body {
 }
 
 .viewSystem .headOfView .dateBox span {
-  font-size: 18px;
+  font-size: 1.125rem;
   color: #CCA079;
   padding-right: 3px;
 }
 
 .viewSystem .headOfView .title {
-  font-size: 28px;
+  font-size: 1.75rem;
   color: #012D29;
-  font-family: "DINNextLTArabicMedium";
+  font-weight: 500;
   margin: 0 0 28px 0;
 }
 
@@ -13839,7 +13898,7 @@ body {
 }
 
 .viewSystem .card-body .praghBox {
-  font-family: "DINNextLTArabicMedium";
+  font-weight: 500;
 }
 
 .viewSystem .resetPadding {
@@ -13850,9 +13909,9 @@ body {
   display: block;
   position: relative;
   padding: 24px 24px 33px 24px;
-  font-size: 24px;
+  font-size: 1.5rem;
   color: #012D29;
-  font-family: "DINNextLTArabicMedium";
+  font-weight: 500;
 }
 
 .viewSystem .faq-section .mb-0 > a:after {
@@ -13883,7 +13942,7 @@ body {
 
 .reportPage .previewReports .headerOfBox, .reportPage .previewReports .systemSection .boxSearch .titleBox, .systemSection .boxSearch .reportPage .previewReports .titleBox {
   margin: 50px 0 20px 0;
-  font-size: 35px;
+  font-size: 2.188rem;
 }
 
 .reportPage .formSearch {
@@ -13958,7 +14017,7 @@ body {
 }
 
 .reportPage .boxSearch .dateBox > span {
-  font-size: 14px;
+  font-size: 0.875rem;
   padding: 5px 15px;
   background: #007066;
   border-radius: 40px;
@@ -13982,6 +14041,214 @@ body {
 
 .reportPage .boxSearch:hover .titleBox {
   text-decoration: underline;
+}
+
+.backgroundOrImage {
+  padding: 84px 0 89px;
+}
+
+.backgroundOrImage .container {
+  position: relative;
+}
+
+.backgroundOrImage .container::before {
+  content: '';
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background-image: url(../images/innerPages/dots.svg);
+  left: -52px;
+  top: -52px;
+}
+
+.backgroundOrImage .formContactUs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 52px;
+}
+
+.backgroundOrImage .formContactUs .textFrom {
+  width: calc(100% - 630px);
+  background: #fff;
+  padding: 69px 24px 69px 17%;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 0px 8px 8px 0px;
+  height: 685px;
+}
+
+.backgroundOrImage .formContactUs .textFrom .headerOfBoxFont35 {
+  margin-bottom: 30px;
+}
+
+.backgroundOrImage .formContactUs .textFrom .paragraphOfBox, .backgroundOrImage .formContactUs .textFrom .systemSection .boxSearch .praghBox, .systemSection .boxSearch .backgroundOrImage .formContactUs .textFrom .praghBox {
+  padding-bottom: 24px;
+}
+
+.backgroundOrImage .formContactUs .textFrom .ContacT {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.backgroundOrImage .formContactUs .textFrom .ContacT li a {
+  display: inline-block;
+  font-size: 16px;
+  color: #007066;
+  margin-bottom: 24px;
+}
+
+.backgroundOrImage .formContactUs .textFrom .ContacT li a img {
+  padding-left: 9px;
+}
+
+.backgroundOrImage .formContactUs .textFrom .qrCode .paragraphOfBox, .backgroundOrImage .formContactUs .textFrom .qrCode .systemSection .boxSearch .praghBox, .systemSection .boxSearch .backgroundOrImage .formContactUs .textFrom .qrCode .praghBox {
+  color: #012D29;
+  font-weight: 500;
+  padding-bottom: 12px;
+  margin: 0;
+}
+
+.backgroundOrImage .formContactUs .textFrom .qrCode .QRbox {
+  height: 150px;
+  width: 150px;
+}
+
+.backgroundOrImage .formContactUs .textFrom .qrCode .QRbox img {
+  width: 100%;
+}
+
+.backgroundOrImage .formContactUs .FromInputs {
+  width: 630px;
+  background-color: #007066;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 51px 48px;
+  position: relative;
+}
+
+.backgroundOrImage .formContactUs .FromInputs::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url(../images/innerPages/BGForm.svg);
+  inset: 0;
+  opacity: .4;
+}
+
+.backgroundOrImage .formContactUs .FromInputs .forZindex {
+  position: relative;
+  z-index: 2;
+}
+
+.backgroundOrImage .formContactUs .FromInputs .formGroup {
+  padding-bottom: 10px;
+}
+
+.backgroundOrImage .formContactUs .FromInputs .formGroup label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.backgroundOrImage .formContactUs .FromInputs .formGroup select {
+  width: 100%;
+  background-color: #fff;
+}
+
+.backgroundOrImage .formContactUs .FromInputs .FixPadding {
+  padding: 0 15px;
+}
+
+.backgroundOrImage .formContactUs .FromInputs .FixPadding .text-left, .backgroundOrImage .formContactUs .FromInputs .FixPadding .text-right {
+  padding-top: 14px;
+}
+
+.backgroundOrImage .col-md-12 > .headerOfBoxFont35 {
+  text-align: center;
+  padding-bottom: 27px;
+}
+
+.backgroundOrImage .mapFrom {
+  width: 100%;
+  height: 446px;
+}
+
+.backgroundOrImage .mapFrom iframe {
+  border: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.NewsPage .formSearch {
+  margin: 0 0 44px;
+}
+
+.NewsPage .boxNewsPage {
+  -webkit-box-shadow: 0 0px 25px rgba(51, 46, 46, 0.1);
+          box-shadow: 0 0px 25px rgba(51, 46, 46, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #fff;
+  width: 82%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  border-radius: 8px;
+}
+
+.NewsPage .boxNewsPage:hover .boxImgNew img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.NewsPage .boxNewsPage .boxImgNew {
+  width: 526px;
+  overflow: hidden;
+}
+
+.NewsPage .boxNewsPage .boxImgNew img {
+  border-radius: 10px;
+  width: 526px;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.NewsPage .boxNewsPage .textNew {
+  padding: 45px 30px 39px;
+  width: calc(100% - 526px);
+}
+
+.NewsPage .boxNewsPage .textNew .dateNew {
+  margin: 0 0 27px 0;
+}
+
+.NewsPage .boxNewsPage .textNew .dateNew:first-of-type span {
+  font-size: 16px;
+  padding-left: 10px;
+  color: #CCA079;
+}
+
+.NewsPage .boxNewsPage .textNew .headerOfBox, .NewsPage .boxNewsPage .textNew .systemSection .boxSearch .titleBox, .systemSection .boxSearch .NewsPage .boxNewsPage .textNew .titleBox {
+  margin-bottom: 12px;
+  color: #CCA079;
+}
+
+.NewsPage .boxNewsPage .textNew .btnForm {
+  display: inline-block;
+  margin-top: 27px;
+  padding: 10px 37px;
 }
 
 /*
