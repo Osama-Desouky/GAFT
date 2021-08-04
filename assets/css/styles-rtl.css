@@ -13670,6 +13670,51 @@ label {
   line-height: 2;
 }
 
+.titleJobFont32 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #CCA079;
+}
+
+.prachJobFont24 {
+  color: #fff;
+  line-height: 1.6;
+  font-size: 24px;
+}
+
+.BtnWithArrow {
+  background-color: #CCA079;
+  padding: 15px 40px 15px 63px;
+  border-radius: 50px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  position: relative;
+  display: inline-block;
+}
+
+.BtnWithArrow::after {
+  content: '';
+  position: absolute;
+  left: 35px;
+  width: 20px;
+  height: 20px;
+  background: url(../images/innerPages/ArrowBTn.svg) no-repeat;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.BtnWithArrow:hover {
+  background-color: #007066;
+  color: #fff;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.BtnWithArrow:hover::after {
+  left: 25px;
+}
+
 .viewBtn {
   padding: 14px 45px;
   background: #CCA079;
@@ -13795,6 +13840,38 @@ body {
 }
 
 .breadcrumbScetion .breadcrumbCustom li a {
+  color: #fff;
+  font-family: "DINNextLT";
+  font-weight: 400;
+  padding-left: 10px;
+  font-size: 1.125rem;
+}
+
+.breadcrumbScetion .breadcrumbCustom span {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.breadcrumbScetion .breadcrumbCustom span:not(:last-of-type) a::after {
+  content: "\f0d9";
+  font-family: "Font Awesome\ 5 Free";
+  font-weight: 900;
+  padding-right: 15px;
+  font-size: 20px;
+  color: #CCA079;
+}
+
+.breadcrumbScetion .breadcrumbCustom span:last-of-type {
+  color: #fff;
+  font-family: "DINNextLT";
+  font-weight: 400;
+  padding-left: 10px;
+  font-size: 1.125rem;
+}
+
+.breadcrumbScetion .breadcrumbCustom span a {
   color: #fff;
   font-family: "DINNextLT";
   font-weight: 400;
@@ -14426,6 +14503,175 @@ body {
   display: inline-block;
   margin-top: 27px;
   padding: 10px 37px;
+}
+
+.jobBanner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #007066;
+  border-radius: 19px;
+  margin-top: 48px;
+  padding: 74px 113px 0 42px;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+}
+
+.jobBanner::before {
+  position: absolute;
+  content: '';
+  right: -89px;
+  top: -85px;
+  background: url(../images/innerPages//bannerJobRigth2.png) no-repeat;
+  width: 280px;
+  height: 280px;
+  z-index: 2;
+}
+
+.jobBanner .overLay {
+  border-radius: 15px;
+  position: absolute;
+  content: '';
+  inset: 0;
+  background: #1d1d1b;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(29, 29, 27, 0.790354)), color-stop(100%, rgba(255, 255, 255, 0)), to(#1d1d1b));
+  background: linear-gradient(180deg, rgba(29, 29, 27, 0.790354) 0%, rgba(255, 255, 255, 0) 100%, #1d1d1b 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1d1d1b",endColorstr="#1d1d1b",GradientType=1);
+}
+
+.jobBanner .textJob .titleJobFont32 {
+  margin-bottom: 25px;
+  padding-top: 51px;
+}
+
+.jobBanner .textJob .prachJobFont24 {
+  margin-bottom: 27px;
+  padding-left: 15%;
+}
+
+.jobBanner .textJob .BtnWithArrow {
+  margin-bottom: 55px;
+}
+
+.jobBanner .imgJob img {
+  width: 327px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 360px;
+  -o-object-position: top;
+     object-position: top;
+}
+
+.jobBanner .imgJob,
+.jobBanner .textJob {
+  position: relative;
+  z-index: 2;
+}
+
+.JobPageStyle {
+  padding: 84px 0 0px;
+}
+
+.JobPageSTL .boxSearch {
+  text-align: center;
+}
+
+.JobPageSTL .boxSearch .dateBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.JobPageSTL .boxSearch .dateBox span {
+  font-size: 16px;
+  padding-right: 10px;
+}
+
+.JobPageSTL .boxSearch .praghBox {
+  height: 80px;
+}
+
+.JobPageSTL .boxSearch .JobCodeSec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 15px;
+}
+
+.JobPageSTL .boxSearch .JobCodeSec .Edgucation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #012D29;
+}
+
+.JobPageSTL .boxSearch .JobCodeSec .Edgucation .MainColr {
+  color: #CCA079;
+  font-size: 21px;
+  padding-right: 5px;
+}
+
+.JobPageSTL .boxSearch .JobCodeSec .Edgucation img {
+  padding-left: 10px;
+  margin-top: 7px;
+}
+
+.JobPageSTL .boxSearch .JobCodeSec .Edgucation span {
+  font-size: 20px;
+}
+
+.JobPageSTL .JobBoxHover {
+  position: relative;
+  margin-top: 145px;
+  margin-bottom: 30px;
+}
+
+.JobPageSTL .JobBoxHover:hover .boxImg img {
+  border-radius: 50%;
+  width: 242px;
+  height: 242px;
+  -webkit-box-shadow: 0 5px 15px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 5px 15px 2px rgba(0, 0, 0, 0.1);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: -webkit-box-shadow .4s,-webkit-transform .4s;
+  transition: -webkit-box-shadow .4s,-webkit-transform .4s;
+  transition: box-shadow .4s,transform .4s;
+  transition: box-shadow .4s,transform .4s,-webkit-box-shadow .4s,-webkit-transform .4s;
+}
+
+.JobPageSTL .JobBoxHover:hover .boxSearch .showBox {
+  bottom: 0px;
+}
+
+.JobPageSTL .JobBoxHover .boxSearch .showBox {
+  bottom: -260px;
+  height: calc(100% - 200px);
+}
+
+.JobPageSTL .JobBoxHover .boxImg {
+  position: absolute;
+  left: 50%;
+  z-index: 3;
+  top: -50%;
+  -webkit-transform: translate(-50%, 40px);
+          transform: translate(-50%, 40px);
+}
+
+.JobPageSTL .JobBoxHover .boxSearch {
+  padding-top: 120px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 /*
