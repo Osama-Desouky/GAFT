@@ -6,6 +6,7 @@ $titleColorD29:#012D29;
 $font40: 2.5rem;
 $font35: 2.188rem;
 $font18: 1.125rem;
+$font14: 0.875rem;
 .btnForm {
   border: unset;
   background: $mainColor;
@@ -91,6 +92,18 @@ font-size: 1.5rem;
   line-height: 1.6;
   font-size: 24px;
 }
+.smallTitle14 {
+  color: $mainColor;
+  font-size: $font14;
+  font-weight: $w-medium;
+}
+.smallTitleWithGreenBg {
+  color: #fff;
+  font-size: $font14;
+  background-color: $creenColor;
+  padding: 5px 15px;
+  border-radius: 50px;
+}
 .BtnWithArrow {
   background-color:$mainColor;
   padding: 15px 40px 15px 63px;
@@ -136,6 +149,32 @@ font-size: 1.5rem;
     color: #fff;
   }
 }
+.showToggleBtn {
+  height: 52px;
+  .showToggle {
+    @extend .viewBtn;
+    width: 160px;
+    height: 52px;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  
+  }
+  .toggleMore {
+    display: none;
+  
+  }
+  &:hover {
+    .toggleMore {
+      display: inline-flex;
+    }
+    .toggleShow {
+      display: none;
+    }
+  }
+}
+
 .DowloadBTn {
   padding: 14px 45px;
   background: transparent;
@@ -518,6 +557,9 @@ body {
     .headerOfBox {
       margin:50px 0 20px 0;
       font-size: $font35;
+    }
+    .paragraphOfBox {
+      padding: 0 8%;
     }
   }
 
@@ -937,3 +979,171 @@ body {
   }
 
 }
+
+
+.bannerSliderSec {
+  padding: 48px 32px; 
+  .bannerSwiperinner  {
+    height: 495px;
+    background-image: url(../images/innerPages/BannerImgInner.jpg);
+    border-radius: 25px;
+    &::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      inset: 0;
+      background: rgb(29,29,27);
+      background: -moz-linear-gradient(0deg, rgba(29,29,27,1) 0%, rgba(29,29,27,1) 0%, rgba(255,255,255,0) 100%, rgba(37,41,56,0.29735644257703087) 100%);
+      background: -webkit-linear-gradient(0deg, rgba(29,29,27,1) 0%, rgba(29,29,27,1) 0%, rgba(255,255,255,0) 100%, rgba(37,41,56,0.29735644257703087) 100%);
+      background: linear-gradient(0deg, rgba(29,29,27,1) 0%, rgba(29,29,27,1) 0%, rgba(255,255,255,0) 100%, rgba(37,41,56,0.29735644257703087) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1d1d1b",endColorstr="#252938",GradientType=1);
+    }
+    .BoxBannerInner {
+      display: block;
+      padding-top: 94px;
+      height: 100%;
+      flex-direction: column;
+      justify-content: center;
+      width: 60%;
+      margin: 0 auto;
+      text-align: center;
+      .headerOfBoxFont35 {
+        font-size: 32px;
+        margin-bottom: 30px;
+        color: $mainColor;
+      }
+      .PraghTextBNR {
+      font-size: 1.5rem;
+        line-height: 1.6;
+        color: #fff;
+        margin-bottom: 17px;
+      }
+      .dateBNInner {
+         &:last-of-type {
+           span {
+            font-size: 16px;
+            padding-#{$end-direction}: 10px;
+            color: $mainColor;
+           }
+         
+        }
+      }
+    }
+
+    .swiper-pagination-bullet {
+      width: 10px;
+      height: 10px;
+      background: #ffffff;
+      opacity: .5;
+    }
+    .swiper-pagination-bullets {
+      bottom: 48px;
+    }
+    .swiper-pagination-bullet-active {
+      background: $mainColor;
+      opacity: 1;
+    }
+
+  }
+}
+
+
+.BTNSWIPERCNT {
+  position: relative;
+  width: 200px;
+  margin: 0 auto;
+  transform: translateY(-102px);
+  z-index: 9;
+  display: flex;
+  justify-content: center;
+  .swiper-button-prev ,
+  .swiper-button-next {
+    position: relative;
+    width: 37px;
+    height: 37px;
+    position: relative;
+    left: unset;
+    right: unset;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    &::after {
+      font-size: 22px;
+      color: #fff;
+      padding-top: 2px;
+    }
+    &:not(.swiper-button-disabled) {
+      background-color: #fff;
+      &::after {
+        font-size: 22px;
+        color: $creenColor;
+        padding-top: 2px;
+      }
+    }
+  }
+  .swiper-button-prev {
+    margin-#{$end-direction}: 10px;
+  }
+}
+
+.boxPuplictions {
+  height: 500px;
+  margin-bottom: 30px;
+  position: relative;
+  .greenBox{
+    height: 373px;
+    background: $creenColor;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: height .4s ease;
+    .gboxG {
+      img {
+        height: 290px;
+        width: 224px;
+      }
+    }
+  }
+  .whiteBoxPupl {
+    background: #fff;
+    border-radius: 0px 0px 8px 8px;
+    padding: 14px 22px 38px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 127px;
+    transition: height .4s ease;
+    overflow: hidden;
+    .dateBox {
+      display: flex;
+      justify-content: space-between;
+    }
+    .headerOfBox {
+      text-align: center;
+      padding-top: 14px;
+      display: block;
+      &:hover {
+        color: $titleColorD29;
+      }
+    }
+  }
+  .showBox {
+    justify-content: space-between;
+    display: none;
+    padding-top: 12px;
+  }
+  &:hover {
+    .greenBox {
+      height: 335px;
+    }
+   .whiteBoxPupl {
+       height: 165px;
+   }
+   .showBox {
+    display: flex;
+  }
+
+  }
+}
+
