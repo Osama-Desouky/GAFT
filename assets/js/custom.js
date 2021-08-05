@@ -43,17 +43,19 @@ $(function () {
     // } else {
     //   scrollUpBtn.fadeOut();
     // }
-    // if ($(window).width() >= 992) {
-    //   if (scroll > 140) {
-    //     if (!navbar.hasClass("fixed")) {
-    //       $("body").css({ "padding-top": navbar.height() + "px" });
-    //       navbar.addClass("fixed");
-    //     }
-    //   } else {
-    //     navbar.removeClass("fixed");
-    //     $("body").css({ "padding-top": "0px" });
-    //   }
-    // }
+    if ($(window).width() >= 992) {
+      if (scroll > 140) {
+        if (!navbar.hasClass("fixed")) {
+          $("body").css({ "padding-top": navbar.height() + "px" });
+          navbar.addClass("fixed");
+          $(".search-toggle").addClass("d-none");
+        }
+      } else {
+        navbar.removeClass("fixed");
+        $("body").css({ "padding-top": "0px" });
+        $(".search-toggle").removeClass("d-none");
+      }
+    }
     if (scroll == 0) {
       $("ul.navigator li").removeClass("active");
       $("#navIntro").addClass("active");
