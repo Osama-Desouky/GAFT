@@ -15248,6 +15248,23 @@ label {
   font-size: 0.875rem;
 }
 
+.inputDateStyle input[type=date]::-webkit-calendar-picker-indicator {
+  background-image: url(../images/innerPages/calendar-dates.svg);
+  width: 20px;
+  height: 20px;
+  margin-left: 0px;
+}
+
+.inputDateStyle input[type=date] {
+  height: 45px;
+  border: unset;
+  background: #f1f1f1;
+  padding: 0 15px;
+  color: #BBBBBB;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
 .InputStyle input[type=text], .InputStyle input[type=email], .InputStyle input[type=number] {
   width: 100%;
   height: 45px;
@@ -15270,9 +15287,8 @@ label {
   min-width: 124px;
   border: unset;
   background: #f1f1f1;
-  padding: 0 24px;
+  padding: 0 24px 0 40px;
   color: #BBBBBB;
-  font-weight: 400;
   border-radius: 8px;
   font-size: 14px;
   -webkit-appearance: none;
@@ -15281,6 +15297,23 @@ label {
   background-image: url(../images/innerPages/chevron-down.svg);
   background-repeat: no-repeat;
   background-position: 15px 12px;
+}
+
+.resetSearch {
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  background: green;
+  padding: 9px 26px;
+  border-radius: 50px;
+}
+
+.resetSearch img {
+  padding-right: 6px;
+}
+
+.resetSearch:hover {
+  color: #fff;
 }
 
 .headerOfBox, .systemSection .boxSearch .titleBox {
@@ -15312,6 +15345,20 @@ label {
   color: #fff;
   line-height: 1.6;
   font-size: 24px;
+}
+
+.smallTitle14 {
+  color: #CCA079;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.smallTitleWithGreenBg {
+  color: #fff;
+  font-size: 0.875rem;
+  background-color: #007066;
+  padding: 5px 15px;
+  border-radius: 50px;
 }
 
 .BtnWithArrow {
@@ -15347,7 +15394,7 @@ label {
   left: 25px;
 }
 
-.viewBtn {
+.viewBtn, .showToggleBtn .showToggle {
   padding: 14px 45px;
   background: #CCA079;
   display: inline-block;
@@ -15355,18 +15402,51 @@ label {
   color: #fff;
 }
 
-.viewBtn img {
+.viewBtn img, .showToggleBtn .showToggle img {
   margin-right: 10px;
 }
 
-.viewBtn span {
+.viewBtn span, .showToggleBtn .showToggle span {
   font-size: 14px;
   font-weight: 500;
 }
 
-.viewBtn:hover {
+.viewBtn:hover, .showToggleBtn .showToggle:hover {
   background: #007066;
   color: #fff;
+}
+
+.showToggleBtn {
+  height: 52px;
+}
+
+.showToggleBtn .showToggle {
+  width: 160px;
+  height: 52px;
+  padding: 0;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.showToggleBtn .toggleMore {
+  display: none;
+}
+
+.showToggleBtn:hover .toggleMore {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.showToggleBtn:hover .toggleShow {
+  display: none;
 }
 
 .DowloadBTn {
@@ -15432,7 +15512,7 @@ body {
   height: 100%;
   inset: 0;
   background: #005b53;
-  background: linear-gradient(77deg, rgba(0, 91, 83, 0.964023) 0%, rgba(46, 120, 114, 0.770746) 100%, rgba(255, 255, 255, 0) 100%, rgba(37, 41, 56, 0.297356) 100%);
+  background: linear-gradient(77deg, rgba(0, 91, 83, 0.664023) 0%, rgba(46, 120, 114, 0.770746) 100%, rgba(255, 255, 255, 0) 100%, rgba(37, 41, 56, 0.297356) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#005b53",endColorstr="#252938",GradientType=1);
 }
 
@@ -15555,7 +15635,7 @@ body {
 }
 
 .systemSection .formSearch {
-  margin: 48px 0 30px;
+  margin: 51px 0 48px;
   border-radius: 8px;
   background: #ffff;
   display: -webkit-box;
@@ -15565,6 +15645,9 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 24px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .systemSection .formSearch .boxSearchEvent {
@@ -15829,6 +15912,10 @@ body {
 .reportPage .previewReports .headerOfBox, .reportPage .previewReports .systemSection .boxSearch .titleBox, .systemSection .boxSearch .reportPage .previewReports .titleBox {
   margin: 50px 0 20px 0;
   font-size: 2.188rem;
+}
+
+.reportPage .previewReports .paragraphOfBox, .reportPage .previewReports .systemSection .boxSearch .praghBox, .systemSection .boxSearch .reportPage .previewReports .praghBox {
+  padding: 0 8%;
 }
 
 .reportPage .formSearch {
@@ -16099,6 +16186,7 @@ body {
 .NewsPage .boxNewsPage .boxImgNew {
   width: 526px;
   overflow: hidden;
+  border-radius: 10px;
 }
 
 .NewsPage .boxNewsPage .boxImgNew img {
@@ -16135,6 +16223,7 @@ body {
   display: inline-block;
   margin-top: 27px;
   padding: 10px 37px;
+  float: left;
 }
 
 .jobBanner {
@@ -16304,6 +16393,420 @@ body {
   padding-top: 120px;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.bannerSliderSec {
+  padding: 48px 32px;
+}
+
+.bannerSliderSec .bannerSwiperinner {
+  height: 495px;
+  background-image: url(../images/innerPages/BannerImgInner.jpg);
+  border-radius: 25px;
+}
+
+.bannerSliderSec .bannerSwiperinner::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  background: #1d1d1b;
+  background: -webkit-gradient(linear, left bottom, left top, from(#1d1d1b), color-stop(0%, #1d1d1b), color-stop(100%, rgba(255, 255, 255, 0)), to(rgba(37, 41, 56, 0.297356)));
+  background: linear-gradient(0deg, #1d1d1b 0%, #1d1d1b 0%, rgba(255, 255, 255, 0) 100%, rgba(37, 41, 56, 0.297356) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1d1d1b",endColorstr="#252938",GradientType=1);
+}
+
+.bannerSliderSec .bannerSwiperinner .BoxBannerInner {
+  display: block;
+  padding-top: 94px;
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.bannerSliderSec .bannerSwiperinner .BoxBannerInner .headerOfBoxFont35 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #CCA079;
+}
+
+.bannerSliderSec .bannerSwiperinner .BoxBannerInner .PraghTextBNR {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  color: #fff;
+  margin-bottom: 17px;
+}
+
+.bannerSliderSec .bannerSwiperinner .BoxBannerInner .dateBNInner:last-of-type span {
+  font-size: 16px;
+  padding-left: 10px;
+  color: #CCA079;
+}
+
+.bannerSliderSec .bannerSwiperinner .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background: #ffffff;
+  opacity: .5;
+}
+
+.bannerSliderSec .bannerSwiperinner .swiper-pagination-bullets {
+  bottom: 48px;
+}
+
+.bannerSliderSec .bannerSwiperinner .swiper-pagination-bullet-active {
+  background: #CCA079;
+  opacity: 1;
+}
+
+.BTNSWIPERCNT {
+  position: relative;
+  width: 200px;
+  margin: 0 auto;
+  -webkit-transform: translateY(-102px);
+          transform: translateY(-102px);
+  z-index: 9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.BTNSWIPERCNT .swiper-button-prev,
+.BTNSWIPERCNT .swiper-button-next {
+  position: relative;
+  width: 37px;
+  height: 37px;
+  position: relative;
+  left: unset;
+  right: unset;
+  border: 1px solid #fff;
+  border-radius: 8px;
+}
+
+.BTNSWIPERCNT .swiper-button-prev::after,
+.BTNSWIPERCNT .swiper-button-next::after {
+  font-size: 22px;
+  color: #fff;
+  padding-top: 2px;
+}
+
+.BTNSWIPERCNT .swiper-button-prev:not(.swiper-button-disabled),
+.BTNSWIPERCNT .swiper-button-next:not(.swiper-button-disabled) {
+  background-color: #fff;
+}
+
+.BTNSWIPERCNT .swiper-button-prev:not(.swiper-button-disabled)::after,
+.BTNSWIPERCNT .swiper-button-next:not(.swiper-button-disabled)::after {
+  font-size: 22px;
+  color: #007066;
+  padding-top: 2px;
+}
+
+.BTNSWIPERCNT .swiper-button-prev {
+  margin-left: 10px;
+}
+
+.boxPuplictions {
+  height: 500px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.boxPuplictions .greenBox {
+  height: 373px;
+  background: #007066;
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: height .4s ease;
+  transition: height .4s ease;
+}
+
+.boxPuplictions .greenBox .gboxG img {
+  height: 290px;
+  width: 224px;
+}
+
+.boxPuplictions .whiteBoxPupl {
+  background: #fff;
+  border-radius: 0px 0px 8px 8px;
+  padding: 14px 22px 38px;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  height: 127px;
+  -webkit-transition: height .4s ease;
+  transition: height .4s ease;
+  overflow: hidden;
+}
+
+.boxPuplictions .whiteBoxPupl .dateBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.boxPuplictions .whiteBoxPupl .headerOfBox, .boxPuplictions .whiteBoxPupl .systemSection .boxSearch .titleBox, .systemSection .boxSearch .boxPuplictions .whiteBoxPupl .titleBox {
+  text-align: center;
+  padding-top: 14px;
+  display: block;
+}
+
+.boxPuplictions .whiteBoxPupl .headerOfBox:hover, .boxPuplictions .whiteBoxPupl .systemSection .boxSearch .titleBox:hover, .systemSection .boxSearch .boxPuplictions .whiteBoxPupl .titleBox:hover {
+  color: #012D29;
+}
+
+.boxPuplictions .showBox {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: none;
+  padding-top: 12px;
+}
+
+.boxPuplictions:hover .greenBox {
+  height: 335px;
+}
+
+.boxPuplictions:hover .whiteBoxPupl {
+  height: 165px;
+}
+
+.boxPuplictions:hover .showBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.tabsStyle .nav-tabs {
+  border: unset;
+  padding: 0;
+  padding-right: 185px;
+}
+
+.tabsStyle .nav-tabs li:first-of-type {
+  padding-left: 24px;
+}
+
+.tabsStyle .nav-tabs li a {
+  font-size: 20px;
+  font-weight: 500;
+  color: #CCA079;
+  background: #fff;
+  padding: 16px 26px;
+  border-radius: 50px;
+  border: 2px solid #CCA079;
+}
+
+.tabsStyle .nav-tabs li a.active {
+  color: #fff;
+  background: #CCA079;
+}
+
+.trainingPage {
+  -webkit-box-shadow: 0 3px 25px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 3px 25px rgba(0, 0, 0, 0.1);
+}
+
+.trainingPage .selectSection .inputDateStyle {
+  margin-left: 12px;
+}
+
+.trainingPage .selectSection .selectBox {
+  margin-right: 12px;
+}
+
+.trainingPage .resetSearch {
+  margin-right: 24px;
+}
+
+.trainingPage .boxSearch .greenBox {
+  height: 264px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.trainingPage .boxSearch .greenBox img {
+  height: 264px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 8px;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+
+.trainingPage .boxSearch .dateBox .dateS img {
+  padding-left: 12px;
+}
+
+.trainingPage .boxSearch .titleBox {
+  height: 40px;
+}
+
+.trainingPage .boxSearch .praghBox {
+  height: 100px;
+}
+
+.trainingPage .boxSearch:hover .titleBox {
+  text-decoration: none !important;
+  text-shadow: 0px 1px 14px #007066;
+  -webkit-transition-delay: .3s;
+          transition-delay: .3s;
+}
+
+.trainingPage .boxSearch:hover .greenBox img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.BGWorld {
+  background: url(../images/innerPages/BGBusiness.png) no-repeat;
+  background-position: center 110px;
+}
+
+.tabsStyleBar {
+  margin: 51px 0 48px;
+  border-radius: 8px;
+  background: #ffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100px;
+  padding: 0 24px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tabsStyleBar .nav-tabs {
+  padding: 0;
+}
+
+.tabsStyleBar .nav-tabs li:not(:last-of-type) {
+  padding-left: 24px;
+}
+
+.businessCouncils .boxPuplictions {
+  height: 483px;
+  background: #fff;
+  border-radius: 20px;
+}
+
+.businessCouncils .boxPuplictions .greenBox {
+  height: 315px;
+  border-radius: 20px;
+  background: #008175;
+  background: -webkit-gradient(linear, left top, left bottom, from(#008175), color-stop(50%, #00685f), to(#004d46));
+  background: linear-gradient(180deg, #008175 0%, #00685f 50%, #004d46 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#008175",endColorstr="#004d46",GradientType=1);
+}
+
+.businessCouncils .boxPuplictions .greenBox .boxG img:first-of-type {
+  padding-left: 48px;
+}
+
+.businessCouncils .boxPuplictions .blueBox {
+  background: #00a1d9;
+  background: -webkit-gradient(linear, left top, left bottom, from(#00a1d9), color-stop(50%, #028ab9), to(#04749b));
+  background: linear-gradient(180deg, #00a1d9 0%, #028ab9 50%, #04749b 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00a1d9",endColorstr="#04749b",GradientType=1);
+}
+
+.businessCouncils .boxPuplictions .whiteBoxPupl {
+  height: 168px;
+}
+
+.businessCouncils .boxPuplictions .whiteBoxPupl .headerOfBox, .businessCouncils .boxPuplictions .whiteBoxPupl .systemSection .boxSearch .titleBox, .systemSection .boxSearch .businessCouncils .boxPuplictions .whiteBoxPupl .titleBox {
+  font-size: 1.875rem;
+}
+
+.businessCouncils .boxPuplictions .whiteBoxPupl .dateBox .paragraphOfBox span, .businessCouncils .boxPuplictions .whiteBoxPupl .dateBox .systemSection .boxSearch .praghBox span, .systemSection .boxSearch .businessCouncils .boxPuplictions .whiteBoxPupl .dateBox .praghBox span {
+  color: #007066;
+}
+
+.businessCouncils .boxPuplictions .whiteBoxPupl .dateBox .paragraphOfBox a, .businessCouncils .boxPuplictions .whiteBoxPupl .dateBox .systemSection .boxSearch .praghBox a, .systemSection .boxSearch .businessCouncils .boxPuplictions .whiteBoxPupl .dateBox .praghBox a {
+  color: #505050;
+  text-decoration: underline;
+}
+
+.businessCouncils .boxPuplictions .whiteBoxPupl .dateS img {
+  max-width: 60px;
+  max-height: 60px;
+}
+
+.businessCouncils .boxPuplictions .whiteBoxPupl .dateS img:first-of-type {
+  padding-left: 6px;
+}
+
+.businessCouncils .boxPuplictions .whiteBoxPupl .showBox {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.businessCouncils .boxPuplictions .whiteBoxPupl .showBox .viewBtn:hover, .businessCouncils .boxPuplictions .whiteBoxPupl .showBox .showToggleBtn .showToggle:hover, .showToggleBtn .businessCouncils .boxPuplictions .whiteBoxPupl .showBox .showToggle:hover {
+  background-color: #CCA079;
+}
+
+.businessCouncils .boxPuplictions:hover .greenBox {
+  height: 265px;
+}
+
+.businessCouncils .boxPuplictions:hover .blueBox {
+  background: #008175;
+  background: -webkit-gradient(linear, left top, left bottom, from(#008175), color-stop(50%, #00685f), to(#004d46));
+  background: linear-gradient(180deg, #008175 0%, #00685f 50%, #004d46 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#008175",endColorstr="#004d46",GradientType=1);
+}
+
+.businessCouncils .boxPuplictions:hover .whiteBoxPupl {
+  height: 219px;
+}
+
+footer {
+  background-image: unset;
+  padding-bottom: 34px;
+}
+
+footer .copySection {
+  margin-top: 69px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 /*
