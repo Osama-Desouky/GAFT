@@ -242,3 +242,14 @@ $("#print").on("click", function () {
   window.print();
 });
 
+function showAllContent(){
+  // $(".collapsed-sec").toggleClass("show-collapse");
+  // $(this).parent(".collapsed-sec").toggleClass("show-collapse");
+  // console.log($(this).parent("div").attr("id"),"yyyyyyy");
+  // ;
+}
+
+$( "a.collapse-btn" ).click(function() {
+  $( this ).parent("div").toggleClass("show-collapse");
+  console.log("hello");
+});

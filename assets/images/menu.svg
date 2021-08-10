@@ -1,0 +1,11 @@
+<svg id="menu" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="list">
+    <rect id="Rectangle_11863" data-name="Rectangle 11863" width="24" height="24" transform="translate(24 24) rotate(180)" fill="#bbb" opacity="0"/>
+    <circle id="Ellipse_217" data-name="Ellipse 217" cx="1" cy="1" r="1" transform="translate(3 6)" fill="#bbb"/>
+    <circle id="Ellipse_218" data-name="Ellipse 218" cx="1" cy="1" r="1" transform="translate(3 11)" fill="#bbb"/>
+    <circle id="Ellipse_219" data-name="Ellipse 219" cx="1" cy="1" r="1" transform="translate(3 16)" fill="#bbb"/>
+    <rect id="Rectangle_11864" data-name="Rectangle 11864" width="14" height="2" rx="0.94" transform="translate(7 11)" fill="#bbb"/>
+    <rect id="Rectangle_11865" data-name="Rectangle 11865" width="14" height="2" rx="0.94" transform="translate(7 16)" fill="#bbb"/>
+    <rect id="Rectangle_11866" data-name="Rectangle 11866" width="14" height="2" rx="0.94" transform="translate(7 6)" fill="#bbb"/>
+  </g>
+</svg>
