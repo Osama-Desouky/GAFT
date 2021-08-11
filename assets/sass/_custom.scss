@@ -2405,7 +2405,7 @@ p.on-space{
 .main-member-inner{
   background-color: #E5ECEC;
   padding-top: 70px;
-  padding-bottom: 40px;
+  padding-bottom: 95px;
   border-radius: 8px;
   .content-wrapper{
     display: flex;
@@ -2426,48 +2426,13 @@ p.on-space{
           transition: 500ms;
         }
       }
-      .share{
-        margin-top: 20px;
-        display: flex;
-        justify-content: center;
-        span{
-          font-size: 1.125rem;
-          font-weight: $w-normal;
-          color: $black-color-two;
-          line-height: 29px;
-          margin-#{$end-direction}:30px ;
-        }
-        a{
-          background-color: #fff;
-          width: 34px;
-          height: 34px;
-          border-radius: 8px;
-          background-repeat: no-repeat;
-          background-position: center;
-          display: inline-block;
-          margin-#{$end-direction}:15px ;
-          transition: 500ms;
-          &:last-child{
-            margin-#{$end-direction}:0 ;
-          }
-        }
-        .twitter-share{
-          background-image: url(../images/twitter1.svg);
-          &:hover{
-            background-image: url(../images/twitter2.svg);
-          }
-        }
-        .linkedin-share{
-          background-image: url(../images/linkedin1.svg);
-          &:hover{
-            background-image: url(../images/linkedin2.svg);
-          }
-        }
-      }
+    
     }
     .left-section{
-      padding-#{$end-direction}:50px ;
+      padding-#{$end-direction}: 35px ;
       .content-box{
+        height: 100%;
+        margin-bottom: 20px;
         h3{
         font-size: 2.187rem;
         font-weight: $w-bold;
@@ -2488,11 +2453,49 @@ p.on-space{
           font-weight: $w-normal;
           color: $p-color;
           line-height: 35px;
-          margin-bottom: 20px;
+          margin-bottom: 35px;
           &:last-child{
             margin-bottom: 0;
           }
         }
+      }
+      .share{
+        // margin-top: 20px;
+        display: flex;
+        justify-content: flex-end;
+        // span{
+        //   font-size: 1.125rem;
+        //   font-weight: $w-normal;
+        //   color: $black-color-two;
+        //   line-height: 29px;
+        //   margin-#{$end-direction}:30px ;
+        // }
+        a{
+          background-color: #fff;
+          width: 34px;
+          height: 34px;
+          border-radius: 8px;
+          background-repeat: no-repeat;
+          background-position: center;
+          display: inline-block;
+          // margin-#{$end-direction}:15px ;
+          transition: 500ms;
+          // &:last-child{
+          //   margin-#{$end-direction}:0 ;
+          // }
+        }
+        .twitter-share{
+          background-image: url(../images/twitter1.svg);
+          &:hover{
+            background-image: url(../images/twitter2.svg);
+          }
+        }
+        // .linkedin-share{
+        //   background-image: url(../images/linkedin1.svg);
+        //   &:hover{
+        //     background-image: url(../images/linkedin2.svg);
+        //   }
+        // }
       }
     }
   }

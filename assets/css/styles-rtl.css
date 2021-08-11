@@ -13625,7 +13625,7 @@ p.on-space {
 .main-member-inner {
   background-color: #E5ECEC;
   padding-top: 70px;
-  padding-bottom: 40px;
+  padding-bottom: 95px;
   border-radius: 8px;
 }
 
@@ -13656,59 +13656,13 @@ p.on-space {
   transition: 500ms;
 }
 
-.main-member-inner .content-wrapper .right-section .share {
-  margin-top: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.main-member-inner .content-wrapper .right-section .share span {
-  font-size: 1.125rem;
-  font-weight: 400;
-  color: #1D1D1B;
-  line-height: 29px;
-  margin-left: 30px;
-}
-
-.main-member-inner .content-wrapper .right-section .share a {
-  background-color: #fff;
-  width: 34px;
-  height: 34px;
-  border-radius: 8px;
-  background-repeat: no-repeat;
-  background-position: center;
-  display: inline-block;
-  margin-left: 15px;
-  -webkit-transition: 500ms;
-  transition: 500ms;
-}
-
-.main-member-inner .content-wrapper .right-section .share a:last-child {
-  margin-left: 0;
-}
-
-.main-member-inner .content-wrapper .right-section .share .twitter-share {
-  background-image: url(../images/twitter1.svg);
-}
-
-.main-member-inner .content-wrapper .right-section .share .twitter-share:hover {
-  background-image: url(../images/twitter2.svg);
-}
-
-.main-member-inner .content-wrapper .right-section .share .linkedin-share {
-  background-image: url(../images/linkedin1.svg);
-}
-
-.main-member-inner .content-wrapper .right-section .share .linkedin-share:hover {
-  background-image: url(../images/linkedin2.svg);
-}
-
 .main-member-inner .content-wrapper .left-section {
-  padding-left: 50px;
+  padding-left: 35px;
+}
+
+.main-member-inner .content-wrapper .left-section .content-box {
+  height: 100%;
+  margin-bottom: 20px;
 }
 
 .main-member-inner .content-wrapper .left-section .content-box h3 {
@@ -13734,11 +13688,40 @@ p.on-space {
   font-weight: 400;
   color: #666666;
   line-height: 35px;
-  margin-bottom: 20px;
+  margin-bottom: 35px;
 }
 
 .main-member-inner .content-wrapper .left-section .content-box p:last-child {
   margin-bottom: 0;
+}
+
+.main-member-inner .content-wrapper .left-section .share {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.main-member-inner .content-wrapper .left-section .share a {
+  background-color: #fff;
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+.main-member-inner .content-wrapper .left-section .share .twitter-share {
+  background-image: url(../images/twitter1.svg);
+}
+
+.main-member-inner .content-wrapper .left-section .share .twitter-share:hover {
+  background-image: url(../images/twitter2.svg);
 }
 
 .lamha-tare5ia {
