@@ -15207,6 +15207,35 @@ p.on-space {
   border-radius: 16px;
 }
 
+.vote-share-fav {
+  display: none;
+}
+
+.main-navbar .top-nav .nav-item.contact-us {
+  background-color: unset;
+  padding-left: 0;
+}
+
+.main-navbar.fixed {
+  background-color: #E4EBEA !important;
+  -webkit-box-shadow: unset !important;
+          box-shadow: unset !important;
+}
+
+.main-navbar.fixed #navbarSupportedContent > .navbar-nav {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-navbar #navbarSupportedContent > .navbar-nav > .nav-item > .nav-link.home-btn {
+  padding: 0 !important;
+}
+
+.main-navbar.fixed .search-box {
+  top: 75px !important;
+}
+
 .btnForm {
   border: unset;
   background: #CCA079;
@@ -15303,7 +15332,7 @@ label {
   font-size: 14px;
   font-weight: 500;
   color: #fff;
-  background: green;
+  background: #007066;
   padding: 9px 26px;
   border-radius: 50px;
 }
@@ -15347,7 +15376,7 @@ label {
   font-size: 24px;
 }
 
-.smallTitle14 {
+.smallTitle14, .main-navbar .top-nav .nav-item.contact-us a, .trainingPage .resetSearch span {
   color: #CCA079;
   font-size: 0.875rem;
   font-weight: 500;
@@ -15477,6 +15506,29 @@ label {
 .DowloadBTn:hover img {
   -webkit-filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(253deg) brightness(110%) contrast(230%);
           filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(253deg) brightness(110%) contrast(230%);
+}
+
+.DowloadBTnXLBDF {
+  margin: 0;
+}
+
+.DowloadBTnXLBDF span {
+  font-weight: 500;
+  font-size: 20px;
+  color: #007066;
+}
+
+.DowloadBTnXLBDF a img {
+  width: 24px;
+  height: 24px;
+  opacity: .6;
+  -webkit-transition: .4s;
+  transition: .4s;
+  margin-right: 12px;
+}
+
+.DowloadBTnXLBDF a:hover img {
+  opacity: 1;
 }
 
 @font-face {
@@ -15630,8 +15682,8 @@ body {
   padding-left: 9px;
 }
 
-.systemSection {
-  font-family: "DINNextLTRegular";
+.breadcrumbScetion .readspeakerSec a:not(#fontIncrease):not(#fontDecrease) {
+  display: none;
 }
 
 .systemSection .formSearch {
@@ -15740,8 +15792,8 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-transition: bottom .5s;
-  transition: bottom .5s;
+  -webkit-transition: bottom .4s;
+  transition: bottom .4s;
 }
 
 .systemSection .boxSearch .showBox .DowloadBTn {
@@ -15838,6 +15890,7 @@ body {
 }
 
 .viewSystem .headOfView .paragraphOfBox, .viewSystem .headOfView .systemSection .boxSearch .praghBox, .systemSection .boxSearch .viewSystem .headOfView .praghBox {
+  margin: 0 18%;
   margin-bottom: 27px;
 }
 
@@ -16112,7 +16165,7 @@ body {
   height: 100%;
   background: url(../images/innerPages/BGForm.svg);
   inset: 0;
-  opacity: .4;
+  opacity: .2;
 }
 
 .backgroundOrImage .formContactUs .FromInputs .forZindex {
@@ -16276,10 +16329,10 @@ body {
 }
 
 .jobBanner .imgJob img {
-  width: 327px;
+  max-width: 390px;
+  max-height: 363px;
   -o-object-fit: cover;
      object-fit: cover;
-  height: 360px;
   -o-object-position: top;
      object-position: top;
 }
@@ -16292,6 +16345,10 @@ body {
 
 .JobPageStyle {
   padding: 84px 0 0px;
+}
+
+.JobPageSTL .formSearch {
+  margin: 0px 0 30px;
 }
 
 .JobPageSTL .boxSearch {
@@ -16353,8 +16410,37 @@ body {
 
 .JobPageSTL .JobBoxHover {
   position: relative;
-  margin-top: 145px;
   margin-bottom: 30px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 5px 15px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 5px 15px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.JobPageSTL .JobBoxHover .boxImgGreen {
+  background: #007066;
+  height: 176px;
+  -webkit-transition: -webkit-transform .4s;
+  transition: -webkit-transform .4s;
+  transition: transform .4s;
+  transition: transform .4s, -webkit-transform .4s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 12px;
+  position: relative;
+  z-index: 9;
+}
+
+.JobPageSTL .JobBoxHover:hover .boxImgGreen {
+  -webkit-transform: scaleY(1.2);
+          transform: scaleY(1.2);
 }
 
 .JobPageSTL .JobBoxHover:hover .boxImg img {
@@ -16377,7 +16463,7 @@ body {
 
 .JobPageSTL .JobBoxHover .boxSearch .showBox {
   bottom: -260px;
-  height: calc(100% - 200px);
+  height: calc(100% - 120px);
 }
 
 .JobPageSTL .JobBoxHover .boxImg {
@@ -16387,12 +16473,6 @@ body {
   top: -50%;
   -webkit-transform: translate(-50%, 40px);
           transform: translate(-50%, 40px);
-}
-
-.JobPageSTL .JobBoxHover .boxSearch {
-  padding-top: 120px;
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .bannerSliderSec {
@@ -16603,7 +16683,6 @@ body {
 .tabsStyle .nav-tabs {
   border: unset;
   padding: 0;
-  padding-right: 185px;
 }
 
 .tabsStyle .nav-tabs li:first-of-type {
@@ -16640,6 +16719,15 @@ body {
 
 .trainingPage .resetSearch {
   margin-right: 24px;
+}
+
+.trainingPage .resetSearch span {
+  color: #fff;
+}
+
+.trainingPage .boxSearch {
+  -webkit-box-shadow: 0 3px 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 3px 30px rgba(0, 0, 0, 0.1);
 }
 
 .trainingPage .boxSearch .greenBox {
@@ -16789,6 +16877,134 @@ body {
 
 .businessCouncils .boxPuplictions:hover .whiteBoxPupl {
   height: 219px;
+}
+
+.changeXDAnimation .DowloadBTnXLBDF {
+  margin-right: 24px;
+}
+
+.changeXDAnimation .boxSearch .boxG img {
+  -webkit-transition: -webkit-transform .4s;
+  transition: -webkit-transform .4s;
+  transition: transform .4s;
+  transition: transform .4s, -webkit-transform .4s;
+}
+
+.changeXDAnimation .boxSearch .boxG p {
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.changeXDAnimation .boxSearch:hover .boxG img {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
+.changeXDAnimation .boxSearch:hover .boxG p {
+  font-size: 35px;
+}
+
+.boxSearch .showBox a {
+  min-width: 160px;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.changeRulesXD .boxSearchRule {
+  background-color: #fff;
+  padding: 24px;
+  height: 308px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  -webkit-box-shadow: 0 0px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+.changeRulesXD .boxSearchRule .shareIcon {
+  margin: 0;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  padding: 10px;
+  background-color: #0070660a;
+  -webkit-transition: background-color .4s;
+  transition: background-color .4s;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+}
+
+.changeRulesXD .boxSearchRule .ransforSec {
+  -webkit-transform: translateY(34px);
+          transform: translateY(34px);
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+
+.changeRulesXD .boxSearchRule .iconRuleBX {
+  padding-bottom: 18px;
+}
+
+.changeRulesXD .boxSearchRule .iconRuleBX img {
+  width: 80px;
+  height: 80px;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
+.changeRulesXD .boxSearchRule .dateBox {
+  padding-bottom: 40px;
+}
+
+.changeRulesXD .boxSearchRule .dateBox span {
+  font-size: 14px;
+  color: #CCA079;
+  padding-right: 10px;
+}
+
+.changeRulesXD .boxSearchRule .headerOfBox, .changeRulesXD .boxSearchRule .systemSection .boxSearch .titleBox, .systemSection .boxSearch .changeRulesXD .boxSearchRule .titleBox {
+  padding-bottom: 14px;
+}
+
+.changeRulesXD .boxSearchRule .showBox {
+  visibility: hidden;
+  -webkit-transition: visibility .28s , -webkit-transform .28s;
+  transition: visibility .28s , -webkit-transform .28s;
+  transition: transform .28s , visibility .28s;
+  transition: transform .28s , visibility .28s , -webkit-transform .28s;
+  height: 0;
+  -webkit-transform: translateY(30px);
+          transform: translateY(30px);
+}
+
+.changeRulesXD .boxSearchRule .showBox .viewBtn, .changeRulesXD .boxSearchRule .showBox .showToggleBtn .showToggle, .showToggleBtn .changeRulesXD .boxSearchRule .showBox .showToggle {
+  margin-left: 14px;
+}
+
+.changeRulesXD .boxSearchRule:hover .shareIcon {
+  background-color: #00706624;
+}
+
+.changeRulesXD .boxSearchRule:hover .ransforSec {
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+}
+
+.changeRulesXD .boxSearchRule:hover .showBox {
+  visibility: visible;
+  height: unset;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
 }
 
 footer {

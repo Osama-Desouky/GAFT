@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="RulesShareIcons" transform="translate(12 12)">
+    <g id="share-outline" transform="translate(-12 -12)">
+      <g id="share">
+        <rect id="Rectangle_11877" data-name="Rectangle 11877" width="24" height="24" opacity="0"/>
+        <path id="Path_57436" data-name="Path 57436" d="M18,15a3,3,0,0,0-2.1.86L8,12.34v-.67l7.9-3.53A3,3,0,1,0,15,6v.34L7.1,9.86a3,3,0,1,0,0,4.28L15,17.67V18a3,3,0,1,0,3-3ZM18,5a1,1,0,1,1-1,1A1,1,0,0,1,18,5ZM5,13a1,1,0,1,1,1-1A1,1,0,0,1,5,13Zm13,6a1,1,0,1,1,1-1A1,1,0,0,1,18,19Z" fill="#007066"/>
+      </g>
+    </g>
+  </g>
+</svg>

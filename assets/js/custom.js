@@ -48,7 +48,7 @@ $(function () {
         if (!navbar.hasClass("fixed")) {
           $("body").css({ "padding-top": navbar.height() + "px" });
           navbar.addClass("fixed");
-          $(".search-toggle").addClass("d-none");
+          // $(".search-toggle").addClass("d-none");
         }
       } else {
         navbar.removeClass("fixed");
