@@ -11220,13 +11220,10 @@ body.header-popup-open {
   line-height: 10px;
 }
 
-.main-navbar .top-nav .nav-item.contact-us {
-  background-color: #007066;
-  padding: 5px 25px 7px;
-}
-
 .main-navbar .top-nav .nav-item.contact-us a {
-  color: #fff;
+  color: #CCA079;
+  padding: 5px 25px 7px;
+  background-color: transparent;
 }
 
 .main-navbar .search-box {
@@ -11758,7 +11755,8 @@ footer .copySection a:last-child {
   index page styles
 */
 .about-hay2a {
-  margin-top: 90px;
+  padding-top: 90px;
+  background-color: #fff;
   text-align: center;
 }
 
@@ -11825,9 +11823,7 @@ footer .copySection a:last-child {
 
 .our-services {
   padding-top: 145px;
-  background-image: url(../images/art.svg);
-  background-repeat: no-repeat;
-  background-position: center top;
+  background-color: #fff;
   position: relative;
 }
 
@@ -12043,6 +12039,7 @@ footer .copySection a:last-child {
 .our-partners {
   padding-top: 75px;
   padding-bottom: 75px;
+  background-color: #fff;
   position: relative;
 }
 
@@ -12128,10 +12125,11 @@ footer .copySection a:last-child {
 .latest-news {
   padding-top: 75px;
   padding-bottom: 100px;
+  background-color: #fff;
   position: relative;
-  background-image: url(../images/news-art.svg), url(../images/dots.svg);
+  background-image: url(../images/dots.svg);
   background-repeat: no-repeat;
-  background-position: left bottom , 91% 25%;
+  background-position: 91% 25%;
 }
 
 .latest-news .heading {
@@ -12332,19 +12330,6 @@ footer .copySection a:last-child {
   opacity: .85;
 }
 
-.ads::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  z-index: -1;
-  background-image: url(../images/ads-art.svg);
-  background-position: right bottom;
-  background-repeat: no-repeat;
-}
-
 .ads .heading h2 {
   text-align: center;
   margin-bottom: 40px;
@@ -12389,10 +12374,6 @@ footer .copySection a:last-child {
   margin-left: 0;
 }
 
-.ads .tabs .tab-content #jobs .owl-stage-outer {
-  padding-right: 150px;
-}
-
 .ads .tabs .tab-content #jobs .ads-card {
   background-color: #fff;
   -webkit-box-shadow: 0 3px 25px rgba(0, 0, 0, 0.1);
@@ -12404,34 +12385,57 @@ footer .copySection a:last-child {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  height: 245px;
+  height: 185px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 25px 15px;
+  padding: 25px;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 .ads .tabs .tab-content #jobs .ads-card .img-box {
-  width: 193px;
-  height: 193px;
-  margin: 10px;
-  border-radius: 50%;
+  width: 134px;
+  height: 134px;
+  border-radius: 4px;
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 193px;
-          flex: 0 0 193px;
-  border: 3px solid #007066;
+      -ms-flex: 0 0 134px;
+          flex: 0 0 134px;
+  background-color: #007066;
   overflow: hidden;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: 500ms;
+  transition: 500ms;
 }
 
 .ads .tabs .tab-content #jobs .ads-card .img-box img {
   max-width: 100%;
-  border-radius: 50%;
   -webkit-transition: 500ms;
   transition: 500ms;
 }
 
 .ads .tabs .tab-content #jobs .ads-card .content-box {
   margin-right: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .ads .tabs .tab-content #jobs .ads-card .content-box h5 {
@@ -12439,23 +12443,11 @@ footer .copySection a:last-child {
   font-weight: 500;
   line-height: 30px;
   color: #007066;
-  margin-bottom: 20px;
-}
-
-.ads .tabs .tab-content #jobs .ads-card .content-box p {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 30px;
-  color: #666666;
-  margin-bottom: 25px;
-  height: calc(30px * 2);
-  overflow: hidden;
 }
 
 .ads .tabs .tab-content #jobs .ads-card .content-box .more {
   background-color: #CCA079;
   border-radius: 36px;
-  padding: 13px 20px 15px;
   font-size: 16px;
   font-weight: 500;
   color: #fff;
@@ -12464,8 +12456,15 @@ footer .copySection a:last-child {
   position: relative;
   width: 160px;
   height: 52px;
-  display: block;
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .ads .tabs .tab-content #jobs .ads-card .content-box .more img {
@@ -12475,6 +12474,7 @@ footer .copySection a:last-child {
   -webkit-transition: 500ms;
   transition: 500ms;
   display: inline-block;
+  margin-top: 4px;
 }
 
 .ads .tabs .tab-content #jobs .ads-card:hover .img-box img {
@@ -12501,10 +12501,10 @@ footer .copySection a:last-child {
   width: 37px;
   height: 37px;
   border-radius: 8px;
-  background-color: #CCA079;
+  background-color: transparent;
   background-repeat: no-repeat;
   background-position: center;
-  border: 2px solid #CCA079;
+  border: 2px solid #fff;
   -webkit-transition: 400ms;
   transition: 400ms;
 }
@@ -12514,16 +12514,24 @@ footer .copySection a:last-child {
 }
 
 .ads .tabs .tab-content #jobs .owl-carousel .owl-nav button.owl-next:hover, .ads .tabs .tab-content #jobs .owl-carousel .owl-nav button.owl-prev:hover {
-  background-color: #CCA079;
+  background-color: #fff;
 }
 
 .ads .tabs .tab-content #jobs .owl-carousel .owl-nav button.owl-next {
-  left: 70px;
+  left: -75px;
+  background-image: url(../images/left-arrow-st1.svg);
+}
+
+.ads .tabs .tab-content #jobs .owl-carousel .owl-nav button.owl-next:hover {
   background-image: url(../images/green-left-arrow.svg);
 }
 
 .ads .tabs .tab-content #jobs .owl-carousel .owl-nav button.owl-prev {
-  right: 70px;
+  right: -75px;
+  background-image: url(../images/right-arrow-st1.svg);
+}
+
+.ads .tabs .tab-content #jobs .owl-carousel .owl-nav button.owl-prev:hover {
   background-image: url(../images/green-right-arrow.svg);
 }
 
@@ -12532,6 +12540,7 @@ footer .copySection a:last-child {
   position: relative;
   height: 635px;
   background-color: #f0f0f0;
+  background-color: #f1f1f1;
 }
 
 .versions::after {
@@ -12770,9 +12779,9 @@ footer .copySection a:last-child {
 .sharekna-elraay {
   padding-top: 66px;
   padding-bottom: 70px;
-  background-image: url(../images/sharekna-art.svg), url(../images/dots.svg);
+  background-image: url(../images/dots.svg);
   background-repeat: no-repeat;
-  background-position: right bottom , 7% 9%;
+  background-position: 7% 9%;
   background-color: #fff;
 }
 
@@ -13123,9 +13132,8 @@ footer .copySection a:last-child {
 */
 .about-hayaa {
   margin-top: 35px;
-  margin-bottom: 40px;
+  margin-bottom: 90px;
   padding-top: 35px;
-  padding-bottom: 35px;
   background-image: url(../images/dots.svg);
   background-position: 3.5% top;
   background-repeat: no-repeat;
@@ -13164,7 +13172,6 @@ footer .copySection a:last-child {
 }
 
 .about-hayaa .about-hay2a-img {
-  border-radius: 16px;
   overflow: hidden;
 }
 
@@ -13174,30 +13181,22 @@ footer .copySection a:last-child {
      object-fit: cover;
 }
 
-.about-details.white-card {
-  padding-top: 75px;
-  padding-bottom: 80px;
-  padding-right: 70px;
-  padding-left: 140px;
+.about-details {
+  padding-bottom: 100px;
 }
 
 .about-details .details-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  padding-bottom: 50px;
+  padding-bottom: 40px;
   position: relative;
 }
 
 .about-details .details-item .details-img {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 80px;
-          flex: 0 0 80px;
-  margin-left: 85px;
-  margin-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .about-details .details-item .details-img img {
@@ -13212,6 +13211,12 @@ footer .copySection a:last-child {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-right: 30px;
+  max-width: 768px;
 }
 
 .about-details .details-item .details-content h3 {
@@ -13261,22 +13266,24 @@ footer .copySection a:last-child {
   background-size: contain;
 }
 
-.about-details .details-item::after {
-  content: "";
-  position: absolute;
-  width: 44.5%;
-  height: 2px;
-  right: calc(50% - 22%);
-  bottom: 0;
-  background-color: #ececec;
-}
-
 .about-details .details-item:last-child {
   padding-bottom: 0;
 }
 
-.about-details .details-item:last-child::after {
-  display: none;
+.about-details .details-item.second .details-content {
+  float: left;
+  padding-right: 0;
+  margin-left: 30px;
+}
+
+.about-details .details-item.second .details-img {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.about-details .details-item.third .details-content {
+  max-width: initial;
 }
 
 p.on-space {
@@ -13290,11 +13297,7 @@ p.on-space {
 }
 
 .about-note {
-  margin-bottom: 210px;
-  background-image: url(../images/about-note-art.svg);
-  background-position: center -30px;
-  background-repeat: no-repeat;
-  background-size: contain;
+  margin-bottom: 90px;
   padding-top: 100px;
   padding-right: 199px;
   padding-left: 199px;
@@ -13462,21 +13465,21 @@ p.on-space {
   margin-bottom: 60px;
 }
 
-.main-member .content-box {
-  padding-top: 45px;
-  padding-bottom: 50px;
-  padding-right: 65px;
+.main-member .main-one .content-box, .main-member .main-two .content-box {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-right: 30px;
   border-radius: 8px;
   position: relative;
 }
 
-.main-member .content-box::before {
+.main-member .main-one .content-box::before, .main-member .main-two .content-box::before {
   content: "";
-  height: 100%;
+  height: calc(100%);
   width: 125%;
   position: absolute;
-  right: 0;
-  top: 0;
+  left: 0;
+  top: 0px;
   background-color: #fff;
   -webkit-box-shadow: 0 20px 35px rgba(62, 62, 62, 0.1);
           box-shadow: 0 20px 35px rgba(62, 62, 62, 0.1);
@@ -13484,25 +13487,25 @@ p.on-space {
   border-radius: 8px;
 }
 
-.main-member .content-box h3 {
-  font-size: 2.187rem;
+.main-member .main-one .content-box h3, .main-member .main-two .content-box h3 {
+  font-size: 1.56rem;
   font-weight: 700;
   color: #012D29;
-  line-height: 51px;
-  margin-bottom: 15px;
+  line-height: 39px;
+  margin-bottom: 13px;
   -webkit-transition: 500ms;
   transition: 500ms;
 }
 
-.main-member .content-box h5 {
-  font-size: 1.5rem;
+.main-member .main-one .content-box h5, .main-member .main-two .content-box h5 {
+  font-size: 1.37rem;
   font-weight: 400;
   color: #1D1D1B;
-  line-height: 35px;
-  margin-bottom: 19px;
+  line-height: 32px;
+  margin-bottom: 20px;
 }
 
-.main-member .content-box p {
+.main-member .main-one .content-box p, .main-member .main-two .content-box p {
   font-size: 1.125rem;
   font-weight: 400;
   color: #666666;
@@ -13510,13 +13513,13 @@ p.on-space {
   margin-bottom: 0;
 }
 
-.main-member .img-box {
+.main-member .main-one .img-box, .main-member .main-two .img-box {
   border-radius: 8px;
   overflow: hidden;
-  width: 100%;
+  max-width: 375px;
 }
 
-.main-member .img-box img {
+.main-member .main-one .img-box img, .main-member .main-two .img-box img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -13525,14 +13528,24 @@ p.on-space {
   transition: 500ms;
 }
 
-.main-member:hover .content-box h3 {
+.main-member .main-one:hover .content-box h3, .main-member .main-two:hover .content-box h3 {
   text-decoration: underline;
   color: #007066;
 }
 
-.main-member:hover .img-box img {
+.main-member .main-one:hover .img-box img, .main-member .main-two:hover .img-box img {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
+}
+
+.main-member .main-one .content-box {
+  padding-left: 30px;
+  padding-right: 0px;
+}
+
+.main-member .main-two .content-box::before {
+  left: auto;
+  right: 0;
 }
 
 .list-members .member-card {
