@@ -11045,6 +11045,8 @@ body.header-popup-open {
   border-radius: 0;
   -webkit-box-shadow: 0 46px 45px rgba(55, 52, 52, 0.13);
           box-shadow: 0 46px 45px rgba(55, 52, 52, 0.13);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
 }
 
 .main-navbar .navbar .dropdown-menu .row {
@@ -11270,6 +11272,11 @@ body.header-popup-open {
 
 .main-navbar .search-box .search-full-area .row .col-12 {
   padding: 0 !important;
+}
+
+.main-navbar .search-box .search-full-area form {
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
 }
 
 .main-navbar .search-box .search-full-area input[type="text"] {
@@ -11676,10 +11683,12 @@ footer ul li a {
   color: #D5D5D5;
   font-size: 15px;
   font-weight: 400;
+  -webkit-transition: 400ms;
+  transition: 400ms;
 }
 
 footer ul li a:hover {
-  color: inherit;
+  color: #fff;
 }
 
 footer .about-us-footer ul li a img {

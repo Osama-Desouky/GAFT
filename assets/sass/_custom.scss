@@ -32,6 +32,7 @@ body.header-popup-open {
     // border-top: 1px solid #e6e6e6;
     border-radius: 0;
     box-shadow: 0 46px 45px rgba($color: #373434, $alpha: 0.13);
+    backdrop-filter: blur(4px);
     
     .row {
       width: 100%;
@@ -254,6 +255,9 @@ body.header-popup-open {
   }
   .search-full-area .row .col-12{
     padding: 0 !important;
+  }
+  .search-full-area form{
+    backdrop-filter: blur(4px);
   }
   .search-full-area input[type="text"]{
       padding-#{$end-direction}: 11%;
@@ -597,8 +601,9 @@ footer {
         color: #D5D5D5;
         font-size: 15px;
         font-weight: $w-normal;
+        transition: 400ms;
         &:hover{
-          color: inherit;
+          color: #fff;
         }
       }
     }
