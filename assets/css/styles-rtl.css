@@ -12383,7 +12383,7 @@ footer .copySection a:last-child {
   margin-left: 0;
 }
 
-.ads .tabs .tab-content #jobs .ads-card {
+.ads .tabs .tab-content .tab-pane .ads-card {
   background-color: #fff;
   -webkit-box-shadow: 0 3px 25px rgba(0, 0, 0, 0.1);
           box-shadow: 0 3px 25px rgba(0, 0, 0, 0.1);
@@ -12403,7 +12403,7 @@ footer .copySection a:last-child {
   overflow: hidden;
 }
 
-.ads .tabs .tab-content #jobs .ads-card .img-box {
+.ads .tabs .tab-content .tab-pane .ads-card .img-box {
   width: 134px;
   height: 134px;
   border-radius: 4px;
@@ -12426,13 +12426,13 @@ footer .copySection a:last-child {
   transition: 500ms;
 }
 
-.ads .tabs .tab-content #jobs .ads-card .img-box img {
+.ads .tabs .tab-content .tab-pane .ads-card .img-box img {
   max-width: 100%;
   -webkit-transition: 500ms;
   transition: 500ms;
 }
 
-.ads .tabs .tab-content #jobs .ads-card .content-box {
+.ads .tabs .tab-content .tab-pane .ads-card .content-box {
   margin-right: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -12447,14 +12447,14 @@ footer .copySection a:last-child {
           justify-content: space-between;
 }
 
-.ads .tabs .tab-content #jobs .ads-card .content-box h5 {
+.ads .tabs .tab-content .tab-pane .ads-card .content-box h5 {
   font-size: 18px;
   font-weight: 500;
   line-height: 30px;
   color: #007066;
 }
 
-.ads .tabs .tab-content #jobs .ads-card .content-box .more {
+.ads .tabs .tab-content .tab-pane .ads-card .content-box .more {
   background-color: #CCA079;
   border-radius: 36px;
   font-size: 16px;
@@ -12476,7 +12476,7 @@ footer .copySection a:last-child {
           justify-content: center;
 }
 
-.ads .tabs .tab-content #jobs .ads-card .content-box .more img {
+.ads .tabs .tab-content .tab-pane .ads-card .content-box .more img {
   margin-right: 10px;
   width: 10px;
   height: 19px;
@@ -12486,25 +12486,25 @@ footer .copySection a:last-child {
   margin-top: 4px;
 }
 
-.ads .tabs .tab-content #jobs .ads-card:hover .img-box img {
+.ads .tabs .tab-content .tab-pane .ads-card:hover .img-box img {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
 
-.ads .tabs .tab-content #jobs .ads-card:hover h5 {
+.ads .tabs .tab-content .tab-pane .ads-card:hover h5 {
   text-decoration: underline;
 }
 
-.ads .tabs .tab-content #jobs .ads-card:hover .more {
+.ads .tabs .tab-content .tab-pane .ads-card:hover .more {
   background-color: #007066;
 }
 
-.ads .tabs .tab-content #jobs .ads-card:hover .more img {
+.ads .tabs .tab-content .tab-pane .ads-card:hover .more img {
   -webkit-transform: translate(-10px);
           transform: translate(-10px);
 }
 
-.ads .tabs .tab-content #jobs .owl-carousel .owl-nav button.owl-next, .ads .tabs .tab-content #jobs .owl-carousel .owl-nav button.owl-prev {
+.ads .tabs .tab-content .tab-pane .owl-carousel .owl-nav button.owl-next, .ads .tabs .tab-content .tab-pane .owl-carousel .owl-nav button.owl-prev {
   position: absolute;
   top: 40%;
   width: 37px;
@@ -12518,29 +12518,29 @@ footer .copySection a:last-child {
   transition: 400ms;
 }
 
-.ads .tabs .tab-content #jobs .owl-carousel .owl-nav button.owl-next span, .ads .tabs .tab-content #jobs .owl-carousel .owl-nav button.owl-prev span {
+.ads .tabs .tab-content .tab-pane .owl-carousel .owl-nav button.owl-next span, .ads .tabs .tab-content .tab-pane .owl-carousel .owl-nav button.owl-prev span {
   display: none;
 }
 
-.ads .tabs .tab-content #jobs .owl-carousel .owl-nav button.owl-next:hover, .ads .tabs .tab-content #jobs .owl-carousel .owl-nav button.owl-prev:hover {
+.ads .tabs .tab-content .tab-pane .owl-carousel .owl-nav button.owl-next:hover, .ads .tabs .tab-content .tab-pane .owl-carousel .owl-nav button.owl-prev:hover {
   background-color: #fff;
 }
 
-.ads .tabs .tab-content #jobs .owl-carousel .owl-nav button.owl-next {
+.ads .tabs .tab-content .tab-pane .owl-carousel .owl-nav button.owl-next {
   left: -75px;
   background-image: url(../images/left-arrow-st1.svg);
 }
 
-.ads .tabs .tab-content #jobs .owl-carousel .owl-nav button.owl-next:hover {
+.ads .tabs .tab-content .tab-pane .owl-carousel .owl-nav button.owl-next:hover {
   background-image: url(../images/green-left-arrow.svg);
 }
 
-.ads .tabs .tab-content #jobs .owl-carousel .owl-nav button.owl-prev {
+.ads .tabs .tab-content .tab-pane .owl-carousel .owl-nav button.owl-prev {
   right: -75px;
   background-image: url(../images/right-arrow-st1.svg);
 }
 
-.ads .tabs .tab-content #jobs .owl-carousel .owl-nav button.owl-prev:hover {
+.ads .tabs .tab-content .tab-pane .owl-carousel .owl-nav button.owl-prev:hover {
   background-image: url(../images/green-right-arrow.svg);
 }
 
@@ -17083,6 +17083,31 @@ this UI is made desktop first.
   .main-header .slider-wrapper .actions {
     right: calc((100vw - 1140px + 30px) / 2);
   }
+  .about-hayaa .about-hay2a-content h3 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+  .about-hayaa .about-hay2a-content p {
+    font-size: 1rem;
+  }
+  .about-details .details-item .details-content h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  .about-details .details-item .details-content p {
+    font-size: 1rem;
+  }
+  .about-details .details-item .details-content ul li {
+    font-size: 1rem;
+    margin-bottom: 17px;
+  }
+  p.on-space {
+    font-size: 1rem;
+  }
+  .about-note {
+    padding-right: 100px;
+    padding-left: 100px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -17194,6 +17219,74 @@ this UI is made desktop first.
   .main-header .slider-wrapper .actions {
     right: calc((100vw - 720px + 30px) / 2);
   }
+  .about-hayaa {
+    background-position: 5.5% 58%;
+  }
+  .about-hayaa .about-hay2a-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0px;
+  }
+  .about-hayaa .about-hay2a-content p {
+    font-size: 1rem;
+    line-height: 30px;
+    margin-bottom: 15px;
+  }
+  .about-details {
+    padding-bottom: 40px;
+  }
+  .about-details .details-item .details-img {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+  .about-details .details-item .details-content {
+    padding-right: 0  !important;
+  }
+  .about-details .details-item .details-content h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  .about-details .details-item .details-content p {
+    font-size: 1rem;
+    line-height: 30px;
+  }
+  .about-details .details-item .details-content ul li {
+    font-size: 1rem;
+    line-height: 30px;
+    margin-bottom: 10px;
+  }
+  .about-details .details-item.second .details-content {
+    padding-left: 0  !important;
+    margin-left: 0  !important;
+  }
+  .about-details .details-item.second .details-content p {
+    margin-bottom: 15px;
+  }
+  p.on-space {
+    font-size: 1rem;
+    line-height: 30px;
+    padding-left: 0;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .about-note {
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-top: 30px;
+  }
+  .about-note .white-card {
+    padding: 20px 35px;
+  }
+  .about-note .white-card::after {
+    width: 40px;
+    height: 30px;
+    background-size: contain;
+  }
+  .about-note .white-card::before {
+    width: 40px;
+    height: 30px;
+    background-size: contain;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -17224,6 +17317,40 @@ this UI is made desktop first.
   .navigator li a {
     font-size: 0 !important;
   }
+  .about-note {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .about-note .white-card {
+    padding-bottom: 22px;
+  }
+  .about-note .white-card h5 {
+    font-size: 1.1rem;
+    line-height: 30px;
+    margin-bottom: 10px;
+  }
+  .about-note .white-card p {
+    font-size: 1rem;
+    line-height: 24px;
+  }
+  .about-note .white-card::after {
+    bottom: -17px;
+    left: 17px;
+  }
+  .about-note .white-card::before {
+    top: -13px;
+    right: 17px;
+  }
+  .breadcrumbScetion {
+    height: 200px;
+    overflow: hidden;
+  }
+  .breadcrumbScetion .heading {
+    font-size: 2rem;
+  }
+  .breadcrumbScetion .breadcrumbCustom li a {
+    font-size: 1rem;
+  }
 }
 
 @media (max-width: 575.98px) {
@@ -17238,6 +17365,53 @@ this UI is made desktop first.
   }
   .in-focus .slider-wrapper .owl-carousel::before {
     display: none;
+  }
+  .breadcrumbScetion {
+    height: 165px;
+    overflow: hidden;
+  }
+  .breadcrumbScetion .heading {
+    font-size: 1.5rem;
+  }
+  .breadcrumbScetion .breadcrumbCustom li a {
+    font-size: 1rem;
+  }
+  .about-hayaa {
+    margin-top: 0;
+    margin-bottom: 50px;
+  }
+  .about-details {
+    padding-bottom: 40px;
+  }
+  .about-details .details-item {
+    padding-bottom: 25px;
+  }
+  .about-details .details-item .details-content h3 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    line-height: 30px;
+  }
+  .about-details .details-item .details-content p {
+    font-size: .9rem;
+    line-height: 24px;
+  }
+  .about-details .details-item .details-content ul li {
+    font-size: .9rem;
+    line-height: 24px;
+    margin-bottom: 10px;
+  }
+  .about-details .details-item.second .details-content {
+    padding-left: 0  !important;
+  }
+  .about-details .details-item.second .details-content p {
+    margin-bottom: 15px;
+  }
+  p.on-space {
+    font-size: .9rem;
+    line-height: 24px;
+    margin-bottom: 20px;
+    margin-top: 0px;
   }
 }
 /*# sourceMappingURL=styles-rtl.css.map */
