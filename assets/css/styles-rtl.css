@@ -17038,6 +17038,390 @@ footer .copySection {
           justify-content: space-between;
 }
 
+/* ----------- mobile ----------- */
+@media (max-width: 767px) {
+  .paragraphOfBox, .systemSection .boxSearch .praghBox {
+    line-height: 1.6;
+    font-size: 16px;
+  }
+  .pagentaaionCustom a {
+    margin: 0 7px;
+  }
+  .pagentaaionCustom span {
+    margin: 0 7px;
+  }
+  .breadcrumbScetion > img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center center;
+       object-position: center center;
+  }
+  .breadcrumbScetion .heading {
+    font-size: 2.2rem;
+    padding-bottom: 10px;
+    padding-top: 0;
+  }
+  .breadcrumbScetion .breadcrumbCustom li a {
+    font-size: 1rem;
+  }
+  .viewSystem .headOfView .paragraphOfBox, .viewSystem .headOfView .systemSection .boxSearch .praghBox, .systemSection .boxSearch .viewSystem .headOfView .praghBox {
+    margin: 0 8%;
+    margin-bottom: 27px;
+  }
+  .viewSystem .headOfView .systemSection .boxSearch .praghBox {
+    margin: 0 8%;
+    margin-bottom: 27px;
+  }
+  .viewSystem .card-body {
+    padding: 0 21px 27px 21px;
+  }
+  .viewSystem .card-body .card {
+    margin-bottom: 30px;
+  }
+  .viewSystem .resetPadding {
+    padding: 0 !important;
+  }
+  .viewSystem .faq-section .mb-0 > a:after {
+    background-size: 80%;
+  }
+  .systemSection .boxSearch .viewSystem .headOfView .praghBox {
+    margin: 0 8%;
+    margin-bottom: 27px;
+  }
+  footer ul {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  footer h5 {
+    text-align: center;
+  }
+  footer .copySection {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  footer .copySection .copy {
+    margin-left: 0;
+  }
+  footer .justify-content-end {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+  .jobBanner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    padding: 74px 20px 0 42px;
+  }
+  .jobBanner .textJob .prachJobFont24 {
+    padding-left: 0;
+    font-size: 20px;
+  }
+  .backgroundOrImage .container::before {
+    left: 5px;
+  }
+  .backgroundOrImage .formContactUs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .backgroundOrImage .formContactUs .FromInputs {
+    height: auto;
+    width: 100%;
+    padding: 40px 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+  }
+  .backgroundOrImage .formContactUs .FromInputs .btnForm {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .backgroundOrImage .formContactUs .textFrom {
+    height: auto;
+    width: 100%;
+    padding: 40px 20px;
+    border-radius: 8px;
+  }
+  .backgroundOrImage .mapFrom {
+    height: 300px;
+  }
+  .reportPage .formSearch {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .reportPage .formSearch .boxSearchEvent {
+    margin-bottom: 10px;
+  }
+  .reportPage .formSearch label {
+    margin-bottom: 5px;
+  }
+  .reportPage .formSearch .selectSection {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .JobPageSTL .boxSearch .JobCodeSec .Edgucation span {
+    font-size: 13px;
+  }
+  .JobPageSTL .boxSearch .JobCodeSec .Edgucation .MainColr {
+    font-size: 15px;
+  }
+  .bannerSliderSec {
+    padding: 48px 0px;
+  }
+  .bannerSliderSec .bannerSwiperinner .BoxBannerInner {
+    width: 100%;
+    padding-top: 30px;
+  }
+  .NewsPage .boxNewsPage {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .NewsPage .boxNewsPage .boxImgNew {
+    width: 100%;
+  }
+  .NewsPage .boxNewsPage .boxImgNew img {
+    width: 100%;
+  }
+  .NewsPage .boxNewsPage .textNew {
+    width: 100%;
+    padding: 25px 30px 20px;
+  }
+  .boxPuplictions .DowloadBTn {
+    width: 140px;
+    height: 45px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .showToggleBtn .showToggle {
+    width: 140px;
+    height: 45px;
+  }
+  .changeRulesXD .boxSearchRule:hover .showBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .changeRulesXD .DowloadBTn {
+    width: 140px;
+    padding: 14px 0px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .changeRulesXD .viewBtn, .changeRulesXD .showToggleBtn .showToggle, .showToggleBtn .changeRulesXD .showToggle {
+    width: 140px;
+    padding: 14px 0px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .trainingPage .selectSection .selectBox {
+    margin-right: 0;
+  }
+  .trainingPage .boxSearch .dateBox > span {
+    font-size: 0.7rem;
+  }
+  .trainingPage .boxSearch .dateBox .dateS img {
+    padding-left: 0;
+  }
+  .trainingPage .boxSearch .praghBox {
+    height: 133px;
+  }
+  .tabsStyle {
+    margin: 10px 0 30px 0;
+  }
+  .reportPage .previewReports .headerOfBox, .reportPage .previewReports .systemSection .boxSearch .titleBox, .systemSection .boxSearch .reportPage .previewReports .titleBox {
+    font-size: 1.9rem;
+  }
+  .reportPage .previewReports .systemSection .boxSearch .titleBox {
+    font-size: 1.9rem;
+  }
+  .systemSection .boxSearch .reportPage .previewReports .titleBox {
+    font-size: 1.9rem;
+  }
+  .pagentaaionCustom a {
+    width: 40px;
+    height: 40px;
+  }
+  .pagentaaionCustom span {
+    width: 40px;
+    height: 40px;
+  }
+  .bannerSliderSec .bannerSwiperinner .BoxBannerInner .PraghTextBNR {
+    font-size: 1.2rem;
+  }
+  .jobBanner .textJob .titleJobFont32 {
+    font-size: 25px;
+  }
+  .jobBanner .textJob .BtnWithArrow {
+    padding: 13px 30px 13px 54px;
+    font-size: 14px;
+  }
+  .viewSystem .faq-section .mb-0 > a {
+    font-size: 1.3rem;
+  }
+  .tabsStyle .nav-tabs li a {
+    padding: 10px 20px;
+    font-size: 15px;
+    padding: 10px 10px;
+  }
+  .trainingPage .resetSearch {
+    margin-right: 0;
+    margin-top: 30px;
+  }
+  .tabsStyleBar {
+    min-height: 100px;
+    height: unset;
+    padding: 24px;
+  }
+  .tabsStyleBar .nav-tabs li {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+    max-width: 50%;
+    padding-left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .tabsStyleBar .nav-tabs li:not(:last-of-type) {
+    padding-left: 0;
+    padding-bottom: 10px;
+  }
+  .businessCouncils .boxPuplictions .greenBox .boxG {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .businessCouncils .boxPuplictions .greenBox .boxG img {
+    max-width: 100%;
+    width: 40%;
+  }
+  .businessCouncils .boxPuplictions .greenBox .boxG img:first-of-type {
+    padding-left: 0;
+  }
+  .businessCouncils .boxPuplictions .whiteBoxPupl .paragraphOfBox a, .businessCouncils .boxPuplictions .whiteBoxPupl .systemSection .boxSearch .praghBox a, .systemSection .boxSearch .businessCouncils .boxPuplictions .whiteBoxPupl .praghBox a {
+    display: block;
+  }
+  .businessCouncils .dateS {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .businessCouncils .dateS img {
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .JobPageSTL .boxSearch .dateBox span {
+    font-size: 14px;
+  }
+  .backgroundOrImage .formContactUs .textFrom .headerOfBoxFont35 {
+    font-size: 1.9rem;
+  }
+  .trainingPage .formSearch .tabsStyle {
+    width: 100%;
+  }
+  .trainingPage .formSearch .tabsStyle .nav.nav-tabs li {
+    width: 50%;
+  }
+}
+
+/* ----------- iPhone ----------- */
+@media (max-width: 374px) {
+  .breadcrumbScetion .breadcrumbCustom li a {
+    font-size: .8rem;
+  }
+  .tabsStyle .nav-tabs li a {
+    font-size: 11px;
+  }
+  .JobPageSTL .boxSearch .JobCodeSec {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .JobPageSTL .JobBoxHover:hover .boxSearch .showBox {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .JobPageSTL .JobBoxHover:hover .boxSearch .showBox .DowloadBTn {
+    margin-right: 0;
+    margin-top: 10px;
+  }
+  .boxPuplictions .DowloadBTn {
+    width: 120px;
+  }
+  .showToggleBtn .showToggle {
+    width: 120px;
+  }
+  .reportPage.changeXDAnimation .boxSearch .titleBox {
+    font-size: 18px;
+  }
+  .reportPage.changeXDAnimation .boxSearch .praghBox {
+    font-size: 15px;
+  }
+  .reportPage.changeXDAnimation .boxSearch .showBox {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .changeXDAnimation .DowloadBTnXLBDF {
+    margin-right: 0;
+    margin-top: 10px;
+  }
+  .changeRulesXD .boxSearchRule .headerOfBox, .changeRulesXD .boxSearchRule .systemSection .boxSearch .titleBox, .systemSection .boxSearch .changeRulesXD .boxSearchRule .titleBox {
+    font-size: 1.2rem;
+  }
+  .trainingPage .formSearch .selectSection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .trainingPage .formSearch label {
+    display: block;
+  }
+  .trainingPage .selectSection select {
+    width: 100%;
+  }
+  .trainingPage .selectSection .selectBox {
+    margin-left: 0;
+    width: 100%;
+  }
+  .trainingPage .selectSection .inputDateStyle {
+    margin-left: 0;
+    width: 100%;
+  }
+  .trainingPage .inputDateStyle input[type=date] {
+    width: 100%;
+  }
+  .trainingPage .resetSearch {
+    margin-top: 10px;
+  }
+}
+
 /*
 this UI is made desktop first.
 */
