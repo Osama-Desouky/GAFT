@@ -54,7 +54,47 @@ this UI is made desktop first.
   .main-header .slider-wrapper .actions {
     #{$start-direction}: calc((100vw - 1140px + 30px) / 2);
   }
-}
+
+  .about-hayaa{
+    .about-hay2a-content{
+      h3{
+        font-size: 2rem;
+        margin-bottom: 15px;
+      }
+      p{
+        font-size: 1rem;
+      }
+    }
+  }
+
+    .about-details {
+      .details-item {
+        .details-content {
+          h3{
+            font-size: 2rem;
+            margin-bottom: 20px;
+          }
+          p{
+            font-size: 1rem;
+          }
+          ul{
+            li{
+              font-size: 1rem;
+              margin-bottom: 17px;
+            }
+          }
+        }
+      }
+    }
+    p.on-space{
+      font-size: 1rem;
+    }
+    .about-note{
+      padding-#{$start-direction}: 100px;
+      padding-#{$end-direction}: 100px;
+    }
+  } 
+
 // Large devices (desktops, 992px and up)
 @include media-breakpoint-up(lg) {
   /* remove the padding from the navbar so the dropdown hover state is not broken */
@@ -162,6 +202,84 @@ this UI is made desktop first.
   .main-header .slider-wrapper .actions {
     #{$start-direction}: calc((100vw - 720px + 30px) / 2);
   }
+
+
+    // about page
+    .about-hayaa{
+      background-position: 5.5% 58%;
+      .about-hay2a-content{
+        h3{
+          font-size: 1.5rem;
+          margin-bottom: 0px;
+        }
+        p{
+          font-size: 1rem;
+          line-height: 30px;
+          margin-bottom: 15px;
+        }
+      }
+    }
+    .about-details {
+      padding-bottom: 40px;
+      .details-item {
+        .details-img{
+          justify-content: center !important;
+        }
+        .details-content {
+          padding-#{$start-direction}: 0  !important;
+          // padding-#{$end-direction}: 0  !important;
+          h3{
+            font-size: 2rem;
+            margin-bottom: 20px;
+          }
+          p{
+            font-size: 1rem;
+            line-height: 30px;
+          }
+          ul{
+            li{
+              font-size: 1rem;
+              line-height: 30px;
+              margin-bottom: 10px;
+            }
+          }
+        }
+        &.second{
+          .details-content {
+            padding-#{$end-direction}: 0  !important;
+            margin-#{$end-direction}: 0  !important;
+            p{
+              margin-bottom: 15px;
+            }
+          }
+        }
+      }
+    }
+    p.on-space{
+      font-size: 1rem;
+      line-height: 30px;
+      padding-#{$end-direction}: 0;
+      margin-bottom: 20px;
+      margin-top: 20px;
+    }
+    .about-note{
+      padding-#{$start-direction}: 50px;
+      padding-#{$end-direction}: 50px;
+      padding-top: 30px;
+      .white-card{
+        padding: 20px 35px;
+        &::after{
+          width: 40px;
+          height: 30px;
+          background-size: contain;
+        }
+        &::before{
+          width: 40px;
+          height: 30px;
+          background-size: contain;
+        }
+      }
+    }
 }
 
 // Small devices (landscape phones, less than 768px)
@@ -199,6 +317,46 @@ this UI is made desktop first.
       }
     }
   }
+
+  .about-note{
+    padding-#{$start-direction}: 20px;
+    padding-#{$end-direction}: 20px;
+    .white-card{
+      padding-bottom: 22px;
+     h5{
+      font-size: 1.1rem;
+      line-height: 30px;
+      margin-bottom: 10px;
+     }
+     p{
+      font-size: 1rem;
+      line-height: 24px
+     }
+      &::after{
+        bottom: -17px;
+        #{$end-direction}: 17px;
+      }
+      &::before{
+        top: -13px;
+        #{$start-direction}: 17px;
+      }
+    }
+  }
+    // breadcrumb
+    .breadcrumbScetion{
+      height: 200px;
+      overflow: hidden;
+      .heading{
+        font-size: 2rem;
+      }
+      .breadcrumbCustom {
+        li{
+          a{
+            font-size: 1rem;
+          }
+        } 
+      }
+    }
 }
 
 // Extra small devices (portrait phones, less than 576px)
@@ -215,4 +373,64 @@ this UI is made desktop first.
   .in-focus .slider-wrapper .owl-carousel::before {
     display: none;
   }
+  // breadcrumb
+  .breadcrumbScetion{
+    height: 165px;
+    overflow: hidden;
+    .heading{
+      font-size: 1.5rem;
+    }
+    .breadcrumbCustom {
+      li{
+        a{
+          font-size: 1rem;
+        }
+      } 
+    }
+  }
+
+  .about-hayaa {
+    margin-top: 0;
+    margin-bottom: 50px;
+  }
+  .about-details {
+    padding-bottom: 40px;
+    .details-item {
+      padding-bottom: 25px;
+      .details-content {
+        h3{
+          font-size: 1.5rem;
+          margin-top: 10px;
+          margin-bottom: 5px;
+          line-height: 30px;
+        }
+        p{
+          font-size: .9rem;
+          line-height: 24px;
+        }
+        ul{
+          li{
+            font-size: .9rem;
+            line-height: 24px;
+            margin-bottom: 10px;
+          }
+        }
+      }
+      &.second{
+        .details-content {
+          padding-#{$end-direction}: 0  !important;
+          p{
+            margin-bottom: 15px;
+          }
+        }
+      }
+    }
+  }
+  p.on-space {
+    font-size: .9rem;
+    line-height: 24px;
+    margin-bottom: 20px;
+    margin-top: 0px;
+  }
+
 }
