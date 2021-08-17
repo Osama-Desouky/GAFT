@@ -40,6 +40,15 @@ this UI is made desktop first.
   }
 }
 
+@media (max-width: 1649.98px){
+  .media-list {
+    .media-item {
+      .img-box{
+        height: 265px;
+      }
+    }
+  }
+}
 
 @media (max-width: 1399.97px) {
   .main-navbar #navbarSupportedContent > .navbar-nav > .nav-item {
@@ -92,6 +101,22 @@ this UI is made desktop first.
     .about-note{
       padding-#{$start-direction}: 100px;
       padding-#{$end-direction}: 100px;
+    }
+    .media-list {
+      .media-item {
+        .img-box{
+          height: 210px;
+        }
+      }
+    }
+    .Commissions-list {
+      .Commissions-card {
+        p{
+          font-size: 1rem;
+          max-height: calc(24px * 3);
+          line-height: 24px;
+        }
+      }
     }
   } 
 
@@ -152,6 +177,68 @@ this UI is made desktop first.
   }
   .main-header .slider-wrapper .actions {
     #{$start-direction}: calc((100vw - 960px + 30px) / 2);
+  }
+
+  .media-list {
+    .media-item {
+      // .img-box{
+      //   height: 210px;
+      // }
+      .content-box{
+        h4{
+          line-height: 28px;
+        }
+        p{
+          line-height: 26px;
+        }
+      }
+    }
+  }
+  .about-wekala {
+    .content-box{
+      h3{
+        font-size: 2rem;
+        line-height: 40px;
+        margin-bottom: 7px
+      }
+      p{
+        font-size: 1rem;
+        line-height: 28px;
+      }
+    }
+  }
+  .maham-wekala {
+    h3{
+      line-height: 35px;
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+    }
+    ul{
+      li{
+        font-size: 1rem;
+        margin-bottom: 15px;
+        &::before{
+          top: 10px;
+        }
+      }
+    }
+  }
+  .edarat {
+    h3{
+      line-height: 35px;
+      font-size: 1.5rem;
+      margin-bottom: 30px;
+    }
+    .edarat-box {
+      height: 210px;
+      margin-bottom: 30px;
+      .content-box {
+        h4{
+          line-height: 24px;
+          font-size: 1.1rem;
+        }
+      }
+    }
   }
 }
 // Medium devices (tablets, less than 992px)
@@ -280,6 +367,165 @@ this UI is made desktop first.
         }
       }
     }
+
+    // servey
+    .servey-list{
+      .servey-item{
+        padding-#{$start-direction}: 25px;
+        padding-#{$end-direction}:25px ;
+        .content-box{
+          h5{
+            font-size: 1.2rem;
+            line-height: 26px;
+            margin-bottom: 10px;
+          }
+        }
+        .vote-here{
+          a{
+            width: 150px;
+            height: 40px;
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+
+    .reportPage {
+      .formSearch{
+        flex-direction: column;
+        margin: 20px 0 ;
+        .boxSearchEvent{
+          width: 100%;
+          margin-bottom: 10px;
+        }
+      }
+    }
+
+    .attaches-tabs {
+      margin-top: 40px;
+      margin-bottom: 15px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      .nav-link{
+        font-size: 1rem;
+        height: 45px;
+        padding-#{$start-direction}: 20px;
+        padding-#{$end-direction}: 20px;
+        margin-left: 10px;
+      }
+    }
+    .attaches-content {
+      #attaches {
+        .content-head {
+          margin-bottom: 50px;
+          h3{
+            font-size: 1.5rem;
+            line-height: 35px;
+            margin-bottom: 10px;
+          }
+          p {
+            font-size: 1rem;
+            line-height: 24px;
+          }
+        }
+        .goals {
+          margin-bottom: 40px;
+          .content-box {
+            p{
+              font-size: 1rem;
+              line-height: 24px;
+            }
+          }
+        }
+        .content-mid {
+          h3{
+            font-size: 1.5rem;
+            line-height: 35px;
+            margin-bottom: 10px;
+          }
+          p{
+            font-size: 1rem;
+            line-height: 24px;
+          }
+        }
+        .inner-tabs {
+          .nav-pills {
+            .nav-item{
+              font-size: 1rem;
+              height: 45px;
+              padding-#{$start-direction}: 20px;
+              padding-#{$end-direction}: 20px;
+            }
+          }
+        }
+      }
+      #saudi-team {
+        .content-head {
+          margin-bottom: 50px;
+          h3{
+            font-size: 1.5rem;
+            line-height: 35px;
+            margin-bottom: 10px;
+          }
+          p {
+            font-size: 1rem;
+            line-height: 24px;
+          }
+        }
+        .attaches-accordion {
+          h2{
+            font-size: 1.5rem;
+            line-height: 35px;
+          }
+          .card-body {
+            .faq-section{
+              margin-top: 20px !important;
+              .mb-0 > a{
+                padding: 15px 20px 20px;
+                padding-#{$end-direction}: 50px;
+                font-size: 1.3rem;
+                &::after{
+                  height: 25px;
+                  width: 25px;
+                  top: 17px;
+                  background-size: contain;              
+                }            
+              }
+            }
+            #accordion {
+              .card-body {
+                .item{
+                  h4{
+                    font-size: 1.1rem;
+                    line-height: 24px;
+                    margin-bottom: 7px;
+                  }
+                  h5{
+                    font-size: 1rem;
+                    margin-bottom: 5px;
+                  }
+                  ul{
+                    li{
+                      margin-bottom: 6px ;
+                      margin-#{$end-direction}: 15px ;
+                      padding-#{$start-direction}: 11px ;
+                      font-size: .875rem ;
+                    }
+                  }
+                  p{
+                    font-size: .875rem;
+                  }
+                }
+                p{
+                  font-size: .875rem;
+                }
+              }
+            }
+          }
+        }
+      }
+
+    }
 }
 
 // Small devices (landscape phones, less than 768px)
@@ -355,6 +601,283 @@ this UI is made desktop first.
             font-size: 1rem;
           }
         } 
+      }
+    }
+
+    // servey
+    .servey-slider{
+      .top-servey{
+        .content-box{
+          padding: 0 25px;
+          h4{
+            font-size: 2rem;
+            line-height: 40px;
+          }
+          p{
+            line-height: 24px;
+          }
+        }
+      }
+    }
+    .slider-container{
+      .slider-wrapper{
+        width: 450px !important;
+      }
+    }
+    .servey-slider{
+      .item{
+        .servey-card{
+          padding-#{$start-direction}: 40px;
+          padding-#{$end-direction}: 40px ;
+          padding-bottom: 23px;
+          .img-box {
+            margin-bottom: 10px;
+          }
+          .content-box{
+            h5 {
+              font-size: 1.3rem;
+              line-height: 32px;
+              margin-bottom: 15px;
+            }
+            .vote-here{
+              a{
+                font-size: 1rem;
+                width: 150px;
+                height: 40px;
+              }
+            }
+
+          }
+        }
+      }
+      .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev{
+        width: 32px;
+        height: 32px;
+        background-size: 8px;
+      }
+      .owl-carousel .owl-nav button.owl-next{
+        #{$start-direction}: 40px
+      }
+       .owl-theme .owl-dots{
+         bottom: -5%;
+       }
+    }
+
+    //  gallary
+
+    .systemSection {
+      .formSearch {
+        .boxSearchEvent{
+          input{
+            font-size: 14px;
+          }
+        }
+        .selectSection{
+          .selectBox{
+            label{
+              font-size: 1rem;
+            }
+          }
+        }
+      }
+    }
+
+    .gallary-header{
+      padding-top: 30px;
+      padding-bottom: 10px;
+      h3{
+        font-size: 1.5rem;
+        line-height: 34px;
+        margin-bottom: 10px;
+      }
+      p{
+        font-size: 0.875rem;
+        line-height: 26px;
+      }
+    }
+    .media-list {
+      .media-item {
+        .content-box {
+          .media-details {
+            margin-bottom: 3px;
+            .date{
+              font-size: 0.875rem;
+            }
+            .count{
+              font-size: 0.87rem;
+            }
+          }
+          h4{
+            font-size: 1rem;
+            line-height: 24px;
+            margin-bottom: 4px;
+          }
+          p{
+            font-size: .875rem;
+            line-height: 20px;
+          }
+        }
+      }
+    }
+    
+    // pagination
+    .pagination-section {
+      .pagination {
+        a{
+          width: 30px;
+          height: 30px;
+        }
+      }
+    }
+
+    .Commissions-nabzza {
+      padding-top: 30px;
+      padding-bottom: 35px;
+      h3{
+        font-size: 1.5rem;
+        line-height: 34px;
+        margin-bottom: 10px;
+      }
+      p{
+        font-size: 0.875rem;
+        line-height: 26px;
+      }
+    }
+    .Commissions-list {
+      .Commissions-card{
+        height: auto;
+        min-height: 270px;
+        .icon-box{
+          height: 80px;
+          margin-bottom: 10px;
+        }
+        h2 {
+          font-size: 1.3rem;
+          line-height: 26px;
+          margin-bottom: 10px;
+        }
+        p{
+          margin-bottom: 15px;
+          font-size: .875rem;
+        }
+        .more {
+          padding: 8px 20px 8px;
+          font-size: .875rem;
+          width: 135px;
+          height: 40px;
+      }
+      }
+    }
+    .about-wekala {
+      .img-box{
+        margin-top: 10px;
+        width: 150px;
+        height: 150px;
+      }
+      .content-box{
+        h3{
+          font-size: 1.5rem;
+          line-height: 35px;
+          margin-bottom: 7px
+        }
+        p{
+          font-size: .875rem;
+          line-height: 24px;
+        }
+      }
+
+      .col-md-4{
+        display: flex;
+        justify-content: center;
+      }
+    }
+    
+    .maham-wekala {
+      ul{
+        li{
+          font-size: .875rem;
+          margin-bottom: 10px;
+          &::before{
+            top: 8px;
+          }
+        }
+      }
+    }
+
+
+    .attaches-content {
+      #attaches{
+        .content-head {
+          margin-bottom: 30px;
+          p{
+            font-size: .875rem;
+          }
+        }
+        .goals {
+          .content-box {
+            h3{
+              font-size: 1.2rem;
+              line-height: 29px;
+              margin-bottom: 7px;
+            }
+            p{
+              font-size: .875rem;
+            }
+            ul{
+              li{
+                font-size: .875rem;
+                padding-#{$start-direction}: 20px;
+                &::before{
+                  height: 10px;
+                  top: 8px
+                }
+              }
+            }
+          }
+        }
+        .content-mid{
+          p{
+            font-size: .875rem;
+          }
+        }
+      }
+      #saudi-team {
+        .content-head {
+          margin-bottom: 30px;
+          p{
+            font-size: .875rem;
+          }
+        }
+        .team-tasks {
+          .content-box {
+            h3{
+              font-size: 1.2rem;
+              line-height: 29px;
+              margin-bottom: 7px;
+            }
+            .collapsed-sec {
+              margin-top: 13px;
+              h4{
+                font-size: 1rem;
+                line-height: 24px;
+              }
+              ul{
+                li{
+                  font-size: .875rem;
+                  padding-#{$start-direction}: 20px;
+                  &::before{
+                    height: 10px;
+                    top: 8px
+                  }
+
+                }
+                &::after{
+                  bottom: -22px;
+                }
+              }
+            }
+          }
+        }
       }
     }
 }
@@ -433,4 +956,121 @@ this UI is made desktop first.
     margin-top: 0px;
   }
 
+
+  // servey
+  .servey-slider{
+    .top-servey {
+      .content-box {
+        h4 {
+          font-size: 1.5rem;
+          line-height: 30px;
+        }
+        p{
+          font-size: 0.875rem;
+        }
+      }
+    }
+  }
+  .slider-container{
+    .slider-wrapper{
+      width: 280px !important;
+    }
+  }
+  .servey-slider{
+    .item{
+      .servey-card{
+        padding-#{$start-direction}: 15px;
+        padding-#{$end-direction}: 15px ;
+        .content-box{
+          h5 {
+            font-size: 1rem;
+            line-height: 24px;
+          }
+          .vote-here{
+            a{
+              font-size: .875rem;
+              width: 130px;
+              height: 35px;
+            }
+          }
+
+        }
+      }
+    }
+
+  }
+
+  .attaches-tabs {
+    .nav-link{
+      height: 40px;
+      padding-#{$start-direction}: 10px;
+      padding-#{$end-direction}: 10px ;
+      margin-#{$end-direction}: 3px;
+    }
+  }
+  .attaches-content {
+    #attaches{
+     
+      .goals {
+        flex-direction: column;
+        .img-box{
+          margin: 0 auto;
+        }
+        .content-box{
+          h3{
+            text-align: center;
+          }
+        }
+      }
+     
+    }
+    #saudi-team {
+     
+      .team-tasks {
+        flex-direction: column;
+        .img-box{
+          margin: 0 auto;
+        }
+        .content-box {
+          h3{
+            text-align: center;
+          }
+          .collapsed-sec {
+            
+            ul{
+              li{
+                margin-bottom: 15px;
+              }
+              &::after{
+                bottom: -0;
+              }
+            }
+          }
+        }
+      }
+      .attaches-accordion {
+        .card-body {
+          .card{
+            margin-bottom: 20px;
+          }
+          .faq-section {
+            .mb-0 > a{
+              font-size: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 349.97px) {
+  .media-list {
+    .media-item {
+      .img-box{
+        height: 170px;
+      }
+    }
+  }
 }

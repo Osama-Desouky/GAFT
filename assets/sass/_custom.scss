@@ -2778,6 +2778,9 @@ p.on-space{
         transition: inherit;
         height: 90px;
         margin-bottom: 23px;
+        img{
+          height: 100%;
+        }
         &::after{
           position: relative;
           z-index: -1;
@@ -2810,6 +2813,7 @@ p.on-space{
         margin-bottom: 30px;
         transition: 400ms;
         max-height: calc(32px * 2);
+        overflow: hidden;
       }
       .more {
         background-color: #CCA079;
@@ -3035,7 +3039,7 @@ p.on-space{
     margin-#{$end-direction}:25px ;
     transition: 400ms;
     &:last-child{
-    margin-#{$end-direction}: 0 ;
+    margin-#{$end-direction}: 0 !important;
     }
     &.active{
       background-color: $golden-color;
@@ -3198,7 +3202,8 @@ p.on-space{
           .tab-container{
             display: flex;
             align-items: center;
-            justify-content: space-between;
+            // justify-content: space-between;
+            justify-content: center;
             flex-wrap: wrap;
             .item{
               padding: 12px;
@@ -3208,7 +3213,9 @@ p.on-space{
               background-color: #FAFAFA;
               border-radius: 4px;
               margin-bottom: 10px;
-              margin-#{$end-direction}: 20px;
+              margin-#{$end-direction}: 7px;
+              margin-#{$start-direction}: 7px;
+              width: 120px;
               &:last-child{
               margin-#{$end-direction}: 0;
               }
