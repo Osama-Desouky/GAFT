@@ -784,6 +784,7 @@ footer {
       img{
         width: inherit;
         display: inline-flex;
+        height: 100%;
       }
       .service-card{
         display: flex;
@@ -2254,19 +2255,23 @@ p.on-space{
   margin-bottom: 60px;
   .main-one , .main-two{
     .content-box{
-      padding-top: 60px;
-      padding-bottom: 60px; 
+      // padding-top: 60px;
+      // padding-bottom: 60px; 
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100%;
       padding-#{$start-direction}: 30px ;
       // background-color: #fff;
       border-radius: 8px;
       position: relative;
       &::before{
         content: "";
-        height: calc(100%);
+        height: calc(100% - 50px);
         width: 125%;
         position: absolute;
         #{$end-direction}:0;
-        top: 0px;
+        top: 25px;
         background-color: #fff;
         box-shadow: 0 20px 35px rgba($color: #3E3E3E, $alpha: 0.10);
         z-index: -1;

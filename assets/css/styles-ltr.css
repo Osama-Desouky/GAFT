@@ -11855,6 +11855,7 @@ footer .copySection a:last-child {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  height: 100%;
 }
 
 .our-services .owl-carousel .item .service-card {
@@ -13475,8 +13476,17 @@ p.on-space {
 }
 
 .main-member .main-one .content-box, .main-member .main-two .content-box {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
   padding-left: 30px;
   border-radius: 8px;
   position: relative;
@@ -13484,11 +13494,11 @@ p.on-space {
 
 .main-member .main-one .content-box::before, .main-member .main-two .content-box::before {
   content: "";
-  height: calc(100%);
+  height: calc(100% - 50px);
   width: 125%;
   position: absolute;
   right: 0;
-  top: 0px;
+  top: 25px;
   background-color: #fff;
   -webkit-box-shadow: 0 20px 35px rgba(62, 62, 62, 0.1);
           box-shadow: 0 20px 35px rgba(62, 62, 62, 0.1);
@@ -15263,6 +15273,69 @@ this UI is made desktop first.
   .media-list .media-item .img-box {
     height: 265px;
   }
+  .main-member .main-one .content-box h3, .main-member .main-two .content-box h3 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+  }
+  .main-member .main-one .content-box h5, .main-member .main-two .content-box h5 {
+    font-size: 1.2rem;
+    line-height: 27px;
+    margin-bottom: 10px;
+  }
+  .main-member .main-one .content-box p, .main-member .main-two .content-box p {
+    font-size: 1rem;
+    line-height: 24px;
+  }
+  .list-members .member-card .content-box h4 {
+    font-size: 1.2rem;
+    line-height: 28px;
+    margin-bottom: 10px;
+  }
+  .list-members .member-card .content-box h5 {
+    font-size: 1.1rem;
+    line-height: 24px;
+    margin-bottom: 7px;
+  }
+  .list-members .member-card .content-box p {
+    line-height: 24px;
+  }
+  .about-hay2a {
+    padding-top: 40px;
+  }
+  .our-services {
+    padding-top: 45px;
+  }
+  .our-services .owl-carousel .item .service-card .icon-box {
+    height: 70px;
+    margin-bottom: 15px;
+  }
+  .our-services .owl-carousel .item .service-card h2 {
+    font-size: 23px;
+    line-height: 33px;
+    margin-bottom: 10px;
+  }
+  .our-services .owl-carousel .item .service-card p {
+    line-height: 32px;
+  }
+  .our-services .owl-carousel .item .service-card:hover .icon-box {
+    -webkit-transform: translateY(-30px) scale(1.2);
+            transform: translateY(-30px) scale(1.2);
+  }
+  .our-partners {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  .latest-news {
+    padding-top: 10px;
+    padding-bottom: 40px;
+  }
+  .ads {
+    height: auto;
+    padding-bottom: 60px;
+  }
+  .versions {
+    padding-top: 40px;
+  }
 }
 
 @media (max-width: 1399.97px) {
@@ -15310,6 +15383,48 @@ this UI is made desktop first.
     font-size: 1rem;
     max-height: calc(24px * 3);
     line-height: 24px;
+  }
+  .main-member .main-one .content-box, .main-member .main-two .content-box {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .main-member .main-one .content-box h3, .main-member .main-two .content-box h3 {
+    font-size: 1.1rem;
+  }
+  .main-member .main-one .content-box h5, .main-member .main-two .content-box h5 {
+    font-size: 1.05rem;
+  }
+  .main-member .main-one .content-box::before, .main-member .main-two .content-box::before {
+    height: calc(100% - 50px);
+    top: 25px;
+  }
+  .main-member .main-two .content-box {
+    padding-left: 10px;
+  }
+  .main-member .main-one .content-box {
+    padding-right: 10px;
+  }
+  .our-services .item .service-card {
+    height: 335px;
+    margin-bottom: 90px;
+  }
+  .our-services .owl-carousel .owl-nav button.owl-prev {
+    left: -50px;
+  }
+  .our-services .owl-carousel .owl-nav button.owl-next {
+    right: -50px;
+  }
+  .our-partners .owl-carousel .owl-nav button.owl-prev, .latest-news .owl-carousel .owl-nav button.owl-prev {
+    left: -50px;
+  }
+  .our-partners .owl-carousel .owl-nav button.owl-next, .latest-news .owl-carousel .owl-nav button.owl-next {
+    right: -50px;
+  }
+  .ads .tabs .tab-content .tab-pane .owl-carousel .owl-nav button.owl-prev {
+    left: -50px;
+  }
+  .ads .tabs .tab-content .tab-pane .owl-carousel .owl-nav button.owl-next {
+    right: -50px;
   }
 }
 
@@ -15407,6 +15522,151 @@ this UI is made desktop first.
   .edarat .edarat-box .content-box h4 {
     line-height: 24px;
     font-size: 1.1rem;
+  }
+  .main-member-inner .content-wrapper .right-section {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 320px;
+            flex: 0 0 320px;
+    margin-right: 30px;
+  }
+  .main-member-inner .content-wrapper .left-section .content-box h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  .main-member-inner .content-wrapper .left-section .content-box h5 {
+    line-height: 30px;
+    margin-bottom: 5px;
+  }
+  .main-member-inner .content-wrapper .left-section .content-box p {
+    font-size: 1rem;
+    line-height: 25px;
+    margin-bottom: 10px;
+  }
+  .lamha-tare5ia {
+    padding-bottom: 75px;
+  }
+  .lamha-tare5ia ul li {
+    font-size: 1rem;
+    margin-bottom: 15px;
+  }
+  .lamha-tare5ia p {
+    font-size: 1rem;
+    line-height: 24px;
+  }
+  .main-member .main-one .content-box, .main-member .main-two .content-box {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  .main-member .main-one .content-box h3, .main-member .main-two .content-box h3 {
+    font-size: 1.1rem;
+  }
+  .main-member .main-one .content-box h5, .main-member .main-two .content-box h5 {
+    font-size: 1.05rem;
+  }
+  .main-member .main-two .content-box {
+    padding-left: 30px;
+  }
+  .main-member .main-one {
+    margin-bottom: 20px;
+  }
+  .main-member .main-one .content-box {
+    padding-right: 30px;
+  }
+  .about-hay2a h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .about-hay2a p {
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 25px;
+  }
+  .about-hay2a .read-more {
+    padding: 8.5px 50px;
+    font-size: 16px;
+  }
+  .our-services {
+    padding-top: 20px;
+  }
+  .our-services .heading h2 {
+    margin-top: 0px;
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .our-partners .heading h2 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .latest-news .heading {
+    margin-bottom: 35px;
+  }
+  .latest-news .heading h2 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .latest-news .heading p {
+    font-size: 16px;
+  }
+  .latest-news .action .read-more {
+    padding: 8.5px 50px;
+    font-size: 16px;
+  }
+  .ads .heading h2 {
+    margin-bottom: 20px;
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .ads .tabs .nav-pills {
+    margin-bottom: 40px;
+  }
+  .ads .tabs .nav-pills .nav-item {
+    width: 190px;
+    height: 45px;
+    font-size: 16px;
+    margin-right: 5px;
+  }
+  .ads .tabs .nav-pills .nav-item:last-child {
+    margin-right: 0px;
+  }
+  .ads .tabs .tab-content .tab-pane .ads-card .content-box h5 {
+    font-size: 16px;
+  }
+  .ads .tabs .tab-content .tab-pane .ads-card .content-box .more {
+    font-size: 15px;
+    width: 140px;
+    height: 45px;
+  }
+  .versions .heading h2 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .sharekna-elraay .sharekna-elray-card {
+    margin-left: 0px;
+    padding: 20px;
+  }
+  .sharekna-elraay .sharekna-elray-card .card-hd {
+    margin-bottom: 10px;
+  }
+  .sharekna-elraay .sharekna-elray-card .card-hd h4 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .sharekna-elraay .sharekna-elray-card p {
+    width: auto;
+    line-height: 24px;
+    margin-bottom: 20px;
+  }
+  .sharekna-elraay .sharekna-elray-card a {
+    width: 215px;
+    padding: 10px 20px 10px;
+    font-size: 15px;
+    height: 45px;
   }
 }
 
@@ -15651,6 +15911,50 @@ this UI is made desktop first.
     font-size: .875rem;
   }
   .attaches-content #saudi-team .attaches-accordion .card-body #accordion .card-body p {
+    font-size: .875rem;
+  }
+  .main-member-inner {
+    padding-top: 40px;
+    padding-bottom: 50px;
+  }
+  .main-member-inner .content-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main-member-inner .content-wrapper .right-section {
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+  .main-member-inner .content-wrapper .left-section .content-box h3 {
+    font-size: 1.5rem;
+    line-height: 38px;
+  }
+  .main-member-inner .content-wrapper .left-section .content-box h5 {
+    font-size: 1.2rem;
+  }
+  .main-member-inner .content-wrapper .left-section .content-box p {
+    font-size: 1rem;
+    line-height: 25px;
+    margin-bottom: 10px;
+  }
+  .lamha-tare5ia {
+    padding-top: 30px;
+    padding-right: 0;
+  }
+  .lamha-tare5ia h3 {
+    font-size: 1.5rem;
+    line-height: 35px;
+    margin-bottom: 15px;
+  }
+  .lamha-tare5ia ul li {
+    margin-bottom: 10px;
+  }
+  .main-member .main-one .content-box p, .main-member .main-two .content-box p {
+    font-size: .875rem;
+  }
+  .list-members .member-card .content-box p {
     font-size: .875rem;
   }
 }
@@ -15919,6 +16223,80 @@ this UI is made desktop first.
   .attaches-content #saudi-team .team-tasks .content-box .collapsed-sec ul::after {
     bottom: -22px;
   }
+  .main-member-inner {
+    padding-top: 40px;
+    padding-bottom: 50px;
+  }
+  .main-member-inner .content-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main-member-inner .content-wrapper .right-section {
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+  .main-member-inner .content-wrapper .left-section .content-box p {
+    font-size: .875rem;
+    line-height: 24px;
+  }
+  .lamha-tare5ia h3 {
+    font-size: 1.5rem;
+    line-height: 35px;
+    margin-bottom: 15px;
+  }
+  .lamha-tare5ia ul {
+    padding-left: 20px;
+  }
+  .lamha-tare5ia ul li {
+    font-size: .875rem;
+    margin-bottom: 7px;
+    padding-left: 20px;
+  }
+  .lamha-tare5ia ul li::before {
+    top: 8px;
+  }
+  .lamha-tare5ia p {
+    font-size: .875rem;
+  }
+  .main-member .main-one .img-box, .main-member .main-two .img-box {
+    margin: 0 auto;
+    max-width: initial;
+    width: 100%;
+    max-height: 350px;
+    border-radius: 8px 8px 0 0;
+  }
+  .main-member .main-one .img-box img, .main-member .main-two .img-box img {
+    height: auto;
+  }
+  .main-member .main-one .content-box, .main-member .main-two .content-box {
+    padding: 25px;
+    padding-top: 15px;
+    padding-bottom: 35px;
+  }
+  .main-member .main-one .content-box h3, .main-member .main-two .content-box h3 {
+    line-height: 32px;
+    margin-bottom: 5px;
+  }
+  .main-member .main-one .content-box h5, .main-member .main-two .content-box h5 {
+    margin-bottom: 5px;
+  }
+  .main-member .main-one .content-box::before, .main-member .main-two .content-box::before {
+    height: calc(100%);
+    top: 0;
+    width: 100%;
+    border-radius: 0 0 8px 8px;
+  }
+  .main-member .main-two .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .list-members .member-card {
+    margin-bottom: 30px;
+  }
 }
 
 @media (max-width: 575.98px) {
@@ -16045,6 +16423,40 @@ this UI is made desktop first.
   }
   .attaches-content #saudi-team .attaches-accordion .card-body .faq-section .mb-0 > a {
     font-size: 1rem;
+  }
+  .main-member-inner {
+    padding-bottom: 30px;
+  }
+  .main-member-inner .content-wrapper .left-section .content-box h3 {
+    font-size: 1.2rem;
+    line-height: 32px;
+    margin-bottom: 5px;
+  }
+  .main-member-inner .content-wrapper .left-section .content-box h5 {
+    font-size: 1rem;
+    line-height: 24px;
+  }
+  .lamha-tare5ia {
+    padding-top: 20px;
+  }
+  .lamha-tare5ia h3 {
+    font-size: 1.5rem;
+    line-height: 35px;
+    margin-bottom: 15px;
+  }
+  .lamha-tare5ia ul {
+    padding-left: 5px;
+  }
+  .lamha-tare5ia ul li {
+    font-size: .875rem;
+    margin-bottom: 7px;
+    padding-left: 20px;
+  }
+  .lamha-tare5ia ul li::before {
+    top: 8px;
+  }
+  .lamha-tare5ia p {
+    font-size: .875rem;
   }
 }
 

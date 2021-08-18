@@ -48,6 +48,92 @@ this UI is made desktop first.
       }
     }
   }
+  .main-member{
+    .main-one , .main-two{
+      .content-box{
+        h3{
+          font-size: 1.25rem;
+          margin-bottom: 10px;
+        }
+        h5{
+          font-size: 1.2rem;
+          line-height: 27px;
+          margin-bottom: 10px
+        }
+        p{
+          font-size: 1rem;
+          line-height: 24px;
+        }
+      }
+    }
+  }
+  .list-members {
+    .member-card {
+      .content-box {
+        h4{
+          font-size: 1.2rem;
+          line-height: 28px;
+          margin-bottom: 10px;
+        }
+        h5{
+          font-size: 1.1rem;
+          line-height: 24px;
+          margin-bottom: 7px;
+        }
+        p{
+          line-height: 24px;
+        }
+      }
+    }
+  }
+  .about-hay2a{
+    padding-top: 40px;
+  }
+  .our-services {
+    padding-top: 45px;
+    .owl-carousel{
+      // .owl-stage-outer {
+      //   padding-top: 50px;
+      // }
+      .item {
+        .service-card {
+          .icon-box{
+            height: 70px;
+            margin-bottom: 15px;
+          }
+          h2{
+            font-size: 23px;
+            line-height: 33px;
+            margin-bottom: 10px;
+          }
+          p{
+            line-height: 32px;
+          }
+          &:hover{
+            .icon-box{
+              transform: translateY(-30px) scale(1.2);
+            }
+          }
+        }
+        
+      }
+    }
+  }
+  .our-partners {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  .latest-news {
+    padding-top: 10px;
+    padding-bottom: 40px;
+  }
+  .ads {
+    height: auto;
+    padding-bottom: 60px;
+  }
+  .versions{
+    padding-top: 40px;
+  }
 }
 
 @media (max-width: 1399.97px) {
@@ -118,7 +204,68 @@ this UI is made desktop first.
         }
       }
     }
-  } 
+    .main-member{
+      .main-one , .main-two{
+        .content-box{
+          padding-top: 60px;
+          padding-bottom: 60px;
+          h3{
+            font-size: 1.1rem;
+          }
+          h5{
+            font-size: 1.05rem;
+          }
+          &::before{
+            height: calc(100% - 50px);
+            top: 25px;
+          }
+        }
+      }
+      .main-two {
+        .content-box{
+          padding-#{$start-direction}: 10px;
+        }
+      }
+      .main-one {
+        .content-box{
+          padding-#{$end-direction}: 10px;
+        }
+      }
+    }
+   
+    .our-services {
+        .item {
+          .service-card {
+            height: 335px;
+            margin-bottom: 90px;
+          } 
+        }
+        .owl-carousel .owl-nav button.owl-prev{
+          #{$start-direction}: -50px;
+        }
+        .owl-carousel .owl-nav button.owl-next {
+          #{$end-direction}: -50px;
+        }
+    }
+    .our-partners , .latest-news {
+      .owl-carousel .owl-nav button.owl-prev{
+        #{$start-direction}: -50px;
+      }
+      .owl-carousel .owl-nav button.owl-next {
+        #{$end-direction}: -50px;
+      }
+    }
+    .ads{
+      .tabs .tab-content .tab-pane{
+        .owl-carousel .owl-nav button.owl-prev{
+          #{$start-direction}: -50px;
+        }
+        .owl-carousel .owl-nav button.owl-next {
+          #{$end-direction}: -50px;
+        }
+      }
+    }
+  }
 
 // Large devices (desktops, 992px and up)
 @include media-breakpoint-up(lg) {
@@ -238,6 +385,207 @@ this UI is made desktop first.
           font-size: 1.1rem;
         }
       }
+    }
+  }
+
+  .main-member-inner {
+    .content-wrapper {
+      .right-section{
+        flex:  0 0 320px;
+        margin-#{$end-direction}: 30px;
+      }
+      .left-section {
+        .content-box{
+          h3{
+            font-size: 2rem;
+            margin-bottom: 10px;
+          }
+          h5{
+            line-height: 30px;
+            margin-bottom: 5px;
+          }
+          p{
+            
+            font-size: 1rem;
+            line-height: 25px;
+            margin-bottom: 10px;
+        
+          }
+        }
+      }
+    }
+  }
+  .lamha-tare5ia {
+    padding-bottom: 75px;
+    ul {
+      li{
+        font-size: 1rem;
+        margin-bottom: 15px;
+      }
+    }
+    p{
+      font-size: 1rem;
+      line-height: 24px;
+    }
+  }
+  .main-member{
+    .main-one , .main-two{
+      .content-box{
+        padding-top: 0px;
+        padding-bottom: 0px;
+        h3{
+          font-size: 1.1rem;
+        }
+        h5{
+          font-size: 1.05rem;
+        }
+        // &::before{
+        //   height: calc(100% );
+        //   top: 0;
+        // }
+      }
+    }
+    .main-two {
+      .content-box{
+        padding-#{$start-direction}: 30px;
+      }
+    }
+    .main-one {
+      margin-bottom: 20px;
+      .content-box{
+        padding-#{$end-direction}: 30px;
+      }
+    }
+  }
+
+  .about-hay2a {
+    h2{
+      margin-top: 10px;
+      margin-bottom: 10px;
+      font-size: 30px;
+      line-height: 40px;
+    }
+    p {
+      font-size: 16px;
+      line-height: 28px;
+      margin-bottom: 25px;
+    }
+    .read-more{
+      padding: 8.5px 50px;
+      font-size: 16px;
+    }
+  }
+  .our-services{
+    padding-top: 20px;
+    .heading {
+      h2{
+        margin-top: 0px;
+        // margin-bottom: 10px;
+        font-size: 30px;
+        line-height: 40px;
+      }
+    }
+  }
+  .our-partners{
+    .heading {
+      h2{
+        margin-top: 0px;
+        margin-bottom: 0px;
+        font-size: 30px;
+        line-height: 40px;
+      }
+    }
+  }
+  .latest-news{
+    .heading {
+      margin-bottom: 35px;
+      h2{
+        margin-top: 15px;
+        margin-bottom: 10px;
+        font-size: 30px;
+        line-height: 40px;
+      }
+      p{
+        font-size: 16px;
+      }
+    }
+    .action{
+      .read-more{
+        padding: 8.5px 50px;
+        font-size: 16px;
+      }
+    }
+  }
+  .ads{
+    .heading {
+      h2{
+        margin-bottom: 20px;
+        font-size: 30px;
+        line-height: 40px;
+      }
+    }
+    .tabs {
+      .nav-pills {
+        margin-bottom: 40px;
+        .nav-item{
+          width: 190px;
+          height: 45px;
+          font-size: 16px;
+          margin-#{$end-direction}: 5px;
+          &:last-child{
+            margin-#{$end-direction}: 0px;
+          }
+        }
+      }
+      .tab-content {
+        .tab-pane {
+          .ads-card {
+            .content-box {
+              h5 {
+                font-size: 16px;
+              }
+              .more{
+                font-size: 15px;
+                width: 140px;
+                height: 45px
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .versions{
+    .heading {
+      h2{
+        // margin-bottom: 20px;
+        font-size: 30px;
+        line-height: 40px;
+      }
+    }
+  }
+  .sharekna-elraay {
+    .sharekna-elray-card{
+      margin-#{$start-direction}: 0px;
+      padding: 20px;
+      .card-hd {
+        margin-bottom: 10px;
+        h4{
+          font-size: 30px;
+          line-height: 40px;
+        }
+      }
+        p{
+          width: auto;
+          line-height: 24px;
+          margin-bottom: 20px;
+        }
+        a{
+          width: 215px;
+          padding: 10px 20px 10px;
+          font-size: 15px;
+          height: 45px;
+        }
     }
   }
 }
@@ -525,6 +873,69 @@ this UI is made desktop first.
         }
       }
 
+    }
+    .main-member-inner {
+      padding-top: 40px;
+      padding-bottom: 50px;
+      .content-wrapper {
+        flex-direction: column;
+        .right-section{
+          margin: 0 auto;
+          margin-bottom: 10px;
+        }
+        .left-section {
+          .content-box{
+            h3{
+              font-size: 1.5rem;
+              line-height: 38px;
+            }
+            h5{
+              font-size: 1.2rem;
+            }
+            p{
+              
+              font-size: 1rem;
+              line-height: 25px;
+              margin-bottom: 10px;
+          
+            }
+          }
+        }
+      }
+    }
+    .lamha-tare5ia {
+      padding-top: 30px;
+      padding-#{$end-direction}: 0 ;
+      h3{
+        font-size: 1.5rem;
+        line-height: 35px;
+        margin-bottom: 15px
+      }
+      ul {
+        li{
+          margin-bottom: 10px;
+        }
+      }
+    }
+    
+    .main-member{
+      .main-one , .main-two{
+        .content-box{
+          p{
+            font-size: .875rem;
+
+          }
+        }
+      }
+    }
+    .list-members {
+      .member-card {
+        .content-box {
+          p{
+            font-size: .875rem;
+          }
+        }
+      }
     }
 }
 
@@ -880,6 +1291,97 @@ this UI is made desktop first.
         }
       }
     }
+
+    .main-member-inner {
+      padding-top: 40px;
+      padding-bottom: 50px;
+      .content-wrapper {
+        flex-direction: column;
+        .right-section{
+          margin: 0 auto;
+          margin-bottom: 10px;
+        }
+        .left-section {
+          .content-box{
+            // h3{
+            //   font-size: 1.5rem;
+            //   line-height: 38px;
+            // }
+            // h5{
+            //   font-size: 1.2rem;
+            // }
+            p{
+              font-size: .875rem;
+              line-height: 24px;
+            }
+          }
+        }
+      }
+    }
+    .lamha-tare5ia {
+      h3{
+        font-size: 1.5rem;
+        line-height: 35px;
+        margin-bottom: 15px
+      }
+      ul {
+        padding-#{$start-direction}: 20px ;
+        li{
+          font-size: .875rem;
+          margin-bottom: 7px;
+          padding-#{$start-direction}: 20px ;
+          &::before{
+            top: 8px
+          }
+        }
+      }
+      p{
+        font-size: .875rem;
+      }
+    }
+
+    .main-member{
+      .main-one , .main-two{
+        .img-box{
+          margin: 0 auto;
+          max-width: initial;
+          width: 100%;
+          max-height: 350px;
+          border-radius: 8px 8px 0 0 ;
+          img{
+            height: auto;
+          }
+        }
+        .content-box{
+          padding: 25px;
+          padding-top: 15px;
+          padding-bottom: 35px;
+          h3{
+            line-height: 32px;
+            margin-bottom: 5px;
+          }
+          h5{
+            margin-bottom: 5px;
+          }
+          &::before{
+            height: calc(100%);
+            top: 0;
+            width: 100%;
+            border-radius: 0 0 8px 8px;
+          }
+        }
+      }
+      .main-two {
+        .row{
+          flex-direction: column-reverse;
+        }
+      }
+    }
+    .list-members {
+      .member-card{
+        margin-bottom: 30px;
+      }
+    }
 }
 
 // Extra small devices (portrait phones, less than 576px)
@@ -1060,6 +1562,46 @@ this UI is made desktop first.
           }
         }
       }
+    }
+  }
+  .main-member-inner {
+    padding-bottom: 30px;
+    .content-wrapper {
+      .left-section {
+        .content-box{
+          h3{
+            font-size: 1.2rem;
+            line-height: 32px;
+            margin-bottom: 5px;
+          }
+          h5{
+            font-size: 1rem;
+            line-height: 24px;
+          }
+        }
+      }
+    }
+  }
+  .lamha-tare5ia {
+    padding-top: 20px;
+    h3{
+      font-size: 1.5rem;
+      line-height: 35px;
+      margin-bottom: 15px
+    }
+    ul {
+      padding-#{$start-direction}: 5px ;
+      li{
+        font-size: .875rem;
+        margin-bottom: 7px;
+        padding-#{$start-direction}: 20px ;
+        &::before{
+          top: 8px
+        }
+      }
+    }
+    p{
+      font-size: .875rem;
     }
   }
 }
