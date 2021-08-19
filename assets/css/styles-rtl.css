@@ -11855,6 +11855,7 @@ footer .copySection a:last-child {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  height: 100%;
 }
 
 .our-services .owl-carousel .item .service-card {
@@ -13475,8 +13476,17 @@ p.on-space {
 }
 
 .main-member .main-one .content-box, .main-member .main-two .content-box {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
   padding-right: 30px;
   border-radius: 8px;
   position: relative;
@@ -13484,11 +13494,11 @@ p.on-space {
 
 .main-member .main-one .content-box::before, .main-member .main-two .content-box::before {
   content: "";
-  height: calc(100%);
+  height: calc(100% - 50px);
   width: 125%;
   position: absolute;
   left: 0;
-  top: 0px;
+  top: 25px;
   background-color: #fff;
   -webkit-box-shadow: 0 20px 35px rgba(62, 62, 62, 0.1);
           box-shadow: 0 20px 35px rgba(62, 62, 62, 0.1);
@@ -14065,6 +14075,10 @@ p.on-space {
   margin-bottom: 23px;
 }
 
+.Commissions-list .Commissions-card .icon-box img {
+  height: 100%;
+}
+
 .Commissions-list .Commissions-card .icon-box::after {
   position: relative;
   z-index: -1;
@@ -14100,6 +14114,7 @@ p.on-space {
   -webkit-transition: 400ms;
   transition: 400ms;
   max-height: calc(32px * 2);
+  overflow: hidden;
 }
 
 .Commissions-list .Commissions-card .more {
@@ -14383,7 +14398,7 @@ p.on-space {
 }
 
 .attaches-tabs .nav-link:last-child {
-  margin-left: 0;
+  margin-left: 0 !important;
 }
 
 .attaches-tabs .nav-link.active {
@@ -14593,9 +14608,9 @@ p.on-space {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -14614,7 +14629,9 @@ p.on-space {
   background-color: #FAFAFA;
   border-radius: 4px;
   margin-bottom: 10px;
-  margin-left: 20px;
+  margin-left: 7px;
+  margin-right: 7px;
+  width: 120px;
 }
 
 .attaches-content #attaches .inner-tabs #menu .white-card .tab-container .item:last-child {
@@ -17836,6 +17853,75 @@ this UI is made desktop first.
   }
 }
 
+@media (max-width: 1649.98px) {
+  .media-list .media-item .img-box {
+    height: 265px;
+  }
+  .main-member .main-one .content-box h3, .main-member .main-two .content-box h3 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+  }
+  .main-member .main-one .content-box h5, .main-member .main-two .content-box h5 {
+    font-size: 1.2rem;
+    line-height: 27px;
+    margin-bottom: 10px;
+  }
+  .main-member .main-one .content-box p, .main-member .main-two .content-box p {
+    font-size: 1rem;
+    line-height: 24px;
+  }
+  .list-members .member-card .content-box h4 {
+    font-size: 1.2rem;
+    line-height: 28px;
+    margin-bottom: 10px;
+  }
+  .list-members .member-card .content-box h5 {
+    font-size: 1.1rem;
+    line-height: 24px;
+    margin-bottom: 7px;
+  }
+  .list-members .member-card .content-box p {
+    line-height: 24px;
+  }
+  .about-hay2a {
+    padding-top: 40px;
+  }
+  .our-services {
+    padding-top: 45px;
+  }
+  .our-services .owl-carousel .item .service-card .icon-box {
+    height: 70px;
+    margin-bottom: 15px;
+  }
+  .our-services .owl-carousel .item .service-card h2 {
+    font-size: 23px;
+    line-height: 33px;
+    margin-bottom: 10px;
+  }
+  .our-services .owl-carousel .item .service-card p {
+    line-height: 32px;
+  }
+  .our-services .owl-carousel .item .service-card:hover .icon-box {
+    -webkit-transform: translateY(-30px) scale(1.2);
+            transform: translateY(-30px) scale(1.2);
+  }
+  .our-partners {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  .latest-news {
+    padding-top: 10px;
+    padding-bottom: 40px;
+  }
+  .ads {
+    height: auto;
+    padding-bottom: 60px;
+  }
+  .versions {
+    padding-top: 40px;
+  }
+}
+
 @media (max-width: 1399.97px) {
   .main-navbar #navbarSupportedContent > .navbar-nav > .nav-item {
     margin-left: auto;
@@ -17873,6 +17959,56 @@ this UI is made desktop first.
   .about-note {
     padding-right: 100px;
     padding-left: 100px;
+  }
+  .media-list .media-item .img-box {
+    height: 210px;
+  }
+  .Commissions-list .Commissions-card p {
+    font-size: 1rem;
+    max-height: calc(24px * 3);
+    line-height: 24px;
+  }
+  .main-member .main-one .content-box, .main-member .main-two .content-box {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .main-member .main-one .content-box h3, .main-member .main-two .content-box h3 {
+    font-size: 1.1rem;
+  }
+  .main-member .main-one .content-box h5, .main-member .main-two .content-box h5 {
+    font-size: 1.05rem;
+  }
+  .main-member .main-one .content-box::before, .main-member .main-two .content-box::before {
+    height: calc(100% - 50px);
+    top: 25px;
+  }
+  .main-member .main-two .content-box {
+    padding-right: 10px;
+  }
+  .main-member .main-one .content-box {
+    padding-left: 10px;
+  }
+  .our-services .item .service-card {
+    height: 335px;
+    margin-bottom: 90px;
+  }
+  .our-services .owl-carousel .owl-nav button.owl-prev {
+    right: -50px;
+  }
+  .our-services .owl-carousel .owl-nav button.owl-next {
+    left: -50px;
+  }
+  .our-partners .owl-carousel .owl-nav button.owl-prev, .latest-news .owl-carousel .owl-nav button.owl-prev {
+    right: -50px;
+  }
+  .our-partners .owl-carousel .owl-nav button.owl-next, .latest-news .owl-carousel .owl-nav button.owl-next {
+    left: -50px;
+  }
+  .ads .tabs .tab-content .tab-pane .owl-carousel .owl-nav button.owl-prev {
+    right: -50px;
+  }
+  .ads .tabs .tab-content .tab-pane .owl-carousel .owl-nav button.owl-next {
+    left: -50px;
   }
 }
 
@@ -17930,6 +18066,191 @@ this UI is made desktop first.
   }
   .main-header .slider-wrapper .actions {
     right: calc((100vw - 960px + 30px) / 2);
+  }
+  .media-list .media-item .content-box h4 {
+    line-height: 28px;
+  }
+  .media-list .media-item .content-box p {
+    line-height: 26px;
+  }
+  .about-wekala .content-box h3 {
+    font-size: 2rem;
+    line-height: 40px;
+    margin-bottom: 7px;
+  }
+  .about-wekala .content-box p {
+    font-size: 1rem;
+    line-height: 28px;
+  }
+  .maham-wekala h3 {
+    line-height: 35px;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  .maham-wekala ul li {
+    font-size: 1rem;
+    margin-bottom: 15px;
+  }
+  .maham-wekala ul li::before {
+    top: 10px;
+  }
+  .edarat h3 {
+    line-height: 35px;
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+  .edarat .edarat-box {
+    height: 210px;
+    margin-bottom: 30px;
+  }
+  .edarat .edarat-box .content-box h4 {
+    line-height: 24px;
+    font-size: 1.1rem;
+  }
+  .main-member-inner .content-wrapper .right-section {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 320px;
+            flex: 0 0 320px;
+    margin-left: 30px;
+  }
+  .main-member-inner .content-wrapper .left-section .content-box h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  .main-member-inner .content-wrapper .left-section .content-box h5 {
+    line-height: 30px;
+    margin-bottom: 5px;
+  }
+  .main-member-inner .content-wrapper .left-section .content-box p {
+    font-size: 1rem;
+    line-height: 25px;
+    margin-bottom: 10px;
+  }
+  .lamha-tare5ia {
+    padding-bottom: 75px;
+  }
+  .lamha-tare5ia ul li {
+    font-size: 1rem;
+    margin-bottom: 15px;
+  }
+  .lamha-tare5ia p {
+    font-size: 1rem;
+    line-height: 24px;
+  }
+  .main-member .main-one .content-box, .main-member .main-two .content-box {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  .main-member .main-one .content-box h3, .main-member .main-two .content-box h3 {
+    font-size: 1.1rem;
+  }
+  .main-member .main-one .content-box h5, .main-member .main-two .content-box h5 {
+    font-size: 1.05rem;
+  }
+  .main-member .main-two .content-box {
+    padding-right: 30px;
+  }
+  .main-member .main-one {
+    margin-bottom: 20px;
+  }
+  .main-member .main-one .content-box {
+    padding-left: 30px;
+  }
+  .about-hay2a h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .about-hay2a p {
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 25px;
+  }
+  .about-hay2a .read-more {
+    padding: 8.5px 50px;
+    font-size: 16px;
+  }
+  .our-services {
+    padding-top: 20px;
+  }
+  .our-services .heading h2 {
+    margin-top: 0px;
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .our-partners .heading h2 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .latest-news .heading {
+    margin-bottom: 35px;
+  }
+  .latest-news .heading h2 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .latest-news .heading p {
+    font-size: 16px;
+  }
+  .latest-news .action .read-more {
+    padding: 8.5px 50px;
+    font-size: 16px;
+  }
+  .ads .heading h2 {
+    margin-bottom: 20px;
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .ads .tabs .nav-pills {
+    margin-bottom: 40px;
+  }
+  .ads .tabs .nav-pills .nav-item {
+    width: 190px;
+    height: 45px;
+    font-size: 16px;
+    margin-left: 5px;
+  }
+  .ads .tabs .nav-pills .nav-item:last-child {
+    margin-left: 0px;
+  }
+  .ads .tabs .tab-content .tab-pane .ads-card .content-box h5 {
+    font-size: 16px;
+  }
+  .ads .tabs .tab-content .tab-pane .ads-card .content-box .more {
+    font-size: 15px;
+    width: 140px;
+    height: 45px;
+  }
+  .versions .heading h2 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .sharekna-elraay .sharekna-elray-card {
+    margin-right: 0px;
+    padding: 20px;
+  }
+  .sharekna-elraay .sharekna-elray-card .card-hd {
+    margin-bottom: 10px;
+  }
+  .sharekna-elraay .sharekna-elray-card .card-hd h4 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .sharekna-elraay .sharekna-elray-card p {
+    width: auto;
+    line-height: 24px;
+    margin-bottom: 20px;
+  }
+  .sharekna-elraay .sharekna-elray-card a {
+    width: 215px;
+    padding: 10px 20px 10px;
+    font-size: 15px;
+    height: 45px;
   }
 }
 
@@ -18053,6 +18374,173 @@ this UI is made desktop first.
     height: 30px;
     background-size: contain;
   }
+  .servey-list .servey-item {
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+  .servey-list .servey-item .content-box h5 {
+    font-size: 1.2rem;
+    line-height: 26px;
+    margin-bottom: 10px;
+  }
+  .servey-list .servey-item .vote-here a {
+    width: 150px;
+    height: 40px;
+    font-size: 1rem;
+  }
+  .reportPage .formSearch {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 20px 0;
+  }
+  .reportPage .formSearch .boxSearchEvent {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .attaches-tabs {
+    margin-top: 40px;
+    margin-bottom: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .attaches-tabs .nav-link {
+    font-size: 1rem;
+    height: 45px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-left: 10px;
+  }
+  .attaches-content #attaches .content-head {
+    margin-bottom: 50px;
+  }
+  .attaches-content #attaches .content-head h3 {
+    font-size: 1.5rem;
+    line-height: 35px;
+    margin-bottom: 10px;
+  }
+  .attaches-content #attaches .content-head p {
+    font-size: 1rem;
+    line-height: 24px;
+  }
+  .attaches-content #attaches .goals {
+    margin-bottom: 40px;
+  }
+  .attaches-content #attaches .goals .content-box p {
+    font-size: 1rem;
+    line-height: 24px;
+  }
+  .attaches-content #attaches .content-mid h3 {
+    font-size: 1.5rem;
+    line-height: 35px;
+    margin-bottom: 10px;
+  }
+  .attaches-content #attaches .content-mid p {
+    font-size: 1rem;
+    line-height: 24px;
+  }
+  .attaches-content #attaches .inner-tabs .nav-pills .nav-item {
+    font-size: 1rem;
+    height: 45px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .attaches-content #saudi-team .content-head {
+    margin-bottom: 50px;
+  }
+  .attaches-content #saudi-team .content-head h3 {
+    font-size: 1.5rem;
+    line-height: 35px;
+    margin-bottom: 10px;
+  }
+  .attaches-content #saudi-team .content-head p {
+    font-size: 1rem;
+    line-height: 24px;
+  }
+  .attaches-content #saudi-team .attaches-accordion h2 {
+    font-size: 1.5rem;
+    line-height: 35px;
+  }
+  .attaches-content #saudi-team .attaches-accordion .card-body .faq-section {
+    margin-top: 20px !important;
+  }
+  .attaches-content #saudi-team .attaches-accordion .card-body .faq-section .mb-0 > a {
+    padding: 15px 20px 20px;
+    padding-left: 50px;
+    font-size: 1.3rem;
+  }
+  .attaches-content #saudi-team .attaches-accordion .card-body .faq-section .mb-0 > a::after {
+    height: 25px;
+    width: 25px;
+    top: 17px;
+    background-size: contain;
+  }
+  .attaches-content #saudi-team .attaches-accordion .card-body #accordion .card-body .item h4 {
+    font-size: 1.1rem;
+    line-height: 24px;
+    margin-bottom: 7px;
+  }
+  .attaches-content #saudi-team .attaches-accordion .card-body #accordion .card-body .item h5 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
+  .attaches-content #saudi-team .attaches-accordion .card-body #accordion .card-body .item ul li {
+    margin-bottom: 6px;
+    margin-left: 15px;
+    padding-right: 11px;
+    font-size: .875rem;
+  }
+  .attaches-content #saudi-team .attaches-accordion .card-body #accordion .card-body .item p {
+    font-size: .875rem;
+  }
+  .attaches-content #saudi-team .attaches-accordion .card-body #accordion .card-body p {
+    font-size: .875rem;
+  }
+  .main-member-inner {
+    padding-top: 40px;
+    padding-bottom: 50px;
+  }
+  .main-member-inner .content-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main-member-inner .content-wrapper .right-section {
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+  .main-member-inner .content-wrapper .left-section .content-box h3 {
+    font-size: 1.5rem;
+    line-height: 38px;
+  }
+  .main-member-inner .content-wrapper .left-section .content-box h5 {
+    font-size: 1.2rem;
+  }
+  .main-member-inner .content-wrapper .left-section .content-box p {
+    font-size: 1rem;
+    line-height: 25px;
+    margin-bottom: 10px;
+  }
+  .lamha-tare5ia {
+    padding-top: 30px;
+    padding-left: 0;
+  }
+  .lamha-tare5ia h3 {
+    font-size: 1.5rem;
+    line-height: 35px;
+    margin-bottom: 15px;
+  }
+  .lamha-tare5ia ul li {
+    margin-bottom: 10px;
+  }
+  .main-member .main-one .content-box p, .main-member .main-two .content-box p {
+    font-size: .875rem;
+  }
+  .list-members .member-card .content-box p {
+    font-size: .875rem;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -18117,6 +18605,282 @@ this UI is made desktop first.
   .breadcrumbScetion .breadcrumbCustom li a {
     font-size: 1rem;
   }
+  .servey-slider .top-servey .content-box {
+    padding: 0 25px;
+  }
+  .servey-slider .top-servey .content-box h4 {
+    font-size: 2rem;
+    line-height: 40px;
+  }
+  .servey-slider .top-servey .content-box p {
+    line-height: 24px;
+  }
+  .slider-container .slider-wrapper {
+    width: 450px !important;
+  }
+  .servey-slider .item .servey-card {
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-bottom: 23px;
+  }
+  .servey-slider .item .servey-card .img-box {
+    margin-bottom: 10px;
+  }
+  .servey-slider .item .servey-card .content-box h5 {
+    font-size: 1.3rem;
+    line-height: 32px;
+    margin-bottom: 15px;
+  }
+  .servey-slider .item .servey-card .content-box .vote-here a {
+    font-size: 1rem;
+    width: 150px;
+    height: 40px;
+  }
+  .servey-slider .owl-carousel .owl-nav button.owl-next, .servey-slider .owl-carousel .owl-nav button.owl-prev {
+    width: 32px;
+    height: 32px;
+    background-size: 8px;
+  }
+  .servey-slider .owl-carousel .owl-nav button.owl-next {
+    right: 40px;
+  }
+  .servey-slider .owl-theme .owl-dots {
+    bottom: -5%;
+  }
+  .systemSection .formSearch .boxSearchEvent input {
+    font-size: 14px;
+  }
+  .systemSection .formSearch .selectSection .selectBox label {
+    font-size: 1rem;
+  }
+  .gallary-header {
+    padding-top: 30px;
+    padding-bottom: 10px;
+  }
+  .gallary-header h3 {
+    font-size: 1.5rem;
+    line-height: 34px;
+    margin-bottom: 10px;
+  }
+  .gallary-header p {
+    font-size: 0.875rem;
+    line-height: 26px;
+  }
+  .media-list .media-item .content-box .media-details {
+    margin-bottom: 3px;
+  }
+  .media-list .media-item .content-box .media-details .date {
+    font-size: 0.875rem;
+  }
+  .media-list .media-item .content-box .media-details .count {
+    font-size: 0.87rem;
+  }
+  .media-list .media-item .content-box h4 {
+    font-size: 1rem;
+    line-height: 24px;
+    margin-bottom: 4px;
+  }
+  .media-list .media-item .content-box p {
+    font-size: .875rem;
+    line-height: 20px;
+  }
+  .pagination-section .pagination a {
+    width: 30px;
+    height: 30px;
+  }
+  .Commissions-nabzza {
+    padding-top: 30px;
+    padding-bottom: 35px;
+  }
+  .Commissions-nabzza h3 {
+    font-size: 1.5rem;
+    line-height: 34px;
+    margin-bottom: 10px;
+  }
+  .Commissions-nabzza p {
+    font-size: 0.875rem;
+    line-height: 26px;
+  }
+  .Commissions-list .Commissions-card {
+    height: auto;
+    min-height: 270px;
+  }
+  .Commissions-list .Commissions-card .icon-box {
+    height: 80px;
+    margin-bottom: 10px;
+  }
+  .Commissions-list .Commissions-card h2 {
+    font-size: 1.3rem;
+    line-height: 26px;
+    margin-bottom: 10px;
+  }
+  .Commissions-list .Commissions-card p {
+    margin-bottom: 15px;
+    font-size: .875rem;
+  }
+  .Commissions-list .Commissions-card .more {
+    padding: 8px 20px 8px;
+    font-size: .875rem;
+    width: 135px;
+    height: 40px;
+  }
+  .about-wekala .img-box {
+    margin-top: 10px;
+    width: 150px;
+    height: 150px;
+  }
+  .about-wekala .content-box h3 {
+    font-size: 1.5rem;
+    line-height: 35px;
+    margin-bottom: 7px;
+  }
+  .about-wekala .content-box p {
+    font-size: .875rem;
+    line-height: 24px;
+  }
+  .about-wekala .col-md-4 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .maham-wekala ul li {
+    font-size: .875rem;
+    margin-bottom: 10px;
+  }
+  .maham-wekala ul li::before {
+    top: 8px;
+  }
+  .attaches-content #attaches .content-head {
+    margin-bottom: 30px;
+  }
+  .attaches-content #attaches .content-head p {
+    font-size: .875rem;
+  }
+  .attaches-content #attaches .goals .content-box h3 {
+    font-size: 1.2rem;
+    line-height: 29px;
+    margin-bottom: 7px;
+  }
+  .attaches-content #attaches .goals .content-box p {
+    font-size: .875rem;
+  }
+  .attaches-content #attaches .goals .content-box ul li {
+    font-size: .875rem;
+    padding-right: 20px;
+  }
+  .attaches-content #attaches .goals .content-box ul li::before {
+    height: 10px;
+    top: 8px;
+  }
+  .attaches-content #attaches .content-mid p {
+    font-size: .875rem;
+  }
+  .attaches-content #saudi-team .content-head {
+    margin-bottom: 30px;
+  }
+  .attaches-content #saudi-team .content-head p {
+    font-size: .875rem;
+  }
+  .attaches-content #saudi-team .team-tasks .content-box h3 {
+    font-size: 1.2rem;
+    line-height: 29px;
+    margin-bottom: 7px;
+  }
+  .attaches-content #saudi-team .team-tasks .content-box .collapsed-sec {
+    margin-top: 13px;
+  }
+  .attaches-content #saudi-team .team-tasks .content-box .collapsed-sec h4 {
+    font-size: 1rem;
+    line-height: 24px;
+  }
+  .attaches-content #saudi-team .team-tasks .content-box .collapsed-sec ul li {
+    font-size: .875rem;
+    padding-right: 20px;
+  }
+  .attaches-content #saudi-team .team-tasks .content-box .collapsed-sec ul li::before {
+    height: 10px;
+    top: 8px;
+  }
+  .attaches-content #saudi-team .team-tasks .content-box .collapsed-sec ul::after {
+    bottom: -22px;
+  }
+  .main-member-inner {
+    padding-top: 40px;
+    padding-bottom: 50px;
+  }
+  .main-member-inner .content-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main-member-inner .content-wrapper .right-section {
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+  .main-member-inner .content-wrapper .left-section .content-box p {
+    font-size: .875rem;
+    line-height: 24px;
+  }
+  .lamha-tare5ia h3 {
+    font-size: 1.5rem;
+    line-height: 35px;
+    margin-bottom: 15px;
+  }
+  .lamha-tare5ia ul {
+    padding-right: 20px;
+  }
+  .lamha-tare5ia ul li {
+    font-size: .875rem;
+    margin-bottom: 7px;
+    padding-right: 20px;
+  }
+  .lamha-tare5ia ul li::before {
+    top: 8px;
+  }
+  .lamha-tare5ia p {
+    font-size: .875rem;
+  }
+  .main-member .main-one .img-box, .main-member .main-two .img-box {
+    margin: 0 auto;
+    max-width: initial;
+    width: 100%;
+    max-height: 350px;
+    border-radius: 8px 8px 0 0;
+  }
+  .main-member .main-one .img-box img, .main-member .main-two .img-box img {
+    height: auto;
+  }
+  .main-member .main-one .content-box, .main-member .main-two .content-box {
+    padding: 25px;
+    padding-top: 15px;
+    padding-bottom: 35px;
+  }
+  .main-member .main-one .content-box h3, .main-member .main-two .content-box h3 {
+    line-height: 32px;
+    margin-bottom: 5px;
+  }
+  .main-member .main-one .content-box h5, .main-member .main-two .content-box h5 {
+    margin-bottom: 5px;
+  }
+  .main-member .main-one .content-box::before, .main-member .main-two .content-box::before {
+    height: calc(100%);
+    top: 0;
+    width: 100%;
+    border-radius: 0 0 8px 8px;
+  }
+  .main-member .main-two .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .list-members .member-card {
+    margin-bottom: 30px;
+  }
 }
 
 @media (max-width: 575.98px) {
@@ -18178,6 +18942,111 @@ this UI is made desktop first.
     line-height: 24px;
     margin-bottom: 20px;
     margin-top: 0px;
+  }
+  .servey-slider .top-servey .content-box h4 {
+    font-size: 1.5rem;
+    line-height: 30px;
+  }
+  .servey-slider .top-servey .content-box p {
+    font-size: 0.875rem;
+  }
+  .slider-container .slider-wrapper {
+    width: 280px !important;
+  }
+  .servey-slider .item .servey-card {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .servey-slider .item .servey-card .content-box h5 {
+    font-size: 1rem;
+    line-height: 24px;
+  }
+  .servey-slider .item .servey-card .content-box .vote-here a {
+    font-size: .875rem;
+    width: 130px;
+    height: 35px;
+  }
+  .attaches-tabs .nav-link {
+    height: 40px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-left: 3px;
+  }
+  .attaches-content #attaches .goals {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .attaches-content #attaches .goals .img-box {
+    margin: 0 auto;
+  }
+  .attaches-content #attaches .goals .content-box h3 {
+    text-align: center;
+  }
+  .attaches-content #saudi-team .team-tasks {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .attaches-content #saudi-team .team-tasks .img-box {
+    margin: 0 auto;
+  }
+  .attaches-content #saudi-team .team-tasks .content-box h3 {
+    text-align: center;
+  }
+  .attaches-content #saudi-team .team-tasks .content-box .collapsed-sec ul li {
+    margin-bottom: 15px;
+  }
+  .attaches-content #saudi-team .team-tasks .content-box .collapsed-sec ul::after {
+    bottom: -0;
+  }
+  .attaches-content #saudi-team .attaches-accordion .card-body .card {
+    margin-bottom: 20px;
+  }
+  .attaches-content #saudi-team .attaches-accordion .card-body .faq-section .mb-0 > a {
+    font-size: 1rem;
+  }
+  .main-member-inner {
+    padding-bottom: 30px;
+  }
+  .main-member-inner .content-wrapper .left-section .content-box h3 {
+    font-size: 1.2rem;
+    line-height: 32px;
+    margin-bottom: 5px;
+  }
+  .main-member-inner .content-wrapper .left-section .content-box h5 {
+    font-size: 1rem;
+    line-height: 24px;
+  }
+  .lamha-tare5ia {
+    padding-top: 20px;
+  }
+  .lamha-tare5ia h3 {
+    font-size: 1.5rem;
+    line-height: 35px;
+    margin-bottom: 15px;
+  }
+  .lamha-tare5ia ul {
+    padding-right: 5px;
+  }
+  .lamha-tare5ia ul li {
+    font-size: .875rem;
+    margin-bottom: 7px;
+    padding-right: 20px;
+  }
+  .lamha-tare5ia ul li::before {
+    top: 8px;
+  }
+  .lamha-tare5ia p {
+    font-size: .875rem;
+  }
+}
+
+@media (max-width: 349.97px) {
+  .media-list .media-item .img-box {
+    height: 170px;
   }
 }
 /*# sourceMappingURL=styles-rtl.css.map */
