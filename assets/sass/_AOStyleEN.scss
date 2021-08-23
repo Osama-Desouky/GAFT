@@ -1,0 +1,128 @@
+.BtnWithArrow {
+    padding: 15px 63px 15px 40px;
+    &::after {
+        transform: rotate(180deg);
+    }
+}
+.selectBox {
+    select {
+    background-position: 89% 12px;
+     padding: 0 40px 0 24px;
+    }
+}
+
+.DowloadBTn {
+	img {
+		margin-left: 10px;
+	}
+}
+.viewBtn {
+	img {
+		margin-left: 10px;
+		margin-left: 10px;
+		transform: rotate(180deg);
+	}
+}
+.showToggleBtn {
+	.showToggle {
+		img {
+			margin-left: 10px;
+			margin-left: 10px;
+			transform: rotate(180deg);
+		}
+	}
+}
+
+// breadcrumb
+
+.breadcrumbScetion {
+	.breadcrumbCustom {
+		li {
+			&:not(:last-of-type) {
+				&::after {
+					transform: rotate(180deg);
+					padding-right: 15px;
+				}
+			}
+		}
+	}
+}
+.businessCouncils {
+	.dateBox {
+		.paragraphOfBox {
+			display: flex;
+			span {
+				display: inline-flex;
+				padding-right: 5px;
+			}
+		}
+	}
+}
+.pagentaaionCustom {
+	.prePagi {
+		img {
+			transform: rotate(0deg);
+		}
+	}
+	.NextPagi {
+		img {
+			transform: rotate(180deg);
+		}
+	}
+}
+.backgroundOrImage {
+	.formContactUs {
+		.textFrom {
+			padding: 69px 17% 69px 24px;
+			border-radius: 8px 0px 0px 8px;
+		}
+	}
+	.container {
+		&::before {
+			left: unset;
+			right: -52px;
+		}
+	}
+}
+.reportPage {
+	.formSearch {
+		.selectSection {
+			.selectBox {
+				&:first-of-type {
+					margin-right: 13px;
+				}
+			}
+		}
+	}
+}
+.JobPageSTL {
+	.boxSearch {
+		.dateBox {
+			span {
+				padding-left: 10px;
+			}
+		}
+	}
+}
+
+
+/* ----------- mobile ----------- */
+/* ----------- fixing global issue ----------- */
+@media (min-device-width: 1401px) and (max-device-width: 1500px) {
+
+}
+@media (min-device-width: 1025px) and (max-device-width: 1400px) { 
+
+}
+/* ----------- iPad ----------- */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+  }
+
+
+@media (max-width:767px){
+
+}

@@ -17175,7 +17175,7 @@ footer .copySection {
     max-width: 50%;
   }
   .backgroundOrImage .container::before {
-    left: -10px;
+    left: -10px !important;
   }
   .backgroundOrImage .formContactUs .textFrom {
     width: calc(100% - 750px);
@@ -17508,7 +17508,7 @@ footer .copySection {
     font-size: 20px;
   }
   .backgroundOrImage .container::before {
-    left: 5px;
+    left: 5px !important;
   }
   .backgroundOrImage .formContactUs {
     -webkit-box-orient: vertical;

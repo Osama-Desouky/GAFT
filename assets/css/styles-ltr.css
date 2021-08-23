@@ -15229,6 +15229,2672 @@ p.on-space {
   border-radius: 16px;
 }
 
+.vote-share-fav {
+  display: none;
+}
+
+.main-navbar .top-nav .nav-item.contact-us {
+  background-color: unset;
+  padding-left: 0;
+}
+
+.main-navbar.fixed {
+  background-color: #E4EBEA !important;
+  -webkit-box-shadow: unset !important;
+          box-shadow: unset !important;
+}
+
+.main-navbar.fixed #navbarSupportedContent > .navbar-nav {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-navbar #navbarSupportedContent > .navbar-nav > .nav-item > .nav-link.home-btn {
+  padding: 0 !important;
+}
+
+.main-navbar.fixed .search-box {
+  top: 75px !important;
+}
+
+.btnForm {
+  border: unset;
+  background: #CCA079;
+  padding: 15px 64px;
+  border-radius: 50px;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.btnForm:hover {
+  color: #fff;
+}
+
+label {
+  font-size: 1.125rem;
+  font-weight: 500;
+  margin: 0;
+  color: #CCA079;
+}
+
+::-webkit-input-placeholder {
+  color: #BBBBBB;
+  font-size: 0.875rem;
+}
+
+:-ms-input-placeholder {
+  color: #BBBBBB;
+  font-size: 0.875rem;
+}
+
+::-ms-input-placeholder {
+  color: #BBBBBB;
+  font-size: 0.875rem;
+}
+
+::placeholder {
+  color: #BBBBBB;
+  font-size: 0.875rem;
+}
+
+.inputDateStyle input[type=date]::-webkit-calendar-picker-indicator {
+  background-image: url(../images/innerPages/calendar-dates.svg);
+  width: 20px;
+  height: 20px;
+  margin-right: 0px;
+}
+
+.inputDateStyle input[type=date] {
+  height: 45px;
+  border: unset;
+  background: #f1f1f1;
+  padding: 0 15px;
+  color: #BBBBBB;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.InputStyle input[type=text], .InputStyle input[type=email], .InputStyle input[type=number] {
+  width: 100%;
+  height: 45px;
+  border-radius: 8px;
+  padding: 0 20px;
+  border: unset;
+}
+
+.textareaStyle textarea {
+  width: 100%;
+  min-height: 84px;
+  border-radius: 8px;
+  padding: 20px 24px;
+  resize: unset;
+  border: unset;
+}
+
+.selectBox select {
+  height: 45px;
+  min-width: 124px;
+  border: unset;
+  background: #f1f1f1;
+  padding: 0 24px 0 40px;
+  color: #BBBBBB;
+  border-radius: 8px;
+  font-size: 14px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-image: url(../images/innerPages/chevron-down.svg);
+  background-repeat: no-repeat;
+  background-position: 15px 12px;
+}
+
+.resetSearch {
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  background: #007066;
+  padding: 9px 26px;
+  border-radius: 50px;
+}
+
+.resetSearch img {
+  padding-left: 6px;
+}
+
+.resetSearch:hover {
+  color: #fff;
+}
+
+.headerOfBox, .systemSection .boxSearch .titleBox {
+  font-size: 1.5rem;
+  color: #012D29;
+  font-weight: 500;
+}
+
+.headerOfBoxFont35 {
+  font-size: 2.188rem;
+  color: #1D1D1B;
+  font-weight: 500;
+}
+
+.paragraphOfBox, .systemSection .boxSearch .praghBox {
+  font-size: 1.125rem;
+  color: #666666;
+  margin: 0;
+  line-height: 2;
+}
+
+.titleJobFont32 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #CCA079;
+}
+
+.prachJobFont24 {
+  color: #fff;
+  line-height: 1.6;
+  font-size: 24px;
+}
+
+.smallTitle14, .main-navbar .top-nav .nav-item.contact-us a, .trainingPage .resetSearch span {
+  color: #CCA079;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.smallTitleWithGreenBg {
+  color: #fff;
+  font-size: 0.875rem;
+  background-color: #007066;
+  padding: 5px 15px;
+  border-radius: 50px;
+}
+
+.BtnWithArrow {
+  background-color: #CCA079;
+  padding: 15px 40px 15px 63px;
+  border-radius: 50px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  position: relative;
+  display: inline-block;
+}
+
+.BtnWithArrow::after {
+  content: '';
+  position: absolute;
+  right: 35px;
+  width: 20px;
+  height: 20px;
+  background: url(../images/innerPages/ArrowBTn.svg) no-repeat;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.BtnWithArrow:hover {
+  background-color: #007066;
+  color: #fff;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.BtnWithArrow:hover::after {
+  right: 25px;
+}
+
+.viewBtn, .showToggleBtn .showToggle {
+  padding: 14px 45px;
+  background: #CCA079;
+  display: inline-block;
+  border-radius: 50px;
+  color: #fff;
+}
+
+.viewBtn img, .showToggleBtn .showToggle img {
+  margin-right: 10px;
+}
+
+.viewBtn span, .showToggleBtn .showToggle span {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.viewBtn:hover, .showToggleBtn .showToggle:hover {
+  background: #007066;
+  color: #fff;
+}
+
+.showToggleBtn {
+  height: 52px;
+}
+
+.showToggleBtn .showToggle {
+  width: 160px;
+  height: 52px;
+  padding: 0;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.showToggleBtn .toggleMore {
+  display: none;
+}
+
+.showToggleBtn:hover .toggleMore {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.showToggleBtn:hover .toggleShow {
+  display: none;
+}
+
+.DowloadBTn {
+  padding: 14px 45px;
+  background: transparent;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  border-radius: 50px;
+  border: 2px solid #007066;
+  color: #007066;
+}
+
+.DowloadBTn img {
+  margin-right: 10px;
+}
+
+.DowloadBTn span {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.DowloadBTn:hover {
+  background: #007066;
+  color: #fff;
+}
+
+.DowloadBTn:hover img {
+  -webkit-filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(253deg) brightness(110%) contrast(230%);
+          filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(253deg) brightness(110%) contrast(230%);
+}
+
+.DowloadBTnXLBDF {
+  margin: 0;
+}
+
+.DowloadBTnXLBDF span {
+  font-weight: 500;
+  font-size: 20px;
+  color: #007066;
+}
+
+.DowloadBTnXLBDF a img {
+  width: 24px;
+  height: 24px;
+  opacity: .6;
+  -webkit-transition: .4s;
+  transition: .4s;
+  margin-left: 12px;
+}
+
+.DowloadBTnXLBDF a:hover img {
+  opacity: 1;
+}
+
+body {
+  background-color: #F1F1F1;
+}
+
+.breadcrumbScetion {
+  font-family: "DINNextLTRegular";
+  position: relative;
+  height: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.breadcrumbScetion::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  background: #005b53;
+  background: linear-gradient(77deg, rgba(0, 91, 83, 0.664023) 0%, rgba(46, 120, 114, 0.770746) 100%, rgba(255, 255, 255, 0) 100%, rgba(37, 41, 56, 0.297356) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#005b53",endColorstr="#252938",GradientType=1);
+}
+
+.breadcrumbScetion > img {
+  width: 100%;
+  height: 250px;
+  position: absolute;
+}
+
+.breadcrumbScetion .container {
+  position: relative;
+  z-index: 9;
+}
+
+.breadcrumbScetion .breadcrumbCustom {
+  list-style: none;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.breadcrumbScetion .breadcrumbCustom li {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.breadcrumbScetion .breadcrumbCustom li:not(:last-of-type)::after {
+  content: "\f0d9";
+  font-family: "Font Awesome\ 5 Free";
+  font-weight: 900;
+  padding-left: 15px;
+  font-size: 20px;
+  color: #CCA079;
+}
+
+.breadcrumbScetion .breadcrumbCustom li a {
+  color: #fff;
+  font-family: "DINNextLT";
+  font-weight: 400;
+  padding-left: 10px;
+  font-size: 1.125rem;
+}
+
+.breadcrumbScetion .breadcrumbCustom span {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.breadcrumbScetion .breadcrumbCustom span:not(:last-of-type) a::after {
+  content: "\f0d9";
+  font-family: "Font Awesome\ 5 Free";
+  font-weight: 900;
+  padding-right: 15px;
+  font-size: 20px;
+  color: #CCA079;
+}
+
+.breadcrumbScetion .breadcrumbCustom span:last-of-type {
+  color: #fff;
+  font-family: "DINNextLT";
+  font-weight: 400;
+  padding-left: 10px;
+  font-size: 1.125rem;
+}
+
+.breadcrumbScetion .breadcrumbCustom span a {
+  color: #fff;
+  font-family: "DINNextLT";
+  font-weight: 400;
+  padding-left: 10px;
+  font-size: 1.125rem;
+}
+
+.breadcrumbScetion .heading {
+  font-size: 2.5rem;
+  padding-top: 10px;
+  color: #fff;
+}
+
+.breadcrumbScetion .readspeakerSec {
+  text-align: left;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.breadcrumbScetion .readspeakerSec a {
+  padding: 4px 4px;
+  background: #fff;
+  border-radius: 8px;
+  margin-right: 12px;
+}
+
+.breadcrumbScetion .readspeakerSec a:first-of-type {
+  padding: 4px 12px 4px 10px;
+  margin-right: 0px;
+}
+
+.breadcrumbScetion .readspeakerSec a:first-of-type > span {
+  font-size: 16px;
+  color: #1d1d1b;
+  font-weight: 400;
+  padding-left: 9px;
+}
+
+.breadcrumbScetion .readspeakerSec a:not(#fontIncrease):not(#fontDecrease) {
+  display: none;
+}
+
+.systemSection .formSearch {
+  margin: 51px 0 48px;
+  border-radius: 8px;
+  background: #ffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 24px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.systemSection .formSearch .boxSearchEvent {
+  width: 526px;
+  background: #F1F1F1;
+  padding: 10px 12px;
+  border-radius: 8px;
+}
+
+.systemSection .formSearch .boxSearchEvent input {
+  background: unset;
+  border: unset;
+  padding-right: 12px;
+  width: 80%;
+  color: #BBBBBB;
+  font-size: 18px;
+}
+
+.systemSection .formSearch .boxSearchEvent ::-webkit-input-placeholder {
+  color: #BBBBBB;
+  font-size: 18px;
+}
+
+.systemSection .formSearch .boxSearchEvent :-ms-input-placeholder {
+  color: #BBBBBB;
+  font-size: 18px;
+}
+
+.systemSection .formSearch .boxSearchEvent ::-ms-input-placeholder {
+  color: #BBBBBB;
+  font-size: 18px;
+}
+
+.systemSection .formSearch .boxSearchEvent ::placeholder {
+  color: #BBBBBB;
+  font-size: 18px;
+}
+
+.systemSection .boxSearch {
+  padding: 32px 20px;
+  background: #fff;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.systemSection .boxSearch:hover {
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.systemSection .boxSearch:hover .showBox {
+  bottom: 0px;
+}
+
+.systemSection .boxSearch .dateBox span {
+  font-size: 14px;
+  color: #CCA079;
+  padding-right: 3px;
+}
+
+.systemSection .boxSearch .titleBox {
+  margin: 13px 0 17px;
+  height: 30px;
+  overflow: hidden;
+  font-size: 24px;
+}
+
+.systemSection .boxSearch .praghBox {
+  font-size: 18px;
+  height: 110px;
+  overflow: hidden;
+}
+
+.systemSection .boxSearch .showBox {
+  position: absolute;
+  background: #ffffffe6;
+  width: 100%;
+  left: 0;
+  bottom: -130px;
+  border-radius: 0 0 8px 8px;
+  height: calc(100% - 115px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: bottom .4s;
+  transition: bottom .4s;
+}
+
+.systemSection .boxSearch .showBox .DowloadBTn {
+  margin-left: 14px;
+}
+
+.pagentaaionCustom {
+  padding: 40px 0 120px;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.pagentaaionCustom a, .pagentaaionCustom span {
+  margin: 0 12px;
+  width: 51px;
+  height: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #fff;
+  border-radius: 8px;
+  color: #244B5A;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.pagentaaionCustom .current {
+  background: #007F75;
+  color: #fff;
+}
+
+.pagentaaionCustom .NextPagi,
+.pagentaaionCustom .prePagi {
+  width: auto;
+  background: unset;
+}
+
+.pagentaaionCustom .prePagi img {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.pagentaaionCustom .aspNetDisabled img {
+  -webkit-filter: invert(85%) sepia(0%) saturate(1%) hue-rotate(173deg) brightness(105%) contrast(132%);
+          filter: invert(85%) sepia(0%) saturate(1%) hue-rotate(173deg) brightness(105%) contrast(132%);
+}
+
+.viewSystem .headOfView {
+  text-align: center;
+  padding-top: 51px;
+  font-family: "DINNextLTRegular";
+}
+
+.viewSystem .headOfView .dateBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 16px;
+}
+
+.viewSystem .headOfView .dateBox img {
+  width: 24px;
+}
+
+.viewSystem .headOfView .dateBox span {
+  font-size: 1.125rem;
+  color: #CCA079;
+  padding-right: 3px;
+}
+
+.viewSystem .headOfView .title {
+  font-size: 1.75rem;
+  color: #012D29;
+  font-weight: 500;
+  margin: 0 0 28px 0;
+}
+
+.viewSystem .headOfView .paragraphOfBox, .viewSystem .headOfView .systemSection .boxSearch .praghBox, .systemSection .boxSearch .viewSystem .headOfView .praghBox {
+  margin: 0 18%;
+  margin-bottom: 27px;
+}
+
+.viewSystem .headOfView .DowloadBTn img {
+  margin-right: 13px;
+}
+
+.viewSystem .card-body {
+  padding: 0 21px 27px 80px;
+}
+
+.viewSystem .card-body .faq-section {
+  margin-top: 50px !important;
+}
+
+.viewSystem .card-body .card {
+  margin-bottom: 48px;
+  border-radius: 8px;
+  border: unset;
+}
+
+.viewSystem .card-body .card .card-header {
+  background-color: #fff;
+  border: unset;
+  padding: unset;
+  border-radius: 8px;
+}
+
+.viewSystem .card-body .praghBox {
+  font-weight: 500;
+}
+
+.viewSystem .resetPadding {
+  padding: 0;
+}
+
+.viewSystem .faq-section .mb-0 > a {
+  display: block;
+  position: relative;
+  padding: 24px 24px 33px 24px;
+  font-size: 1.5rem;
+  color: #012D29;
+  font-weight: 500;
+}
+
+.viewSystem .faq-section .mb-0 > a:after {
+  content: "";
+  position: absolute;
+  left: 24px;
+  background-image: url(../images/innerPages/plusQ.svg);
+  height: 40px;
+  width: 40px;
+  background-repeat: no-repeat;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.viewSystem .faq-section .mb-0 > a[aria-expanded="true"]:after {
+  content: "";
+  -webkit-transition: .4s;
+  transition: .4s;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.reportPage .previewReports {
+  text-align: center;
+}
+
+.reportPage .previewReports .headerOfBox, .reportPage .previewReports .systemSection .boxSearch .titleBox, .systemSection .boxSearch .reportPage .previewReports .titleBox {
+  margin: 50px 0 20px 0;
+  font-size: 2.188rem;
+}
+
+.reportPage .previewReports .paragraphOfBox, .reportPage .previewReports .systemSection .boxSearch .praghBox, .systemSection .boxSearch .reportPage .previewReports .praghBox {
+  padding: 0 8%;
+}
+
+.reportPage .formSearch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.reportPage .formSearch .boxSearchEvent {
+  width: 339px;
+}
+
+.reportPage .formSearch .selectSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.reportPage .formSearch .selectSection .selectBox:first-of-type {
+  margin-left: 13px;
+}
+
+.reportPage .boxSearch {
+  padding: 0;
+}
+
+.reportPage .boxSearch .greenBox {
+  height: 230px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #007066;
+}
+
+.reportPage .boxSearch .greenBox .boxG img {
+  max-width: 100%;
+}
+
+.reportPage .boxSearch .greenBox .boxG p {
+  color: #CCA079;
+  text-align: center;
+  margin: 23px 0 0 0;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.reportPage .boxSearch .dateBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 26px 24px 15px 30px;
+}
+
+.reportPage .boxSearch .dateBox .dateS img {
+  -webkit-transform: translateY(-1px);
+          transform: translateY(-1px);
+}
+
+.reportPage .boxSearch .dateBox > span {
+  font-size: 0.875rem;
+  padding: 5px 15px;
+  background: #007066;
+  border-radius: 40px;
+  color: #fff;
+}
+
+.reportPage .boxSearch .titleBox {
+  margin: 0px 0 12px;
+  padding: 0px 24px 0px 30px;
+}
+
+.reportPage .boxSearch .praghBox {
+  height: 200px;
+  padding: 0px 24px 20px 30px;
+}
+
+.reportPage .boxSearch .showBox {
+  height: calc(100% - 340px);
+  bottom: -200px;
+}
+
+.reportPage .boxSearch:hover .titleBox {
+  text-decoration: underline;
+}
+
+.backgroundOrImage {
+  padding: 84px 0 89px;
+}
+
+.backgroundOrImage .container {
+  position: relative;
+}
+
+.backgroundOrImage .container::before {
+  content: '';
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background-image: url(../images/innerPages/dots.svg);
+  left: -52px;
+  top: -52px;
+}
+
+.backgroundOrImage .formContactUs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 52px;
+}
+
+.backgroundOrImage .formContactUs .textFrom {
+  width: calc(100% - 630px);
+  background: #fff;
+  padding: 69px 24px 69px 17%;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 0px 8px 8px 0px;
+  height: 685px;
+}
+
+.backgroundOrImage .formContactUs .textFrom .headerOfBoxFont35 {
+  margin-bottom: 30px;
+}
+
+.backgroundOrImage .formContactUs .textFrom .paragraphOfBox, .backgroundOrImage .formContactUs .textFrom .systemSection .boxSearch .praghBox, .systemSection .boxSearch .backgroundOrImage .formContactUs .textFrom .praghBox {
+  padding-bottom: 24px;
+}
+
+.backgroundOrImage .formContactUs .textFrom .ContacT {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.backgroundOrImage .formContactUs .textFrom .ContacT li a {
+  display: inline-block;
+  font-size: 16px;
+  color: #007066;
+  margin-bottom: 24px;
+}
+
+.backgroundOrImage .formContactUs .textFrom .ContacT li a img {
+  padding-right: 9px;
+}
+
+.backgroundOrImage .formContactUs .textFrom .qrCode .paragraphOfBox, .backgroundOrImage .formContactUs .textFrom .qrCode .systemSection .boxSearch .praghBox, .systemSection .boxSearch .backgroundOrImage .formContactUs .textFrom .qrCode .praghBox {
+  color: #012D29;
+  font-weight: 500;
+  padding-bottom: 12px;
+  margin: 0;
+}
+
+.backgroundOrImage .formContactUs .textFrom .qrCode .QRbox {
+  height: 150px;
+  width: 150px;
+}
+
+.backgroundOrImage .formContactUs .textFrom .qrCode .QRbox img {
+  width: 100%;
+}
+
+.backgroundOrImage .formContactUs .FromInputs {
+  width: 630px;
+  background-color: #007066;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 51px 48px;
+  position: relative;
+}
+
+.backgroundOrImage .formContactUs .FromInputs::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url(../images/innerPages/BGForm.svg);
+  inset: 0;
+  opacity: .2;
+}
+
+.backgroundOrImage .formContactUs .FromInputs .forZindex {
+  position: relative;
+  z-index: 2;
+}
+
+.backgroundOrImage .formContactUs .FromInputs .formGroup {
+  padding-bottom: 10px;
+}
+
+.backgroundOrImage .formContactUs .FromInputs .formGroup label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.backgroundOrImage .formContactUs .FromInputs .formGroup select {
+  width: 100%;
+  background-color: #fff;
+}
+
+.backgroundOrImage .formContactUs .FromInputs .FixPadding {
+  padding: 0 15px;
+}
+
+.backgroundOrImage .formContactUs .FromInputs .FixPadding .text-left, .backgroundOrImage .formContactUs .FromInputs .FixPadding .text-right {
+  padding-top: 14px;
+}
+
+.backgroundOrImage .col-md-12 > .headerOfBoxFont35 {
+  text-align: center;
+  padding-bottom: 27px;
+}
+
+.backgroundOrImage .mapFrom {
+  width: 100%;
+  height: 446px;
+}
+
+.backgroundOrImage .mapFrom iframe {
+  border: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.NewsPage .formSearch {
+  margin: 0 0 44px;
+}
+
+.NewsPage .boxNewsPage {
+  -webkit-box-shadow: 0 0px 25px rgba(51, 46, 46, 0.1);
+          box-shadow: 0 0px 25px rgba(51, 46, 46, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #fff;
+  width: 82%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  border-radius: 8px;
+}
+
+.NewsPage .boxNewsPage:hover .boxImgNew img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.NewsPage .boxNewsPage .boxImgNew {
+  width: 526px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.NewsPage .boxNewsPage .boxImgNew img {
+  border-radius: 10px;
+  width: 526px;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.NewsPage .boxNewsPage .textNew {
+  padding: 45px 30px 39px;
+  width: calc(100% - 526px);
+}
+
+.NewsPage .boxNewsPage .textNew .dateNew {
+  margin: 0 0 27px 0;
+}
+
+.NewsPage .boxNewsPage .textNew .dateNew:first-of-type span {
+  font-size: 16px;
+  padding-right: 10px;
+  color: #CCA079;
+}
+
+.NewsPage .boxNewsPage .textNew .headerOfBox, .NewsPage .boxNewsPage .textNew .systemSection .boxSearch .titleBox, .systemSection .boxSearch .NewsPage .boxNewsPage .textNew .titleBox {
+  margin-bottom: 12px;
+  color: #CCA079;
+}
+
+.NewsPage .boxNewsPage .textNew .btnForm {
+  display: inline-block;
+  margin-top: 27px;
+  padding: 10px 37px;
+  float: right;
+}
+
+.jobBanner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #007066;
+  border-radius: 19px;
+  margin-top: 48px;
+  padding: 74px 113px 0 42px;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+}
+
+.jobBanner::before {
+  position: absolute;
+  content: '';
+  left: -89px;
+  top: -85px;
+  background: url(../images/innerPages//bannerJobRigth2.png) no-repeat;
+  width: 280px;
+  height: 280px;
+  z-index: 2;
+}
+
+.jobBanner .overLay {
+  border-radius: 15px;
+  position: absolute;
+  content: '';
+  inset: 0;
+  background: #1d1d1b;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(29, 29, 27, 0.790354)), color-stop(100%, rgba(255, 255, 255, 0)), to(#1d1d1b));
+  background: linear-gradient(180deg, rgba(29, 29, 27, 0.790354) 0%, rgba(255, 255, 255, 0) 100%, #1d1d1b 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1d1d1b",endColorstr="#1d1d1b",GradientType=1);
+}
+
+.jobBanner .textJob .titleJobFont32 {
+  margin-bottom: 25px;
+  padding-top: 51px;
+}
+
+.jobBanner .textJob .prachJobFont24 {
+  margin-bottom: 27px;
+  padding-right: 15%;
+}
+
+.jobBanner .textJob .BtnWithArrow {
+  margin-bottom: 55px;
+}
+
+.jobBanner .imgJob img {
+  max-width: 390px;
+  max-height: 363px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+
+.jobBanner .imgJob,
+.jobBanner .textJob {
+  position: relative;
+  z-index: 2;
+}
+
+.JobPageStyle {
+  padding: 84px 0 0px;
+}
+
+.JobPageSTL .formSearch {
+  margin: 0px 0 30px;
+}
+
+.JobPageSTL .boxSearch {
+  text-align: center;
+}
+
+.JobPageSTL .boxSearch .dateBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.JobPageSTL .boxSearch .dateBox span {
+  font-size: 16px;
+  padding-right: 10px;
+}
+
+.JobPageSTL .boxSearch .praghBox {
+  height: 80px;
+}
+
+.JobPageSTL .boxSearch .JobCodeSec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 15px;
+}
+
+.JobPageSTL .boxSearch .JobCodeSec .Edgucation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #012D29;
+}
+
+.JobPageSTL .boxSearch .JobCodeSec .Edgucation .MainColr {
+  color: #CCA079;
+  font-size: 21px;
+  padding-left: 5px;
+}
+
+.JobPageSTL .boxSearch .JobCodeSec .Edgucation img {
+  padding-right: 10px;
+  margin-top: 7px;
+}
+
+.JobPageSTL .boxSearch .JobCodeSec .Edgucation span {
+  font-size: 20px;
+}
+
+.JobPageSTL .JobBoxHover {
+  position: relative;
+  margin-bottom: 30px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 5px 15px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 5px 15px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.JobPageSTL .JobBoxHover .boxImgGreen {
+  background: #007066;
+  height: 176px;
+  -webkit-transition: -webkit-transform .4s;
+  transition: -webkit-transform .4s;
+  transition: transform .4s;
+  transition: transform .4s, -webkit-transform .4s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 12px;
+  position: relative;
+  z-index: 9;
+}
+
+.JobPageSTL .JobBoxHover:hover .boxImgGreen {
+  -webkit-transform: scaleY(1.2);
+          transform: scaleY(1.2);
+}
+
+.JobPageSTL .JobBoxHover:hover .boxImg img {
+  border-radius: 50%;
+  width: 242px;
+  height: 242px;
+  -webkit-box-shadow: 0 5px 15px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 5px 15px 2px rgba(0, 0, 0, 0.1);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: -webkit-box-shadow .4s,-webkit-transform .4s;
+  transition: -webkit-box-shadow .4s,-webkit-transform .4s;
+  transition: box-shadow .4s,transform .4s;
+  transition: box-shadow .4s,transform .4s,-webkit-box-shadow .4s,-webkit-transform .4s;
+}
+
+.JobPageSTL .JobBoxHover:hover .boxSearch .showBox {
+  bottom: 0px;
+}
+
+.JobPageSTL .JobBoxHover .boxSearch .showBox {
+  bottom: -260px;
+  height: calc(100% - 120px);
+}
+
+.JobPageSTL .JobBoxHover .boxImg {
+  position: absolute;
+  left: 50%;
+  z-index: 3;
+  top: -50%;
+  -webkit-transform: translate(-50%, 40px);
+          transform: translate(-50%, 40px);
+}
+
+.bannerSliderSec {
+  padding: 48px 32px;
+}
+
+.bannerSliderSec .bannerSwiperinner {
+  height: 495px;
+  background-image: url(../images/innerPages/BannerImgInner.jpg);
+  border-radius: 25px;
+}
+
+.bannerSliderSec .bannerSwiperinner::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  background: #1d1d1b;
+  background: -webkit-gradient(linear, left bottom, left top, from(#1d1d1b), color-stop(0%, #1d1d1b), color-stop(100%, rgba(255, 255, 255, 0)), to(rgba(37, 41, 56, 0.297356)));
+  background: linear-gradient(0deg, #1d1d1b 0%, #1d1d1b 0%, rgba(255, 255, 255, 0) 100%, rgba(37, 41, 56, 0.297356) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1d1d1b",endColorstr="#252938",GradientType=1);
+}
+
+.bannerSliderSec .bannerSwiperinner .BoxBannerInner {
+  display: block;
+  padding-top: 94px;
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.bannerSliderSec .bannerSwiperinner .BoxBannerInner .headerOfBoxFont35 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #CCA079;
+}
+
+.bannerSliderSec .bannerSwiperinner .BoxBannerInner .PraghTextBNR {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  color: #fff;
+  margin-bottom: 17px;
+}
+
+.bannerSliderSec .bannerSwiperinner .BoxBannerInner .dateBNInner:last-of-type span {
+  font-size: 16px;
+  padding-right: 10px;
+  color: #CCA079;
+}
+
+.bannerSliderSec .bannerSwiperinner .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background: #ffffff;
+  opacity: .5;
+}
+
+.bannerSliderSec .bannerSwiperinner .swiper-pagination-bullets {
+  bottom: 48px;
+}
+
+.bannerSliderSec .bannerSwiperinner .swiper-pagination-bullet-active {
+  background: #CCA079;
+  opacity: 1;
+}
+
+.BTNSWIPERCNT {
+  position: relative;
+  width: 200px;
+  margin: 0 auto;
+  -webkit-transform: translateY(-102px);
+          transform: translateY(-102px);
+  z-index: 9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.BTNSWIPERCNT .swiper-button-prev,
+.BTNSWIPERCNT .swiper-button-next {
+  position: relative;
+  width: 37px;
+  height: 37px;
+  position: relative;
+  left: unset;
+  right: unset;
+  border: 1px solid #fff;
+  border-radius: 8px;
+}
+
+.BTNSWIPERCNT .swiper-button-prev::after,
+.BTNSWIPERCNT .swiper-button-next::after {
+  font-size: 22px;
+  color: #fff;
+  padding-top: 2px;
+}
+
+.BTNSWIPERCNT .swiper-button-prev:not(.swiper-button-disabled),
+.BTNSWIPERCNT .swiper-button-next:not(.swiper-button-disabled) {
+  background-color: #fff;
+}
+
+.BTNSWIPERCNT .swiper-button-prev:not(.swiper-button-disabled)::after,
+.BTNSWIPERCNT .swiper-button-next:not(.swiper-button-disabled)::after {
+  font-size: 22px;
+  color: #007066;
+  padding-top: 2px;
+}
+
+.BTNSWIPERCNT .swiper-button-prev {
+  margin-right: 10px;
+}
+
+.boxPuplictions {
+  height: 500px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.boxPuplictions .greenBox {
+  height: 373px;
+  background: #007066;
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: height .4s ease;
+  transition: height .4s ease;
+}
+
+.boxPuplictions .greenBox .gboxG img {
+  height: 290px;
+  width: 224px;
+}
+
+.boxPuplictions .whiteBoxPupl {
+  background: #fff;
+  border-radius: 0px 0px 8px 8px;
+  padding: 14px 22px 38px;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  height: 127px;
+  -webkit-transition: height .4s ease;
+  transition: height .4s ease;
+  overflow: hidden;
+}
+
+.boxPuplictions .whiteBoxPupl .dateBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.boxPuplictions .whiteBoxPupl .headerOfBox, .boxPuplictions .whiteBoxPupl .systemSection .boxSearch .titleBox, .systemSection .boxSearch .boxPuplictions .whiteBoxPupl .titleBox {
+  text-align: center;
+  padding-top: 14px;
+  display: block;
+}
+
+.boxPuplictions .whiteBoxPupl .headerOfBox:hover, .boxPuplictions .whiteBoxPupl .systemSection .boxSearch .titleBox:hover, .systemSection .boxSearch .boxPuplictions .whiteBoxPupl .titleBox:hover {
+  color: #012D29;
+}
+
+.boxPuplictions .showBox {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: none;
+  padding-top: 12px;
+}
+
+.boxPuplictions:hover .greenBox {
+  height: 335px;
+}
+
+.boxPuplictions:hover .whiteBoxPupl {
+  height: 165px;
+}
+
+.boxPuplictions:hover .showBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.tabsStyle .nav-tabs {
+  border: unset;
+  padding: 0;
+}
+
+.tabsStyle .nav-tabs li:first-of-type {
+  padding-right: 24px;
+}
+
+.tabsStyle .nav-tabs li a {
+  font-size: 20px;
+  font-weight: 500;
+  color: #CCA079;
+  background: #fff;
+  padding: 14px 26px;
+  border-radius: 50px;
+  border: 2px solid #CCA079;
+}
+
+.tabsStyle .nav-tabs li a.active {
+  color: #fff;
+  background: #CCA079;
+}
+
+.trainingPage {
+  -webkit-box-shadow: 0 3px 25px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 3px 25px rgba(0, 0, 0, 0.1);
+}
+
+.trainingPage .selectSection .inputDateStyle {
+  margin-right: 12px;
+}
+
+.trainingPage .selectSection .selectBox {
+  margin-left: 12px;
+}
+
+.trainingPage .resetSearch {
+  margin-left: 24px;
+}
+
+.trainingPage .resetSearch span {
+  color: #fff;
+}
+
+.trainingPage .boxSearch {
+  -webkit-box-shadow: 0 3px 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 3px 30px rgba(0, 0, 0, 0.1);
+}
+
+.trainingPage .boxSearch .greenBox {
+  height: 264px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.trainingPage .boxSearch .greenBox img {
+  height: 264px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 8px;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+
+.trainingPage .boxSearch .dateBox .dateS img {
+  padding-right: 12px;
+}
+
+.trainingPage .boxSearch .titleBox {
+  height: 40px;
+}
+
+.trainingPage .boxSearch .praghBox {
+  height: 100px;
+}
+
+.trainingPage .boxSearch:hover .titleBox {
+  text-decoration: none !important;
+  text-shadow: 0px 1px 14px #007066;
+  -webkit-transition-delay: .3s;
+          transition-delay: .3s;
+}
+
+.trainingPage .boxSearch:hover .greenBox img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.BGWorld {
+  background: url(../images/innerPages/BGBusiness.png) no-repeat;
+  background-position: center 110px;
+}
+
+.tabsStyleBar {
+  margin: 51px 0 48px;
+  border-radius: 8px;
+  background: #ffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100px;
+  padding: 0 24px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tabsStyleBar .nav-tabs {
+  padding: 0;
+}
+
+.tabsStyleBar .nav-tabs li:not(:last-of-type) {
+  padding-right: 24px;
+}
+
+.businessCouncils .boxPuplictions {
+  height: 483px;
+  background: #fff;
+  border-radius: 20px;
+}
+
+.businessCouncils .boxPuplictions .greenBox {
+  height: 315px;
+  border-radius: 20px;
+  background: #008175;
+  background: -webkit-gradient(linear, left top, left bottom, from(#008175), color-stop(50%, #00685f), to(#004d46));
+  background: linear-gradient(180deg, #008175 0%, #00685f 50%, #004d46 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#008175",endColorstr="#004d46",GradientType=1);
+}
+
+.businessCouncils .boxPuplictions .greenBox .boxG img:first-of-type {
+  padding-right: 48px;
+}
+
+.businessCouncils .boxPuplictions .blueBox {
+  background: #00a1d9;
+  background: -webkit-gradient(linear, left top, left bottom, from(#00a1d9), color-stop(50%, #028ab9), to(#04749b));
+  background: linear-gradient(180deg, #00a1d9 0%, #028ab9 50%, #04749b 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00a1d9",endColorstr="#04749b",GradientType=1);
+}
+
+.businessCouncils .boxPuplictions .whiteBoxPupl {
+  height: 168px;
+}
+
+.businessCouncils .boxPuplictions .whiteBoxPupl .headerOfBox, .businessCouncils .boxPuplictions .whiteBoxPupl .systemSection .boxSearch .titleBox, .systemSection .boxSearch .businessCouncils .boxPuplictions .whiteBoxPupl .titleBox {
+  font-size: 1.875rem;
+}
+
+.businessCouncils .boxPuplictions .whiteBoxPupl .dateBox .paragraphOfBox span, .businessCouncils .boxPuplictions .whiteBoxPupl .dateBox .systemSection .boxSearch .praghBox span, .systemSection .boxSearch .businessCouncils .boxPuplictions .whiteBoxPupl .dateBox .praghBox span {
+  color: #007066;
+}
+
+.businessCouncils .boxPuplictions .whiteBoxPupl .dateBox .paragraphOfBox a, .businessCouncils .boxPuplictions .whiteBoxPupl .dateBox .systemSection .boxSearch .praghBox a, .systemSection .boxSearch .businessCouncils .boxPuplictions .whiteBoxPupl .dateBox .praghBox a {
+  color: #505050;
+  text-decoration: underline;
+}
+
+.businessCouncils .boxPuplictions .whiteBoxPupl .dateS img {
+  max-width: 60px;
+  max-height: 60px;
+}
+
+.businessCouncils .boxPuplictions .whiteBoxPupl .dateS img:first-of-type {
+  padding-right: 6px;
+}
+
+.businessCouncils .boxPuplictions .whiteBoxPupl .showBox {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.businessCouncils .boxPuplictions .whiteBoxPupl .showBox .viewBtn:hover, .businessCouncils .boxPuplictions .whiteBoxPupl .showBox .showToggleBtn .showToggle:hover, .showToggleBtn .businessCouncils .boxPuplictions .whiteBoxPupl .showBox .showToggle:hover {
+  background-color: #CCA079;
+}
+
+.businessCouncils .boxPuplictions:hover .greenBox {
+  height: 265px;
+}
+
+.businessCouncils .boxPuplictions:hover .blueBox {
+  background: #008175;
+  background: -webkit-gradient(linear, left top, left bottom, from(#008175), color-stop(50%, #00685f), to(#004d46));
+  background: linear-gradient(180deg, #008175 0%, #00685f 50%, #004d46 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#008175",endColorstr="#004d46",GradientType=1);
+}
+
+.businessCouncils .boxPuplictions:hover .whiteBoxPupl {
+  height: 219px;
+}
+
+.changeXDAnimation .DowloadBTnXLBDF {
+  margin-left: 24px;
+}
+
+.changeXDAnimation .boxSearch .boxG img {
+  -webkit-transition: -webkit-transform .4s;
+  transition: -webkit-transform .4s;
+  transition: transform .4s;
+  transition: transform .4s, -webkit-transform .4s;
+}
+
+.changeXDAnimation .boxSearch .boxG p {
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.changeXDAnimation .boxSearch:hover .boxG img {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
+.changeXDAnimation .boxSearch:hover .boxG p {
+  font-size: 35px;
+}
+
+.boxSearch .showBox a {
+  min-width: 160px;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.changeRulesXD .boxSearchRule {
+  background-color: #fff;
+  padding: 24px;
+  height: 308px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  -webkit-box-shadow: 0 0px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+.changeRulesXD .boxSearchRule .shareIcon {
+  margin: 0;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  padding: 10px;
+  background-color: #0070660a;
+  -webkit-transition: background-color .4s;
+  transition: background-color .4s;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+}
+
+.changeRulesXD .boxSearchRule .ransforSec {
+  -webkit-transform: translateY(34px);
+          transform: translateY(34px);
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+
+.changeRulesXD .boxSearchRule .iconRuleBX {
+  padding-bottom: 18px;
+}
+
+.changeRulesXD .boxSearchRule .iconRuleBX img {
+  width: 80px;
+  height: 80px;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
+.changeRulesXD .boxSearchRule .dateBox {
+  padding-bottom: 40px;
+}
+
+.changeRulesXD .boxSearchRule .dateBox span {
+  font-size: 14px;
+  color: #CCA079;
+  padding-left: 10px;
+}
+
+.changeRulesXD .boxSearchRule .headerOfBox, .changeRulesXD .boxSearchRule .systemSection .boxSearch .titleBox, .systemSection .boxSearch .changeRulesXD .boxSearchRule .titleBox {
+  padding-bottom: 14px;
+}
+
+.changeRulesXD .boxSearchRule .showBox {
+  visibility: hidden;
+  -webkit-transition: visibility .28s , -webkit-transform .28s;
+  transition: visibility .28s , -webkit-transform .28s;
+  transition: transform .28s , visibility .28s;
+  transition: transform .28s , visibility .28s , -webkit-transform .28s;
+  height: 0;
+  -webkit-transform: translateY(30px);
+          transform: translateY(30px);
+}
+
+.changeRulesXD .boxSearchRule .showBox .viewBtn, .changeRulesXD .boxSearchRule .showBox .showToggleBtn .showToggle, .showToggleBtn .changeRulesXD .boxSearchRule .showBox .showToggle {
+  margin-right: 14px;
+}
+
+.changeRulesXD .boxSearchRule:hover .shareIcon {
+  background-color: #00706624;
+}
+
+.changeRulesXD .boxSearchRule:hover .ransforSec {
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+}
+
+.changeRulesXD .boxSearchRule:hover .showBox {
+  visibility: visible;
+  height: unset;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+}
+
+footer {
+  background-image: unset;
+  padding-bottom: 34px;
+}
+
+footer .copySection {
+  margin-top: 69px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+/* ----------- fixing global issue ----------- */
+@media (min-device-width: 1401px) and (max-device-width: 1500px) {
+  .backgroundOrImage .container::before {
+    left: -30px;
+  }
+  .JobPageSTL .boxSearch .JobCodeSec .Edgucation span {
+    font-size: 18px;
+  }
+  .JobPageSTL .boxSearch .JobCodeSec .Edgucation .MainColr {
+    font-size: 19px;
+  }
+  .boxPuplictions .DowloadBTn,
+  .showToggleBtn .showToggle {
+    width: 120px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .trainingPage .boxSearch .praghBox {
+    height: 122px;
+    font-size: 17px;
+  }
+}
+
+@media (min-device-width: 1025px) and (max-device-width: 1400px) {
+  .changeRulesXD .boxSearchRule .showBox a {
+    width: 120px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 12px 0;
+  }
+  .changeRulesXD .col-md-4 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .systemSection.trainingPage .boxSearch .titleBox {
+    font-size: 20px;
+  }
+  .systemSection.trainingPage .boxSearch .praghBox {
+    font-size: 16px;
+    height: 145px;
+  }
+  .systemSection.changeXDAnimation .boxSearch .titleBox {
+    font-size: 20px;
+  }
+  .systemSection.changeXDAnimation .boxSearch .praghBox {
+    font-size: 16px;
+    height: 250px;
+  }
+  .changeXDAnimation .boxSearch .showBox {
+    bottom: -250px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .changeXDAnimation .DowloadBTnXLBDF {
+    margin-right: 0;
+    margin-top: 15px;
+  }
+  .reportPage .boxSearch .dateBox > span {
+    font-size: 0.775rem;
+    padding: 5px;
+    width: 40%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .trainingPage .boxSearch .dateBox .dateS img {
+    padding-left: 0px;
+  }
+  .trainingPage .boxSearch .dateBox .dateS span:last-of-type {
+    display: block;
+    padding-right: 25px;
+  }
+  .trainingPage .boxSearch .showBox a {
+    min-width: 120px;
+  }
+  .trainingPage .formSearch .tabsStyle {
+    width: 30%;
+  }
+  .trainingPage .tabsStyle .nav-tabs li a {
+    font-size: 16px;
+    padding: 12px 20px;
+  }
+  .trainingPage .resetSearch {
+    margin-right: 10px;
+    font-size: 12px;
+    padding: 9px 10px;
+    width: 115px;
+  }
+  .boxPuplictions .DowloadBTn,
+  .showToggleBtn .showToggle {
+    width: 120px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .systemSection.reportPage .col-md-3 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 33.33333%;
+            flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+  }
+  .bannerSliderSec .bannerSwiperinner .BoxBannerInner {
+    padding-top: 60px;
+  }
+  .bannerSliderSec .bannerSwiperinner .BoxBannerInner .PraghTextBNR {
+    font-size: 1.2rem;
+  }
+  .NewsPage .boxNewsPage {
+    width: 100%;
+  }
+  .NewsPage .boxNewsPage .boxImgNew {
+    width: 400px;
+  }
+  .NewsPage .boxNewsPage .boxImgNew img {
+    width: 400px;
+  }
+  .NewsPage .boxNewsPage .textNew {
+    width: calc(100% - 400px);
+  }
+  .JobPageSTL .col-md-4 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .backgroundOrImage .container::before {
+    right: -10px !important;
+  }
+  .backgroundOrImage .formContactUs .textFrom {
+    width: calc(100% - 750px);
+    padding: 30px 24px 25px 5%;
+  }
+  .backgroundOrImage .formContactUs .FromInputs {
+    width: 750px;
+  }
+  .backgroundOrImage .formContactUs .FromInputs .FixPadding .col-md-6 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .businessCouncils .boxPuplictions .greenBox .boxG {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0 15px;
+  }
+  .businessCouncils .boxPuplictions .greenBox .boxG img {
+    width: 50%;
+  }
+}
+
+/* ----------- iPad ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .breadcrumbScetion .breadcrumbCustom {
+    width: 150%;
+  }
+  .changeRulesXD .boxSearchRule .showBox a {
+    width: 120px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 12px 0;
+  }
+  .changeRulesXD .col-md-4 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .changeXDAnimation .boxSearch .praghBox {
+    font-size: 16px;
+  }
+  .trainingPage .formSearch {
+    display: block;
+  }
+  .trainingPage .formSearch .boxSearchEvent {
+    margin-bottom: 20px;
+  }
+  .trainingPage .formSearch .tabsStyle {
+    margin-bottom: 20px;
+  }
+  .trainingPage .formSearch .selectSection {
+    width: 100%;
+    -webkit-box-pack: inherit;
+        -ms-flex-pack: inherit;
+            justify-content: inherit;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .trainingPage .tabsStyle .nav-tabs li a {
+    font-size: 16px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 14px 30px;
+  }
+  .trainingPage .resetSearch {
+    margin-right: 5px;
+    padding: 9px 15px;
+    font-size: 14px;
+    width: 127px;
+  }
+  .trainingPage .boxSearch .praghBox {
+    height: 120px;
+    font-size: 16px;
+  }
+  .trainingPage .boxSearch .dateBox .dateS img {
+    padding-left: 0px;
+  }
+  .trainingPage .boxSearch .dateBox .dateS span:last-of-type {
+    display: block;
+    padding-right: 25px;
+  }
+  .trainingPage .boxSearch .titleBox {
+    font-size: 20px;
+  }
+  .reportPage .boxSearch .dateBox > span {
+    font-size: 0.775rem;
+    padding: 5px;
+    width: 40%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .boxPuplictions .DowloadBTn,
+  .showToggleBtn .showToggle {
+    width: 140px;
+  }
+  .boxPuplictions .DowloadBTn {
+    width: 140px;
+  }
+  .showToggleBtn .showToggle {
+    width: 140px;
+  }
+  .bannerSliderSec .bannerSwiperinner .BoxBannerInner {
+    padding-top: 60px;
+  }
+  .bannerSliderSec .bannerSwiperinner .BoxBannerInner .PraghTextBNR {
+    font-size: 1.2rem;
+  }
+  .NewsPage .boxNewsPage {
+    width: 100%;
+  }
+  .NewsPage .boxNewsPage .boxImgNew {
+    width: 300px;
+  }
+  .NewsPage .boxNewsPage .boxImgNew img {
+    width: 300px;
+  }
+  .NewsPage .boxNewsPage .textNew {
+    width: calc(100% - 300px);
+  }
+  .jobBanner .imgJob img {
+    -o-object-fit: none;
+       object-fit: none;
+  }
+  .jobBanner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    margin-bottom: 20px;
+  }
+  .reportPage .formSearch .boxSearchEvent {
+    width: 230px;
+  }
+  .reportPage .formSearch .boxSearchEvent input::-webkit-input-placeholder {
+    font-size: 14px;
+  }
+  .reportPage .formSearch .boxSearchEvent input:-ms-input-placeholder {
+    font-size: 14px;
+  }
+  .reportPage .formSearch .boxSearchEvent input::-ms-input-placeholder {
+    font-size: 14px;
+  }
+  .reportPage .formSearch .boxSearchEvent input::placeholder {
+    font-size: 14px;
+  }
+  .JobPageSTL .boxSearch .JobCodeSec {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .boxSearch .showBox a {
+    min-width: 140px;
+  }
+  .JobPageSTL .col-md-4 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .systemSection.reportPage .col-md-4,
+  .systemSection.reportPage .col-md-3 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .backgroundOrImage .formContactUs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .backgroundOrImage .formContactUs .FromInputs {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .backgroundOrImage .formContactUs .textFrom {
+    width: 100%;
+  }
+  .tabsStyle .nav-tabs li a {
+    padding: 16px 16px;
+  }
+  .businessCouncils .tab-pane .col-md-6 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 100%;
+  }
+  footer ul {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  footer h5 {
+    text-align: center;
+  }
+  footer .copySection {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  footer .copySection .copy {
+    margin-left: 0;
+  }
+  footer .justify-content-end {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+}
+
+.reportPage .tab-pane.active {
+  -webkit-animation: slide-down 1s;
+          animation: slide-down 1s;
+}
+
+@-webkit-keyframes slide-down {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-down {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* ----------- mobile ----------- */
+@media (max-width: 767px) {
+  .paragraphOfBox, .systemSection .boxSearch .praghBox {
+    line-height: 1.6;
+    font-size: 16px;
+  }
+  .pagentaaionCustom a {
+    margin: 0 7px;
+  }
+  .pagentaaionCustom span {
+    margin: 0 7px;
+  }
+  .breadcrumbScetion > img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center center;
+       object-position: center center;
+  }
+  .breadcrumbScetion .heading {
+    font-size: 2.2rem;
+    padding-bottom: 10px;
+    padding-top: 0;
+  }
+  .breadcrumbScetion .breadcrumbCustom li a {
+    font-size: 1rem;
+  }
+  .viewSystem .headOfView .paragraphOfBox, .viewSystem .headOfView .systemSection .boxSearch .praghBox, .systemSection .boxSearch .viewSystem .headOfView .praghBox {
+    margin: 0 8%;
+    margin-bottom: 27px;
+  }
+  .viewSystem .headOfView .systemSection .boxSearch .praghBox {
+    margin: 0 8%;
+    margin-bottom: 27px;
+  }
+  .viewSystem .card-body {
+    padding: 0 21px 27px 21px;
+  }
+  .viewSystem .card-body .card {
+    margin-bottom: 30px;
+  }
+  .viewSystem .resetPadding {
+    padding: 0 !important;
+  }
+  .viewSystem .faq-section .mb-0 > a:after {
+    background-size: 80%;
+  }
+  .systemSection .boxSearch .viewSystem .headOfView .praghBox {
+    margin: 0 8%;
+    margin-bottom: 27px;
+  }
+  footer ul {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  footer h5 {
+    text-align: center;
+  }
+  footer .copySection {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  footer .copySection .copy {
+    margin-left: 0;
+  }
+  footer .justify-content-end {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+  .jobBanner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    padding: 74px 20px 0 42px;
+  }
+  .jobBanner .textJob .prachJobFont24 {
+    padding-left: 0;
+    font-size: 20px;
+  }
+  .backgroundOrImage .container::before {
+    right: 5px !important;
+  }
+  .backgroundOrImage .formContactUs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .backgroundOrImage .formContactUs .FromInputs {
+    height: auto;
+    width: 100%;
+    padding: 40px 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+  }
+  .backgroundOrImage .formContactUs .FromInputs .btnForm {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .backgroundOrImage .formContactUs .textFrom {
+    height: auto;
+    width: 100%;
+    padding: 40px 20px;
+    border-radius: 8px;
+  }
+  .backgroundOrImage .mapFrom {
+    height: 300px;
+  }
+  .reportPage .formSearch {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .reportPage .formSearch .boxSearchEvent {
+    margin-bottom: 10px;
+  }
+  .reportPage .formSearch label {
+    margin-bottom: 5px;
+  }
+  .reportPage .formSearch .selectSection {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .JobPageSTL .boxSearch .JobCodeSec .Edgucation span {
+    font-size: 13px;
+  }
+  .JobPageSTL .boxSearch .JobCodeSec .Edgucation .MainColr {
+    font-size: 15px;
+  }
+  .bannerSliderSec {
+    padding: 48px 0px;
+  }
+  .bannerSliderSec .bannerSwiperinner .BoxBannerInner {
+    width: 100%;
+    padding-top: 30px;
+  }
+  .NewsPage .boxNewsPage {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .NewsPage .boxNewsPage .boxImgNew {
+    width: 100%;
+  }
+  .NewsPage .boxNewsPage .boxImgNew img {
+    width: 100%;
+  }
+  .NewsPage .boxNewsPage .textNew {
+    width: 100%;
+    padding: 25px 30px 20px;
+  }
+  .boxPuplictions .DowloadBTn {
+    width: 140px;
+    height: 45px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .showToggleBtn .showToggle {
+    width: 140px;
+    height: 45px;
+  }
+  .changeRulesXD .boxSearchRule:hover .showBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .changeRulesXD .DowloadBTn {
+    width: 140px;
+    padding: 14px 0px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .changeRulesXD .viewBtn, .changeRulesXD .showToggleBtn .showToggle, .showToggleBtn .changeRulesXD .showToggle {
+    width: 140px;
+    padding: 14px 0px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .trainingPage .selectSection .selectBox {
+    margin-right: 0;
+  }
+  .trainingPage .boxSearch .dateBox > span {
+    font-size: 0.7rem;
+  }
+  .trainingPage .boxSearch .dateBox .dateS img {
+    padding-left: 0;
+  }
+  .trainingPage .boxSearch .praghBox {
+    height: 133px;
+  }
+  .tabsStyle {
+    margin: 10px 0 30px 0;
+  }
+  .reportPage .previewReports .headerOfBox, .reportPage .previewReports .systemSection .boxSearch .titleBox, .systemSection .boxSearch .reportPage .previewReports .titleBox {
+    font-size: 1.9rem;
+  }
+  .reportPage .previewReports .systemSection .boxSearch .titleBox {
+    font-size: 1.9rem;
+  }
+  .systemSection .boxSearch .reportPage .previewReports .titleBox {
+    font-size: 1.9rem;
+  }
+  .pagentaaionCustom a {
+    width: 40px;
+    height: 40px;
+  }
+  .pagentaaionCustom span {
+    width: 40px;
+    height: 40px;
+  }
+  .bannerSliderSec .bannerSwiperinner .BoxBannerInner .PraghTextBNR {
+    font-size: 1.2rem;
+  }
+  .jobBanner .textJob .titleJobFont32 {
+    font-size: 25px;
+  }
+  .jobBanner .textJob .BtnWithArrow {
+    padding: 13px 30px 13px 54px;
+    font-size: 14px;
+  }
+  .viewSystem .faq-section .mb-0 > a {
+    font-size: 1.3rem;
+  }
+  .tabsStyle .nav-tabs li a {
+    padding: 10px 20px;
+    font-size: 15px;
+    padding: 10px 10px;
+  }
+  .trainingPage .resetSearch {
+    margin-right: 0;
+    margin-top: 30px;
+    max-width: 135px;
+  }
+  .tabsStyleBar {
+    min-height: 100px;
+    height: unset;
+    padding: 24px;
+  }
+  .tabsStyleBar .nav-tabs li {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+    max-width: 50%;
+    padding-left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .tabsStyleBar .nav-tabs li:not(:last-of-type) {
+    padding-left: 0;
+    padding-bottom: 10px;
+  }
+  .businessCouncils .boxPuplictions .greenBox .boxG {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .businessCouncils .boxPuplictions .greenBox .boxG img {
+    max-width: 100%;
+    width: 40%;
+  }
+  .businessCouncils .boxPuplictions .greenBox .boxG img:first-of-type {
+    padding-left: 0;
+  }
+  .businessCouncils .boxPuplictions .whiteBoxPupl .paragraphOfBox a, .businessCouncils .boxPuplictions .whiteBoxPupl .systemSection .boxSearch .praghBox a, .systemSection .boxSearch .businessCouncils .boxPuplictions .whiteBoxPupl .praghBox a {
+    display: block;
+  }
+  .businessCouncils .dateS {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .businessCouncils .dateS img {
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .JobPageSTL .boxSearch .dateBox span {
+    font-size: 14px;
+  }
+  .backgroundOrImage .formContactUs .textFrom .headerOfBoxFont35 {
+    font-size: 1.9rem;
+  }
+  .trainingPage .formSearch .tabsStyle {
+    width: 100%;
+  }
+  .trainingPage .formSearch .tabsStyle .nav.nav-tabs li {
+    width: 50%;
+  }
+}
+
+/* ----------- iPhone ----------- */
+@media (max-width: 374px) {
+  .breadcrumbScetion .breadcrumbCustom li a {
+    font-size: .8rem;
+  }
+  .tabsStyle .nav-tabs li a {
+    font-size: 11px;
+  }
+  .JobPageSTL .boxSearch .JobCodeSec {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .JobPageSTL .JobBoxHover:hover .boxSearch .showBox {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .JobPageSTL .JobBoxHover:hover .boxSearch .showBox .DowloadBTn {
+    margin-right: 0;
+    margin-top: 10px;
+  }
+  .boxPuplictions .DowloadBTn {
+    width: 120px;
+  }
+  .showToggleBtn .showToggle {
+    width: 120px;
+  }
+  .reportPage.changeXDAnimation .boxSearch .titleBox {
+    font-size: 18px;
+  }
+  .reportPage.changeXDAnimation .boxSearch .praghBox {
+    font-size: 15px;
+  }
+  .reportPage.changeXDAnimation .boxSearch .showBox {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .changeXDAnimation .DowloadBTnXLBDF {
+    margin-right: 0;
+    margin-top: 10px;
+  }
+  .changeRulesXD .boxSearchRule .headerOfBox, .changeRulesXD .boxSearchRule .systemSection .boxSearch .titleBox, .systemSection .boxSearch .changeRulesXD .boxSearchRule .titleBox {
+    font-size: 1.2rem;
+  }
+  .trainingPage .formSearch .selectSection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .trainingPage .formSearch label {
+    display: block;
+  }
+  .trainingPage .selectSection select {
+    width: 100%;
+  }
+  .trainingPage .selectSection .selectBox {
+    margin-left: 0;
+    width: 100%;
+  }
+  .trainingPage .selectSection .inputDateStyle {
+    margin-left: 0;
+    width: 100%;
+  }
+  .trainingPage .inputDateStyle input[type=date] {
+    width: 100%;
+  }
+  .trainingPage .resetSearch {
+    margin-top: 10px;
+  }
+}
+
+.BtnWithArrow {
+  padding: 15px 63px 15px 40px;
+}
+
+.BtnWithArrow::after {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.selectBox select {
+  background-position: 89% 12px;
+  padding: 0 40px 0 24px;
+}
+
+.DowloadBTn img {
+  margin-left: 10px;
+}
+
+.viewBtn img, .showToggleBtn .showToggle img {
+  margin-left: 10px;
+  margin-left: 10px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.showToggleBtn .showToggle img {
+  margin-left: 10px;
+  margin-left: 10px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.breadcrumbScetion .breadcrumbCustom li:not(:last-of-type)::after {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  padding-right: 15px;
+}
+
+.businessCouncils .dateBox .paragraphOfBox, .businessCouncils .dateBox .systemSection .boxSearch .praghBox, .systemSection .boxSearch .businessCouncils .dateBox .praghBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.businessCouncils .dateBox .paragraphOfBox span, .businessCouncils .dateBox .systemSection .boxSearch .praghBox span, .systemSection .boxSearch .businessCouncils .dateBox .praghBox span {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding-right: 5px;
+}
+
+.pagentaaionCustom .prePagi img {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.pagentaaionCustom .NextPagi img {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.backgroundOrImage .formContactUs .textFrom {
+  padding: 69px 17% 69px 24px;
+  border-radius: 8px 0px 0px 8px;
+}
+
+.backgroundOrImage .container::before {
+  left: unset;
+  right: -52px;
+}
+
+.reportPage .formSearch .selectSection .selectBox:first-of-type {
+  margin-right: 13px;
+}
+
+.JobPageSTL .boxSearch .dateBox span {
+  padding-left: 10px;
+}
+
+/* ----------- mobile ----------- */
+/* ----------- fixing global issue ----------- */
+/* ----------- iPad ----------- */
 /*
 this UI is made desktop first.
 */
