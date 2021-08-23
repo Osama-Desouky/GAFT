@@ -16212,6 +16212,19 @@ this UI is made desktop first.
   .navigator {
     display: none;
   }
+  .versions {
+    height: 775px;
+  }
+  .versions .swiper-container {
+    height: 570px;
+  }
+  .versions .swiper-container .swiper-slide {
+    height: auto !important;
+  }
+  .versions::after {
+    height: 70px;
+    bottom: 45px;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -16874,6 +16887,9 @@ this UI is made desktop first.
   }
   .lamha-tare5ia p {
     font-size: .875rem;
+  }
+  .versions .swiper-container {
+    height: 525px;
   }
   .versions .versions-card {
     height: 215px;

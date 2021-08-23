@@ -1236,6 +1236,21 @@ this UI is made desktop first.
     // }
 
   }
+
+
+  .versions{
+    height: 775px;
+    .swiper-container{
+      height: 570px;
+      .swiper-slide {
+        height: auto !important;
+      }
+    }
+    &::after{
+      height: 70px;
+      bottom: 45px;
+    }
+  }
 }
 
 // Small devices (landscape phones, less than 768px)
@@ -2112,6 +2127,9 @@ this UI is made desktop first.
     }
   }
   .versions {
+    .swiper-container {
+      height: 525px;
+    }
     .versions-card {
       height: 215px;
       .img-box{
