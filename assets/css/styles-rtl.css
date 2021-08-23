@@ -18410,7 +18410,7 @@ this UI is made desktop first.
             flex-direction: column;
   }
   .main-navbar #navbarSupportedContent > .navbar-nav > .nav-item.search-mob {
-    width: 100%;
+    width: 400px;
     padding: 0 40px;
   }
   .main-navbar #navbarSupportedContent > .navbar-nav > .nav-item.search-mob .form-group {
@@ -18431,6 +18431,10 @@ this UI is made desktop first.
   }
   .main-navbar #navbarSupportedContent > .navbar-nav > .nav-item .search-toggle {
     display: none;
+  }
+  .main-navbar #navbarSupportedContent > .navbar-nav > .nav-item.contact-us a {
+    color: #CCA079;
+    text-align: center;
   }
   .main-navbar .navbar-brand {
     -ms-flex-item-align: start;
@@ -19525,6 +19529,7 @@ this UI is made desktop first.
   }
   .main-navbar #navbarSupportedContent > .navbar-nav > .nav-item.search-mob {
     padding: 0 15px;
+    width: 100%;
   }
   .main-navbar #navbarSupportedContent > .navbar-nav > .nav-item.search-mob .form-group button {
     top: 3px;
@@ -19561,6 +19566,10 @@ this UI is made desktop first.
     left: 16px;
     position: absolute;
     top: 19px;
+  }
+  .main-navbar #navbarSupportedContent > .navbar-nav > .nav-item.contact-us a {
+    text-align: right;
+    padding: 12px 15px;
   }
   .main-navbar .nav-wrapper {
     margin-top: 30px;

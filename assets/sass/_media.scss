@@ -745,7 +745,7 @@ this UI is made desktop first.
           display: flex;
           flex-direction: column;
           &.search-mob{
-            width: 100%;
+            width: 400px;
             padding: 0 40px;
             .form-group{
               position: relative;
@@ -764,9 +764,16 @@ this UI is made desktop first.
           }
           .nav-link{
             font-size: 14px;
+
           }
           .search-toggle{
             display: none;
+          }
+          &.contact-us{
+            a{
+              color: $golden-color;
+              text-align: center;
+            }
           }
         }
       }
@@ -2177,6 +2184,7 @@ this UI is made desktop first.
   }
   .main-navbar #navbarSupportedContent > .navbar-nav > .nav-item.search-mob{
     padding: 0 15px;
+    width: 100%;
   }
   .main-navbar #navbarSupportedContent > .navbar-nav > .nav-item.search-mob .form-group button{
     top: 3px;
@@ -2211,6 +2219,10 @@ this UI is made desktop first.
     #{$end-direction}: 16px;
     position: absolute;
     top: 19px;
+  }
+  .main-navbar #navbarSupportedContent > .navbar-nav > .nav-item.contact-us a{
+    text-align: #{$start-direction};
+    padding: 12px 15px;
   }
   .main-navbar .nav-wrapper{
     margin-top: 30px;
