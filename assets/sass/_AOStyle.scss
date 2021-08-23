@@ -1,3 +1,4 @@
+
 .vote-share-fav {
   display: none;
 }
@@ -275,14 +276,14 @@ font-size: 1.5rem;
     }
   }
 }
-@font-face {
-  font-family: "DINNextLTRegular";
-  src: url('../fonts/DIN-Next-LT-Arabic-Regular.ttf');
-}
-@font-face {
-  font-family: "DINNextLTArabicMedium";
-  src: url('../fonts/DINNextLTArabic-Medium.ttf');
-}
+// @font-face {
+//   font-family: "DINNextLTRegular";
+//   src: url('../fonts/DIN-Next-LT-Arabic-Regular.ttf');
+// }
+// @font-face {
+//   font-family: "DINNextLTArabicMedium";
+//   src: url('../fonts/DINNextLTArabic-Medium.ttf');
+// }
 body {
   background-color: #F1F1F1;
 }
@@ -1277,7 +1278,7 @@ body {
         font-weight: $w-medium;
         color:  $mainColor;
         background: #fff;
-        padding: 16px 26px;
+        padding: 14px 26px;
         border-radius: 50px;
         border: 2px solid $mainColor;
         &.active {
@@ -1584,6 +1585,498 @@ footer {
 
 
 
+/* ----------- fixing global issue ----------- */
+@media (min-device-width: 1401px) and (max-device-width: 1500px) {
+
+
+  .backgroundOrImage {
+    .container {
+      &::before {
+        left: -30px;
+      }
+    }
+  }
+  .JobPageSTL {
+    .boxSearch {
+      .JobCodeSec {
+        .Edgucation {
+          span {
+            font-size: 18px;
+          }
+          .MainColr {
+            font-size: 19px;
+          }
+        }
+      }
+    }
+  }
+  .boxPuplictions .DowloadBTn ,
+  .showToggleBtn .showToggle {
+    width: 120px;
+    justify-content: center;
+  }
+  .trainingPage {
+    .boxSearch {
+      .praghBox {
+        height: 122px;
+        font-size: 17px;
+      }
+    }
+  }
+}
+@media (min-device-width: 1025px) and (max-device-width: 1400px) { 
+  // .container  {
+  //   background-color: rgb(51, 255, 0);
+  // }
+    // ---------------------------
+   
+    // ---------------------------
+    .changeRulesXD {
+      .boxSearchRule {
+        .showBox {
+          a {
+            width: 120px;
+            justify-content: center;
+            padding: 12px 0;
+          }
+        }
+      }
+      .col-md-4 {
+        flex: 0 0 50%;
+        max-width: 50%;
+      }
+    }
+    .systemSection.trainingPage {
+      .boxSearch {
+        .titleBox {
+          font-size: 20px;
+        }
+        .praghBox {
+          font-size: 16px;
+          height: 145px;
+        }
+      }
+    }
+    .systemSection.changeXDAnimation {
+      .boxSearch {
+        .titleBox {
+          font-size: 20px;
+        }
+        .praghBox {
+          font-size: 16px;
+          height: 250px;
+        }
+      }
+    }
+    .changeXDAnimation {
+      .boxSearch {
+        .showBox {
+          bottom: -250px;
+          flex-direction: column;
+        }
+      }
+      .DowloadBTnXLBDF {
+        margin-right: 0;
+        margin-top: 15px;
+      }
+    }
+    .reportPage {
+      .boxSearch {
+        .dateBox {
+          >span {
+            font-size: 0.775rem;
+            padding: 5px;
+            width: 40%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+      }
+    }
+    .trainingPage {
+      .boxSearch {
+        .dateBox {
+          .dateS {
+            img {
+              padding-left: 0px;
+            }
+            span {
+              &:last-of-type {
+                display: block;
+                padding-right: 25px;
+              }
+            }
+          }
+        }
+        .showBox {
+          a {
+            min-width: 120px;
+          }
+        }
+      }
+      .formSearch {
+        .tabsStyle {
+          width: 30%;
+        }
+      }
+      .tabsStyle {
+        .nav-tabs {
+          li {
+            a {
+              font-size: 16px;
+              padding: 12px 20px;
+            }
+          }
+        }
+      }
+      .resetSearch {
+        margin-right: 10px;
+        font-size: 12px;
+        padding: 9px 10px;
+        width: 115px;
+      }
+    }
+    
+    .boxPuplictions .DowloadBTn ,
+    .showToggleBtn .showToggle {
+      width: 120px;
+      justify-content: center;
+    }
+    .systemSection.reportPage {
+      .col-md-3 {
+        flex: 0 0 33.33333%;
+        max-width: 33.33333%;
+      }
+    }
+    .bannerSliderSec {
+      .bannerSwiperinner {
+        .BoxBannerInner {
+          padding-top: 60px;
+          .PraghTextBNR {
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+    .NewsPage {
+      .boxNewsPage {
+        width: 100%;
+        .boxImgNew {
+          img {
+            width: 400px;
+          }
+          width: 400px;
+        }
+        .textNew {
+          width: calc(100% - 400px);
+        }
+      }
+    }
+    
+    .JobPageSTL {
+      .col-md-4 {
+        flex: 0 0 50%;
+        max-width: 50%;
+      }
+    }
+    .backgroundOrImage {
+      .container {
+        &::before {
+          left: -10px;
+        }
+      }
+      .formContactUs {
+        .textFrom {
+          width: calc(100% - 750px); 
+          padding: 30px 24px 25px 5%;
+        }
+        .FromInputs {
+          width: 750px;
+          .FixPadding {
+            .col-md-6 {
+              flex: 0 0 100%;
+              max-width: 100%;
+            }
+          }
+        }
+      }
+    }
+    
+  .businessCouncils {
+    .boxPuplictions {
+      .greenBox {
+        .boxG {
+          display: flex;
+          padding: 0 15px;
+          img {
+            width: 50%;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+/* ----------- iPad ----------- */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    // .container  {
+    //   background-color: red;
+    // }
+    .breadcrumbScetion {
+      .breadcrumbCustom {
+        width: 150%;
+      }
+    }
+
+    .changeRulesXD {
+      .boxSearchRule {
+        .showBox {
+          a {
+            width: 120px;
+            justify-content: center;
+            padding: 12px 0;
+          }
+        }
+      }
+      .col-md-4 {
+        flex: 0 0 50%;
+        max-width: 50%;
+      }
+    }
+    .changeXDAnimation {
+      .boxSearch {
+        .praghBox {
+          font-size: 16px;
+        }
+      }
+    }
+    .trainingPage {
+      .formSearch {
+        display: block;
+        .boxSearchEvent {
+          margin-bottom: 20px;
+        }
+        .tabsStyle {
+          margin-bottom: 20px;
+        }
+        .selectSection {
+          width: 100%;
+          justify-content: inherit;
+          align-items: center;
+        }
+      }
+      .tabsStyle {
+        .nav-tabs {
+          li {
+            a {
+              font-size: 16px;
+              display: flex;
+              padding: 14px 30px;
+            }
+          }
+        }
+      }
+      .resetSearch {
+        margin-right: 5px;
+        padding: 9px 15px;
+        font-size: 14px;
+        width: 127px;
+      }
+      .boxSearch {
+        .praghBox {
+          height: 120px;
+          font-size: 16px;
+        }
+        .dateBox {
+          .dateS {
+            img {
+              padding-left: 0px;
+            }
+            span {
+              &:last-of-type {
+                display: block;
+                padding-right: 25px;
+              }
+            }
+          }
+        }
+        .titleBox {
+          font-size: 20px;
+        }
+      }
+    }
+    .reportPage {
+      .boxSearch {
+        .dateBox {
+          >span {
+            font-size: 0.775rem;
+            padding: 5px;
+            width: 40%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+      }
+    }
+    
+    .boxPuplictions .DowloadBTn ,
+    .showToggleBtn .showToggle {
+      width: 140px;
+    }
+    .boxPuplictions {
+      .DowloadBTn {
+        width: 140px;
+      }
+    }
+    .showToggleBtn {
+      .showToggle {
+        width: 140px;
+      }
+    }
+    
+    .bannerSliderSec {
+      .bannerSwiperinner {
+        .BoxBannerInner {
+          padding-top: 60px;
+          .PraghTextBNR {
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+    .NewsPage {
+      .boxNewsPage {
+        width: 100%;
+        .boxImgNew {
+          img {
+            width: 300px;
+          }
+          width: 300px;
+        }
+        .textNew {
+          width: calc(100% - 300px);
+        }
+      }
+    }
+    
+    .jobBanner {
+      .imgJob {
+        img {
+          object-fit: none;
+        }
+      }
+    }
+    .jobBanner {
+      flex-direction: column-reverse;
+      margin-bottom: 20px;
+    }
+    .reportPage {
+      .formSearch {
+        .boxSearchEvent {
+          width: 230px;
+          input {
+            &::placeholder {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+    .JobPageSTL {
+      .boxSearch {
+        .JobCodeSec {
+          flex-direction: column;
+        }
+      }
+    }
+    .boxSearch {
+      .showBox {
+        a {
+          min-width: 140px;
+        }
+      }
+    }
+    
+    .JobPageSTL {
+      .col-md-4 {
+        flex: 0 0 50%;
+        max-width: 50%;
+      }
+    }
+    .systemSection.reportPage {
+      .col-md-4,
+      .col-md-3 {
+        flex: 0 0 50%;
+        max-width: 50%;
+      }
+    }
+    .boxPuplictions {
+      .showBox {
+
+      }
+    }
+
+    .backgroundOrImage {
+      .formContactUs {
+        flex-direction: column;
+        .FromInputs {
+          width: 100%;
+          margin-top: 30px;
+        }
+        .textFrom {
+          width: 100%;
+        }
+      }
+    }
+    
+    .tabsStyle .nav-tabs li a {
+      padding: 16px 16px;
+    }
+    .businessCouncils  {
+      .tab-pane {
+        .col-md-6 {
+          flex: 0 0 100%;
+          max-width: 100%;
+        }
+      }
+    }
+    footer {
+      ul {
+        text-align: center;
+        margin-bottom: 15px;
+      }
+      h5 {
+        text-align: center;
+      }
+      .copySection {
+        flex-direction: column-reverse;
+        .copy {
+          margin-left: 0;
+        }
+      }
+      .justify-content-end {
+        justify-content: center !important;
+      }
+    }
+
+
+
+}
+
+.reportPage .tab-pane.active {
+  animation: slide-down 1s ;
+}
+
+@keyframes slide-down {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
 /* ----------- mobile ----------- */
 
 @media (max-width:767px){
@@ -1799,6 +2292,7 @@ footer {
         .showBox {
           display: flex;
           align-items: center;
+          justify-content: center;
         }
       }
     }
@@ -1917,6 +2411,7 @@ footer {
     .resetSearch {
       margin-right: 0;
       margin-top: 30px;
+      max-width: 135px;
     }
   }
   .tabsStyleBar {
