@@ -11061,6 +11061,16 @@ body.header-popup-open {
   margin-bottom: 15px;
 }
 
+.main-navbar .navbar .dropdown-menu h6 a {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 41px;
+  color: #fff;
+  padding: 0 8px;
+  padding-right: 14px;
+  display: block;
+}
+
 .main-navbar .navbar .dropdown-menu p {
   color: #fff;
   font-size: 16px;
@@ -11246,6 +11256,7 @@ body.header-popup-open {
   right: 0;
   background: none;
   border: none;
+  min-width: auto;
 }
 
 .main-navbar .search-box input[type="text"] {
@@ -11478,6 +11489,15 @@ body.header-popup-open {
   margin-bottom: 15px;
 }
 
+.main-header .slider-wrapper .owl-carousel .item .caption h2 a {
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 66px;
+  color: #CCA079;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
 .main-header .slider-wrapper .owl-carousel .item .caption h4 {
   font-weight: 400;
   font-size: 30px;
@@ -11622,6 +11642,7 @@ body.header-popup-open {
   position: absolute;
   bottom: 140px;
   width: 37px;
+  min-width: auto;
   height: 37px;
   border-radius: 8px;
   background-color: transparent;
@@ -12015,6 +12036,7 @@ footer .copySection a:last-child {
   position: absolute;
   top: 50%;
   width: 37px;
+  min-width: auto;
   height: 37px;
   border-radius: 8px;
   background-color: transparent;
@@ -12101,6 +12123,7 @@ footer .copySection a:last-child {
   position: absolute;
   top: 40%;
   width: 37px;
+  min-width: auto;
   height: 37px;
   border-radius: 8px;
   background-color: transparent;
@@ -12214,6 +12237,17 @@ footer .copySection a:last-child {
   overflow: hidden;
 }
 
+.latest-news .owl-carousel .item .news-card .content-box p a {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  color: #1D1D1B;
+  margin-bottom: 35px;
+  height: calc(30px * 2);
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
 .latest-news .owl-carousel .item .news-card .content-box .date {
   color: #CCA079;
   font-size: 16px;
@@ -12237,10 +12271,16 @@ footer .copySection a:last-child {
   text-decoration: underline;
 }
 
+.latest-news .owl-carousel .item .news-card:hover .content-box p a {
+  color: #007066;
+  text-decoration: underline;
+}
+
 .latest-news .owl-carousel .owl-nav button.owl-next, .latest-news .owl-carousel .owl-nav button.owl-prev {
   position: absolute;
   top: 40%;
   width: 37px;
+  min-width: auto;
   height: 37px;
   border-radius: 8px;
   background-color: transparent;
@@ -12515,6 +12555,7 @@ footer .copySection a:last-child {
   position: absolute;
   top: 40%;
   width: 37px;
+  min-width: auto;
   height: 37px;
   border-radius: 8px;
   background-color: transparent;
@@ -12743,6 +12784,7 @@ footer .copySection a:last-child {
   background-image: url(../images/left-arrow-st1.svg);
   position: absolute;
   width: 37px;
+  min-width: auto;
   height: 37px;
   border-radius: 8px;
   background-color: #CCA079;
@@ -12769,6 +12811,7 @@ footer .copySection a:last-child {
   background-image: url(../images/right-arrow-st1.svg);
   position: absolute;
   width: 37px;
+  min-width: auto;
   height: 37px;
   border-radius: 8px;
   background-color: #CCA079;
@@ -12876,6 +12919,7 @@ footer .copySection a:last-child {
   line-height: 60px;
   color: #fff;
   margin-bottom: 0;
+  margin: 0 auto;
 }
 
 .sharekna-elraay .sharekna-elray-card p {
@@ -12885,6 +12929,7 @@ footer .copySection a:last-child {
   font-weight: 400;
   line-height: 32px;
   color: #fff;
+  margin: 0 auto;
   margin-bottom: 30px;
 }
 
@@ -12902,6 +12947,7 @@ footer .copySection a:last-child {
   height: 52px;
   display: block;
   text-align: center;
+  margin: 0 auto;
 }
 
 .sharekna-elraay .sharekna-elray-card a img {
@@ -12973,7 +13019,7 @@ footer .copySection a:last-child {
 
 .sharekna-elraay .servay .pollWp .pollInner {
   padding: 8px 10px !important;
-  height: 163px;
+  height: 215px;
 }
 
 .sharekna-elraay .servay .pollWp .pollInner ul li,
@@ -15080,6 +15126,7 @@ p.on-space {
   position: absolute;
   bottom: -7%;
   width: 37px;
+  min-width: auto;
   height: 37px;
   border-radius: 8px;
   background-color: transparent;
@@ -15238,6 +15285,30 @@ p.on-space {
 .offset-lg-1 {
   margin-right: 0;
   margin-left: 0;
+}
+
+.ms-webpartzone-cell {
+  margin: 0 !important;
+}
+
+.ms-webpart-zone {
+  display: block !important;
+}
+
+div.ms-webpart-cell-vertical-inline-table {
+  display: block !important;
+}
+
+.ms-webpart-chrome-vertical {
+  display: block !important;
+}
+
+h2, h3, h4, h5, h6 {
+  font-family: inherit !important;
+}
+
+#s4-bodyContainer {
+  padding-bottom: 0 !important;
 }
 
 .vote-share-fav {

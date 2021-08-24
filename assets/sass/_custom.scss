@@ -44,6 +44,15 @@ body.header-popup-open {
       font-weight: $w-bold;
       line-height: 30px;
       margin-bottom: 15px;
+      a{
+        font-size: 16px;
+        font-weight: $w-medium;
+        line-height: 41px;
+        color: #fff;
+        padding: 0 8px;
+        padding-right: 14px;
+        display: block;
+      }
     }
     p {
       color: #fff;
@@ -214,6 +223,7 @@ body.header-popup-open {
       #{$start-direction}: 0;
       background: none;
       border: none;
+      min-width: auto;
     }
     input[type="text"] {
       padding-#{$start-direction}: 30px;
@@ -427,6 +437,14 @@ body.header-popup-open {
             color: $golden-color;
             text-transform: uppercase;
             margin-bottom: 15px;
+            a{
+              font-weight: $w-medium;
+              font-size: 45px;
+              line-height: 66px;
+              color: $golden-color;
+              text-transform: uppercase;
+              margin-bottom: 15px;
+            }
           }
           h4 {
             // font-weight: $golden-color;
@@ -552,6 +570,7 @@ body.header-popup-open {
         display: none;
       }
       width: 37px;
+      min-width: auto;
       height: 37px;
       border-radius: 8px;
       background-color: transparent;
@@ -919,6 +938,7 @@ footer {
       display: none;
     }
     width: 37px;
+    min-width: auto;
     height: 37px;
     border-radius: 8px;
     background-color: transparent;
@@ -1002,6 +1022,7 @@ footer {
       display: none;
     }
     width: 37px;
+    min-width: auto;
     height: 37px;
     border-radius: 8px;
     background-color: transparent;
@@ -1103,6 +1124,16 @@ footer {
              height: calc(30px * 2);
              transition: 300ms;
              overflow: hidden;
+             a{
+              font-size: 20px;
+              font-weight: 500;
+              line-height: 30px;
+              color: #1D1D1B;
+              margin-bottom: 35px;
+              height: calc(30px * 2);
+              -webkit-transition: 300ms;
+              transition: 300ms;
+             }
            }
            .date{
              color: $golden-color;
@@ -1126,6 +1157,10 @@ footer {
            p{
              color: $dark-green;
              text-decoration: underline;
+             a{
+              color: $dark-green;
+              text-decoration: underline;
+             }
 
            }
          }
@@ -1142,6 +1177,7 @@ footer {
       display: none;
     }
     width: 37px;
+    min-width: auto;
     height: 37px;
     border-radius: 8px;
     background-color: transparent;
@@ -1394,6 +1430,7 @@ footer {
             display: none;
           }
           width: 37px;
+          min-width: auto;
           height: 37px;
           border-radius: 8px;
           background-color: transparent;
@@ -1590,6 +1627,7 @@ footer {
     position: absolute;
     // top: 40%;
     width: 37px;
+    min-width: auto;
     height: 37px;
     border-radius: 8px;
     background-color: $golden-color;
@@ -1612,6 +1650,7 @@ footer {
     position: absolute;
     // top: 40%;
     width: 37px;
+    min-width: auto;
     height: 37px;
     border-radius: 8px;
     background-color: $golden-color;
@@ -1693,6 +1732,7 @@ footer {
         line-height: 60px;
         color: #fff;
         margin-bottom: 0;
+        margin: 0 auto;
       }
     }
     p{
@@ -1702,6 +1742,7 @@ footer {
       font-weight: $w-normal;
       line-height: 32px;
       color: #fff;
+      margin: 0 auto;
       margin-bottom: 30px;
     }
     a{
@@ -1718,6 +1759,7 @@ footer {
       height: 52px;
       display: block;
       text-align: center;
+      margin: 0 auto;
       img{
         margin-#{$start-direction}:10px ;
         width: 10px;
@@ -1778,7 +1820,7 @@ footer {
     }
     .pollWp .pollInner {
       padding: 8px 10px!important;
-      height: 163px;
+      height: 215px;
     }
     .pollWp .pollInner ul li,
     .pollWp .pollInner > table li {
@@ -3604,6 +3646,7 @@ p.on-space{
       display: none;
     }
     width: 37px;
+    min-width: auto;
     height: 37px;
     border-radius: 8px;
     background-color: transparent;
@@ -3735,6 +3778,25 @@ p.on-space{
   margin-#{$end-direction}: 0;
 }
 
+// sharepoint styles
+.ms-webpartzone-cell {
+  margin: 0 !important;
+  }
+  .ms-webpart-zone {
+    display: block !important;
+} 
+div.ms-webpart-cell-vertical-inline-table {
+  display: block !important;
+}
+.ms-webpart-chrome-vertical {
+  display: block !important;
+}
+h2, h3 ,h4 ,h5 ,h6{
+  font-family: inherit !important;
+}
+#s4-bodyContainer {
+  padding-bottom: 0 !important;
+}
 // RTL
 // html[dir="rtl"] {
 // }
