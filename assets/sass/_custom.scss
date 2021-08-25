@@ -266,7 +266,7 @@ body.header-popup-open {
   .search-full-area .row .col-12{
     padding: 0 !important;
   }
-  .search-full-area form{
+  .search-full-area {
     backdrop-filter: blur(4px);
   }
   .search-full-area input[type="text"]{
@@ -624,12 +624,12 @@ footer {
     li{
       margin-bottom: 5px;
       a{
-        color: #D5D5D5;
+        color: #D5D5D5 !important;
         font-size: 15px;
         font-weight: $w-normal;
         transition: 400ms;
         &:hover{
-          color: #fff;
+          color: #fff !important;
         }
       }
     }
@@ -1499,6 +1499,7 @@ footer {
   width: 1342px;
   height: 370px;
   padding-top: inherit;
+  overflow: hidden;
   .swiper-slide{
     height: 243px !important;
   }
@@ -2334,20 +2335,28 @@ p.on-space{
         line-height: 39px;
         margin-bottom: 13px;
         transition: 500ms;
-  
+        a{
+          font-size: 1.56rem;
+          font-weight: $w-bold;
+          color: $black-color;
+          line-height: 39px;
+          margin-bottom: 13px;
+          transition: 500ms;
+        }
       }
       h5{
         font-size: 1.37rem;
         font-weight: $w-normal;
         color: $black-color-two;
         line-height: 32px;
+        margin: inherit;
         margin-bottom: 20px;
       }
       p{
         font-size: 1.125rem;
         font-weight: $w-normal;
         color: $p-color;
-        line-height: 35px;
+        line-height: 28px;
         margin-bottom: 0;
       }
     }
@@ -2356,6 +2365,7 @@ p.on-space{
       overflow: hidden;
       // width: 100%;
       max-width: 375px;
+      height: 375px;
       img{
         width: 100%;
         height: 100%;
@@ -2368,6 +2378,10 @@ p.on-space{
         h3{
           text-decoration: underline;
           color: $dark-green;
+          a{
+            text-decoration: underline;
+            color: $dark-green;
+          }
         }
       }
       .img-box{
@@ -2427,6 +2441,14 @@ p.on-space{
         line-height: 36px;
         margin-bottom: 20px;
         transition: 500ms;
+        a{
+          font-size: 1.5rem;
+          font-weight: $w-bold;
+          color: $black-color;
+          line-height: 36px;
+          margin-bottom: 20px;
+          transition: 500ms;
+        }
       }
       h5{
         font-size: 1.125rem;
@@ -2451,6 +2473,10 @@ p.on-space{
         h4{
           text-decoration: underline;
           color: $dark-green;
+          a{
+            text-decoration: underline;
+            color: $dark-green;
+          }
         }
       }
       .img-box{
@@ -3797,6 +3823,79 @@ h2, h3 ,h4 ,h5 ,h6{
 #s4-bodyContainer {
   padding-bottom: 0 !important;
 }
+
+.breadcrumbScetion #ctl00_PlaceHolderMain_ctl00__ControlWrapper_RichImageField img {
+  width: 100%;
+  height: 250px;
+  position: absolute;
+  top:0;
+}
+
+// remove sharepoint breadcrumb  " > " arrow 
+.breadcrumbScetion .breadcrumbCustom span:nth-of-type(2),
+.breadcrumbScetion .breadcrumbCustom span:nth-of-type(4),
+.breadcrumbScetion .breadcrumbCustom span:nth-of-type(6),
+.breadcrumbScetion .breadcrumbCustom span:nth-of-type(8),
+.breadcrumbScetion .breadcrumbCustom span:nth-of-type(10){
+  visibility: hidden;
+  display: none;
+}
+
+// contact us 
+.backgroundOrImage .container::before {
+  background-repeat: no-repeat;
+}
+
+.backgroundOrImage .formContactUs .ms-webpart-zone.ms-fullWidth{
+  width: 630px;
+}
+
+.backgroundOrImage .formContactUs .textFrom{
+  width: 100%;
+  height: 100%;
+  padding-top: 45px;
+}
+
+.backgroundOrImage .formContactUs div#ctl00_PlaceHolderMain_ctl03__ControlWrapper_RichHtmlField {
+  display: flex !important;
+  align-items: center;
+  height: 100%;
+}
+
+// search bar with select inner pages
+.selectBox select {
+  width: auto;
+  display: inline-block;
+}
+
+// .boxPuplictions{
+//   .greenBox .boxG img {
+//       transition: 500ms;
+//   }
+//   .whiteBoxPupl{
+//     height: 135px;
+//     padding-bottom: 14px;
+//     .headerOfBox{
+//       font-size: 1.3rem;
+//       line-height: 31px;
+//       height: calc(31px * 2 + 14px);
+//       overflow: hidden;
+//     }
+//   }
+
+//   &:hover{
+//     .greenBox {
+//       height: 300px !important;
+//       .boxG img {
+//         transform: scale(.9);
+//       }
+//     }
+//     .whiteBoxPupl {
+//       height: 200px !important;
+//     }
+//   }
+// }
+ 
 // RTL
 // html[dir="rtl"] {
 // }

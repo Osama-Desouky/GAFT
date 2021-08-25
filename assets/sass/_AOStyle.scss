@@ -295,7 +295,7 @@ body {
 //=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= {END} =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
 .breadcrumbScetion {
-  font-family: "DINNextLTRegular";
+  // font-family: "DINNextLTRegular";
   position: relative;
   height: 250px;
   display: flex;
@@ -901,6 +901,9 @@ body {
       .headerOfBox {
         margin-bottom: 12px;
         color: $mainColor;
+        a{
+        color: $mainColor;
+        }
       }
       .btnForm {
         display: inline-block;
@@ -1221,6 +1224,11 @@ body {
         width: 224px;
       }
     }
+    .boxG{
+      img {
+        transition: 500ms;
+      }
+    }
   }
   .whiteBoxPupl {
     background: #fff;
@@ -1232,6 +1240,8 @@ body {
     height: 127px;
     transition: height .4s ease;
     overflow: hidden;
+    height: 135px;
+    padding-bottom: 14px;
     .dateBox {
       display: flex;
       justify-content: space-between;
@@ -1240,6 +1250,10 @@ body {
       text-align: center;
       padding-top: 14px;
       display: block;
+      font-size: 1.3rem;
+      line-height: 31px;
+      height: calc(31px * 2 + 14px);
+      overflow: hidden;
       &:hover {
         color: $titleColorD29;
       }
@@ -1252,10 +1266,13 @@ body {
   }
   &:hover {
     .greenBox {
-      height: 335px;
+      height: 300px;
+      .boxG img {
+        transform: scale(.9);
+      }
     }
    .whiteBoxPupl {
-       height: 165px;
+       height: 200px;
    }
    .showBox {
     display: flex;
