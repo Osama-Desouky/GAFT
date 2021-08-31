@@ -12217,6 +12217,8 @@ footer .copySection a:last-child {
   transition: 600ms;
   -o-object-fit: cover;
      object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .latest-news .owl-carousel .item .news-card .content-box {
@@ -12499,6 +12501,7 @@ footer .copySection a:last-child {
   font-weight: 500;
   line-height: 30px;
   color: #007066;
+  margin: 0;
 }
 
 .ads .tabs .tab-content .tab-pane .ads-card .content-box .more {
@@ -12604,7 +12607,7 @@ footer .copySection a:last-child {
   content: "";
   position: absolute;
   width: 100%;
-  height: 188px;
+  height: 115px;
   bottom: 65px;
   left: 0;
   background: white;
@@ -12622,6 +12625,15 @@ footer .copySection a:last-child {
   color: #012D29;
 }
 
+.versions .swiper-vertical > .swiper-wrapper {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 .versions .swiper-container {
   width: 1342px;
   height: 370px;
@@ -12631,6 +12643,12 @@ footer .copySection a:last-child {
 
 .versions .swiper-container .swiper-slide {
   height: 243px !important;
+  width: calc(100% / 2 - 15px);
+}
+
+.versions .swiper-container .swiper-slide:nth-child(even) {
+  margin-left: 30px;
+  margin-right: 0 !important;
 }
 
 .versions .versions-card {
@@ -12648,7 +12666,6 @@ footer .copySection a:last-child {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 30px;
   border-radius: 8px;
 }
 
@@ -14525,6 +14542,7 @@ p.on-space {
   margin-bottom: 0;
   text-align: center;
   max-width: 1360px;
+  margin: 0 auto;
 }
 
 .attaches-content #attaches .goals {
@@ -14626,6 +14644,7 @@ p.on-space {
   margin-bottom: 0;
   text-align: center;
   max-width: 1360px;
+  margin: 0 auto;
 }
 
 .attaches-content #attaches .inner-tabs {
@@ -14775,6 +14794,7 @@ p.on-space {
   margin-bottom: 0;
   text-align: center;
   max-width: 1360px;
+  margin: 0 auto;
 }
 
 .attaches-content #saudi-team .team-tasks {
@@ -15368,12 +15388,6 @@ h2, h3, h4, h5, h6 {
   width: 630px;
 }
 
-.backgroundOrImage .formContactUs .textFrom {
-  width: 100%;
-  height: 100%;
-  padding-top: 45px;
-}
-
 .backgroundOrImage .formContactUs div#ctl00_PlaceHolderMain_ctl03__ControlWrapper_RichHtmlField {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
@@ -15387,6 +15401,38 @@ h2, h3, h4, h5, h6 {
 .selectBox select {
   width: auto;
   display: inline-block;
+}
+
+.selectSection input#btn_submitSearch {
+  background-color: #cca079;
+  height: 40px;
+  color: #fff;
+  border-radius: 50px;
+  font-family: inherit;
+  font-size: 13px;
+}
+
+.reportPage .boxSearch .dateBox div[id*="spanCategory"] span {
+  font-size: 0.875rem;
+  padding: 5px 15px;
+  background: #007066;
+  border-radius: 40px;
+  color: #fff;
+}
+
+@media (min-device-width: 1025px) and (max-device-width: 1400px) {
+  .backgroundOrImage .formContactUs .textFrom {
+    width: 100% !important;
+  }
+  .backgroundOrImage .formContactUs .FromInputs {
+    width: 500px !important;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .backgroundOrImage .formContactUs .ms-webpart-zone.ms-fullWidth {
+    width: 100% !important;
+  }
 }
 
 /*
@@ -15854,6 +15900,9 @@ this UI is made desktop first.
     font-size: 30px;
     line-height: 40px;
   }
+  .versions::after {
+    bottom: 100px;
+  }
   .sharekna-elraay .offset-lg-1 {
     margin-left: 8.33333%;
   }
@@ -16025,6 +16074,8 @@ this UI is made desktop first.
     position: absolute;
     right: 50px;
     top: 40px;
+    width: 54px;
+    min-width: auto;
   }
   .main-navbar .nav-wrapper {
     -webkit-box-flex: 1;
@@ -16145,7 +16196,12 @@ this UI is made desktop first.
   }
   .reportPage .formSearch .boxSearchEvent {
     width: 100%;
-    margin-bottom: 10px;
+  }
+  .reportPage .formSearch .selectSection {
+    display: block;
+    margin-top: 10px;
+    float: none;
+    margin-left: 0;
   }
   .attaches-tabs {
     margin-top: 40px;
@@ -16321,6 +16377,12 @@ this UI is made desktop first.
     margin-bottom: 15px;
     height: calc(24px * 3);
   }
+  .latest-news .owl-carousel .item .news-card .content-box p a {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 15px;
+    height: calc(24px * 3);
+  }
   .our-services .owl-carousel .owl-stage-outer {
     padding-top: 40px;
   }
@@ -16369,10 +16431,14 @@ this UI is made desktop first.
     height: 775px;
   }
   .versions .swiper-container {
-    height: 570px;
+    height: 545px;
   }
   .versions .swiper-container .swiper-slide {
     height: auto !important;
+    width: 100%;
+  }
+  .versions .swiper-container .swiper-slide:nth-child(even) {
+    margin-left: 0;
   }
   .versions::after {
     height: 70px;
@@ -16464,6 +16530,16 @@ this UI is made desktop first.
   }
   .breadcrumbScetion .breadcrumbCustom li a {
     font-size: 1rem;
+  }
+  .breadcrumbScetion .breadcrumbCustom span {
+    font-size: .875rem !important;
+    white-space: nowrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .breadcrumbScetion .breadcrumbCustom span a {
+    font-size: .875rem;
+    white-space: nowrap;
   }
   .servey-slider .top-servey .content-box {
     padding: 0 25px;
@@ -16811,6 +16887,11 @@ this UI is made desktop first.
   }
   .latest-news .owl-carousel .item .news-card .content-box p {
     font-size: 14px;
+    line-height: 24px;
+    height: calc(24px * 2);
+  }
+  .latest-news .owl-carousel .item .news-card .content-box p a {
+    font-size: 14px;
     height: calc(24px * 2);
   }
   .latest-news .owl-carousel .item .news-card .content-box .date {
@@ -16904,6 +16985,15 @@ this UI is made desktop first.
   }
   .breadcrumbScetion .breadcrumbCustom li a {
     font-size: 1rem;
+  }
+  .breadcrumbScetion .breadcrumbCustom span {
+    font-size: .875rem;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .breadcrumbScetion .breadcrumbCustom span a {
+    font-size: .875rem;
+    white-space: nowrap;
   }
   .about-hayaa {
     margin-top: 0;
@@ -17042,7 +17132,7 @@ this UI is made desktop first.
     font-size: .875rem;
   }
   .versions .swiper-container {
-    height: 525px;
+    height: 465px;
   }
   .versions .versions-card {
     height: 215px;

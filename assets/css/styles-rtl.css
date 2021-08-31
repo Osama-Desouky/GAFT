@@ -12217,6 +12217,8 @@ footer .copySection a:last-child {
   transition: 600ms;
   -o-object-fit: cover;
      object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .latest-news .owl-carousel .item .news-card .content-box {
@@ -12499,6 +12501,7 @@ footer .copySection a:last-child {
   font-weight: 500;
   line-height: 30px;
   color: #007066;
+  margin: 0;
 }
 
 .ads .tabs .tab-content .tab-pane .ads-card .content-box .more {
@@ -12604,7 +12607,7 @@ footer .copySection a:last-child {
   content: "";
   position: absolute;
   width: 100%;
-  height: 188px;
+  height: 115px;
   bottom: 65px;
   left: 0;
   background: white;
@@ -12622,6 +12625,15 @@ footer .copySection a:last-child {
   color: #012D29;
 }
 
+.versions .swiper-vertical > .swiper-wrapper {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 .versions .swiper-container {
   width: 1342px;
   height: 370px;
@@ -12631,6 +12643,12 @@ footer .copySection a:last-child {
 
 .versions .swiper-container .swiper-slide {
   height: 243px !important;
+  width: calc(100% / 2 - 15px);
+}
+
+.versions .swiper-container .swiper-slide:nth-child(even) {
+  margin-right: 30px;
+  margin-left: 0 !important;
 }
 
 .versions .versions-card {
@@ -12648,7 +12666,6 @@ footer .copySection a:last-child {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 30px;
   border-radius: 8px;
 }
 
@@ -14525,6 +14542,7 @@ p.on-space {
   margin-bottom: 0;
   text-align: center;
   max-width: 1360px;
+  margin: 0 auto;
 }
 
 .attaches-content #attaches .goals {
@@ -14626,6 +14644,7 @@ p.on-space {
   margin-bottom: 0;
   text-align: center;
   max-width: 1360px;
+  margin: 0 auto;
 }
 
 .attaches-content #attaches .inner-tabs {
@@ -14775,6 +14794,7 @@ p.on-space {
   margin-bottom: 0;
   text-align: center;
   max-width: 1360px;
+  margin: 0 auto;
 }
 
 .attaches-content #saudi-team .team-tasks {
@@ -15368,12 +15388,6 @@ h2, h3, h4, h5, h6 {
   width: 630px;
 }
 
-.backgroundOrImage .formContactUs .textFrom {
-  width: 100%;
-  height: 100%;
-  padding-top: 45px;
-}
-
 .backgroundOrImage .formContactUs div#ctl00_PlaceHolderMain_ctl03__ControlWrapper_RichHtmlField {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
@@ -15387,6 +15401,38 @@ h2, h3, h4, h5, h6 {
 .selectBox select {
   width: auto;
   display: inline-block;
+}
+
+.selectSection input#btn_submitSearch {
+  background-color: #cca079;
+  height: 40px;
+  color: #fff;
+  border-radius: 50px;
+  font-family: inherit;
+  font-size: 13px;
+}
+
+.reportPage .boxSearch .dateBox div[id*="spanCategory"] span {
+  font-size: 0.875rem;
+  padding: 5px 15px;
+  background: #007066;
+  border-radius: 40px;
+  color: #fff;
+}
+
+@media (min-device-width: 1025px) and (max-device-width: 1400px) {
+  .backgroundOrImage .formContactUs .textFrom {
+    width: 100% !important;
+  }
+  .backgroundOrImage .formContactUs .FromInputs {
+    width: 500px !important;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .backgroundOrImage .formContactUs .ms-webpart-zone.ms-fullWidth {
+    width: 100% !important;
+  }
 }
 
 .vote-share-fav {
@@ -15419,17 +15465,18 @@ h2, h3, h4, h5, h6 {
 }
 
 .btnForm {
-  border: unset;
-  background: #CCA079;
-  padding: 15px 64px;
-  border-radius: 50px;
-  font-size: 16px;
-  color: #fff;
-  font-weight: 500;
+  border: unset !important;
+  background-color: #CCA079 !important;
+  padding: 15px 64px !important;
+  border-radius: 50px !important;
+  font-size: 16px !important;
+  color: #fff !important;
+  font-weight: 500 !important;
+  margin-top: 10px !important;
 }
 
 .btnForm:hover {
-  color: #fff;
+  color: #fff !important;
 }
 
 label {
@@ -15474,6 +15521,22 @@ label {
   color: #BBBBBB;
   border-radius: 8px;
   font-size: 14px;
+}
+
+.inputDateStyle input.datepicker {
+  height: 45px;
+  border: unset;
+  background: #f1f1f1;
+  padding: 0 15px;
+  color: #BBBBBB;
+  border-radius: 8px;
+  font-size: 14px;
+  background-image: url(../images/innerPages/calendar-dates.svg);
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: 90% center;
+  padding-right: 45px;
+  width: 150px;
 }
 
 .InputStyle input[type=text], .InputStyle input[type=email], .InputStyle input[type=number] {
@@ -15864,9 +15927,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   padding: 24px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -16146,13 +16206,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.reportPage .formSearch .boxSearchEvent {
-  width: 339px;
 }
 
 .reportPage .formSearch .selectSection {
@@ -16162,6 +16215,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  float: left;
+  margin-right: auto;
 }
 
 .reportPage .formSearch .selectSection .selectBox:first-of-type {
@@ -16276,6 +16331,9 @@ body {
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 0px 8px 8px 0px;
   height: 685px;
+  width: 100%;
+  height: 100%;
+  padding-top: 45px;
 }
 
 .backgroundOrImage .formContactUs .textFrom .headerOfBoxFont35 {
@@ -16871,23 +16929,33 @@ body {
   display: flex;
 }
 
+.tabsStyle {
+  margin-top: 40px;
+}
+
 .tabsStyle .nav-tabs {
   border: unset;
   padding: 0;
+  background-color: #ebe4dd;
+  border-radius: 50px;
+}
+
+.tabsStyle .nav-tabs li {
+  padding-right: 24px;
 }
 
 .tabsStyle .nav-tabs li:first-of-type {
-  padding-left: 24px;
+  padding-right: 0;
 }
 
 .tabsStyle .nav-tabs li a {
   font-size: 20px;
   font-weight: 500;
   color: #CCA079;
-  background: #fff;
+  background: transparent;
   padding: 14px 26px;
   border-radius: 50px;
-  border: 2px solid #CCA079;
+  display: inline-block;
 }
 
 .tabsStyle .nav-tabs li a.active {
@@ -17034,6 +17102,11 @@ body {
 .businessCouncils .boxPuplictions .whiteBoxPupl .dateBox .paragraphOfBox a, .businessCouncils .boxPuplictions .whiteBoxPupl .dateBox .systemSection .boxSearch .praghBox a, .systemSection .boxSearch .businessCouncils .boxPuplictions .whiteBoxPupl .dateBox .praghBox a {
   color: #505050;
   text-decoration: underline;
+}
+
+.businessCouncils .boxPuplictions .whiteBoxPupl .dateS {
+  float: left;
+  margin-right: auto;
 }
 
 .businessCouncils .boxPuplictions .whiteBoxPupl .dateS img {
@@ -17410,14 +17483,16 @@ footer .copySection {
   .trainingPage .formSearch .tabsStyle {
     margin-bottom: 20px;
   }
+  .trainingPage .formSearch .selectBox {
+    display: inline-block;
+  }
   .trainingPage .formSearch .selectSection {
-    width: 100%;
     -webkit-box-pack: inherit;
         -ms-flex-pack: inherit;
             justify-content: inherit;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+  }
+  .trainingPage .formSearch .selectSection div {
+    display: inline-block;
   }
   .trainingPage .tabsStyle .nav-tabs li a {
     font-size: 16px;
@@ -17703,8 +17778,8 @@ footer .copySection {
     margin-top: 20px;
   }
   .backgroundOrImage .formContactUs .FromInputs .btnForm {
-    width: 100%;
-    margin-top: 10px;
+    width: 100% !important;
+    margin-top: 10px !important;
   }
   .backgroundOrImage .formContactUs .textFrom {
     height: auto;
@@ -18457,6 +18532,9 @@ this UI is made desktop first.
     font-size: 30px;
     line-height: 40px;
   }
+  .versions::after {
+    bottom: 100px;
+  }
   .sharekna-elraay .offset-lg-1 {
     margin-right: 8.33333%;
   }
@@ -18628,6 +18706,8 @@ this UI is made desktop first.
     position: absolute;
     left: 50px;
     top: 40px;
+    width: 54px;
+    min-width: auto;
   }
   .main-navbar .nav-wrapper {
     -webkit-box-flex: 1;
@@ -18748,7 +18828,12 @@ this UI is made desktop first.
   }
   .reportPage .formSearch .boxSearchEvent {
     width: 100%;
-    margin-bottom: 10px;
+  }
+  .reportPage .formSearch .selectSection {
+    display: block;
+    margin-top: 10px;
+    float: none;
+    margin-right: 0;
   }
   .attaches-tabs {
     margin-top: 40px;
@@ -18924,6 +19009,12 @@ this UI is made desktop first.
     margin-bottom: 15px;
     height: calc(24px * 3);
   }
+  .latest-news .owl-carousel .item .news-card .content-box p a {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 15px;
+    height: calc(24px * 3);
+  }
   .our-services .owl-carousel .owl-stage-outer {
     padding-top: 40px;
   }
@@ -18972,10 +19063,14 @@ this UI is made desktop first.
     height: 775px;
   }
   .versions .swiper-container {
-    height: 570px;
+    height: 545px;
   }
   .versions .swiper-container .swiper-slide {
     height: auto !important;
+    width: 100%;
+  }
+  .versions .swiper-container .swiper-slide:nth-child(even) {
+    margin-right: 0;
   }
   .versions::after {
     height: 70px;
@@ -19067,6 +19162,16 @@ this UI is made desktop first.
   }
   .breadcrumbScetion .breadcrumbCustom li a {
     font-size: 1rem;
+  }
+  .breadcrumbScetion .breadcrumbCustom span {
+    font-size: .875rem !important;
+    white-space: nowrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .breadcrumbScetion .breadcrumbCustom span a {
+    font-size: .875rem;
+    white-space: nowrap;
   }
   .servey-slider .top-servey .content-box {
     padding: 0 25px;
@@ -19414,6 +19519,11 @@ this UI is made desktop first.
   }
   .latest-news .owl-carousel .item .news-card .content-box p {
     font-size: 14px;
+    line-height: 24px;
+    height: calc(24px * 2);
+  }
+  .latest-news .owl-carousel .item .news-card .content-box p a {
+    font-size: 14px;
     height: calc(24px * 2);
   }
   .latest-news .owl-carousel .item .news-card .content-box .date {
@@ -19507,6 +19617,15 @@ this UI is made desktop first.
   }
   .breadcrumbScetion .breadcrumbCustom li a {
     font-size: 1rem;
+  }
+  .breadcrumbScetion .breadcrumbCustom span {
+    font-size: .875rem;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .breadcrumbScetion .breadcrumbCustom span a {
+    font-size: .875rem;
+    white-space: nowrap;
   }
   .about-hayaa {
     margin-top: 0;
@@ -19645,7 +19764,7 @@ this UI is made desktop first.
     font-size: .875rem;
   }
   .versions .swiper-container {
-    height: 525px;
+    height: 465px;
   }
   .versions .versions-card {
     height: 215px;

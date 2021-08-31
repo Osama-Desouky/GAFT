@@ -1109,6 +1109,8 @@ footer {
          img{
           transition: 600ms;
           object-fit: cover;
+          width: 100%;
+          height: 100%;
          }
         }
          .content-box{
@@ -1368,6 +1370,7 @@ footer {
               line-height: 30px;
               color: $dark-green;
               // margin-bottom: 20px;
+              margin: 0;
             }
             // p{
             //   font-size: 14px;
@@ -1475,7 +1478,7 @@ footer {
     content: "";
     position: absolute;
     width: 100%;
-    height: 188px;
+    height: 115px;
     // bottom: 0;
     bottom: 65px;
     left:0 ;
@@ -1494,6 +1497,10 @@ footer {
       color: $black-color;
     }
   }
+  .swiper-vertical>.swiper-wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 
 .swiper-container {
   width: 1342px;
@@ -1502,6 +1509,11 @@ footer {
   overflow: hidden;
   .swiper-slide{
     height: 243px !important;
+    width: calc(100% / 2 - 15px);
+    &:nth-child(even) {
+      margin-#{$start-direction}: 30px;
+      margin-#{$end-direction}: 0 !important;
+    }
   }
 }
   .versions-card{
@@ -1511,7 +1523,7 @@ footer {
     flex-direction: row;
     height: 243px;
     align-items: center;
-    margin-bottom: 30px;
+    // margin-bottom: 30px;
     border-radius: 8px;
     // padding: 25px 15px;
     .img-box{
@@ -3154,6 +3166,7 @@ p.on-space{
         margin-bottom: 0;
         text-align: center;
         max-width: 1360px;
+        margin: 0 auto;
       }
     }
     .goals{
@@ -3233,6 +3246,7 @@ p.on-space{
         margin-bottom: 0;
         text-align: center;
         max-width: 1360px;
+        margin: 0 auto;
       }
 
     }
@@ -3348,6 +3362,7 @@ p.on-space{
         margin-bottom: 0;
         text-align: center;
         max-width: 1360px;
+        margin: 0 auto;
       }
     }
     .team-tasks {
@@ -3850,12 +3865,6 @@ h2, h3 ,h4 ,h5 ,h6{
   width: 630px;
 }
 
-.backgroundOrImage .formContactUs .textFrom{
-  width: 100%;
-  height: 100%;
-  padding-top: 45px;
-}
-
 .backgroundOrImage .formContactUs div#ctl00_PlaceHolderMain_ctl03__ControlWrapper_RichHtmlField {
   display: flex !important;
   align-items: center;
@@ -3868,33 +3877,35 @@ h2, h3 ,h4 ,h5 ,h6{
   display: inline-block;
 }
 
-// .boxPuplictions{
-//   .greenBox .boxG img {
-//       transition: 500ms;
-//   }
-//   .whiteBoxPupl{
-//     height: 135px;
-//     padding-bottom: 14px;
-//     .headerOfBox{
-//       font-size: 1.3rem;
-//       line-height: 31px;
-//       height: calc(31px * 2 + 14px);
-//       overflow: hidden;
-//     }
-//   }
+.selectSection input#btn_submitSearch {
+  background-color: #cca079;
+  height: 40px;
+  color: #fff;
+  border-radius: 50px;
+  font-family: inherit;
+  font-size: 13px;
+}
+.reportPage .boxSearch .dateBox div[id*="spanCategory"] span{
+  font-size: 0.875rem;
+  padding: 5px 15px;
+  background: #007066;
+  border-radius: 40px;
+  color: #fff;
+}
 
-//   &:hover{
-//     .greenBox {
-//       height: 300px !important;
-//       .boxG img {
-//         transform: scale(.9);
-//       }
-//     }
-//     .whiteBoxPupl {
-//       height: 200px !important;
-//     }
-//   }
-// }
+@media (min-device-width: 1025px) and (max-device-width: 1400px){
+  .backgroundOrImage .formContactUs .textFrom{
+    width: 100% !important;
+  }
+  .backgroundOrImage .formContactUs .FromInputs{
+    width: 500px !important;
+  }
+}
+@media (max-width: 767.98px) {
+  .backgroundOrImage .formContactUs .ms-webpart-zone.ms-fullWidth {
+    width: 100% !important;
+  }
+}
  
 // RTL
 // html[dir="rtl"] {
