@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+  <g id="list" transform="translate(24 24)">
+    <g id="list-outline" transform="translate(-24 -24)">
+      <g id="list-2" data-name="list">
+        <rect id="Rectangle_11930" data-name="Rectangle 11930" width="48" height="48" opacity="0"/>
+        <circle id="Ellipse_226" data-name="Ellipse 226" cx="2" cy="2" r="2" transform="translate(38 12)" fill="#007066"/>
+        <circle id="Ellipse_227" data-name="Ellipse 227" cx="2" cy="2" r="2" transform="translate(38 22)" fill="#007066"/>
+        <circle id="Ellipse_228" data-name="Ellipse 228" cx="2" cy="2" r="2" transform="translate(38 32)" fill="#007066"/>
+        <rect id="Rectangle_11931" data-name="Rectangle 11931" width="28" height="4" rx="1.88" transform="translate(6 22)" fill="#cca079"/>
+        <rect id="Rectangle_11932" data-name="Rectangle 11932" width="28" height="4" rx="1.88" transform="translate(6 32)" fill="#cca079"/>
+        <rect id="Rectangle_11933" data-name="Rectangle 11933" width="28" height="4" rx="1.88" transform="translate(6 12)" fill="#cca079"/>
+      </g>
+    </g>
+  </g>
+</svg>

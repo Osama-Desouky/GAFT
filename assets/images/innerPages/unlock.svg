@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+  <g id="unlock" transform="translate(12 12)">
+    <g id="unlock-outline" transform="translate(-12 -12)">
+      <g id="unlock-2" data-name="unlock">
+        <rect id="Rectangle_11920" data-name="Rectangle 11920" width="30" height="30" opacity="0"/>
+        <path id="Path_57532" data-name="Path 57532" d="M20.25,9.5H11.5V7a2.5,2.5,0,0,1,5,0A1.25,1.25,0,0,0,19,7,5,5,0,0,0,9,7V9.5H7.75A3.75,3.75,0,0,0,4,13.25v10A3.75,3.75,0,0,0,7.75,27h12.5A3.75,3.75,0,0,0,24,23.25v-10A3.75,3.75,0,0,0,20.25,9.5ZM21.5,23.25a1.25,1.25,0,0,1-1.25,1.25H7.75A1.25,1.25,0,0,1,6.5,23.25v-10A1.25,1.25,0,0,1,7.75,12h12.5a1.25,1.25,0,0,1,1.25,1.25Z" transform="translate(1 0.5)" fill="#cca079"/>
+        <path id="Path_57533" data-name="Path 57533" d="M12.75,12a3.75,3.75,0,1,0,3.75,3.75A3.75,3.75,0,0,0,12.75,12Zm0,5A1.25,1.25,0,1,1,14,15.75,1.25,1.25,0,0,1,12.75,17Z" transform="translate(2.25 3)" fill="#007066"/>
+      </g>
+    </g>
+  </g>
+</svg>

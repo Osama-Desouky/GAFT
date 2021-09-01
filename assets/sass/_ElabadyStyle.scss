@@ -1,0 +1,317 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+// 404 page style starts here 
+
+.not-found-state{
+
+    margin-top: 48px;
+
+    margin-bottom: 120px;
+
+    &_box{
+        background-color: #fff;
+        box-shadow: 0 3px 25px rgba(#000, 0.1) ;
+        padding: 0 24px;
+        border-radius: $raduis-normal;
+        -webkit-border-radius: $raduis-normal;
+        -moz-border-radius: $raduis-normal;
+        -ms-border-radius: $raduis-normal;
+        -o-border-radius: $raduis-normal;
+
+        &--content{
+            img{
+                margin-bottom: 48px;
+                height: 100%;
+                width: 100%;
+                max-width: 100%;
+                max-height: 460px;
+    
+                margin-bottom: 48px;
+            }            
+    
+            h1{
+                color: $golden-color;
+                font-weight: $w-bold;
+                font-size: 35px;
+                margin-bottom: 48px;
+
+
+            }
+
+            a.read-more{
+                color: #fff;
+                background-color: $golden-color;
+                padding: 12px 16px;
+                display: inline-block;
+                border-radius:1000px;
+                -moz-border-radius:1000px;
+                -ms-border-radius:1000px;
+                -o-border-radius:1000px;
+                -webkit-border-radius:1000px;
+                transition: background 0.4s ease-in  ;
+                -webkit-transition: background 0.4s ease-in  ;
+                -moz-transition: background 0.4s ease-in  ;
+                -ms-transition: background 0.4s ease-in  ;
+                -o-transition: background 0.4s ease-in  ;
+
+                margin-bottom: 69px;
+
+                &:hover{
+                    background-color: $dark-green;
+                }
+            }
+        }
+
+            
+
+        
+}
+
+
+
+
+
+
+
+}
+
+
+// 404 page style ends here 
+
+/*
+
+================================================
+=============================================
+================================================
+
+*/
+
+
+// services inner page style starts here 
+
+.service{
+
+    &_header{
+
+        background-color: $headres-bg;
+        padding: 130px 0;
+
+    }
+
+    &_descreption{
+
+        &--title{
+            color: $dark-green;
+            font-weight: $w-bold;
+            font-size: 35px;
+            margin-bottom: 24px;
+
+        }
+
+        &--breif{
+            color: $p-color;
+            font-size: 20px;
+            font-weight: $w-light;
+            margin-bottom: 24px;
+        }
+
+        &--features{
+
+            &-item{
+
+                &:not(:last-child){
+                    margin-bottom: 12px;
+                }
+
+                .icon{
+                    height: 30px;
+                    margin-left: 6px;
+                }
+    
+                .text{
+                    font-size: 20px;
+                    font-weight: $w-medium;
+                    line-height: 0.8;
+                    margin:0;
+                    span.title{
+                        color: #707070;
+    
+                    }
+    
+                    span.content{
+                        color:$golden-color;
+                        
+                    }
+    
+    
+                }
+            }
+
+        }
+    }
+
+    
+    &_img-box{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        height: 250px;
+        width: 250px;
+        background-color: #fff;
+        box-shadow: 0 6px 25px rgba(#007066, 0.10);
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+
+        margin-bottom: 24px;
+
+    }
+
+    &_rating-box{
+
+
+        .stars{
+            img{
+                width: 28px;
+                
+                &:not(:first-child){
+                    margin-right:6px;
+
+                }
+            }
+        }
+
+        .text{
+            font-size: 14px;
+            font-weight: 400 ;
+
+            .number{
+                color: $golden-color;
+                font-weight: $w-bold;
+
+            }
+
+            .ratings{
+                color: $black-color-two;
+
+            }
+
+            span:not(:last-child){
+                margin-left: 6px;
+            }
+
+        }
+    }
+
+
+
+    &-rules{
+        margin-top: 48px;
+        
+        &_title{
+            border-bottom: 2px solid rgba(187, 187, 187 , 0.5);
+            padding-bottom: 24px;
+            position: relative;
+            
+            &::after{
+                content: "";
+                width: 40%;
+                border-bottom: 3px solid #009F91 ;
+                position: absolute;
+                bottom: 0 - 2px;
+                border-radius: 1000PX;
+                -webkit-border-radius: 1000PX;
+                -moz-border-radius: 1000PX;
+                -ms-border-radius: 1000PX;
+                -o-border-radius: 1000PX;
+}
+            img{
+                margin-left: 6px;
+                height: 48px;
+            }
+            h3{
+                font-size: 28px;
+                font-weight: $w-bold;
+                color: $black-color-two ;
+            }
+
+
+
+        }
+        &_box{
+            background-color: #fff;
+            padding: 24px;
+            border-radius: $raduis-normal;
+            -webkit-border-radius: $raduis-normal;
+            -moz-border-radius: $raduis-normal;
+            -ms-border-radius: $raduis-normal;
+            -o-border-radius: $raduis-normal;
+
+
+
+            &--content{
+
+                &_items{
+
+                    margin-top: 24px;
+                    .item{
+                        &:not(:last-child){
+                            margin-bottom: 12px;
+                        }
+                        img{
+                            height: 24px;
+                            margin-top: 6px;
+                        }
+
+                        p{
+                            margin: 0;
+                            font-size: 18px;
+                            color: $p-color;
+                        }
+                    }
+
+                }
+
+
+            }
+        }
+
+
+  
+
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// services inner page style ends here 
