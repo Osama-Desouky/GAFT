@@ -2082,6 +2082,39 @@ this UI is made desktop first.
      
     }
   }
+
+
+
+
+
+
+    // 404 statement 
+    .not-found-state{
+      &_box{
+        padding: 0 12px;
+
+
+        &--content{
+
+          img{
+            margin-bottom: 24px;
+
+          }
+          h1{
+            font-weight: $w-semi-bold;
+            font-size: 28px;
+            margin-bottom: 24px;
+          }
+        }
+      }
+
+
+    }
+
+    
+
+
+
 }
 
 // Extra small devices (portrait phones, less than 576px)
