@@ -17365,6 +17365,17 @@ this UI is made desktop first.
   .not-found .content h2 {
     font-size: 25px;
   }
+  .not-found-state_box {
+    padding: 0 12px;
+  }
+  .not-found-state_box--content img {
+    margin-bottom: 24px;
+  }
+  .not-found-state_box--content h1 {
+    font-weight: 600;
+    font-size: 28px;
+    margin-bottom: 24px;
+  }
 }
 
 @media (max-width: 575.98px) {
