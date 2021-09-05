@@ -13211,12 +13211,14 @@ footer .copySection a:last-child {
   about styles
 */
 .about-hayaa {
-  margin-top: 35px;
-  margin-bottom: 90px;
+  margin-bottom: 70px;
   padding-top: 35px;
-  background-image: url(../images/dots.svg);
-  background-position: 3.5% top;
-  background-repeat: no-repeat;
+}
+
+.about-hayaa .white-card {
+  border-radius: 8px;
+  -webkit-box-shadow: 0 8px 16px rgba(187, 187, 187, 0.15);
+          box-shadow: 0 8px 16px rgba(187, 187, 187, 0.15);
 }
 
 .about-hayaa .about-hay2a-content {
@@ -13231,12 +13233,16 @@ footer .copySection a:last-child {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 55px;
+  padding-bottom: 55px;
 }
 
 .about-hayaa .about-hay2a-content h3 {
   font-size: 2.187rem;
   font-weight: 500;
-  color: #1D1D1B;
+  color: #007066;
   line-height: 50px;
   margin-bottom: 20px;
   text-align: right;
@@ -13244,25 +13250,44 @@ footer .copySection a:last-child {
 
 .about-hayaa .about-hay2a-content p {
   font-size: 1.125rem;
-  font-weight: 400;
+  font-weight: 500;
   color: #666666;
   line-height: 36px;
   margin-bottom: 0;
   text-align: right;
+  margin-bottom: 20px;
+}
+
+.about-hayaa .about-hay2a-content p:last-child {
+  margin-bottom: 0;
+}
+
+.about-hayaa .about-hay2a-content p.black-p {
+  color: #1D1D1B;
 }
 
 .about-hayaa .about-hay2a-img {
   overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
 }
 
 .about-hayaa .about-hay2a-img img {
   max-width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
-.about-details {
-  padding-bottom: 100px;
+.about-details .white-card {
+  padding: 50px;
+  padding-bottom: 55px;
+  margin-bottom: 70px;
 }
 
 .about-details .details-item {
@@ -13274,9 +13299,13 @@ footer .copySection a:last-child {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  height: 100%;
 }
 
 .about-details .details-item .details-img img {
@@ -13303,7 +13332,7 @@ footer .copySection a:last-child {
   font-size: 2.187rem;
   font-weight: 500;
   line-height: 51px;
-  color: #1D1D1B;
+  color: #007066;
   margin-bottom: 30px;
 }
 
@@ -13364,6 +13393,84 @@ footer .copySection a:last-child {
 
 .about-details .details-item.third .details-content {
   max-width: initial;
+}
+
+.about-details .hay2a-missions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.about-details .hay2a-missions .missions-content {
+  margin-right: 60px;
+  padding-right: 60px;
+}
+
+.about-details .hay2a-missions .missions-content h3 {
+  font-size: 2.187rem;
+  font-weight: 500;
+  color: #007066;
+  line-height: 50px;
+  margin-bottom: 24px;
+  text-align: right;
+}
+
+.about-details .hay2a-missions .missions-content p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #393939;
+  line-height: 36px;
+  margin-bottom: 24px;
+  text-align: right;
+}
+
+.about-details .hay2a-missions .missions-content ol {
+  padding-left: 35px;
+}
+
+.about-details .hay2a-missions .missions-content ol li {
+  padding-left: 5px;
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #9C9C9C;
+  line-height: 36px;
+  margin-bottom: 12px;
+}
+
+.about-details .hay2a-missions .missions-content ol li::marker {
+  color: #CCA079;
+}
+
+.about-details .hay2a-missions .missions-content ol li ul {
+  padding-left: 0;
+  margin-top: 12px;
+  list-style: none;
+}
+
+.about-details .hay2a-missions .missions-content ol li ul li {
+  padding-left: 5px;
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #9C9C9C;
+  line-height: 36px;
+  margin-bottom: 12px;
+  position: relative;
+}
+
+.about-details .hay2a-missions .missions-content ol li ul li::before {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 11px;
+  top: 15px;
+  right: -28px;
+  background-image: url(../images/arrow-gold.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 p.on-space {
@@ -13428,6 +13535,95 @@ p.on-space {
   right: 30px;
   background-image: url(../images/about-note-quote-bottom.svg);
   background-repeat: no-repeat;
+}
+
+.strategy {
+  margin-bottom: 100px;
+}
+
+.strategy .strategy-top {
+  background-image: url(../images/strategy.svg);
+  background-position: left center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-bottom: 30px;
+}
+
+.strategy .strategy-top h2 {
+  font-size: 2.0625rem;
+  font-weight: 500;
+  color: #007066;
+  margin-bottom: 22px;
+  line-height: 49px;
+}
+
+.strategy .strategy-top p {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #9C9C9C;
+  line-height: 36px;
+  margin-bottom: 0;
+}
+
+.strategy .strategy-goals h2 {
+  font-size: 1.75rem;
+  font-weight: 500;
+  color: #CCA079;
+  line-height: 42px;
+  margin-bottom: 24px;
+}
+
+.strategy .strategy-goals .st-goal {
+  background-color: #fff;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.16);
+          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.16);
+  height: 270px;
+  width: calc(100% / 4 - 16px);
+  margin-right: 16px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 24px;
+  padding-left: 12px;
+}
+
+.strategy .strategy-goals .st-goal:last-child {
+  margin-right: 0;
+}
+
+.strategy .strategy-goals .st-goal img {
+  height: 60px;
+}
+
+.strategy .strategy-goals .st-goal h4 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #1D1D1B;
+  line-height: 29px;
+  margin-bottom: 6px;
+  margin-top: 6px;
+  letter-spacing: -1px;
+}
+
+.strategy .strategy-goals .st-goal p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #9C9C9C;
+  line-height: 24px;
+  margin-bottom: 0px;
+  height: calc(24px * 5);
+  overflow: hidden;
 }
 
 .vote-share-fav {
@@ -15326,6 +15522,83 @@ p.on-space {
           transform: translateY(0);
 }
 
+.not-found {
+  margin-top: 65px;
+  margin-bottom: 130px;
+}
+
+.not-found .white-card {
+  width: 1082px;
+  height: 739px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
+}
+
+.not-found img {
+  max-height: 465px;
+}
+
+.not-found .content {
+  margin-top: 65px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.not-found .content h2 {
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 51px;
+  color: #CCA079;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.not-found .content a {
+  background-color: #CCA079;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 36px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 36px;
+  width: 205px;
+  height: 52px;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+.not-found .content a:hover {
+  background-color: #007066;
+}
+
 .bg-2 {
   background-color: #F1F1F1;
 }
@@ -15995,6 +16268,9 @@ this UI is made desktop first.
         -ms-flex: 0 0 70px;
             flex: 0 0 70px;
   }
+  .not-found .white-card {
+    width: 950px;
+  }
 }
 
 @media (max-width: 991.98px) {
@@ -16108,17 +16384,30 @@ this UI is made desktop first.
   .about-hayaa {
     background-position: 5.5% 58%;
   }
+  .about-hayaa .about-hay2a-content {
+    padding: 25px 35px 15px;
+  }
   .about-hayaa .about-hay2a-content h3 {
     font-size: 1.5rem;
-    margin-bottom: 0px;
+    margin-bottom: 10px;
+    line-height: 32px;
   }
   .about-hayaa .about-hay2a-content p {
     font-size: 1rem;
     line-height: 30px;
     margin-bottom: 15px;
   }
+  .about-hayaa .about-hay2a-img {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   .about-details {
-    padding-bottom: 40px;
+    padding-bottom: 0px;
+  }
+  .about-details .white-card {
+    padding: 35px;
+    margin-bottom: 40px;
   }
   .about-details .details-item .details-img {
     -webkit-box-pack: center !important;
@@ -16147,6 +16436,82 @@ this UI is made desktop first.
   }
   .about-details .details-item.second .details-content p {
     margin-bottom: 15px;
+  }
+  .about-details .hay2a-missions {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .about-details .hay2a-missions .missions-content {
+    margin: 0;
+    padding: 0;
+  }
+  .about-details .hay2a-missions .missions-content h3 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+  .about-details .hay2a-missions .missions-content p {
+    font-size: 1.25rem;
+    line-height: 30px;
+    margin-bottom: 15px;
+  }
+  .about-details .hay2a-missions .missions-content ol li {
+    font-size: 1rem;
+    line-height: 24px;
+    margin-bottom: 10px;
+  }
+  .about-details .hay2a-missions .missions-content ol li ul li {
+    font-size: 1rem;
+    line-height: 24px;
+    margin-bottom: 7px;
+  }
+  .about-details .hay2a-missions .missions-content ol li ul li::before {
+    height: 8px;
+    top: 10px;
+  }
+  .strategy .strategy-top {
+    background-position: left top;
+  }
+  .strategy .strategy-top h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    line-height: 38px;
+    padding-top: 275px;
+  }
+  .strategy .strategy-top p {
+    font-size: 1rem;
+    line-height: 24px;
+  }
+  .strategy .strategy-goals h2 {
+    font-size: 1.5rem;
+    line-height: 32px;
+    margin-bottom: 20px;
+  }
+  .strategy .strategy-goals .st-goal {
+    width: calc(100% / 2 - 15px);
+    margin-right: 15px;
+    margin-bottom: 15px;
+  }
+  .strategy .strategy-goals .st-goal:nth-child(odd) {
+    margin-right: 0px;
+  }
+  .strategy .strategy-goals .st-goal h4 {
+    font-size: 1.1rem;
+    line-height: 22px;
+    max-height: calc(22px * 2);
+    overflow: hidden;
+  }
+  .strategy .strategy-goals .st-goal p {
+    font-size: .875rem;
+    line-height: 20px;
+    height: calc(20px * 5);
   }
   p.on-space {
     font-size: 1rem;
@@ -16443,6 +16808,13 @@ this UI is made desktop first.
   .versions::after {
     height: 70px;
     bottom: 45px;
+  }
+  .not-found .white-card {
+    width: 760px;
+  }
+  .not-found .content h2 {
+    font-size: 30px;
+    line-height: 45px;
   }
 }
 
@@ -16973,6 +17345,26 @@ this UI is made desktop first.
     font-size: 14px;
     line-height: 26px;
   }
+  .not-found {
+    margin-top: 65px;
+    margin-bottom: 130px;
+    padding: 15px;
+  }
+  .not-found .white-card {
+    width: auto;
+    height: auto;
+    padding: 0 10px;
+  }
+  .not-found img {
+    max-height: 350px;
+    max-width: 100%;
+  }
+  .not-found .content {
+    margin-bottom: 65px;
+  }
+  .not-found .content h2 {
+    font-size: 25px;
+  }
 }
 
 @media (max-width: 575.98px) {
@@ -16997,10 +17389,20 @@ this UI is made desktop first.
   }
   .about-hayaa {
     margin-top: 0;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
+  }
+  .about-hayaa .about-hay2a-content {
+    padding: 15px 20px;
+  }
+  .about-hayaa .about-hay2a-content p {
+    font-size: .875rem;
+    line-height: 24px;
   }
   .about-details {
     padding-bottom: 40px;
+  }
+  .about-details .white-card {
+    padding: 20px;
   }
   .about-details .details-item {
     padding-bottom: 25px;
@@ -17012,7 +17414,7 @@ this UI is made desktop first.
     line-height: 30px;
   }
   .about-details .details-item .details-content p {
-    font-size: .9rem;
+    font-size: .875rem;
     line-height: 24px;
   }
   .about-details .details-item .details-content ul li {
@@ -17025,6 +17427,68 @@ this UI is made desktop first.
   }
   .about-details .details-item.second .details-content p {
     margin-bottom: 15px;
+  }
+  .about-details .hay2a-missions .missions-content h3 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 30px;
+  }
+  .about-details .hay2a-missions .missions-content p {
+    font-size: 1.125rem;
+    line-height: 26px;
+    margin-bottom: 10px;
+  }
+  .about-details .hay2a-missions .missions-content ol {
+    padding-left: 25px;
+  }
+  .about-details .hay2a-missions .missions-content ol li {
+    font-size: 0.875rem;
+    margin-bottom: 5px;
+    line-height: 20px;
+  }
+  .about-details .hay2a-missions .missions-content ol li ul {
+    margin-bottom: 10px;
+  }
+  .about-details .hay2a-missions .missions-content ol li ul li {
+    font-size: 0.875rem;
+    line-height: 20px;
+    margin-bottom: 5px;
+  }
+  .about-details .hay2a-missions .missions-content ol li ul li::before {
+    left: -25px;
+  }
+  .strategy .strategy-top h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    line-height: 30px;
+    padding-top: 215px;
+  }
+  .strategy .strategy-top p {
+    font-size: 0.875rem;
+    line-height: 20px;
+  }
+  .strategy .strategy-goals h2 {
+    font-size: 1.125rem;
+    line-height: 26px;
+    margin-bottom: 15px;
+  }
+  .strategy .strategy-goals .st-goal {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 15px;
+    height: auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .strategy .strategy-goals .st-goal h4 {
+    text-align: center;
+  }
+  .strategy .strategy-goals .st-goal p {
+    max-height: calc(20px * 5);
+    height: auto;
+    text-align: center;
   }
   p.on-space {
     font-size: .9rem;

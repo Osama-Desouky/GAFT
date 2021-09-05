@@ -728,6 +728,12 @@ this UI is made desktop first.
   .main-navbar .navbar-brand.brand-2{
     flex: 0 0 70px;
   }
+  // 404
+  .not-found{
+    .white-card{
+      width: 950px;
+    }
+  }
 }
 // Medium devices (tablets, less than 992px)
 @include media-breakpoint-down(md) {
@@ -839,9 +845,11 @@ this UI is made desktop first.
     .about-hayaa{
       background-position: 5.5% 58%;
       .about-hay2a-content{
+        padding: 25px 35px 15px;
         h3{
           font-size: 1.5rem;
-          margin-bottom: 0px;
+          margin-bottom: 10px;
+          line-height: 32px;
         }
         p{
           font-size: 1rem;
@@ -849,9 +857,17 @@ this UI is made desktop first.
           margin-bottom: 15px;
         }
       }
+      .about-hay2a-img{
+        justify-content: center;
+      }
     }
     .about-details {
-      padding-bottom: 40px;
+      padding-bottom: 0px;
+      .white-card{
+        padding: 35px;
+        margin-bottom: 40px;
+      }
+
       .details-item {
         .details-img{
           justify-content: center !important;
@@ -882,6 +898,83 @@ this UI is made desktop first.
             p{
               margin-bottom: 15px;
             }
+          }
+        }
+      }
+      .hay2a-missions {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        .missions-content {
+          margin: 0;
+          padding: 0;
+          h3{
+            font-size: 2rem;
+            margin-bottom: 15px;
+          }
+          p{
+            font-size: 1.25rem;
+            line-height: 30px;
+            margin-bottom: 15px;
+          }
+          ol{
+            li{
+              font-size: 1rem;
+              line-height: 24px;
+              margin-bottom: 10px;
+              ul{
+                li{
+                  font-size: 1rem;
+                  line-height: 24px;
+                  margin-bottom: 7px;
+                  &::before{
+                    height: 8px;
+                    top: 10px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .strategy {
+      .strategy-top {
+        background-position: left top;
+        h2{
+          font-size: 2rem;
+          margin-bottom: 15px;
+          line-height: 38px;
+          padding-top: 275px;
+        }
+        p{
+          font-size: 1rem;
+          line-height: 24px;
+        }
+      }
+      .strategy-goals {
+        h2{
+          font-size: 1.5rem;
+          line-height: 32px;
+          margin-bottom: 20px;
+        }
+        .st-goal{
+          width: calc(100% / 2 - 15px);
+          margin-#{$end-direction}: 15px;
+          margin-bottom: 15px;
+          &:nth-child(odd){
+          margin-#{$end-direction}: 0px;
+          }
+          h4{
+            font-size: 1.1rem;
+            line-height: 22px;
+            max-height: calc(22px * 2);
+            overflow: hidden
+          }
+          p{
+            font-size: .875rem;
+            line-height: 20px;
+            height: calc(20px * 5);
           }
         }
       }
@@ -1277,6 +1370,19 @@ this UI is made desktop first.
     &::after{
       height: 70px;
       bottom: 45px;
+    }
+  }
+  // 404
+  .not-found{
+    .white-card{
+      width: 760px;
+    }
+    .content{
+
+      h2{
+        font-size: 30px;
+        line-height: 45px;
+      }
     }
   }
 }
@@ -1954,6 +2060,28 @@ this UI is made desktop first.
         }
       }
     }
+    // 404
+  .not-found{
+    margin-top: 65px;
+    margin-bottom: 130px;
+    padding: 15px;
+    .white-card{
+      width: auto;
+      height: auto;
+      padding: 0 10px;
+    }
+    img{
+      max-height: 350px;
+      max-width: 100%;
+    }
+    .content{
+      margin-bottom: 65px;
+      h2{
+        font-size: 25px;
+      }
+     
+    }
+  }
 }
 
 // Extra small devices (portrait phones, less than 576px)
@@ -1988,10 +2116,20 @@ this UI is made desktop first.
 
   .about-hayaa {
     margin-top: 0;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
+    .about-hay2a-content {
+      padding: 15px 20px;
+      p{
+        font-size: .875rem;
+        line-height: 24px;
+      }
+    }
   }
   .about-details {
     padding-bottom: 40px;
+    .white-card{
+      padding: 20px;
+    }
     .details-item {
       padding-bottom: 25px;
       .details-content {
@@ -2002,7 +2140,7 @@ this UI is made desktop first.
           line-height: 30px;
         }
         p{
-          font-size: .9rem;
+          font-size: .875rem;
           line-height: 24px;
         }
         ul{
@@ -2019,6 +2157,76 @@ this UI is made desktop first.
           p{
             margin-bottom: 15px;
           }
+        }
+      }
+    }
+    .hay2a-missions {
+      .missions-content {
+        h3{
+          font-size: 1.5rem;
+          margin-top: 10px;
+          margin-bottom: 10px;
+          line-height: 30px;
+        }
+        p{
+          font-size: 1.125rem;
+          line-height: 26px;
+          margin-bottom: 10px
+        }
+        ol{
+          padding-#{$start-direction}: 25px;
+          li{
+            font-size: 0.875rem;
+            margin-bottom: 5px;
+            line-height: 20px;
+            ul{
+              margin-bottom: 10px;
+              li{
+                font-size: 0.875rem;
+                line-height: 20px;
+                margin-bottom: 5px;
+                &::before{
+                  #{$start-direction}:-25px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .strategy {
+    .strategy-top{
+      h2{
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+        line-height: 30px;
+        padding-top: 215px;
+      }
+      p{
+        font-size: 0.875rem;
+        line-height: 20px;
+      }
+    }
+    .strategy-goals{
+      h2{
+        font-size: 1.125rem;
+        line-height: 26px;
+        margin-bottom: 15px;
+      }
+      .st-goal{
+        width: 100%;
+        margin: 0;
+        margin-bottom: 15px;
+        height: auto;
+        align-items: center;
+        h4{
+          text-align: center;
+        }
+        p{
+          max-height: calc(20px * 5);
+          height: auto;
+          text-align: center;
         }
       }
     }
