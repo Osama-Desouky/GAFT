@@ -336,6 +336,13 @@ body.header-popup-open {
 }
 .side-border {
   border-#{$end-direction}: 1px solid $border-color;
+  .d-flex{
+    &.flex-column{
+      .hd-img{
+        align-self: flex-start;
+      }
+    }
+  }
 }
 
 .main-header {
@@ -348,7 +355,7 @@ body.header-popup-open {
     left: calc(50% - 10px);
     width: 17px;
     height: 24px;
-    z-index: 9999;
+    z-index: 9;
   }
   .slider-wrapper {
     position: absolute;
@@ -1095,6 +1102,7 @@ footer {
              margin-bottom: 35px;
              height: calc(30px * 2);
              transition: 300ms;
+             overflow: hidden;
            }
            .date{
              color: $golden-color;
@@ -3721,6 +3729,10 @@ p.on-space{
 .white-card{
   background-color: #fff;
   border-radius: 16px;
+}
+.offset-lg-1{
+  margin-#{$start-direction}: 0;
+  margin-#{$end-direction}: 0;
 }
 
 // RTL

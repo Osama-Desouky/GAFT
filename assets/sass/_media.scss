@@ -9,6 +9,7 @@ this UI is made desktop first.
   }
   .custom-container{
     max-width: 1340px;
+    margin: 0 auto;
   }
   .mx-lg-140 {
     padding-left: 70px;
@@ -133,6 +134,25 @@ this UI is made desktop first.
   }
   .versions{
     padding-top: 40px;
+    .swiper-container{
+      width: auto;
+    }
+  }
+  .main-navbar {
+    .navbar-brand{
+      flex: 0 0 225px ;
+      margin-#{$start-direction}: 0 ;
+      img{
+        width: 100%;
+      }
+      &.brand-2{
+        margin-#{$start-direction}: 20px ;
+        flex: 0 0 80px;
+      }
+    }
+    #navbarSupportedContent > .navbar-nav > .nav-item{
+      margin-#{$start-direction}: 20px ;
+    }
   }
 }
 
@@ -265,6 +285,41 @@ this UI is made desktop first.
         }
       }
     }
+    .versions {
+      .versions-card {
+        .content-box {
+          .actions {
+            .view{
+              width: 130px ;
+              height: 45px
+            }
+            .download{
+              margin-#{$start-direction}: 5px;
+              width: 130px ;
+              height: 45px
+            }
+          }
+        }
+      }
+    }
+
+    .main-navbar{
+      max-height: 99px;
+      .top-nav{
+        margin-top: 15px;
+        margin-bottom: 5px;
+      }
+      #navbarSupportedContent > .navbar-nav > .nav-item > .nav-link{
+        padding: 15px 0;
+        font-size: 14px;
+      }
+      .search-box{
+        top: 99px !important;
+      }
+    }
+    .navbar .dropdown-menu{
+      top: 99px !important;
+    }
   }
 
 // Large devices (desktops, 992px and up)
@@ -317,7 +372,7 @@ this UI is made desktop first.
 // Large devices (desktops, less than 1200px)
 @include media-breakpoint-down(lg) {
   .main-navbar #navbarSupportedContent > .navbar-nav > .nav-item > .nav-link {
-    font-size: 13px;
+    font-size: 12px;
   }
   .main-header .slider-wrapper .social {
     #{$end-direction}: calc((100vw - 960px + 30px) / 2);
@@ -565,9 +620,13 @@ this UI is made desktop first.
     }
   }
   .sharekna-elraay {
+    .offset-lg-1{
+      margin-#{$start-direction}: 8.33333%;
+    }
     .sharekna-elray-card{
       margin-#{$start-direction}: 0px;
       padding: 20px;
+      margin-bottom: 20px;
       .card-hd {
         margin-bottom: 10px;
         h4{
@@ -588,6 +647,84 @@ this UI is made desktop first.
         }
     }
   }
+  .main-header {
+    .slider-wrapper {
+      .owl-carousel {
+        .item {
+          .caption{
+            padding: 25px 30px;
+            #{$end-direction} : calc(50% - 300px);
+            h2{
+              font-size: 32px;
+              line-height: 42px;
+              margin-bottom: 10px;
+            }
+            h4{
+              font-size: 24px;
+              line-height: 35px;
+            }
+            &::after{
+              width: 50px;
+              height: 50px;
+              background-size: 60%;
+              #{$start-direction}: 30px;
+              top: -25px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .versions {
+    .versions-card {
+      .content-box {
+        .actions {
+          .view{
+            width: 100px ;
+            height: 40px;
+            font-size: 14px;
+            img{
+              margin-#{$start-direction}: 5px;
+              width: 15px;
+              height: 15px;
+            }
+          }
+          .download{
+            margin-#{$start-direction}: 5px;
+            width: 100px ;
+            height: 40px;
+            font-size: 14px;
+            img{
+              margin-#{$start-direction}: 5px;
+              width: 15px;
+              height: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .main-navbar #navbarSupportedContent > .navbar-nav{
+    padding-inline-start: 15px;
+  }
+  .main-navbar #navbarSupportedContent > .navbar-nav > .nav-item{
+    margin-#{$start-direction}: 10px;
+  }
+  .main-navbar #navbarSupportedContent > .navbar-nav > .nav-item:last-child {
+    margin-right: 10px;
+  }
+  .main-navbar #navbarSupportedContent > .navbar-nav > .nav-item > .nav-link.dropdown-toggle::after{
+    background-size: contain;
+    background-position-y: 100%;
+    width: 8px;
+  }
+  .main-navbar .navbar-brand{
+    flex: 0 0 200px;
+  }
+  .main-navbar .navbar-brand.brand-2{
+    flex: 0 0 70px;
+  }
 }
 // Medium devices (tablets, less than 992px)
 @include media-breakpoint-down(md) {
@@ -597,33 +734,80 @@ this UI is made desktop first.
       width: 100%;
       left: 0;
       background: #fff;
-      top: 135px;
+      top: 99px;
       z-index: 99;
       > .navbar-nav {
+        box-shadow: 0 80px 65px rgba($color: #000, $alpha: 0.20);
+        padding-bottom: 20px;
+        padding-inline-start: 0;
         > .nav-item {
           margin: auto;
           display: flex;
           flex-direction: column;
+          &.search-mob{
+            width: 100%;
+            padding: 0 40px;
+            .form-group{
+              position: relative;
+              margin-bottom: 0;
+              margin-top: 20px;
+              .form-control{
+                padding-#{$end-direction}:45px ;
+              }
+              button{
+                position: absolute;
+                top: -4px;
+                #{$end-direction}:10px
+              }
+            }
+
+          }
+          .nav-link{
+            font-size: 14px;
+          }
+          .search-toggle{
+            display: none;
+          }
         }
       }
     }
     .navbar-brand {
       align-self: flex-start;
+      &.brand-2{
+        position: absolute;
+        #{$start-direction}: 220px;
+        max-width: 75px;
+        margin-#{$start-direction}: 20px;
+        padding-#{$start-direction}: 0;
+        &::before{
+          content: "";
+          background-color: #c3c3c3;
+          width: 2px;
+          height: 70%;
+          position: absolute;
+          #{$start-direction}: -15px;
+          bottom: 5px
+        }
+      }
     }
     .navbar-toggler {
       position: absolute;
       #{$end-direction}: 50px;
-      top: 70px;
+      top: 40px;
     }
     .nav-wrapper {
       flex-grow: 1;
       width: auto;
       align-self: flex-start;
-      margin-top: 20px;
+      margin-top: 45px;
+      margin-#{$end-direction}: 115px;
       .top-nav {
         margin-top: 0;
         .nav-item {
           margin-#{$start-direction}: auto;
+          &.contact-us{
+            display: none;
+          }
         }
       }
     }
@@ -937,6 +1121,121 @@ this UI is made desktop first.
         }
       }
     }
+    .sharekna-elraay {
+      .offset-lg-1{
+        margin-#{$start-direction}: 0;
+      }
+    }
+    .ads {
+      .tabs {
+        .nav-pills{
+          justify-content: center;
+          margin-bottom: 25px;
+          .nav-item{
+            margin-bottom: 5px;
+          }
+        }
+      }
+    }
+    .latest-news {
+      .owl-carousel {
+        .owl-stage-outer {
+          padding-bottom: 20px;
+        }
+        .item {
+          .news-card{
+            margin-#{$start-direction}:10px ;
+            margin-#{$end-direction}:10px ;
+            height: auto;
+            padding-bottom: 35px;
+            box-shadow: 0 10px 15px rgba($color: #000, $alpha: 0.10);
+
+            .img-box {
+              height: 190px;
+            }
+            .content-box{
+              p{
+                font-size: 16px;
+                line-height: 24px;
+                margin-bottom: 15px;
+                height: calc(24px * 3);
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .our-services {
+      .owl-carousel {
+        .owl-stage-outer {
+          padding-top: 40px;
+        }
+        .item {
+          .service-card{
+            margin-#{$start-direction}:10px ;
+            margin-#{$end-direction}:10px ;
+            // height: auto;
+            // padding-bottom: 35px;
+            box-shadow: 0 -5px 15px rgba($color: #000, $alpha: 0.10);
+            &:hover{
+              box-shadow: 0 -5px 20px rgba(0, 91, 83,  0.40);
+            }
+            p{
+              line-height: 25px;
+              font-size: 16px;
+            }
+          }
+        }
+      }
+      .owl-carousel .owl-nav button.owl-prev{
+        #{$start-direction}: -40px;
+      }
+      .owl-carousel .owl-nav button.owl-next {
+        #{$end-direction}: -40px;
+      }
+    }
+
+  .our-partners , .latest-news {
+    .owl-carousel .owl-nav button.owl-prev{
+      #{$start-direction}: -40px;
+    }
+    .owl-carousel .owl-nav button.owl-next {
+      #{$end-direction}: -40px;
+    }
+  }
+  .ads{
+    .tabs .tab-content .tab-pane{
+      .owl-carousel .owl-nav button.owl-prev{
+        #{$start-direction}: -40px;
+        width: 30px;
+        height: 30px;
+        background-size: 35%;
+      }
+      .owl-carousel .owl-nav button.owl-next {
+        #{$end-direction}: -40px;
+        width: 30px;
+        height: 30px;
+        background-size: 35%;
+      }
+    }
+  }
+  .navigator{
+    display: none;
+    // right: 20px;
+    // li{
+    //   display: flex;
+    //   margin-bottom: 10px;
+    //   a{
+    //     display: inline-flex;
+    //     &::before{
+    //       width: 10px;
+    //       height: 10px;
+    //     }
+    //   }
+    // }
+
+  }
 }
 
 // Small devices (landscape phones, less than 768px)
@@ -948,11 +1247,45 @@ this UI is made desktop first.
     &.show {
       text-align: center;
       padding-bottom: 0;
-      background-color: rgba(238, 238, 238, 0.5) !important;
+      background-color: rgba(0, 0, 0, 0.5) !important;
+      padding-top: 15px;
+      padding-bottom: 20px;
+    }
+    .side-border{
+      .flex-column{
+        .hd-img{
+          align-self: center;
+        }
+      }
     }
     ul.nav {
       margin-bottom: 15px;
+      padding-inline-start: 0;
     }
+  }
+  .main-navbar .navbar .dropdown-menu{
+    h6 {
+      font-size: 16px;
+      line-height: 25px;
+      margin-bottom: 7px;
+    }
+    p{
+      font-size: 14px;
+      line-height: 24px;
+    }
+    .nav-item {
+      .nav-link{
+        font-size: 14px;
+        line-height: 24px;
+        padding: 3px 8px;
+      }
+    }
+  }
+  .main-navbar #navbarSupportedContent > .navbar-nav > .nav-item > .nav-link{
+    font-size: 14px;
+  }
+  .main-navbar #navbarSupportedContent > .navbar-nav > .nav-item{
+    width: 95%;
   }
   .main-header .slider-wrapper .social {
     #{$end-direction}: calc((100vw - 540px + 30px) / 2);
@@ -964,16 +1297,7 @@ this UI is made desktop first.
   .main-header .slider-wrapper .owl-carousel .item .caption {
     top: 40px;
   }
-  .navigator {
-    li {
-      ::after {
-        bottom: 9px;
-      }
-      a {
-        font-size: 0 !important;
-      }
-    }
-  }
+
 
   .about-note{
     padding-#{$start-direction}: 20px;
@@ -1382,22 +1706,205 @@ this UI is made desktop first.
         margin-bottom: 30px;
       }
     }
+    .about-hay2a {
+      h2{
+        font-size: 24px;
+        line-height: 32px;
+      }
+      p{
+        font-size: 14px;
+        line-height: 24px;
+        margin-bottom: 15px;    
+      }
+      .read-more {
+        padding: 5.5px 40px;
+        font-size: 14px;
+      }
+    }
+    .our-services {
+      padding-bottom: 20px;
+      .heading {
+        h2{
+          font-size: 24px;
+          line-height: 32px;
+        }
+      }
+      .owl-carousel .item .service-card{
+        margin-bottom: 20px
+      }
+      .owl-carousel .owl-nav button.owl-next{
+       position: static;
+       width: 30px;
+       height: 30px;
+       background-size: 35%;
+      }
+      .owl-carousel .owl-nav button.owl-prev{
+        position: static;
+        width: 30px;
+        height: 30px;
+        background-size: 35%;
+      }
+    }
+    .our-partners {
+      .heading {
+        h2{
+          font-size: 24px;
+          line-height: 32px;
+        }
+      }
+      .owl-nav{
+        margin-bottom: 10px;
+      }
+      .owl-carousel .owl-nav button.owl-next{
+        position: static;
+        width: 30px;
+        height: 30px;
+        background-size: 35%;
+       }
+       .owl-carousel .owl-nav button.owl-prev{
+         position: static;
+         width: 30px;
+         height: 30px;
+         background-size: 35%;
+       }
+    }
+    .latest-news {
+      .heading {
+        margin-bottom: 20px;
+        h2{
+          font-size: 24px;
+          line-height: 32px;
+        }
+        p{
+          font-size: 14px;
+          line-height: 24px;
+        }
+      }
+      .owl-carousel {
+        .item {
+          .news-card {
+            .img-box {
+              height: 250px;
+            }
+            .content-box {
+              p{
+                font-size: 14px;
+                height: calc(24px * 2);
+              }
+              .date{
+                font-size: 14px;
+              }
+            }
+          }
+        }
+      }
+      .owl-nav{
+        margin-bottom: 10px;
+      }
+      .owl-carousel .owl-nav button.owl-next{
+        position: static;
+        width: 30px;
+        height: 30px;
+        background-size: 35%;
+       }
+       .owl-carousel .owl-nav button.owl-prev{
+         position: static;
+         width: 30px;
+         height: 30px;
+         background-size: 35%;
+       }
+    }
+    .ads {
+      padding-bottom: 30px;
+      .heading {
+        h2{
+          font-size: 24px;
+          line-height: 32px;
+          margin-bottom: 15px;
+        }
+      }
+      .tabs {
+        .nav-pills {
+          margin-bottom: 15px;
+          .nav-item{
+            width: 165px;
+            height: 34px;
+            font-size: 14px;
+          }
+        }
+        .tab-content {
+          .tab-pane {
+            .ads-card {
+              .content-box{
+                justify-content: center;
+                h5{
+                  font-size: 15px;
+                  margin-bottom: 15px;
+                }
+                .more{
+                  font-size: 14px;
+                  width: 125px;
+                  height: 40px;
+                }
+              }
+            }
+            .owl-nav{
+              margin-bottom: 10px;
+            }
+            .owl-carousel .owl-nav button.owl-next{
+              position: static;
+             }
+             .owl-carousel .owl-nav button.owl-prev{
+               position: static;
+             }
+          }
+        }
+      }
+    }
+    .versions {
+      .heading {
+        h2{
+          font-size: 24px;
+          line-height: 32px;
+        }
+      }
+    }
+    .main-header {
+      .slider-wrapper {
+        .owl-carousel {
+          .owl-item.active {
+            .item {
+              .caption{
+                width: auto;
+                #{$end-direction}:auto;
+                margin-left: 30px;
+                margin-right: 30px;
+                h2{
+                  font-size: 28px;
+                  line-height: 33px;
+                }
+                h4{
+                  font-size: 19px;
+                  line-height: 27px;
+                }
+                p{
+                  font-size: 14px;
+                  line-height: 26px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
 }
 
 // Extra small devices (portrait phones, less than 576px)
 @include media-breakpoint-down(xs) {
-  .main-navbar .nav-wrapper .top-nav {
-    display: none;
-  }
-  .main-header .slider-wrapper .social {
-    #{$end-direction}: 15px;
-  }
-  .main-header .slider-wrapper .actions {
-    #{$start-direction}: 15px;
-  }
-  .in-focus .slider-wrapper .owl-carousel::before {
-    display: none;
-  }
+  // .main-navbar .nav-wrapper .top-nav {
+  //   display: none;
+  // }
+
   // breadcrumb
   .breadcrumbScetion{
     height: 165px;
@@ -1604,6 +2111,96 @@ this UI is made desktop first.
       font-size: .875rem;
     }
   }
+  .versions {
+    .versions-card {
+      height: 215px;
+      .img-box{
+        flex: 0 0 130px;
+        height: 215px;
+        display: flex;
+      }
+      .content-box {
+        h5{
+          font-size: 16px;
+          line-height: 25px;
+          margin-bottom: 7px;
+        }
+        p{
+          font-size: 14px;
+          line-height: 20px;
+          margin-bottom: 10px;
+          height: calc(20px * 3);
+        }
+        .actions {
+          .view{
+            display: flex;
+            width: 100%;
+            margin-bottom: 5px;
+            height: 35px;
+            font-size: 13px;
+          }
+          .download{
+            display: flex;
+            width: 100%;
+            margin-bottom: 5px;
+            height: 35px;
+            font-size: 13px;
+            margin-#{$start-direction}:0 ;
+          }
+        }
+      }
+    }
+  }
+  .main-navbar{
+    height: 85px;
+  }
+  .main-navbar #navbarSupportedContent{
+    top: 85px;
+  }
+  .main-navbar #navbarSupportedContent > .navbar-nav > .nav-item.search-mob{
+    padding: 0 15px;
+  }
+  .main-navbar #navbarSupportedContent > .navbar-nav > .nav-item.search-mob .form-group button{
+    top: 3px;
+    #{$end-direction}: 3px;
+    padding: 0 6px;
+  }
+  .main-navbar #navbarSupportedContent > .navbar-nav > .nav-item > .nav-link.dropdown-toggle::before{
+    width: 35%;
+  }
+  .main-navbar .navbar-brand{
+    flex: 0 0 135px;
+  }
+  .main-navbar .navbar-brand.brand-2{
+    #{$start-direction}: 155px;
+    max-width: 55px;
+    margin-#{$start-direction}: 10px;
+    &::before{
+      #{$start-direction}: -8px;
+    }
+  }
+  .main-navbar .navbar-toggler{
+    #{$end-direction}: 20px;
+    top: 25px;
+    padding: 5px 8px;
+  }
+  #navbarSupportedContent > .navbar-nav > .nav-item #navbarDropdown {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 14px;
+  }
+  .main-navbar #navbarSupportedContent > .navbar-nav > .nav-item #navbarDropdown::after{
+    #{$end-direction}: 16px;
+    position: absolute;
+    top: 19px;
+  }
+  .main-navbar .nav-wrapper{
+    margin-top: 30px;
+    margin-#{$end-direction}: 63px;
+  }
+  .main-navbar .top-nav .nav-item .nav-link.lang img{
+    margin-#{$start-direction}:3px ;
+  }
 }
 
 
@@ -1614,5 +2211,16 @@ this UI is made desktop first.
         height: 170px;
       }
     }
+  }
+  .main-navbar .navbar-brand.brand-2{
+    max-width: 40px;
+  }
+  .main-navbar .nav-wrapper{
+    margin-#{$end-direction}: 48px;
+  }
+  .main-navbar .navbar-toggler{
+    #{$end-direction}: 10px;
+    top: 28px;
+    padding: 3px 5px;
   }
 }
