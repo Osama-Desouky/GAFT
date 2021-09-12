@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="uploadIcon" transform="translate(11.186 411) rotate(180)">
+    <g id="download" transform="translate(-12.333 387)">
+      <g id="download-2" data-name="download">
+        <rect id="Rectangle_11905" data-name="Rectangle 11905" width="24" height="24" transform="translate(-0.481)" fill="#cca079" opacity="0"/>
+        <rect id="Rectangle_11906" data-name="Rectangle 11906" width="16" height="2" rx="1" transform="translate(3.519 18)" fill="#cca079"/>
+        <rect id="Rectangle_11907" data-name="Rectangle 11907" width="4" height="2" rx="1" transform="translate(3.519 20) rotate(-90)" fill="#cca079"/>
+        <rect id="Rectangle_11908" data-name="Rectangle 11908" width="4" height="2" rx="1" transform="translate(17.519 20) rotate(-90)" fill="#cca079"/>
+        <path id="Path_57506" data-name="Path 57506" d="M5,5a1,1,0,0,1-.58-.18L.421,2A1,1,0,1,1,1.581.37L5,2.76,8.4.2A1,1,0,1,1,9.6,1.8l-4,3A1,1,0,0,1,5,5Z" transform="translate(7.332 10)" fill="#cca079"/>
+        <path id="Path_57507" data-name="Path 57507" d="M1,10A1,1,0,0,1,0,9V1A1,1,0,0,1,2,1V9A1,1,0,0,1,1,10Z" transform="translate(11.333 3)" fill="#cca079"/>
+      </g>
+    </g>
+  </g>
+</svg>

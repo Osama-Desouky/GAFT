@@ -221,7 +221,7 @@ th {
   text-align: -webkit-match-parent;
 }
 
-label {
+label, .ForBGFrom .asLabel {
   display: inline-block;
   margin-bottom: 0.5rem;
 }
@@ -2627,7 +2627,7 @@ textarea.form-control {
 }
 
 @media (min-width: 576px) {
-  .form-inline label {
+  .form-inline label, .form-inline .ForBGFrom .asLabel, .ForBGFrom .form-inline .asLabel {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -11061,6 +11061,16 @@ body.header-popup-open {
   margin-bottom: 15px;
 }
 
+.main-navbar .navbar .dropdown-menu h6 a {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 41px;
+  color: #fff;
+  padding: 0 8px;
+  padding-right: 14px;
+  display: block;
+}
+
 .main-navbar .navbar .dropdown-menu p {
   color: #fff;
   font-size: 16px;
@@ -11246,6 +11256,7 @@ body.header-popup-open {
   left: 0;
   background: none;
   border: none;
+  min-width: auto;
 }
 
 .main-navbar .search-box input[type="text"] {
@@ -11274,7 +11285,7 @@ body.header-popup-open {
   padding: 0 !important;
 }
 
-.main-navbar .search-box .search-full-area form {
+.main-navbar .search-box .search-full-area {
   -webkit-backdrop-filter: blur(4px);
           backdrop-filter: blur(4px);
 }
@@ -11478,6 +11489,15 @@ body.header-popup-open {
   margin-bottom: 15px;
 }
 
+.main-header .slider-wrapper .owl-carousel .item .caption h2 a {
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 66px;
+  color: #CCA079;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
 .main-header .slider-wrapper .owl-carousel .item .caption h4 {
   font-weight: 400;
   font-size: 30px;
@@ -11622,6 +11642,7 @@ body.header-popup-open {
   position: absolute;
   bottom: 140px;
   width: 37px;
+  min-width: auto;
   height: 37px;
   border-radius: 8px;
   background-color: transparent;
@@ -11685,7 +11706,7 @@ footer ul li {
 }
 
 footer ul li a {
-  color: #D5D5D5;
+  color: #D5D5D5 !important;
   font-size: 15px;
   font-weight: 400;
   -webkit-transition: 400ms;
@@ -11693,7 +11714,7 @@ footer ul li a {
 }
 
 footer ul li a:hover {
-  color: #fff;
+  color: #fff !important;
 }
 
 footer .about-us-footer ul li a img {
@@ -12015,6 +12036,7 @@ footer .copySection a:last-child {
   position: absolute;
   top: 50%;
   width: 37px;
+  min-width: auto;
   height: 37px;
   border-radius: 8px;
   background-color: transparent;
@@ -12101,6 +12123,7 @@ footer .copySection a:last-child {
   position: absolute;
   top: 40%;
   width: 37px;
+  min-width: auto;
   height: 37px;
   border-radius: 8px;
   background-color: transparent;
@@ -12194,6 +12217,8 @@ footer .copySection a:last-child {
   transition: 600ms;
   -o-object-fit: cover;
      object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .latest-news .owl-carousel .item .news-card .content-box {
@@ -12212,6 +12237,17 @@ footer .copySection a:last-child {
   -webkit-transition: 300ms;
   transition: 300ms;
   overflow: hidden;
+}
+
+.latest-news .owl-carousel .item .news-card .content-box p a {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  color: #1D1D1B;
+  margin-bottom: 35px;
+  height: calc(30px * 2);
+  -webkit-transition: 300ms;
+  transition: 300ms;
 }
 
 .latest-news .owl-carousel .item .news-card .content-box .date {
@@ -12237,10 +12273,16 @@ footer .copySection a:last-child {
   text-decoration: underline;
 }
 
+.latest-news .owl-carousel .item .news-card:hover .content-box p a {
+  color: #007066;
+  text-decoration: underline;
+}
+
 .latest-news .owl-carousel .owl-nav button.owl-next, .latest-news .owl-carousel .owl-nav button.owl-prev {
   position: absolute;
   top: 40%;
   width: 37px;
+  min-width: auto;
   height: 37px;
   border-radius: 8px;
   background-color: transparent;
@@ -12459,6 +12501,7 @@ footer .copySection a:last-child {
   font-weight: 500;
   line-height: 30px;
   color: #007066;
+  margin: 0;
 }
 
 .ads .tabs .tab-content .tab-pane .ads-card .content-box .more {
@@ -12515,6 +12558,7 @@ footer .copySection a:last-child {
   position: absolute;
   top: 40%;
   width: 37px;
+  min-width: auto;
   height: 37px;
   border-radius: 8px;
   background-color: transparent;
@@ -12563,7 +12607,7 @@ footer .copySection a:last-child {
   content: "";
   position: absolute;
   width: 100%;
-  height: 188px;
+  height: 115px;
   bottom: 65px;
   left: 0;
   background: white;
@@ -12581,14 +12625,30 @@ footer .copySection a:last-child {
   color: #012D29;
 }
 
+.versions .swiper-vertical > .swiper-wrapper {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 .versions .swiper-container {
   width: 1342px;
   height: 370px;
   padding-top: inherit;
+  overflow: hidden;
 }
 
 .versions .swiper-container .swiper-slide {
   height: 243px !important;
+  width: calc(100% / 2 - 15px);
+}
+
+.versions .swiper-container .swiper-slide:nth-child(even) {
+  margin-left: 30px;
+  margin-right: 0 !important;
 }
 
 .versions .versions-card {
@@ -12606,7 +12666,6 @@ footer .copySection a:last-child {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 30px;
   border-radius: 8px;
 }
 
@@ -12743,6 +12802,7 @@ footer .copySection a:last-child {
   background-image: url(../images/left-arrow-st1.svg);
   position: absolute;
   width: 37px;
+  min-width: auto;
   height: 37px;
   border-radius: 8px;
   background-color: #CCA079;
@@ -12769,6 +12829,7 @@ footer .copySection a:last-child {
   background-image: url(../images/right-arrow-st1.svg);
   position: absolute;
   width: 37px;
+  min-width: auto;
   height: 37px;
   border-radius: 8px;
   background-color: #CCA079;
@@ -12876,6 +12937,7 @@ footer .copySection a:last-child {
   line-height: 60px;
   color: #fff;
   margin-bottom: 0;
+  margin: 0 auto;
 }
 
 .sharekna-elraay .sharekna-elray-card p {
@@ -12885,6 +12947,7 @@ footer .copySection a:last-child {
   font-weight: 400;
   line-height: 32px;
   color: #fff;
+  margin: 0 auto;
   margin-bottom: 30px;
 }
 
@@ -12902,6 +12965,7 @@ footer .copySection a:last-child {
   height: 52px;
   display: block;
   text-align: center;
+  margin: 0 auto;
 }
 
 .sharekna-elraay .sharekna-elray-card a img {
@@ -12973,7 +13037,7 @@ footer .copySection a:last-child {
 
 .sharekna-elraay .servay .pollWp .pollInner {
   padding: 8px 10px !important;
-  height: 163px;
+  height: 215px;
 }
 
 .sharekna-elraay .servay .pollWp .pollInner ul li,
@@ -12995,8 +13059,10 @@ footer .copySection a:last-child {
   height: 15px;
 }
 
-.sharekna-elraay .servay .pollWp .pollInner ul label,
-.sharekna-elraay .servay .pollWp .pollInner > table label {
+.sharekna-elraay .servay .pollWp .pollInner ul label, .sharekna-elraay .servay .pollWp .pollInner ul .ForBGFrom .asLabel, .ForBGFrom .sharekna-elraay .servay .pollWp .pollInner ul .asLabel,
+.sharekna-elraay .servay .pollWp .pollInner > table label,
+.sharekna-elraay .servay .pollWp .pollInner > table .ForBGFrom .asLabel,
+.ForBGFrom .sharekna-elraay .servay .pollWp .pollInner > table .asLabel {
   font-size: 16px;
   font-weight: 400;
   color: #92999E;
@@ -13097,7 +13163,7 @@ footer .copySection a:last-child {
   position: absolute;
 }
 
-.sharekna-elraay .servay input[type=radio] + label:before {
+.sharekna-elraay .servay input[type=radio] + label:before, .sharekna-elraay .servay .ForBGFrom input[type=radio] + .asLabel:before, .ForBGFrom .sharekna-elraay .servay input[type=radio] + .asLabel:before {
   content: '';
   display: inline-block;
   margin-right: 20px;
@@ -13113,25 +13179,27 @@ footer .copySection a:last-child {
   transition: all 0.3s ease;
 }
 
-.sharekna-elraay .servay input[type=radio] + label:hover,
-.sharekna-elraay .servay input[type=checkbox] + label:hover {
+.sharekna-elraay .servay input[type=radio] + label:hover, .sharekna-elraay .servay .ForBGFrom input[type=radio] + .asLabel:hover, .ForBGFrom .sharekna-elraay .servay input[type=radio] + .asLabel:hover,
+.sharekna-elraay .servay input[type=checkbox] + label:hover,
+.sharekna-elraay .servay .ForBGFrom input[type=checkbox] + .asLabel:hover,
+.ForBGFrom .sharekna-elraay .servay input[type=checkbox] + .asLabel:hover {
   cursor: pointer;
 }
 
-.sharekna-elraay .servay input[type=radio] + label:hover:before {
+.sharekna-elraay .servay input[type=radio] + label:hover:before, .sharekna-elraay .servay .ForBGFrom input[type=radio] + .asLabel:hover:before, .ForBGFrom .sharekna-elraay .servay input[type=radio] + .asLabel:hover:before {
   border-color: #CCA079;
 }
 
-.sharekna-elraay .servay input[type=radio]:checked + label {
+.sharekna-elraay .servay input[type=radio]:checked + label, .sharekna-elraay .servay .ForBGFrom input[type=radio]:checked + .asLabel, .ForBGFrom .sharekna-elraay .servay input[type=radio]:checked + .asLabel {
   position: relative;
   color: #CCA079 !important;
 }
 
-.sharekna-elraay .servay input[type=radio]:checked + label:before {
+.sharekna-elraay .servay input[type=radio]:checked + label:before, .sharekna-elraay .servay .ForBGFrom input[type=radio]:checked + .asLabel:before, .ForBGFrom .sharekna-elraay .servay input[type=radio]:checked + .asLabel:before {
   border-color: #CCA079;
 }
 
-.sharekna-elraay .servay input[type=radio]:checked + label:after {
+.sharekna-elraay .servay input[type=radio]:checked + label:after, .sharekna-elraay .servay .ForBGFrom input[type=radio]:checked + .asLabel:after, .ForBGFrom .sharekna-elraay .servay input[type=radio]:checked + .asLabel:after {
   content: "";
   display: inline-block;
   position: absolute;
@@ -13147,12 +13215,14 @@ footer .copySection a:last-child {
   about styles
 */
 .about-hayaa {
-  margin-top: 35px;
-  margin-bottom: 90px;
+  margin-bottom: 70px;
   padding-top: 35px;
-  background-image: url(../images/dots.svg);
-  background-position: 3.5% top;
-  background-repeat: no-repeat;
+}
+
+.about-hayaa .white-card {
+  border-radius: 8px;
+  -webkit-box-shadow: 0 8px 16px rgba(187, 187, 187, 0.15);
+          box-shadow: 0 8px 16px rgba(187, 187, 187, 0.15);
 }
 
 .about-hayaa .about-hay2a-content {
@@ -13167,12 +13237,16 @@ footer .copySection a:last-child {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 55px;
+  padding-bottom: 55px;
 }
 
 .about-hayaa .about-hay2a-content h3 {
   font-size: 2.187rem;
   font-weight: 500;
-  color: #1D1D1B;
+  color: #007066;
   line-height: 50px;
   margin-bottom: 20px;
   text-align: right;
@@ -13180,25 +13254,44 @@ footer .copySection a:last-child {
 
 .about-hayaa .about-hay2a-content p {
   font-size: 1.125rem;
-  font-weight: 400;
+  font-weight: 500;
   color: #666666;
   line-height: 36px;
   margin-bottom: 0;
   text-align: right;
+  margin-bottom: 20px;
+}
+
+.about-hayaa .about-hay2a-content p:last-child {
+  margin-bottom: 0;
+}
+
+.about-hayaa .about-hay2a-content p.black-p {
+  color: #1D1D1B;
 }
 
 .about-hayaa .about-hay2a-img {
   overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
 }
 
 .about-hayaa .about-hay2a-img img {
   max-width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
-.about-details {
-  padding-bottom: 100px;
+.about-details .white-card {
+  padding: 50px;
+  padding-bottom: 55px;
+  margin-bottom: 70px;
 }
 
 .about-details .details-item {
@@ -13210,9 +13303,13 @@ footer .copySection a:last-child {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  height: 100%;
 }
 
 .about-details .details-item .details-img img {
@@ -13239,7 +13336,7 @@ footer .copySection a:last-child {
   font-size: 2.187rem;
   font-weight: 500;
   line-height: 51px;
-  color: #1D1D1B;
+  color: #007066;
   margin-bottom: 30px;
 }
 
@@ -13300,6 +13397,84 @@ footer .copySection a:last-child {
 
 .about-details .details-item.third .details-content {
   max-width: initial;
+}
+
+.about-details .hay2a-missions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.about-details .hay2a-missions .missions-content {
+  margin-right: 60px;
+  padding-right: 60px;
+}
+
+.about-details .hay2a-missions .missions-content h3 {
+  font-size: 2.187rem;
+  font-weight: 500;
+  color: #007066;
+  line-height: 50px;
+  margin-bottom: 24px;
+  text-align: right;
+}
+
+.about-details .hay2a-missions .missions-content p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #393939;
+  line-height: 36px;
+  margin-bottom: 24px;
+  text-align: right;
+}
+
+.about-details .hay2a-missions .missions-content ol {
+  padding-left: 35px;
+}
+
+.about-details .hay2a-missions .missions-content ol li {
+  padding-left: 5px;
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #9C9C9C;
+  line-height: 36px;
+  margin-bottom: 12px;
+}
+
+.about-details .hay2a-missions .missions-content ol li::marker {
+  color: #CCA079;
+}
+
+.about-details .hay2a-missions .missions-content ol li ul {
+  padding-left: 0;
+  margin-top: 12px;
+  list-style: none;
+}
+
+.about-details .hay2a-missions .missions-content ol li ul li {
+  padding-left: 5px;
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #9C9C9C;
+  line-height: 36px;
+  margin-bottom: 12px;
+  position: relative;
+}
+
+.about-details .hay2a-missions .missions-content ol li ul li::before {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 11px;
+  top: 15px;
+  right: -28px;
+  background-image: url(../images/arrow-gold.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 p.on-space {
@@ -13364,6 +13539,95 @@ p.on-space {
   right: 30px;
   background-image: url(../images/about-note-quote-bottom.svg);
   background-repeat: no-repeat;
+}
+
+.strategy {
+  margin-bottom: 100px;
+}
+
+.strategy .strategy-top {
+  background-image: url(../images/strategy.svg);
+  background-position: left center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-bottom: 30px;
+}
+
+.strategy .strategy-top h2 {
+  font-size: 2.0625rem;
+  font-weight: 500;
+  color: #007066;
+  margin-bottom: 22px;
+  line-height: 49px;
+}
+
+.strategy .strategy-top p {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #9C9C9C;
+  line-height: 36px;
+  margin-bottom: 0;
+}
+
+.strategy .strategy-goals h2 {
+  font-size: 1.75rem;
+  font-weight: 500;
+  color: #CCA079;
+  line-height: 42px;
+  margin-bottom: 24px;
+}
+
+.strategy .strategy-goals .st-goal {
+  background-color: #fff;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.16);
+          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.16);
+  height: 270px;
+  width: calc(100% / 4 - 16px);
+  margin-right: 16px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 24px;
+  padding-left: 12px;
+}
+
+.strategy .strategy-goals .st-goal:last-child {
+  margin-right: 0;
+}
+
+.strategy .strategy-goals .st-goal img {
+  height: 60px;
+}
+
+.strategy .strategy-goals .st-goal h4 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #1D1D1B;
+  line-height: 29px;
+  margin-bottom: 6px;
+  margin-top: 6px;
+  letter-spacing: -1px;
+}
+
+.strategy .strategy-goals .st-goal p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #9C9C9C;
+  line-height: 24px;
+  margin-bottom: 0px;
+  height: calc(24px * 5);
+  overflow: hidden;
 }
 
 .vote-share-fav {
@@ -13522,11 +13786,22 @@ p.on-space {
   transition: 500ms;
 }
 
+.main-member .main-one .content-box h3 a, .main-member .main-two .content-box h3 a {
+  font-size: 1.56rem;
+  font-weight: 700;
+  color: #012D29;
+  line-height: 39px;
+  margin-bottom: 13px;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
 .main-member .main-one .content-box h5, .main-member .main-two .content-box h5 {
   font-size: 1.37rem;
   font-weight: 400;
   color: #1D1D1B;
   line-height: 32px;
+  margin: inherit;
   margin-bottom: 20px;
 }
 
@@ -13534,7 +13809,7 @@ p.on-space {
   font-size: 1.125rem;
   font-weight: 400;
   color: #666666;
-  line-height: 35px;
+  line-height: 28px;
   margin-bottom: 0;
 }
 
@@ -13542,6 +13817,7 @@ p.on-space {
   border-radius: 8px;
   overflow: hidden;
   max-width: 375px;
+  height: 375px;
 }
 
 .main-member .main-one .img-box img, .main-member .main-two .img-box img {
@@ -13554,6 +13830,11 @@ p.on-space {
 }
 
 .main-member .main-one:hover .content-box h3, .main-member .main-two:hover .content-box h3 {
+  text-decoration: underline;
+  color: #007066;
+}
+
+.main-member .main-one:hover .content-box h3 a, .main-member .main-two:hover .content-box h3 a {
   text-decoration: underline;
   color: #007066;
 }
@@ -13615,6 +13896,16 @@ p.on-space {
   transition: 500ms;
 }
 
+.list-members .member-card .content-box h4 a {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #012D29;
+  line-height: 36px;
+  margin-bottom: 20px;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
 .list-members .member-card .content-box h5 {
   font-size: 1.125rem;
   font-weight: 400;
@@ -13638,6 +13929,11 @@ p.on-space {
 }
 
 .list-members .member-card:hover .content-box h4 {
+  text-decoration: underline;
+  color: #007066;
+}
+
+.list-members .member-card:hover .content-box h4 a {
   text-decoration: underline;
   color: #007066;
 }
@@ -14446,6 +14742,7 @@ p.on-space {
   margin-bottom: 0;
   text-align: center;
   max-width: 1360px;
+  margin: 0 auto;
 }
 
 .attaches-content #attaches .goals {
@@ -14547,6 +14844,7 @@ p.on-space {
   margin-bottom: 0;
   text-align: center;
   max-width: 1360px;
+  margin: 0 auto;
 }
 
 .attaches-content #attaches .inner-tabs {
@@ -14696,6 +14994,7 @@ p.on-space {
   margin-bottom: 0;
   text-align: center;
   max-width: 1360px;
+  margin: 0 auto;
 }
 
 .attaches-content #saudi-team .team-tasks {
@@ -15080,6 +15379,7 @@ p.on-space {
   position: absolute;
   bottom: -7%;
   width: 37px;
+  min-width: auto;
   height: 37px;
   border-radius: 8px;
   background-color: transparent;
@@ -15226,6 +15526,83 @@ p.on-space {
           transform: translateY(0);
 }
 
+.not-found {
+  margin-top: 65px;
+  margin-bottom: 130px;
+}
+
+.not-found .white-card {
+  width: 1082px;
+  height: 739px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
+}
+
+.not-found img {
+  max-height: 465px;
+}
+
+.not-found .content {
+  margin-top: 65px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.not-found .content h2 {
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 51px;
+  color: #CCA079;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.not-found .content a {
+  background-color: #CCA079;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 36px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 36px;
+  width: 205px;
+  height: 52px;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+.not-found .content a:hover {
+  background-color: #007066;
+}
+
 .bg-2 {
   background-color: #F1F1F1;
 }
@@ -15240,8 +15617,116 @@ p.on-space {
   margin-right: 0;
 }
 
+.ms-webpartzone-cell {
+  margin: 0 !important;
+}
+
+.ms-webpart-zone {
+  display: block !important;
+}
+
+div.ms-webpart-cell-vertical-inline-table {
+  display: block !important;
+}
+
+.ms-webpart-chrome-vertical {
+  display: block !important;
+}
+
+h2, h3, h4, h5, h6 {
+  font-family: inherit !important;
+}
+
+#s4-bodyContainer {
+  padding-bottom: 0 !important;
+}
+
+.breadcrumbScetion #ctl00_PlaceHolderMain_ctl00__ControlWrapper_RichImageField img {
+  width: 100%;
+  height: 250px;
+  position: absolute;
+  top: 0;
+}
+
+.breadcrumbScetion .breadcrumbCustom span:nth-of-type(2),
+.breadcrumbScetion .breadcrumbCustom span:nth-of-type(4),
+.breadcrumbScetion .breadcrumbCustom span:nth-of-type(6),
+.breadcrumbScetion .breadcrumbCustom span:nth-of-type(8),
+.breadcrumbScetion .breadcrumbCustom span:nth-of-type(10) {
+  visibility: hidden;
+  display: none;
+}
+
+.backgroundOrImage .container::before {
+  background-repeat: no-repeat;
+}
+
+.backgroundOrImage .formContactUs .ms-webpart-zone.ms-fullWidth {
+  width: 630px;
+}
+
+.backgroundOrImage .formContactUs div#ctl00_PlaceHolderMain_ctl03__ControlWrapper_RichHtmlField {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.selectBox select {
+  width: auto;
+  display: inline-block;
+}
+
+.selectSection input#btn_submitSearch {
+  background-color: #cca079;
+  height: 40px;
+  color: #fff;
+  border-radius: 50px;
+  font-family: inherit;
+  font-size: 13px;
+}
+
+.reportPage .boxSearch .dateBox div[id*="spanCategory"] span {
+  font-size: 0.875rem;
+  padding: 5px 15px;
+  background: #007066;
+  border-radius: 40px;
+  color: #fff;
+}
+
+@media (min-device-width: 1025px) and (max-device-width: 1400px) {
+  .backgroundOrImage .formContactUs .textFrom {
+    width: 100% !important;
+  }
+  .backgroundOrImage .formContactUs .FromInputs {
+    width: 500px !important;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .backgroundOrImage .formContactUs .ms-webpart-zone.ms-fullWidth {
+    width: 100% !important;
+  }
+}
+
 .vote-share-fav {
   display: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0;
+  /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+  /* Firefox */
 }
 
 .main-navbar .top-nav .nav-item.contact-us {
@@ -15270,20 +15755,21 @@ p.on-space {
 }
 
 .btnForm {
-  border: unset;
-  background: #CCA079;
-  padding: 15px 64px;
-  border-radius: 50px;
-  font-size: 16px;
-  color: #fff;
-  font-weight: 500;
+  border: unset !important;
+  background-color: #CCA079 !important;
+  padding: 15px 64px !important;
+  border-radius: 50px !important;
+  font-size: 16px !important;
+  color: #fff !important;
+  font-weight: 500 !important;
+  margin-top: 10px !important;
 }
 
 .btnForm:hover {
-  color: #fff;
+  color: #fff !important;
 }
 
-label {
+label, .ForBGFrom .asLabel {
   font-size: 1.125rem;
   font-weight: 500;
   margin: 0;
@@ -15325,6 +15811,22 @@ label {
   color: #BBBBBB;
   border-radius: 8px;
   font-size: 14px;
+}
+
+.inputDateStyle input.datepicker {
+  height: 45px;
+  border: unset;
+  background: #f1f1f1;
+  padding: 0 15px;
+  color: #BBBBBB;
+  border-radius: 8px;
+  font-size: 14px;
+  background-image: url(../images/innerPages/calendar-dates.svg);
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: 90% center;
+  padding-right: 45px;
+  width: 150px;
 }
 
 .InputStyle input[type=text], .InputStyle input[type=email], .InputStyle input[type=number] {
@@ -15406,7 +15908,7 @@ label {
 .prachJobFont24 {
   color: #fff;
   line-height: 1.6;
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 
 .smallTitle14, .main-navbar .top-nav .nav-item.contact-us a, .trainingPage .resetSearch span {
@@ -15569,7 +16071,6 @@ body {
 }
 
 .breadcrumbScetion {
-  font-family: "DINNextLTRegular";
   position: relative;
   height: 250px;
   display: -webkit-box;
@@ -15716,9 +16217,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   padding: 24px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -15998,13 +16496,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.reportPage .formSearch .boxSearchEvent {
-  width: 339px;
 }
 
 .reportPage .formSearch .selectSection {
@@ -16014,10 +16505,12 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  float: right;
+  margin-left: auto;
 }
 
 .reportPage .formSearch .selectSection .selectBox:first-of-type {
-  margin-left: 13px;
+  margin-right: 13px;
 }
 
 .reportPage .boxSearch {
@@ -16127,7 +16620,8 @@ body {
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 0px 8px 8px 0px;
-  height: 685px;
+  height: 100%;
+  padding-top: 45px;
 }
 
 .backgroundOrImage .formContactUs .textFrom .headerOfBoxFont35 {
@@ -16200,7 +16694,7 @@ body {
   padding-bottom: 10px;
 }
 
-.backgroundOrImage .formContactUs .FromInputs .formGroup label {
+.backgroundOrImage .formContactUs .FromInputs .formGroup label, .backgroundOrImage .formContactUs .FromInputs .formGroup .ForBGFrom .asLabel, .ForBGFrom .backgroundOrImage .formContactUs .FromInputs .formGroup .asLabel {
   display: block;
   margin-bottom: 5px;
 }
@@ -16295,6 +16789,10 @@ body {
   color: #CCA079;
 }
 
+.NewsPage .boxNewsPage .textNew .headerOfBox a, .NewsPage .boxNewsPage .textNew .systemSection .boxSearch .titleBox a, .systemSection .boxSearch .NewsPage .boxNewsPage .textNew .titleBox a {
+  color: #CCA079;
+}
+
 .NewsPage .boxNewsPage .textNew .btnForm {
   display: inline-block;
   margin-top: 27px;
@@ -16309,7 +16807,7 @@ body {
   background-color: #007066;
   border-radius: 19px;
   margin-top: 48px;
-  padding: 74px 113px 0 42px;
+  padding: 0px 113px 0 0;
   position: relative;
   overflow: hidden;
   margin: 0;
@@ -16337,6 +16835,10 @@ body {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1d1d1b",endColorstr="#1d1d1b",GradientType=1);
 }
 
+.jobBanner .textJob {
+  padding-top: 74px;
+}
+
 .jobBanner .textJob .titleJobFont32 {
   margin-bottom: 25px;
   padding-top: 51px;
@@ -16344,7 +16846,7 @@ body {
 
 .jobBanner .textJob .prachJobFont24 {
   margin-bottom: 27px;
-  padding-right: 15%;
+  padding-right: 0;
 }
 
 .jobBanner .textJob .BtnWithArrow {
@@ -16352,10 +16854,10 @@ body {
 }
 
 .jobBanner .imgJob img {
-  max-width: 390px;
-  max-height: 363px;
+  max-width: 645px;
   -o-object-fit: cover;
      object-fit: cover;
+  height: 100%;
   -o-object-position: top;
      object-position: top;
 }
@@ -16506,6 +17008,8 @@ body {
   height: 495px;
   background-image: url(../images/innerPages/BannerImgInner.jpg);
   border-radius: 25px;
+  position: relative;
+  overflow: hidden;
 }
 
 .bannerSliderSec .bannerSwiperinner::after {
@@ -16649,6 +17153,11 @@ body {
   width: 224px;
 }
 
+.boxPuplictions .greenBox .boxG img {
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
 .boxPuplictions .whiteBoxPupl {
   background: #fff;
   border-radius: 0px 0px 8px 8px;
@@ -16660,6 +17169,8 @@ body {
   -webkit-transition: height .4s ease;
   transition: height .4s ease;
   overflow: hidden;
+  height: 135px;
+  padding-bottom: 14px;
 }
 
 .boxPuplictions .whiteBoxPupl .dateBox {
@@ -16675,6 +17186,10 @@ body {
   text-align: center;
   padding-top: 14px;
   display: block;
+  font-size: 1.3rem;
+  line-height: 31px;
+  height: calc(31px * 2 + 14px);
+  overflow: hidden;
 }
 
 .boxPuplictions .whiteBoxPupl .headerOfBox:hover, .boxPuplictions .whiteBoxPupl .systemSection .boxSearch .titleBox:hover, .systemSection .boxSearch .boxPuplictions .whiteBoxPupl .titleBox:hover {
@@ -16690,11 +17205,16 @@ body {
 }
 
 .boxPuplictions:hover .greenBox {
-  height: 335px;
+  height: 300px;
+}
+
+.boxPuplictions:hover .greenBox .boxG img {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
 }
 
 .boxPuplictions:hover .whiteBoxPupl {
-  height: 165px;
+  height: 200px;
 }
 
 .boxPuplictions:hover .showBox {
@@ -16703,23 +17223,33 @@ body {
   display: flex;
 }
 
+.tabsStyle {
+  margin-top: 40px;
+}
+
 .tabsStyle .nav-tabs {
   border: unset;
   padding: 0;
+  background-color: #ebe4dd;
+  border-radius: 50px;
+}
+
+.tabsStyle .nav-tabs li {
+  padding-left: 24px;
 }
 
 .tabsStyle .nav-tabs li:first-of-type {
-  padding-right: 24px;
+  padding-left: 0;
 }
 
 .tabsStyle .nav-tabs li a {
   font-size: 20px;
   font-weight: 500;
   color: #CCA079;
-  background: #fff;
+  background: transparent;
   padding: 14px 26px;
   border-radius: 50px;
-  border: 2px solid #CCA079;
+  display: inline-block;
 }
 
 .tabsStyle .nav-tabs li a.active {
@@ -16868,6 +17398,11 @@ body {
   text-decoration: underline;
 }
 
+.businessCouncils .boxPuplictions .whiteBoxPupl .dateS {
+  float: right;
+  margin-left: auto;
+}
+
 .businessCouncils .boxPuplictions .whiteBoxPupl .dateS img {
   max-width: 60px;
   max-height: 60px;
@@ -16938,7 +17473,7 @@ body {
 .changeRulesXD .boxSearchRule {
   background-color: #fff;
   padding: 24px;
-  height: 308px;
+  height: 350px;
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -16997,6 +17532,16 @@ body {
 
 .changeRulesXD .boxSearchRule .headerOfBox, .changeRulesXD .boxSearchRule .systemSection .boxSearch .titleBox, .systemSection .boxSearch .changeRulesXD .boxSearchRule .titleBox {
   padding-bottom: 14px;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .changeRulesXD .boxSearchRule .showBox {
@@ -17046,6 +17591,438 @@ footer .copySection {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.businessCouncilsNewXD {
+  background-image: unset;
+}
+
+.businessCouncilsNewXD .businessCouncils {
+  margin-bottom: 105px;
+}
+
+.businessCouncilsNewXD .previewReports2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 414px;
+  border-radius: 8px;
+  background-color: #fff;
+  margin: 27px 0;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.businessCouncilsNewXD .previewReports2 .TextBCN {
+  padding-left: 24px;
+  padding-right: 145px;
+}
+
+.businessCouncilsNewXD .previewReports2 .imgBCN {
+  border-radius: 8px;
+  max-width: 665px;
+}
+
+.businessCouncilsNewXD .tabsStyle {
+  background-color: transparent;
+}
+
+.businessCouncilsNewXD .tabsStyle .nav-tabs li a {
+  padding: 16px 26px;
+}
+
+.businessCouncilsNewXD .boxPuplictions {
+  height: auto;
+  margin-bottom: 40px;
+}
+
+.businessCouncilsNewXD .boxPuplictions .greenBox {
+  background-image: url(../images/innerPages/businessCouncilsBoxBG.png);
+  background-position: center center;
+  background-size: 100% 100%;
+  -webkit-transition: background-size .4s linear;
+  transition: background-size .4s linear;
+}
+
+.businessCouncilsNewXD .boxPuplictions .greenBox {
+  height: 423px;
+}
+
+.businessCouncilsNewXD .boxPuplictions .greenBox .boxG img {
+  padding: 0 !important;
+}
+
+.businessCouncilsNewXD .boxPuplictions .whiteBoxPupl {
+  height: auto;
+  position: unset;
+}
+
+.businessCouncilsNewXD .boxPuplictions .whiteBoxPupl .headerOfBox, .businessCouncilsNewXD .boxPuplictions .whiteBoxPupl .systemSection .boxSearch .titleBox, .systemSection .boxSearch .businessCouncilsNewXD .boxPuplictions .whiteBoxPupl .titleBox {
+  margin-bottom: 0;
+  margin-top: 7px;
+  text-align: left;
+}
+
+.businessCouncilsNewXD .boxPuplictions .whiteBoxPupl .paragraphOfBox span, .businessCouncilsNewXD .boxPuplictions .whiteBoxPupl .systemSection .boxSearch .praghBox span, .systemSection .boxSearch .businessCouncilsNewXD .boxPuplictions .whiteBoxPupl .praghBox span {
+  color: #007066;
+}
+
+.businessCouncilsNewXD .boxPuplictions .whiteBoxPupl .paragraphOfBox a, .businessCouncilsNewXD .boxPuplictions .whiteBoxPupl .systemSection .boxSearch .praghBox a, .systemSection .boxSearch .businessCouncilsNewXD .boxPuplictions .whiteBoxPupl .praghBox a {
+  color: #505050;
+  text-decoration: underline;
+}
+
+.businessCouncilsNewXD .boxPuplictions .dateBox {
+  margin-top: 16px;
+  margin-bottom: 10px;
+}
+
+.businessCouncilsNewXD .boxPuplictions .dateBox .viewBtn span, .businessCouncilsNewXD .boxPuplictions .dateBox .showToggleBtn .showToggle span, .showToggleBtn .businessCouncilsNewXD .boxPuplictions .dateBox .showToggle span {
+  font-size: 1rem;
+}
+
+.businessCouncilsNewXD .boxPuplictions .dateBox .dateS img {
+  padding-left: 0px;
+  max-width: 118px;
+  max-height: 48px;
+}
+
+.businessCouncilsNewXD .boxPuplictions:hover .greenBox {
+  height: 423px;
+  background-size: 110% 110%;
+}
+
+.businessCouncilsNewXD .boxPuplictions:hover .greenBox .boxG img {
+  -webkit-transform: unset;
+          transform: unset;
+}
+
+.businessCouncilsNewXD .boxPuplictions:hover .whiteBoxPupl {
+  height: auto;
+}
+
+.ReportNewXD .previewReports {
+  background-image: url(../images/innerPages/RportsPageBG.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 485px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 100px 48px;
+  margin-top: 112px;
+}
+
+.ReportNewXD .previewReports * {
+  text-align: right;
+  width: 65%;
+  padding: 0 !important;
+}
+
+.ReportNewXD .previewReports .headerOfBox, .ReportNewXD .previewReports .systemSection .boxSearch .titleBox, .systemSection .boxSearch .ReportNewXD .previewReports .titleBox {
+  font-size: 2rem;
+  color: #CCA079;
+  margin: 0 0 25px 0;
+}
+
+.ReportNewXD .previewReports .paragraphOfBox, .ReportNewXD .previewReports .systemSection .boxSearch .praghBox, .systemSection .boxSearch .ReportNewXD .previewReports .praghBox {
+  line-height: 1.6;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.ReportNewXD .formSearch {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.newInnerPage .headNIP {
+  margin-top: 24px;
+}
+
+.newInnerPage .headNIP img {
+  width: 100%;
+  max-height: 555px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 8px;
+}
+
+.newInnerPage .bodyBGNIP {
+  padding: 50px 30px 75px;
+  background-color: #fff;
+  margin-bottom: 120px;
+  border-radius: 0px 0px 8px 8px;
+}
+
+.newInnerPage .bodyBGNIP .textNIP .dateNew {
+  padding-bottom: 16px;
+}
+
+.newInnerPage .bodyBGNIP .textNIP .dateNew span:last-of-type {
+  font-size: 1rem;
+  color: #CCA079;
+  padding-left: 10px;
+}
+
+.newInnerPage .bodyBGNIP .textNIP .headerOfBoxFont35 {
+  margin-bottom: 48px;
+  color: #007066;
+}
+
+.newInnerPage .bodyBGNIP .textNIP .prachJobFont24 {
+  margin-bottom: 27px;
+  color: #666666;
+  line-height: 1.9;
+}
+
+.newInnerPage .newTitleWithImg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 25px;
+}
+
+.newInnerPage .newTitleWithImg .textNP2 {
+  width: 50%;
+}
+
+.newInnerPage .newTitleWithImg .textNP2 h4 {
+  font-size: 1.688rem;
+  margin-bottom: 27px;
+  padding-top: 6px;
+  color: #5A5A5A;
+  font-weight: bold;
+}
+
+.newInnerPage .newTitleWithImg .textNP2 .prachJobFont24 {
+  color: #666666;
+  line-height: 1.9;
+}
+
+.newInnerPage .newTitleWithImg .imgNP {
+  width: 50%;
+}
+
+.newInnerPage .newTitleWithImg .imgNP img {
+  max-width: 100%;
+  padding-right: 30px;
+  max-height: 477px;
+  width: 100%;
+}
+
+.JOPINNER {
+  background: #E5ECEC;
+  border-radius: 8px;
+  margin-top: 48px;
+  margin-bottom: 185px;
+}
+
+.JOPINNER .ForPadding {
+  padding: 81px 140px;
+}
+
+.JOPINNER .ForPadding .imgInnerJop {
+  text-align: left;
+}
+
+.JOPINNER .ForPadding .imgInnerJop img {
+  max-height: 388px;
+}
+
+.JOPINNER .ForPadding .boxSearch .dateBox span {
+  font-size: 1rem;
+  color: #CCA079;
+  padding-left: 10px;
+}
+
+.JOPINNER .ForPadding .boxSearch .titleBox {
+  font-size: 2.188rem;
+  color: #CCA079;
+  margin: 0px 0 28px;
+}
+
+.JOPINNER .ForPadding .boxSearch .praghBox {
+  color: #666666;
+  font-size: 1rem;
+  line-height: 1.9;
+}
+
+.JOPINNER .ForPadding .Edgucation {
+  margin-top: 26px;
+}
+
+.JOPINNER .ForPadding .Edgucation .boxImg {
+  width: 24px;
+  margin-right: 12px;
+}
+
+.JOPINNER .ForPadding .Edgucation .boxImg img {
+  width: 22px;
+}
+
+.JOPINNER .ForPadding .Edgucation .NormalEd {
+  font-size: 1.25rem;
+  color: #707070;
+}
+
+.JOPINNER .ForPadding .Edgucation .MainColr {
+  font-size: 1.25rem;
+  color: #CCA079;
+}
+
+.JOPINNER .ForPadding .showBox {
+  margin-top: 24px;
+}
+
+.JOPINNER .ForPadding .showBox span {
+  font-size: 1rem;
+}
+
+.ForBGFrom .FromJob {
+  background: #fff;
+  max-width: 841px;
+  margin: 0 auto;
+  margin-bottom: 120px;
+  padding: 48px;
+  border-radius: 8px;
+}
+
+.ForBGFrom .formHeading {
+  font-size: 1.813rem;
+  color: #1D1D1B;
+  margin: 0 0 35px 0;
+  text-align: center;
+}
+
+.ForBGFrom .formGroup {
+  margin-bottom: 8px;
+}
+
+.ForBGFrom .formGroup label, .ForBGFrom .formGroup .asLabel {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.ForBGFrom .formGroup select {
+  width: 100%;
+  background-color: #F6F6F6;
+}
+
+.ForBGFrom .formGroup input {
+  background-color: #F6F6F6;
+}
+
+.ForBGFrom .asLabel {
+  margin-bottom: 8px;
+}
+
+.ForBGFrom .viewBtn, .ForBGFrom .showToggleBtn .showToggle, .showToggleBtn .ForBGFrom .showToggle {
+  border: unset;
+  width: 80%;
+  margin-top: 37px;
+  font-size: 16px;
+}
+
+.ForBGFrom .fileUpload label, .ForBGFrom .fileUpload .asLabel {
+  width: 100%;
+  min-height: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #f6f6f6;
+  font-size: 14px;
+  color: #BBBBBB;
+  cursor: pointer;
+}
+
+.ForBGFrom .fileUpload label img, .ForBGFrom .fileUpload .asLabel img {
+  padding-left: 10px;
+}
+
+.JOPINNER + .ForBGFrom {
+  margin-top: -130px;
+}
+
+.BGQFAHead {
+  background: #E5ECEC;
+  margin-bottom: 24px;
+}
+
+.BGQFAHead .headerOfBoxFont35 {
+  margin: 90px 0 24px 0;
+  color: #007066;
+  font-weight: 500;
+}
+
+.BGQFAHead .paragraphOfBox, .BGQFAHead .systemSection .boxSearch .praghBox, .systemSection .boxSearch .BGQFAHead .praghBox {
+  margin-left: 17%;
+  margin-bottom: 48px;
+}
+
+.BGQFAHead .imgFAQ {
+  height: 325px;
+}
+
+.BGQFAHead .imgFAQ img {
+  max-width: 100%;
+}
+
+.FAQSPage .cards {
+  background-color: #fff;
+  padding: 60px 140px;
+  margin-bottom: 120px;
+  border-radius: 5px;
+}
+
+.FAQSPage .cards .card {
+  margin-bottom: 30px;
+}
+
+.FAQSPage .cards .card .card-header a {
+  color: #CCA079;
+  font-size: 1.75rem;
+  font-weight: 500;
+  border-radius: 5px;
+}
+
+.FAQSPage .cards .card .card-header a:not(.collapsed) {
+  background: #fcfaf8;
+}
+
+.FAQSPage .cards .card .card-header a.collapsed {
+  background: #faf5f0;
+}
+
+.FAQSPage .cards .card .card-header a::after {
+  background-image: url(../images/innerPages/accourdingQFAIcon.svg);
+}
+
+.FAQSPage .cards .card .card-body {
+  background: #fcfaf8;
+  padding: 0 0px 30px 0px;
+}
+
+.FAQSPage .cards .card .card-body p {
+  border-top: 2px solid #bbbbbb7a;
+  margin: 0 21px 0 34px;
+  padding-top: 14px;
 }
 
 /* ----------- fixing global issue ----------- */
@@ -17210,6 +18187,25 @@ footer .copySection {
   .businessCouncils .boxPuplictions .greenBox .boxG img {
     width: 50%;
   }
+  .businessCouncilsNewXD .businessCouncils .boxPuplictions .greenBox .boxG img {
+    width: 100%;
+  }
+  .businessCouncilsNewXD .previewReports2 {
+    min-height: auto;
+  }
+  .businessCouncilsNewXD .previewReports2 .TextBCN {
+    padding: 20px;
+    width: 50%;
+  }
+  .businessCouncilsNewXD .previewReports2 .imgBCN {
+    width: 50%;
+  }
+  .businessCouncilsNewXD .previewReports2 .imgBCN img {
+    width: 100%;
+    height: 100vh;
+    -o-object-fit: fill;
+       object-fit: fill;
+  }
 }
 
 /* ----------- iPad ----------- */
@@ -17242,14 +18238,16 @@ footer .copySection {
   .trainingPage .formSearch .tabsStyle {
     margin-bottom: 20px;
   }
+  .trainingPage .formSearch .selectBox {
+    display: inline-block;
+  }
   .trainingPage .formSearch .selectSection {
-    width: 100%;
     -webkit-box-pack: inherit;
         -ms-flex-pack: inherit;
             justify-content: inherit;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+  }
+  .trainingPage .formSearch .selectSection div {
+    display: inline-block;
   }
   .trainingPage .tabsStyle .nav-tabs li a {
     font-size: 16px;
@@ -17411,6 +18409,104 @@ footer .copySection {
         -ms-flex-pack: center !important;
             justify-content: center !important;
   }
+  .businessCouncilsNewXD .previewReports2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .businessCouncilsNewXD .previewReports2 .TextBCN {
+    padding: 20px 20px 30px !important;
+  }
+  .businessCouncilsNewXD .previewReports2 .imgBCN {
+    width: 100%;
+    max-width: unset;
+  }
+  .businessCouncilsNewXD .previewReports2 .imgBCN img {
+    max-width: 100%;
+    width: 100%;
+  }
+  .businessCouncilsNewXD .boxPuplictions:hover .greenBox {
+    height: 300px;
+  }
+  .businessCouncilsNewXD .boxPuplictions .greenBox {
+    height: 300px;
+  }
+  .businessCouncilsNewXD .boxPuplictions .greenBox .boxG img {
+    width: 100%;
+  }
+  .businessCouncilsNewXD .boxPuplictions .headerOfBox, .businessCouncilsNewXD .boxPuplictions .systemSection .boxSearch .titleBox, .systemSection .boxSearch .businessCouncilsNewXD .boxPuplictions .titleBox {
+    height: auto;
+    font-size: 1.475rem !important;
+    margin-bottom: 10px !important;
+  }
+  .businessCouncilsNewXD .boxPuplictions .viewBtn, .businessCouncilsNewXD .boxPuplictions .showToggleBtn .showToggle, .showToggleBtn .businessCouncilsNewXD .boxPuplictions .showToggle {
+    padding: 5px 30px;
+  }
+  .businessCouncilsNewXD .boxPuplictions .dateBox .dateS img {
+    max-height: 35px;
+  }
+  .businessCouncilsNewXD .tabsStyle .nav-tabs li a {
+    padding: 16px;
+    font-size: 15px;
+  }
+  .ReportNewXD .previewReports {
+    background-position: 19% 100%;
+  }
+  .ReportNewXD .formSearch {
+    margin-top: 0 !important;
+  }
+  .newInnerPage .newTitleWithImg {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .newInnerPage .newTitleWithImg .imgNP {
+    width: 100%;
+  }
+  .newInnerPage .newTitleWithImg .imgNP img {
+    padding-right: 0;
+    max-height: 300px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 8px;
+  }
+  .newInnerPage .newTitleWithImg .textNP2 {
+    width: 100%;
+  }
+  .JOPINNER .ForPadding {
+    padding: 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .JOPINNER .ForPadding > .col-md-6 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .JOPINNER .ForPadding .imgInnerJop {
+    text-align: center;
+  }
+  .BGQFAHead .imgFAQ {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+  }
+  .FAQSPage .cards {
+    padding: 30px 60px 2px;
+  }
+  .FAQSPage .cards .card .card-header a {
+    padding-left: 50px;
+  }
+  .FAQSPage .cards .card .card-header a::after {
+    top: 26%;
+    left: 15px;
+  }
 }
 
 .reportPage .tab-pane.active {
@@ -17535,8 +18631,8 @@ footer .copySection {
     margin-top: 20px;
   }
   .backgroundOrImage .formContactUs .FromInputs .btnForm {
-    width: 100%;
-    margin-top: 10px;
+    width: 100% !important;
+    margin-top: 10px !important;
   }
   .backgroundOrImage .formContactUs .textFrom {
     height: auto;
@@ -17554,14 +18650,14 @@ footer .copySection {
   .reportPage .formSearch .boxSearchEvent {
     margin-bottom: 10px;
   }
-  .reportPage .formSearch label {
+  .reportPage .formSearch label, .reportPage .formSearch .ForBGFrom .asLabel, .ForBGFrom .reportPage .formSearch .asLabel {
     margin-bottom: 5px;
   }
   .reportPage .formSearch .selectSection {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    display: -ms-grid;
-    display: grid;
+    display: -ms-grid !important;
+    display: grid !important;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
   }
@@ -17746,6 +18842,170 @@ footer .copySection {
   .trainingPage .formSearch .tabsStyle .nav.nav-tabs li {
     width: 50%;
   }
+  .businessCouncilsNewXD .previewReports2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .businessCouncilsNewXD .previewReports2 .TextBCN {
+    padding: 20px 20px 30px !important;
+  }
+  .businessCouncilsNewXD .previewReports2 img {
+    max-width: 100%;
+  }
+  .businessCouncilsNewXD .boxPuplictions:hover .greenBox {
+    height: 300px;
+  }
+  .businessCouncilsNewXD .boxPuplictions .greenBox {
+    height: 300px;
+  }
+  .businessCouncilsNewXD .boxPuplictions .greenBox .boxG img {
+    width: 90%;
+  }
+  .businessCouncilsNewXD .boxPuplictions .headerOfBox, .businessCouncilsNewXD .boxPuplictions .systemSection .boxSearch .titleBox, .systemSection .boxSearch .businessCouncilsNewXD .boxPuplictions .titleBox {
+    height: auto;
+    font-size: 1.475rem !important;
+    margin-bottom: 10px !important;
+  }
+  .businessCouncilsNewXD .boxPuplictions .viewBtn, .businessCouncilsNewXD .boxPuplictions .showToggleBtn .showToggle, .showToggleBtn .businessCouncilsNewXD .boxPuplictions .showToggle {
+    padding: 5px 30px;
+  }
+  .businessCouncilsNewXD .boxPuplictions .dateBox .dateS img {
+    max-height: 35px;
+  }
+  .businessCouncilsNewXD .tabsStyle ul {
+    display: block;
+    border-radius: 25px;
+  }
+  .businessCouncilsNewXD .tabsStyle ul li {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 100%;
+    padding-right: 0;
+  }
+  .businessCouncilsNewXD .tabsStyle ul li a {
+    width: 100%;
+  }
+  .ReportNewXD .formSearch {
+    margin-top: 0 !important;
+  }
+  .ReportNewXD .previewReports {
+    margin-top: 60px;
+    border-radius: 20px 20px 0 0px;
+    padding: 30px;
+    background-position: 19% 100%;
+  }
+  .ReportNewXD .previewReports * {
+    width: 100%;
+    text-align: center;
+  }
+  .ReportNewXD .previewReports .headerOfBox, .ReportNewXD .previewReports .systemSection .boxSearch .titleBox, .systemSection .boxSearch .ReportNewXD .previewReports .titleBox {
+    font-size: 1.7rem;
+  }
+  .ReportNewXD .previewReports .paragraphOfBox, .ReportNewXD .previewReports .systemSection .boxSearch .praghBox, .systemSection .boxSearch .ReportNewXD .previewReports .praghBox {
+    font-size: 1.3rem;
+  }
+  .newInnerPage .bodyBGNIP {
+    padding: 30px 20px;
+  }
+  .newInnerPage .bodyBGNIP .textNIP .headerOfBoxFont35 {
+    font-size: 1.888rem;
+    margin-bottom: 30px;
+  }
+  .newInnerPage .bodyBGNIP .textNIP .prachJobFont24 {
+    line-height: 1.6;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+  }
+  .newInnerPage .headNIP img {
+    min-height: 230px;
+  }
+  .newInnerPage .newTitleWithImg {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .newInnerPage .newTitleWithImg .textNP2 {
+    width: 100%;
+  }
+  .newInnerPage .newTitleWithImg .textNP2 .prachJobFont24 {
+    line-height: 1.6;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+  }
+  .newInnerPage .newTitleWithImg .textNP2 h4 {
+    font-size: 1.588rem;
+    margin-bottom: 15px;
+    padding-top: 15px;
+  }
+  .newInnerPage .newTitleWithImg .imgNP {
+    width: 100%;
+  }
+  .newInnerPage .newTitleWithImg .imgNP img {
+    padding: 0;
+  }
+  .JOPINNER .ForPadding {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    padding: 30px 20px;
+  }
+  .JOPINNER .imgInnerJop img {
+    max-width: 100%;
+  }
+  .JOPINNER .boxSearch .titleBox {
+    font-size: 1.988rem;
+    margin: 0px 0 10px;
+  }
+  .JOPINNER .Edgucation {
+    margin-top: 5px;
+  }
+  .JOPINNER .Edgucation .MainColr {
+    font-size: 1.0rem;
+  }
+  .JOPINNER .Edgucation .NormalEd {
+    font-size: 1.0rem;
+  }
+  .JOPINNER .showBox .viewBtn, .JOPINNER .showBox .showToggleBtn .showToggle, .showToggleBtn .JOPINNER .showBox .showToggle {
+    padding: 10px 30px;
+    min-width: 125px;
+  }
+  .ForBGFrom .FromJob {
+    padding: 10px;
+  }
+  .BGQFAHead .headerOfBoxFont35 {
+    margin: 45px 0 24px 0;
+  }
+  .BGQFAHead .paragraphOfBox, .BGQFAHead .systemSection .boxSearch .praghBox, .systemSection .boxSearch .BGQFAHead .praghBox {
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+  .BGQFAHead .imgFAQ {
+    height: 200px;
+    text-align: center;
+  }
+  .BGQFAHead .imgFAQ img {
+    height: 100%;
+  }
+  .FAQSPage .cards {
+    padding: 40px 20px 0px 20px;
+    margin-bottom: 60px;
+  }
+  .FAQSPage .cards .card .card-header a {
+    font-size: 1.15rem;
+    padding-left: 53px;
+  }
+  .FAQSPage .faq-section .mb-0 > a:after {
+    left: 10px;
+    top: 24px;
+  }
+  .FAQSPage .card-body .faq-section {
+    margin: 0px !important;
+  }
 }
 
 /* ----------- iPhone ----------- */
@@ -17798,11 +19058,11 @@ footer .copySection {
     font-size: 1.2rem;
   }
   .trainingPage .formSearch .selectSection {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
   }
-  .trainingPage .formSearch label {
+  .trainingPage .formSearch label, .trainingPage .formSearch .ForBGFrom .asLabel, .ForBGFrom .trainingPage .formSearch .asLabel {
     display: block;
   }
   .trainingPage .selectSection select {
@@ -18371,6 +19631,9 @@ this UI is made desktop first.
     font-size: 30px;
     line-height: 40px;
   }
+  .versions::after {
+    bottom: 100px;
+  }
   .sharekna-elraay .offset-lg-1 {
     margin-left: 8.33333%;
   }
@@ -18463,6 +19726,9 @@ this UI is made desktop first.
         -ms-flex: 0 0 70px;
             flex: 0 0 70px;
   }
+  .not-found .white-card {
+    width: 950px;
+  }
 }
 
 @media (max-width: 991.98px) {
@@ -18492,7 +19758,7 @@ this UI is made desktop first.
             flex-direction: column;
   }
   .main-navbar #navbarSupportedContent > .navbar-nav > .nav-item.search-mob {
-    width: 100%;
+    width: 400px;
     padding: 0 40px;
   }
   .main-navbar #navbarSupportedContent > .navbar-nav > .nav-item.search-mob .form-group {
@@ -18513,6 +19779,10 @@ this UI is made desktop first.
   }
   .main-navbar #navbarSupportedContent > .navbar-nav > .nav-item .search-toggle {
     display: none;
+  }
+  .main-navbar #navbarSupportedContent > .navbar-nav > .nav-item.contact-us a {
+    color: #CCA079;
+    text-align: center;
   }
   .main-navbar .navbar-brand {
     -ms-flex-item-align: start;
@@ -18538,6 +19808,8 @@ this UI is made desktop first.
     position: absolute;
     right: 50px;
     top: 40px;
+    width: 54px;
+    min-width: auto;
   }
   .main-navbar .nav-wrapper {
     -webkit-box-flex: 1;
@@ -18570,17 +19842,30 @@ this UI is made desktop first.
   .about-hayaa {
     background-position: 5.5% 58%;
   }
+  .about-hayaa .about-hay2a-content {
+    padding: 25px 35px 15px;
+  }
   .about-hayaa .about-hay2a-content h3 {
     font-size: 1.5rem;
-    margin-bottom: 0px;
+    margin-bottom: 10px;
+    line-height: 32px;
   }
   .about-hayaa .about-hay2a-content p {
     font-size: 1rem;
     line-height: 30px;
     margin-bottom: 15px;
   }
+  .about-hayaa .about-hay2a-img {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   .about-details {
-    padding-bottom: 40px;
+    padding-bottom: 0px;
+  }
+  .about-details .white-card {
+    padding: 35px;
+    margin-bottom: 40px;
   }
   .about-details .details-item .details-img {
     -webkit-box-pack: center !important;
@@ -18609,6 +19894,82 @@ this UI is made desktop first.
   }
   .about-details .details-item.second .details-content p {
     margin-bottom: 15px;
+  }
+  .about-details .hay2a-missions {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .about-details .hay2a-missions .missions-content {
+    margin: 0;
+    padding: 0;
+  }
+  .about-details .hay2a-missions .missions-content h3 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+  .about-details .hay2a-missions .missions-content p {
+    font-size: 1.25rem;
+    line-height: 30px;
+    margin-bottom: 15px;
+  }
+  .about-details .hay2a-missions .missions-content ol li {
+    font-size: 1rem;
+    line-height: 24px;
+    margin-bottom: 10px;
+  }
+  .about-details .hay2a-missions .missions-content ol li ul li {
+    font-size: 1rem;
+    line-height: 24px;
+    margin-bottom: 7px;
+  }
+  .about-details .hay2a-missions .missions-content ol li ul li::before {
+    height: 8px;
+    top: 10px;
+  }
+  .strategy .strategy-top {
+    background-position: left top;
+  }
+  .strategy .strategy-top h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    line-height: 38px;
+    padding-top: 275px;
+  }
+  .strategy .strategy-top p {
+    font-size: 1rem;
+    line-height: 24px;
+  }
+  .strategy .strategy-goals h2 {
+    font-size: 1.5rem;
+    line-height: 32px;
+    margin-bottom: 20px;
+  }
+  .strategy .strategy-goals .st-goal {
+    width: calc(100% / 2 - 15px);
+    margin-right: 15px;
+    margin-bottom: 15px;
+  }
+  .strategy .strategy-goals .st-goal:nth-child(odd) {
+    margin-right: 0px;
+  }
+  .strategy .strategy-goals .st-goal h4 {
+    font-size: 1.1rem;
+    line-height: 22px;
+    max-height: calc(22px * 2);
+    overflow: hidden;
+  }
+  .strategy .strategy-goals .st-goal p {
+    font-size: .875rem;
+    line-height: 20px;
+    height: calc(20px * 5);
   }
   p.on-space {
     font-size: 1rem;
@@ -18658,7 +20019,12 @@ this UI is made desktop first.
   }
   .reportPage .formSearch .boxSearchEvent {
     width: 100%;
-    margin-bottom: 10px;
+  }
+  .reportPage .formSearch .selectSection {
+    display: block;
+    margin-top: 10px;
+    float: none;
+    margin-left: 0;
   }
   .attaches-tabs {
     margin-top: 40px;
@@ -18834,6 +20200,12 @@ this UI is made desktop first.
     margin-bottom: 15px;
     height: calc(24px * 3);
   }
+  .latest-news .owl-carousel .item .news-card .content-box p a {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 15px;
+    height: calc(24px * 3);
+  }
   .our-services .owl-carousel .owl-stage-outer {
     padding-top: 40px;
   }
@@ -18877,6 +20249,30 @@ this UI is made desktop first.
   }
   .navigator {
     display: none;
+  }
+  .versions {
+    height: 775px;
+  }
+  .versions .swiper-container {
+    height: 545px;
+  }
+  .versions .swiper-container .swiper-slide {
+    height: auto !important;
+    width: 100%;
+  }
+  .versions .swiper-container .swiper-slide:nth-child(even) {
+    margin-left: 0;
+  }
+  .versions::after {
+    height: 70px;
+    bottom: 45px;
+  }
+  .not-found .white-card {
+    width: 760px;
+  }
+  .not-found .content h2 {
+    font-size: 30px;
+    line-height: 45px;
   }
 }
 
@@ -18965,6 +20361,16 @@ this UI is made desktop first.
   .breadcrumbScetion .breadcrumbCustom li a {
     font-size: 1rem;
   }
+  .breadcrumbScetion .breadcrumbCustom span {
+    font-size: .875rem !important;
+    white-space: nowrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .breadcrumbScetion .breadcrumbCustom span a {
+    font-size: .875rem;
+    white-space: nowrap;
+  }
   .servey-slider .top-servey .content-box {
     padding: 0 25px;
   }
@@ -19010,7 +20416,7 @@ this UI is made desktop first.
   .systemSection .formSearch .boxSearchEvent input {
     font-size: 14px;
   }
-  .systemSection .formSearch .selectSection .selectBox label {
+  .systemSection .formSearch .selectSection .selectBox label, .systemSection .formSearch .selectSection .selectBox .ForBGFrom .asLabel, .ForBGFrom .systemSection .formSearch .selectSection .selectBox .asLabel {
     font-size: 1rem;
   }
   .gallary-header {
@@ -19311,6 +20717,11 @@ this UI is made desktop first.
   }
   .latest-news .owl-carousel .item .news-card .content-box p {
     font-size: 14px;
+    line-height: 24px;
+    height: calc(24px * 2);
+  }
+  .latest-news .owl-carousel .item .news-card .content-box p a {
+    font-size: 14px;
     height: calc(24px * 2);
   }
   .latest-news .owl-carousel .item .news-card .content-box .date {
@@ -19392,6 +20803,37 @@ this UI is made desktop first.
     font-size: 14px;
     line-height: 26px;
   }
+  .not-found {
+    margin-top: 65px;
+    margin-bottom: 130px;
+    padding: 15px;
+  }
+  .not-found .white-card {
+    width: auto;
+    height: auto;
+    padding: 0 10px;
+  }
+  .not-found img {
+    max-height: 350px;
+    max-width: 100%;
+  }
+  .not-found .content {
+    margin-bottom: 65px;
+  }
+  .not-found .content h2 {
+    font-size: 25px;
+  }
+  .not-found-state_box {
+    padding: 0 12px;
+  }
+  .not-found-state_box--content img {
+    margin-bottom: 24px;
+  }
+  .not-found-state_box--content h1 {
+    font-weight: 600;
+    font-size: 28px;
+    margin-bottom: 24px;
+  }
 }
 
 @media (max-width: 575.98px) {
@@ -19405,12 +20847,31 @@ this UI is made desktop first.
   .breadcrumbScetion .breadcrumbCustom li a {
     font-size: 1rem;
   }
+  .breadcrumbScetion .breadcrumbCustom span {
+    font-size: .875rem;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .breadcrumbScetion .breadcrumbCustom span a {
+    font-size: .875rem;
+    white-space: nowrap;
+  }
   .about-hayaa {
     margin-top: 0;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
+  }
+  .about-hayaa .about-hay2a-content {
+    padding: 15px 20px;
+  }
+  .about-hayaa .about-hay2a-content p {
+    font-size: .875rem;
+    line-height: 24px;
   }
   .about-details {
     padding-bottom: 40px;
+  }
+  .about-details .white-card {
+    padding: 20px;
   }
   .about-details .details-item {
     padding-bottom: 25px;
@@ -19422,7 +20883,7 @@ this UI is made desktop first.
     line-height: 30px;
   }
   .about-details .details-item .details-content p {
-    font-size: .9rem;
+    font-size: .875rem;
     line-height: 24px;
   }
   .about-details .details-item .details-content ul li {
@@ -19435,6 +20896,68 @@ this UI is made desktop first.
   }
   .about-details .details-item.second .details-content p {
     margin-bottom: 15px;
+  }
+  .about-details .hay2a-missions .missions-content h3 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 30px;
+  }
+  .about-details .hay2a-missions .missions-content p {
+    font-size: 1.125rem;
+    line-height: 26px;
+    margin-bottom: 10px;
+  }
+  .about-details .hay2a-missions .missions-content ol {
+    padding-left: 25px;
+  }
+  .about-details .hay2a-missions .missions-content ol li {
+    font-size: 0.875rem;
+    margin-bottom: 5px;
+    line-height: 20px;
+  }
+  .about-details .hay2a-missions .missions-content ol li ul {
+    margin-bottom: 10px;
+  }
+  .about-details .hay2a-missions .missions-content ol li ul li {
+    font-size: 0.875rem;
+    line-height: 20px;
+    margin-bottom: 5px;
+  }
+  .about-details .hay2a-missions .missions-content ol li ul li::before {
+    left: -25px;
+  }
+  .strategy .strategy-top h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    line-height: 30px;
+    padding-top: 215px;
+  }
+  .strategy .strategy-top p {
+    font-size: 0.875rem;
+    line-height: 20px;
+  }
+  .strategy .strategy-goals h2 {
+    font-size: 1.125rem;
+    line-height: 26px;
+    margin-bottom: 15px;
+  }
+  .strategy .strategy-goals .st-goal {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 15px;
+    height: auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .strategy .strategy-goals .st-goal h4 {
+    text-align: center;
+  }
+  .strategy .strategy-goals .st-goal p {
+    max-height: calc(20px * 5);
+    height: auto;
+    text-align: center;
   }
   p.on-space {
     font-size: .9rem;
@@ -19541,6 +21064,9 @@ this UI is made desktop first.
   .lamha-tare5ia p {
     font-size: .875rem;
   }
+  .versions .swiper-container {
+    height: 465px;
+  }
   .versions .versions-card {
     height: 215px;
   }
@@ -19591,6 +21117,7 @@ this UI is made desktop first.
   }
   .main-navbar #navbarSupportedContent > .navbar-nav > .nav-item.search-mob {
     padding: 0 15px;
+    width: 100%;
   }
   .main-navbar #navbarSupportedContent > .navbar-nav > .nav-item.search-mob .form-group button {
     top: 3px;
@@ -19627,6 +21154,10 @@ this UI is made desktop first.
     right: 16px;
     position: absolute;
     top: 19px;
+  }
+  .main-navbar #navbarSupportedContent > .navbar-nav > .nav-item.contact-us a {
+    text-align: left;
+    padding: 12px 15px;
   }
   .main-navbar .nav-wrapper {
     margin-top: 30px;

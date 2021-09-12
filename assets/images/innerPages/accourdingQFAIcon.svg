@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+  <g id="accourdingQFAIcon" transform="translate(24 24)">
+    <g id="close" transform="translate(-24 -24)">
+      <g id="close-2" data-name="close">
+        <rect id="Rectangle_11953" data-name="Rectangle 11953" width="48" height="48" transform="translate(48 48) rotate(180)" opacity="0"/>
+        <path id="Path_57565" data-name="Path 57565" d="M15.186,18.008l-8.6,8.58a2.008,2.008,0,0,0,2.84,2.84l8.58-8.6,8.58,8.6a2.008,2.008,0,0,0,2.84-2.84l-8.6-8.58,8.6-8.58a2.008,2.008,0,1,0-2.84-2.84l-8.58,8.6-8.58-8.6a2.008,2.008,0,1,0-2.84,2.84Z" transform="translate(-1.464 24.002) rotate(-45)" fill="#cca079"/>
+      </g>
+    </g>
+  </g>
+</svg>
