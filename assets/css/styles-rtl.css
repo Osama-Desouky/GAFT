@@ -14708,6 +14708,10 @@ p.on-space {
   color: #fff;
 }
 
+.attaches-content .attaches-2 {
+  margin-top: 70px;
+}
+
 .attaches-content #attaches .content-head {
   display: -webkit-box;
   display: -ms-flexbox;
