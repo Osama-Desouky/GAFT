@@ -15720,6 +15720,10 @@ h2, h3, h4, h5, h6 {
   display: none;
 }
 
+#s4-workspace {
+  overflow-y: hidden;
+}
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   /* display: none; <- Crashes Chrome on hover */
@@ -16189,6 +16193,7 @@ body {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  display: none;
 }
 
 .breadcrumbScetion .readspeakerSec a {
@@ -16199,7 +16204,6 @@ body {
 }
 
 .breadcrumbScetion .readspeakerSec a:first-of-type {
-  padding: 4px 12px 4px 10px;
   margin-right: 0px;
 }
 
@@ -16340,7 +16344,7 @@ body {
           justify-content: center;
 }
 
-.pagentaaionCustom a, .pagentaaionCustom span {
+.pagentaaionCustom a, .pagentaaionCustom span span {
   margin: 0 12px;
   width: 51px;
   height: 48px;
@@ -16360,6 +16364,12 @@ body {
   font-weight: 500;
 }
 
+.pagentaaionCustom > span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .pagentaaionCustom .current {
   background: #007F75;
   color: #fff;
@@ -16371,9 +16381,19 @@ body {
   background: unset;
 }
 
-.pagentaaionCustom .prePagi img {
+.pagentaaionCustom .NextPagi {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
+}
+
+.pagentaaionCustom .NextPagi img {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.pagentaaionCustom .aspNetDisabled {
+  -webkit-filter: invert(85%) sepia(0%) saturate(1%) hue-rotate(173deg) brightness(105%) contrast(132%);
+          filter: invert(85%) sepia(0%) saturate(1%) hue-rotate(173deg) brightness(105%) contrast(132%);
 }
 
 .pagentaaionCustom .aspNetDisabled img {
@@ -18029,6 +18049,256 @@ footer .copySection {
   padding-top: 14px;
 }
 
+.accordion.NewStyleAccordion .card {
+  margin-bottom: 48px;
+  border-radius: 8px !important;
+  border: unset;
+  margin-bottom: 30px;
+}
+
+.accordion.NewStyleAccordion .card .card-header {
+  padding: 0;
+  border: unset;
+}
+
+.accordion.NewStyleAccordion .card .card-header .btn-link {
+  position: relative;
+  padding: 24px 24px 24px 55px;
+  font-size: 1.5rem;
+  color: #012D29;
+  font-weight: 500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  border: unset;
+  -webkit-transition: .4s;
+  transition: .4s;
+  text-decoration: none;
+  text-align: left;
+}
+
+.accordion.NewStyleAccordion .card .card-header .btn-link:hover {
+  background-color: #fff;
+  text-decoration: unset;
+}
+
+.accordion.NewStyleAccordion .card .card-header .btn-link::after {
+  content: "";
+  position: absolute;
+  left: 24px;
+  background-image: url(../images/innerPages/plusQ.svg);
+  height: 40px;
+  width: 40px;
+  background-repeat: no-repeat;
+}
+
+.accordion.NewStyleAccordion .card .card-header .btn-link[aria-expanded="true"]:after {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.accordion.NewStyleAccordion .card .card-body a {
+  font-size: 1.125rem;
+  color: #666666;
+  margin: 0;
+  line-height: 2;
+}
+
+.accordion.NewStyleAccordion .card .card-body h4 {
+  font-size: 1.253rem;
+  color: #1D1D1B;
+}
+
+.accordion.NewStyleAccordion .card .card-body li {
+  color: #666666;
+  font-size: 1rem;
+  line-height: 1.9;
+}
+
+.accordion.NewStyleAccordion .card .card-body li::marker {
+  color: #666666;
+}
+
+.surveyContainer {
+  background: #fff;
+  max-width: 841px;
+  margin: 0 auto;
+  margin-bottom: 120px;
+  padding: 48px;
+  border-radius: 8px;
+}
+
+.surveyContainer .survey_wrapper > div {
+  margin-bottom: 30px;
+}
+
+.surveyContainer .survey_wrapper > div br {
+  display: none;
+}
+
+.surveyContainer .survey_wrapper > div .tittel p {
+  font-size: 1.125rem;
+  font-weight: 500;
+  margin: 0;
+  color: #CCA079;
+  margin-bottom: 8px;
+}
+
+.surveyContainer .survey_wrapper > div textarea.hasDatepicker,
+.surveyContainer .survey_wrapper > div input.hasDatepicker {
+  background-image: url(../images/calendar-dates.svg);
+  background-position: 20px center;
+}
+
+.surveyContainer .survey_wrapper > div textarea:not(input[type="radio"]),
+.surveyContainer .survey_wrapper > div input:not(input[type="radio"]) {
+  width: 100% !important;
+  height: 45px;
+  border-radius: 8px;
+  padding: 0 20px;
+  border: unset;
+  background-color: #F6F6F6;
+}
+
+.surveyContainer .survey_wrapper > div textarea {
+  height: 145px !important;
+}
+
+.surveyContainer .survey_wrapper #question11 tbody {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.surveyContainer .survey_wrapper #question11 tbody tr:first-of-type label, .surveyContainer .survey_wrapper #question11 tbody tr:first-of-type .ForBGFrom .asLabel, .ForBGFrom .surveyContainer .survey_wrapper #question11 tbody tr:first-of-type .asLabel {
+  margin-right: 20px;
+}
+
+.surveyContainer .btnsdiv {
+  margin-top: 20px;
+}
+
+.surveyContainer .btnsdiv input[type=submit] {
+  padding: 14px 45px;
+  display: inline-block;
+  border-radius: 50px;
+  color: #fff;
+  border: unset;
+  font-size: 16px;
+}
+
+.surveyContainer .btnsdiv input[type=submit]:first-of-type {
+  background-color: #CCA079;
+  margin: 0 !important;
+}
+
+.surveyContainer .btnsdiv input[type=submit]:last-of-type {
+  background-color: #666666;
+}
+
+.surveyContainer input[type="radio"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.surveyContainer [type="radio"]:checked {
+  position: absolute;
+  left: -9999px;
+}
+
+.surveyContainer [type="radio"]:checked + label, .surveyContainer .ForBGFrom [type="radio"]:checked + .asLabel, .ForBGFrom .surveyContainer [type="radio"]:checked + .asLabel {
+  position: relative;
+  padding-left: 28px;
+  cursor: pointer;
+  line-height: 20px;
+  display: inline-block;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.surveyContainer [type="radio"]:checked + label:before, .surveyContainer .ForBGFrom [type="radio"]:checked + .asLabel:before, .ForBGFrom .surveyContainer [type="radio"]:checked + .asLabel:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #ddd;
+  border-radius: 100%;
+  background: #fff;
+}
+
+.surveyContainer [type="radio"]:checked + label:after, .surveyContainer .ForBGFrom [type="radio"]:checked + .asLabel:after, .ForBGFrom .surveyContainer [type="radio"]:checked + .asLabel:after {
+  content: '';
+  width: 12px;
+  height: 12px;
+  background: #CCA079;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  border-radius: 100%;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.surveyContainer [type="radio"]:not(:checked) + label, .surveyContainer .ForBGFrom [type="radio"]:not(:checked) + .asLabel, .ForBGFrom .surveyContainer [type="radio"]:not(:checked) + .asLabel {
+  position: relative;
+  padding-left: 28px;
+  cursor: pointer;
+  line-height: 20px;
+  display: inline-block;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.surveyContainer [type="radio"]:not(:checked) + label:before, .surveyContainer .ForBGFrom [type="radio"]:not(:checked) + .asLabel:before, .ForBGFrom .surveyContainer [type="radio"]:not(:checked) + .asLabel:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #ddd;
+  border-radius: 100%;
+  background: #fff;
+}
+
+.surveyContainer [type="radio"]:not(:checked) + label:after, .surveyContainer .ForBGFrom [type="radio"]:not(:checked) + .asLabel:after, .ForBGFrom .surveyContainer [type="radio"]:not(:checked) + .asLabel:after {
+  content: '';
+  width: 12px;
+  height: 12px;
+  background: #CCA079;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  border-radius: 100%;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  opacity: 0;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+
+.surveyContainer [type="radio"]:not(:checked) {
+  position: absolute;
+  left: -9999px;
+}
+
+body .ui-datepicker {
+  border: 5px solid #cca079 !important;
+}
+
+body .ui-widget-content a {
+  color: #cca079 !important;
+}
+
 /* ----------- fixing global issue ----------- */
 @media (min-device-width: 1401px) and (max-device-width: 1500px) {
   .backgroundOrImage .container::before {
@@ -18762,7 +19032,7 @@ footer .copySection {
     width: 40px;
     height: 40px;
   }
-  .pagentaaionCustom span {
+  .pagentaaionCustom span span {
     width: 40px;
     height: 40px;
   }
@@ -19009,6 +19279,30 @@ footer .copySection {
   }
   .FAQSPage .card-body .faq-section {
     margin: 0px !important;
+  }
+  .accordion.NewStyleAccordion {
+    padding: 0 20px;
+  }
+  .accordion.NewStyleAccordion .card .card-header .btn-link {
+    font-size: 1.2rem;
+  }
+  .accordion.NewStyleAccordion .card .card-header .btn-link::after {
+    height: 25px;
+    width: 25px;
+    left: 15px;
+    background-repeat: no-repeat;
+    margin-top: -4px;
+  }
+  .surveyContainer {
+    padding: 20px;
+    margin: 20px;
+  }
+  .surveyContainer .btnsdiv input[type=submit] {
+    padding: 8px 30px;
+    font-size: 14px;
+  }
+  .surveyContainer .survey_wrapper > div .tittel p {
+    font-size: 1rem;
   }
 }
 
