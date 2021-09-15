@@ -17945,6 +17945,7 @@ footer .copySection {
 
 .ForBGFrom .formGroup input {
   background-color: #F6F6F6;
+  color: #BBBBBB;
 }
 
 .ForBGFrom .asLabel {
@@ -18049,6 +18050,10 @@ footer .copySection {
   padding-top: 14px;
 }
 
+.accordion.NewStyleAccordion {
+  margin-bottom: 70px;
+}
+
 .accordion.NewStyleAccordion .card {
   margin-bottom: 48px;
   border-radius: 8px !important;
@@ -18076,6 +18081,7 @@ footer .copySection {
   transition: .4s;
   text-decoration: none;
   text-align: right;
+  background-color: #fff;
 }
 
 .accordion.NewStyleAccordion .card .card-header .btn-link:hover {
@@ -18091,6 +18097,7 @@ footer .copySection {
   height: 40px;
   width: 40px;
   background-repeat: no-repeat;
+  margin-top: -4px;
 }
 
 .accordion.NewStyleAccordion .card .card-header .btn-link[aria-expanded="true"]:after {
@@ -18100,26 +18107,79 @@ footer .copySection {
   transition: .4s;
 }
 
+.accordion.NewStyleAccordion .card .card-body ul {
+  list-style: none;
+  padding: 0;
+}
+
+.accordion.NewStyleAccordion .card .card-body ul li {
+  padding-right: 5px;
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #9C9C9C;
+  line-height: 36px;
+  margin-bottom: 8px;
+  position: relative;
+  padding-right: 22px;
+}
+
+.accordion.NewStyleAccordion .card .card-body ul li::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: 15px;
+  right: -6px;
+  background-image: url(../images/arrow-gold.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 .accordion.NewStyleAccordion .card .card-body a {
   font-size: 1.125rem;
-  color: #666666;
+  color: #9C9C9C;
   margin: 0;
   line-height: 2;
 }
 
 .accordion.NewStyleAccordion .card .card-body h4 {
   font-size: 1.253rem;
-  color: #1D1D1B;
+  color: #000000;
+  margin-bottom: 12px;
+  font-weight: 500;
 }
 
-.accordion.NewStyleAccordion .card .card-body li {
-  color: #666666;
-  font-size: 1rem;
-  line-height: 1.9;
+.accordion.NewStyleAccordion.organizations {
+  margin-top: 70px;
 }
 
-.accordion.NewStyleAccordion .card .card-body li::marker {
-  color: #666666;
+.accordion.NewStyleAccordion.organizations .card .card-header .btn-link {
+  padding: 19px 24px 19px 55px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.accordion.NewStyleAccordion.organizations .card .card-header .btn-link img {
+  width: 50px;
+  height: 48px;
+  margin-left: 13px;
+}
+
+.accordion.NewStyleAccordion.organizations .card .card-header .btn-link:not(.collapsed) {
+  border-bottom: 1px solid #bbbbbb4d;
+}
+
+.accordion.NewStyleAccordion.organizations .card-body {
+  padding-right: 97px;
+  padding-left: 70px;
+}
+
+.accordion.NewStyleAccordion.organizations .card-body p {
+  font-size: 1.125rem;
+  color: #9C9C9C;
+  margin: 0;
+  line-height: 2;
 }
 
 .surveyContainer {
@@ -18199,47 +18259,51 @@ footer .copySection {
   background-color: #666666;
 }
 
-.surveyContainer input[type="radio"] {
+div .formGroup span input[type="radio"] + label, div .formGroup span .ForBGFrom input[type="radio"] + .asLabel, .ForBGFrom div .formGroup span input[type="radio"] + .asLabel {
+  margin-left: 35px;
+}
+
+div input[type="radio"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
 }
 
-.surveyContainer [type="radio"]:checked {
+div [type="radio"]:checked {
   position: absolute;
   right: -9999px;
 }
 
-.surveyContainer [type="radio"]:checked + label, .surveyContainer .ForBGFrom [type="radio"]:checked + .asLabel, .ForBGFrom .surveyContainer [type="radio"]:checked + .asLabel {
+div [type="radio"]:checked + label, div .ForBGFrom [type="radio"]:checked + .asLabel, .ForBGFrom div [type="radio"]:checked + .asLabel {
   position: relative;
   padding-right: 28px;
   cursor: pointer;
   line-height: 20px;
   display: inline-block;
-  color: #666;
+  color: #CCA079;
   margin-bottom: 5px;
 }
 
-.surveyContainer [type="radio"]:checked + label:before, .surveyContainer .ForBGFrom [type="radio"]:checked + .asLabel:before, .ForBGFrom .surveyContainer [type="radio"]:checked + .asLabel:before {
+div [type="radio"]:checked + label:before, div .ForBGFrom [type="radio"]:checked + .asLabel:before, .ForBGFrom div [type="radio"]:checked + .asLabel:before {
   content: '';
   position: absolute;
   right: 0;
   top: 0;
   width: 20px;
   height: 20px;
-  border: 1px solid #ddd;
+  border: 3px solid #CCA079;
   border-radius: 100%;
   background: #fff;
 }
 
-.surveyContainer [type="radio"]:checked + label:after, .surveyContainer .ForBGFrom [type="radio"]:checked + .asLabel:after, .ForBGFrom .surveyContainer [type="radio"]:checked + .asLabel:after {
+div [type="radio"]:checked + label:after, div .ForBGFrom [type="radio"]:checked + .asLabel:after, .ForBGFrom div [type="radio"]:checked + .asLabel:after {
   content: '';
-  width: 12px;
-  height: 12px;
+  width: 10px;
+  height: 10px;
   background: #CCA079;
   position: absolute;
-  top: 4px;
-  right: 4px;
+  top: 5px;
+  right: 5px;
   border-radius: 100%;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
@@ -18248,35 +18312,36 @@ footer .copySection {
   transform: scale(1);
 }
 
-.surveyContainer [type="radio"]:not(:checked) + label, .surveyContainer .ForBGFrom [type="radio"]:not(:checked) + .asLabel, .ForBGFrom .surveyContainer [type="radio"]:not(:checked) + .asLabel {
+div [type="radio"]:not(:checked) + label, div .ForBGFrom [type="radio"]:not(:checked) + .asLabel, .ForBGFrom div [type="radio"]:not(:checked) + .asLabel {
   position: relative;
   padding-right: 28px;
   cursor: pointer;
   line-height: 20px;
   display: inline-block;
-  color: #666;
+  color: #92999E;
   margin-bottom: 5px;
 }
 
-.surveyContainer [type="radio"]:not(:checked) + label:before, .surveyContainer .ForBGFrom [type="radio"]:not(:checked) + .asLabel:before, .ForBGFrom .surveyContainer [type="radio"]:not(:checked) + .asLabel:before {
+div [type="radio"]:not(:checked) + label:before, div .ForBGFrom [type="radio"]:not(:checked) + .asLabel:before, .ForBGFrom div [type="radio"]:not(:checked) + .asLabel:before {
   content: '';
   position: absolute;
   right: 0;
   top: 0;
   width: 20px;
   height: 20px;
-  border: 1px solid #ddd;
+  border: 3px solid #92999E;
   border-radius: 100%;
   background: #fff;
+  color: #92999E;
 }
 
-.surveyContainer [type="radio"]:not(:checked) + label:after, .surveyContainer .ForBGFrom [type="radio"]:not(:checked) + .asLabel:after, .ForBGFrom .surveyContainer [type="radio"]:not(:checked) + .asLabel:after {
+div [type="radio"]:not(:checked) + label:after, div .ForBGFrom [type="radio"]:not(:checked) + .asLabel:after, .ForBGFrom div [type="radio"]:not(:checked) + .asLabel:after {
   content: '';
-  width: 12px;
-  height: 12px;
+  width: 10px;
+  height: 10px;
   background: #CCA079;
   position: absolute;
-  top: 4px;
+  top: 5px;
   right: 4px;
   border-radius: 100%;
   -webkit-transition: all 0.2s ease;
@@ -18286,7 +18351,7 @@ footer .copySection {
   transform: scale(0);
 }
 
-.surveyContainer [type="radio"]:not(:checked) {
+div [type="radio"]:not(:checked) {
   position: absolute;
   right: -9999px;
 }
@@ -18297,6 +18362,56 @@ body .ui-datepicker {
 
 body .ui-widget-content a {
   color: #cca079 !important;
+}
+
+.JOPINNER.workshopsAndEventsInner .dateBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.JOPINNER.workshopsAndEventsInner .dateBox h6 {
+  font-size: 0.875rem;
+  padding: 5px 15px;
+  background: #007066;
+  border-radius: 40px;
+  color: #fff;
+  margin-left: 28px;
+}
+
+.JOPINNER.workshopsAndEventsInner .ForPadding .boxSearch .titleBox {
+  margin: 0px 0 10px;
+}
+
+.JOPINNER.workshopsAndEventsInner .ForPadding .boxSearch .praghBox {
+  margin-bottom: 27px;
+}
+
+.JOPINNER.workshopsAndEventsInner .ForPadding .showBox {
+  text-align: left;
+  padding-left: 125px;
+}
+
+.JOPINNER.workshopsAndEventsInner .downloadSection > p span {
+  margin-right: 8px;
+  color: #000;
+  font-size: 1.125rem;
+}
+
+.JOPINNER.workshopsAndEventsInner .downloadSection > .viewBtn, .JOPINNER.workshopsAndEventsInner .showToggleBtn .downloadSection > .showToggle, .showToggleBtn .JOPINNER.workshopsAndEventsInner .downloadSection > .showToggle {
+  padding: 10px 25px;
+}
+
+.JOPINNER.workshopsAndEventsInner .downloadSection > .viewBtn:hover:not(:first-of-type), .JOPINNER.workshopsAndEventsInner .showToggleBtn .downloadSection > .showToggle:hover:not(:first-of-type), .showToggleBtn .JOPINNER.workshopsAndEventsInner .downloadSection > .showToggle:hover:not(:first-of-type) {
+  background: #CCA079;
+}
+
+.JOPINNER.workshopsAndEventsInner .downloadSection > .viewBtn:first-of-type, .JOPINNER.workshopsAndEventsInner .showToggleBtn .downloadSection > .showToggle:first-of-type, .showToggleBtn .JOPINNER.workshopsAndEventsInner .downloadSection > .showToggle:first-of-type {
+  background: #007066;
+  margin-left: 24px;
 }
 
 /* ----------- fixing global issue ----------- */
@@ -18781,6 +18896,12 @@ body .ui-widget-content a {
     top: 26%;
     left: 15px;
   }
+  .JOPINNER.workshopsAndEventsInner .ForPadding .showBox {
+    text-align: center;
+    padding-left: 0;
+    margin-bottom: 50px;
+    margin-top: 0;
+  }
 }
 
 .reportPage .tab-pane.active {
@@ -19249,7 +19370,7 @@ body .ui-widget-content a {
     min-width: 125px;
   }
   .ForBGFrom .FromJob {
-    padding: 10px;
+    padding: 10px 0 30px;
   }
   .BGQFAHead .headerOfBoxFont35 {
     margin: 45px 0 24px 0;
@@ -19292,6 +19413,7 @@ body .ui-widget-content a {
     left: 15px;
     background-repeat: no-repeat;
     margin-top: -4px;
+    background-size: cover;
   }
   .surveyContainer {
     padding: 20px;
@@ -19303,6 +19425,19 @@ body .ui-widget-content a {
   }
   .surveyContainer .survey_wrapper > div .tittel p {
     font-size: 1rem;
+  }
+  .accordion.NewStyleAccordion.organizations .card-body {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .accordion.NewStyleAccordion .card .card-body ul li {
+    font-size: 1rem;
+  }
+  .JOPINNER.workshopsAndEventsInner .ForPadding .showBox {
+    text-align: center;
+    padding-left: 0;
+    margin-bottom: 50px;
+    margin-top: 0;
   }
 }
 

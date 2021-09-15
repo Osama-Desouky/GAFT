@@ -1950,6 +1950,7 @@ footer {
     }
     input {
       background-color: #F6F6F6;
+      color: #BBBBBB;
     }
   }
   .asLabel {
@@ -2046,6 +2047,7 @@ footer {
 
 
 .accordion.NewStyleAccordion {
+  margin-bottom: 70px;
 	.card {
 		margin-bottom: 48px;
 		border-radius: 8px !important;
@@ -2066,6 +2068,7 @@ footer {
 				transition: .4s;
         text-decoration: none;
         text-align: #{$start-direction};
+        background-color: #fff;
 				&:hover {
 					background-color: #fff;
 					text-decoration: unset;
@@ -2078,6 +2081,7 @@ footer {
 					height: 40px;
 					width: 40px;
 					background-repeat: no-repeat;
+          margin-top: -4px;
 				}
 			}
 			.btn-link[aria-expanded="true"] {
@@ -2088,27 +2092,80 @@ footer {
 			}
 		}
 		.card-body {
+      ul {
+        list-style: none;
+        padding: 0;
+        li {
+          padding-right: 5px;
+          font-size: 1.25rem;
+          font-weight: 400;
+          color: #9C9C9C;
+          line-height: 36px;
+          margin-bottom: 8px;
+          position: relative;
+          padding-#{$start-direction}: 22px;
+          &::before {
+            content: "";
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            top: 15px;
+            #{$start-direction}: -6px;
+            background-image: url(../images/arrow-gold.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+          }
+        }
+      }
 			a {
 				font-size: 1.125rem;
-				color: #666666;
+				color: #9C9C9C;
 				margin: 0;
 				line-height: 2;
 			}
+  
       h4 {
         font-size: 1.253rem;
-        color: #1D1D1B;
+        color: #000000;
+        margin-bottom: 12px;
+        font-weight: 500;
       }
-			li {
-        color: #666666;
-        font-size: 1rem;
-        line-height: 1.9;
-				&::marker {
-					color: #666666;
-				}
-			}
+
 		}
 	}
 }
+
+.accordion.NewStyleAccordion.organizations {
+  margin-top: 70px;
+	.card {
+		.card-header {
+			.btn-link {
+        padding: 19px 24px 19px 55px;
+        align-items: center;
+        img {
+          width: 50px;
+          height: 48px;
+          margin-#{$end-direction}: 13px; 
+        }
+				&:not(.collapsed) {
+					border-bottom: 1px solid #bbbbbb4d;
+				}
+			}
+
+		}
+	}
+	.card-body {
+		padding-right: 97px;
+		padding-left: 70px;
+		p {
+			font-size: 1.125rem;
+			color: #9C9C9C;
+			margin: 0;
+			line-height: 2;
+		}
+	}
+}
+
 .surveyContainer {
   background: #fff;
   max-width: 841px;
@@ -2184,7 +2241,16 @@ footer {
     }
   }
 }
-.surveyContainer {
+div {
+  .formGroup {
+    span {
+      input[type="radio"] {
+        & + label {
+          margin-#{$end-direction}: 35px;
+        }
+      }
+    }
+  }
 	input[type="radio"] {
 		-webkit-appearance: none;
 		-moz-appearance: none;
@@ -2201,7 +2267,7 @@ footer {
 					cursor: pointer;
 					line-height: 20px;
 					display: inline-block;
-					color: #666;
+					color: $mainColor;
           margin-bottom: 5px;
 					&:before {
 						content: '';
@@ -2210,18 +2276,18 @@ footer {
 						top: 0;
 						width: 20px;
 						height: 20px;
-						border: 1px solid #ddd;
+            border: 3px solid $mainColor;
 						border-radius: 100%;
 						background: #fff;
 					}
 					&:after {
 						content: '';
-						width: 12px;
-						height: 12px;
+						width: 10px;
+						height: 10px;
 						background: $mainColor;
 						position: absolute;
-						top: 4px;
-						#{$start-direction}: 4px;
+						top: 5px;
+						#{$start-direction}: 5px;
 						border-radius: 100%;
 						-webkit-transition: all 0.2s ease;
 						transition: all 0.2s ease;
@@ -2240,7 +2306,7 @@ footer {
 					cursor: pointer;
 					line-height: 20px;
 					display: inline-block;
-					color: #666;
+					color: #92999E;
           margin-bottom: 5px;
 					&:before {
 						content: '';
@@ -2249,17 +2315,18 @@ footer {
 						top: 0;
 						width: 20px;
 						height: 20px;
-						border: 1px solid #ddd;
+						border: 3px solid #92999E;
 						border-radius: 100%;
 						background: #fff;
+            color: #92999E;
 					}
 					&:after {
 						content: '';
-						width: 12px;
-						height: 12px;
+						width: 10px;
+						height: 10px;
 						background: $mainColor;
 						position: absolute;
-						top: 4px;
+						top: 5px;
 						#{$start-direction}: 4px;
 						border-radius: 100%;
 						-webkit-transition: all 0.2s ease;
@@ -2279,12 +2346,69 @@ footer {
     }
   }
 }
+
+
+
+
 body .ui-datepicker {
   border: 5px solid #cca079 !important;
 }
 body .ui-widget-content a {
   color: #cca079 !important;
 }
+
+
+.JOPINNER.workshopsAndEventsInner {
+	.dateBox {
+		display: flex;
+		justify-content: space-between;
+		h6 {
+			font-size: 0.875rem;
+			padding: 5px 15px;
+			background: #007066;
+			border-radius: 40px;
+			color: #fff;
+			margin-#{$end-direction}: 28px;
+		}
+	}
+	.ForPadding {
+		.boxSearch {
+			.titleBox {
+				margin: 0px 0 10px;
+			}
+			.praghBox {
+				margin-bottom: 27px;
+			}
+		}
+		.showBox {
+			text-align: left;
+			padding-#{$end-direction}: 125px;
+		}
+	}
+	.downloadSection {
+		>p {
+			span {
+				margin-right: 8px;
+				color: #000;
+				  font-size: $font18;
+			}
+		}
+		>.viewBtn {
+			padding: 10px 25px;
+			&:hover {
+				&:not(:first-of-type) {
+				 background: $mainColor;
+				}
+			}
+			&:first-of-type {
+				  background: $creenColor;
+        margin-#{$end-direction}: 24px;
+			}
+		}
+	}
+}
+
+
 // 5555555555555555555555555555555555555
 /* ----------- fixing global issue ----------- */
 @media (min-device-width: 1401px) and (max-device-width: 1500px) {
@@ -2543,7 +2667,7 @@ body .ui-widget-content a {
       }
     }
   }
-  
+
 // ----- {END 1025px to 1400px} ----------
 }
 
@@ -2922,7 +3046,16 @@ body .ui-widget-content a {
         }
       }
     }
-    
+    .JOPINNER.workshopsAndEventsInner {
+      .ForPadding {
+        .showBox {
+          text-align: center;
+          padding-left: 0;
+          margin-bottom: 50px;
+          margin-top: 0;
+        }
+      }
+    }
     // ------------ {END 768 to 1024} --------
 
 }
@@ -3505,7 +3638,7 @@ body .ui-widget-content a {
   }
   .ForBGFrom {
     .FromJob {
-      padding: 10px;
+      padding: 10px 0 30px;
     }
   }
   .BGQFAHead {
@@ -3565,6 +3698,7 @@ body .ui-widget-content a {
             left: 15px;
             background-repeat: no-repeat;
             margin-top: -4px;
+            background-size: cover;
           }
         }
       }
@@ -3589,7 +3723,26 @@ body .ui-widget-content a {
       }
     }
   }
+  .accordion.NewStyleAccordion.organizations .card-body {
+    padding-#{$start-direction}: 20px;
+    padding-#{$end-direction}: 20px;
+  }
+  .accordion.NewStyleAccordion .card .card-body ul li {
+    font-size: 1rem;
+  }
+
+  .JOPINNER.workshopsAndEventsInner {
+    .ForPadding {
+      .showBox {
+        text-align: center;
+        padding-left: 0;
+        margin-bottom: 50px;
+        margin-top: 0;
+      }
+    }
+  }
   
+
 //---------- END mobile
 }
 
