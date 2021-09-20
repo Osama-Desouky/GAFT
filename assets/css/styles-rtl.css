@@ -12987,7 +12987,7 @@ footer .copySection a:last-child {
 }
 
 .sharekna-elraay .servay .chart-icon {
-  background-image: url(../images/servey-icon.svg);
+  background-image: url(../images/es2.svg);
   background-repeat: no-repeat;
   background-position: center;
   display: -webkit-box;
@@ -13066,6 +13066,7 @@ footer .copySection a:last-child {
   font-size: 16px;
   font-weight: 400;
   color: #92999E;
+  padding-right: 0;
 }
 
 .sharekna-elraay .servay .pollWp .pollInner ul .checkmark,
@@ -13203,7 +13204,7 @@ footer .copySection a:last-child {
   content: "";
   display: inline-block;
   position: absolute;
-  top: 9px;
+  top: 7px;
   right: 3px;
   width: 10px;
   height: 10px;
@@ -13211,12 +13212,23 @@ footer .copySection a:last-child {
   background: #CCA079;
 }
 
+.sharekna-elraay .servay input[type="radio"]:not(:checked) + label:after, .sharekna-elraay .servay .ForBGFrom input[type="radio"]:not(:checked) + .asLabel:after, .ForBGFrom .sharekna-elraay .servay input[type="radio"]:not(:checked) + .asLabel:after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background: #CCA079;
+  position: absolute;
+  top: 7px;
+  right: 3px;
+}
+
 /*
   about styles
 */
 .about-hayaa {
-  margin-bottom: 70px;
-  padding-top: 35px;
+  background-color: #E5ECEC;
+  border-radius: 8px;
+  margin-bottom: 48px;
 }
 
 .about-hayaa .white-card {
@@ -13289,9 +13301,12 @@ footer .copySection a:last-child {
 }
 
 .about-details .white-card {
-  padding: 50px;
-  padding-bottom: 55px;
-  margin-bottom: 70px;
+  padding: 24px;
+  padding-left: 22px;
+  margin-bottom: 24px;
+  -webkit-box-shadow: 0 6px 16px rgba(1, 45, 41, 0.1);
+          box-shadow: 0 6px 16px rgba(1, 45, 41, 0.1);
+  border-radius: 10px;
 }
 
 .about-details .details-item {
@@ -13328,16 +13343,18 @@ footer .copySection a:last-child {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-right: 30px;
-  max-width: 768px;
 }
 
 .about-details .details-item .details-content h3 {
-  font-size: 2.187rem;
+  font-size: 1.75rem;
   font-weight: 500;
-  line-height: 51px;
+  line-height: 42px;
   color: #007066;
-  margin-bottom: 30px;
+  margin-bottom: 24px;
+}
+
+.about-details .details-item .details-content h3 img {
+  margin-left: 12px;
 }
 
 .about-details .details-item .details-content p {
@@ -13346,6 +13363,7 @@ footer .copySection a:last-child {
   color: #666666;
   line-height: 36px;
   margin-bottom: 0;
+  margin-top: 24px;
 }
 
 .about-details .details-item .details-content ul {
@@ -13415,12 +13433,16 @@ footer .copySection a:last-child {
 }
 
 .about-details .hay2a-missions .missions-content h3 {
-  font-size: 2.187rem;
+  font-size: 1.75rem;
   font-weight: 500;
   color: #007066;
-  line-height: 50px;
+  line-height: 42px;
   margin-bottom: 24px;
   text-align: right;
+}
+
+.about-details .hay2a-missions .missions-content h3 img {
+  margin-left: 12px;
 }
 
 .about-details .hay2a-missions .missions-content p {
@@ -13428,7 +13450,8 @@ footer .copySection a:last-child {
   font-weight: 500;
   color: #393939;
   line-height: 36px;
-  margin-bottom: 24px;
+  margin-top: 24px;
+  margin-bottom: 12px;
   text-align: right;
 }
 
@@ -13450,7 +13473,7 @@ footer .copySection a:last-child {
 }
 
 .about-details .hay2a-missions .missions-content ol li ul {
-  padding-right: 0;
+  padding-right: 20px;
   margin-top: 12px;
   list-style: none;
 }
@@ -13545,36 +13568,44 @@ p.on-space {
   margin-bottom: 100px;
 }
 
-.strategy .strategy-top {
-  background-image: url(../images/strategy.svg);
-  background-position: left center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  padding-bottom: 30px;
+.strategy .white-card {
+  -webkit-box-shadow: 0 6px 16px rgba(1, 45, 41, 0.1);
+          box-shadow: 0 6px 16px rgba(1, 45, 41, 0.1);
+  border-radius: 10px;
+  padding: 24px;
 }
 
 .strategy .strategy-top h2 {
-  font-size: 2.0625rem;
+  font-size: 1.75rem;
   font-weight: 500;
   color: #007066;
-  margin-bottom: 22px;
-  line-height: 49px;
+  margin-bottom: 24px;
+  line-height: 42px;
+}
+
+.strategy .strategy-top h2 img {
+  margin-left: 12px;
 }
 
 .strategy .strategy-top p {
   font-size: 1.25rem;
   font-weight: 400;
-  color: #9C9C9C;
+  color: #393939;
   line-height: 36px;
   margin-bottom: 0;
+  margin-top: 24px;
+}
+
+.strategy .strategy-goals {
+  margin-top: 48px;
 }
 
 .strategy .strategy-goals h2 {
   font-size: 1.75rem;
   font-weight: 500;
-  color: #CCA079;
+  color: #007066;
   line-height: 42px;
-  margin-bottom: 24px;
+  margin-bottom: 48px;
 }
 
 .strategy .strategy-goals .st-goal {
@@ -13595,11 +13626,33 @@ p.on-space {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  padding: 24px;
-  padding-right: 12px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 19px;
+  padding-bottom: 24px;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.strategy .strategy-goals .st-goal .st-img {
+  -webkit-transition: inherit;
+  transition: inherit;
+}
+
+.strategy .strategy-goals .st-goal .st-img::after {
+  position: absolute;
+  left: -17px;
+  top: 70px;
+  z-index: -1;
+  content: "";
+  background: radial-gradient(rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0) 60%);
+  opacity: 0;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  width: 92px;
+  height: 31px;
+  margin: 0;
 }
 
 .strategy .strategy-goals .st-goal:last-child {
@@ -13618,6 +13671,8 @@ p.on-space {
   margin-bottom: 6px;
   margin-top: 6px;
   letter-spacing: -1px;
+  -webkit-transition: 500ms;
+  transition: 500ms;
 }
 
 .strategy .strategy-goals .st-goal p {
@@ -13628,6 +13683,26 @@ p.on-space {
   margin-bottom: 0px;
   height: calc(24px * 5);
   overflow: hidden;
+  text-align: center;
+}
+
+.strategy .strategy-goals .st-goal:hover {
+  background-color: #DAFCF9;
+}
+
+.strategy .strategy-goals .st-goal:hover .st-img {
+  -webkit-transform: translateY(-50px) scale(1.2);
+          transform: translateY(-50px) scale(1.2);
+}
+
+.strategy .strategy-goals .st-goal:hover .st-img::after {
+  opacity: 1;
+  display: block;
+}
+
+.strategy .strategy-goals .st-goal:hover h4 {
+  text-decoration: underline;
+  color: #007066;
 }
 
 .vote-share-fav {
@@ -15619,6 +15694,44 @@ p.on-space {
 .offset-lg-1 {
   margin-right: 0;
   margin-left: 0;
+}
+
+.headers-border {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.headers-border div {
+  margin-left: 22px;
+  border-radius: 10px;
+}
+
+.headers-border .border-green {
+  width: 217px;
+  height: 7px;
+  background-color: #009F91;
+}
+
+.headers-border .border-gold {
+  width: 168px;
+  height: 6px;
+  background-color: #CCA079;
+}
+
+.headers-border .border-gray-1 {
+  width: 116px;
+  height: 5px;
+  background-color: #BBBBBB;
+}
+
+.headers-border .border-gray-2 {
+  width: 98px;
+  height: 4px;
+  background-color: #EBEBEB;
 }
 
 .ms-webpartzone-cell {
@@ -20030,7 +20143,7 @@ this UI is made desktop first.
     font-size: 1rem;
   }
   .about-details .details-item .details-content h3 {
-    font-size: 2rem;
+    font-size: 1.75rem;
     margin-bottom: 20px;
   }
   .about-details .details-item .details-content p {
@@ -20588,7 +20701,7 @@ this UI is made desktop first.
     padding-right: 0  !important;
   }
   .about-details .details-item .details-content h3 {
-    font-size: 2rem;
+    font-size: 1.75rem;
     margin-bottom: 20px;
   }
   .about-details .details-item .details-content p {
@@ -20615,16 +20728,13 @@ this UI is made desktop first.
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
   .about-details .hay2a-missions .missions-content {
     margin: 0;
     padding: 0;
   }
   .about-details .hay2a-missions .missions-content h3 {
-    font-size: 2rem;
+    font-size: 1.75rem;
     margin-bottom: 15px;
   }
   .about-details .hay2a-missions .missions-content p {
@@ -20650,10 +20760,9 @@ this UI is made desktop first.
     background-position: left top;
   }
   .strategy .strategy-top h2 {
-    font-size: 2rem;
+    font-size: 1.75rem;
     margin-bottom: 15px;
     line-height: 38px;
-    padding-top: 275px;
   }
   .strategy .strategy-top p {
     font-size: 1rem;
@@ -21593,6 +21702,7 @@ this UI is made desktop first.
     margin-top: 10px;
     margin-bottom: 5px;
     line-height: 30px;
+    text-align: center;
   }
   .about-details .details-item .details-content p {
     font-size: .875rem;
@@ -21614,6 +21724,7 @@ this UI is made desktop first.
     margin-top: 10px;
     margin-bottom: 10px;
     line-height: 30px;
+    text-align: center;
   }
   .about-details .hay2a-missions .missions-content p {
     font-size: 1.125rem;
@@ -21643,7 +21754,7 @@ this UI is made desktop first.
     font-size: 1.5rem;
     margin-bottom: 10px;
     line-height: 30px;
-    padding-top: 215px;
+    text-align: center;
   }
   .strategy .strategy-top p {
     font-size: 0.875rem;
@@ -21877,6 +21988,27 @@ this UI is made desktop first.
   }
   .main-navbar .top-nav .nav-item .nav-link.lang img {
     margin-right: 3px;
+  }
+  .headers-border {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .headers-border div {
+    margin-bottom: 3px;
+  }
+  .headers-border .border-green {
+    height: 5px;
+  }
+  .headers-border .border-gold {
+    height: 4px;
+  }
+  .headers-border .border-gray-1 {
+    height: 3px;
+  }
+  .headers-border .border-gray-2 {
+    height: 2px;
   }
 }
 

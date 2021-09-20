@@ -186,7 +186,7 @@ this UI is made desktop first.
       .details-item {
         .details-content {
           h3{
-            font-size: 2rem;
+            font-size: 1.75rem;
             margin-bottom: 20px;
           }
           p{
@@ -876,7 +876,7 @@ this UI is made desktop first.
           padding-#{$start-direction}: 0  !important;
           // padding-#{$end-direction}: 0  !important;
           h3{
-            font-size: 2rem;
+            font-size: 1.75rem;
             margin-bottom: 20px;
           }
           p{
@@ -904,12 +904,12 @@ this UI is made desktop first.
       .hay2a-missions {
         flex-direction: column-reverse;
         justify-content: center;
-        align-items: center;
+        // align-items: center;
         .missions-content {
           margin: 0;
           padding: 0;
           h3{
-            font-size: 2rem;
+            font-size: 1.75rem;
             margin-bottom: 15px;
           }
           p{
@@ -942,10 +942,10 @@ this UI is made desktop first.
       .strategy-top {
         background-position: left top;
         h2{
-          font-size: 2rem;
+          font-size: 1.75rem;
           margin-bottom: 15px;
           line-height: 38px;
-          padding-top: 275px;
+          // padding-top: 275px;
         }
         p{
           font-size: 1rem;
@@ -2171,6 +2171,7 @@ this UI is made desktop first.
           margin-top: 10px;
           margin-bottom: 5px;
           line-height: 30px;
+          text-align: center;
         }
         p{
           font-size: .875rem;
@@ -2200,6 +2201,7 @@ this UI is made desktop first.
           margin-top: 10px;
           margin-bottom: 10px;
           line-height: 30px;
+          text-align: center;
         }
         p{
           font-size: 1.125rem;
@@ -2234,7 +2236,8 @@ this UI is made desktop first.
         font-size: 1.5rem;
         margin-bottom: 10px;
         line-height: 30px;
-        padding-top: 215px;
+        // padding-top: 215px;
+        text-align: center;
       }
       p{
         font-size: 0.875rem;
@@ -2514,6 +2517,24 @@ this UI is made desktop first.
   }
   .main-navbar .top-nav .nav-item .nav-link.lang img{
     margin-#{$start-direction}:3px ;
+  }
+  .headers-border{
+    flex-direction: column;
+    div{
+      margin-bottom: 3px;
+    }
+    .border-green{
+      height: 5px;
+    }
+    .border-gold{
+      height: 4px;
+    }
+    .border-gray-1{
+      height: 3px;
+    }
+    .border-gray-2{
+      height: 2px;
+    }
   }
 }
 

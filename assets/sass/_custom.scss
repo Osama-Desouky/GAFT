@@ -1792,7 +1792,7 @@ footer {
   .servay {
 
     .chart-icon{
-      background-image: url(../images/servey-icon.svg);
+      background-image: url(../images/es2.svg);
       background-repeat: no-repeat;
       background-position:center;
       display: flex;
@@ -1856,6 +1856,7 @@ footer {
       font-size: 16px;
       font-weight: $w-normal;
       color: #92999E;
+      padding-#{$start-direction}: 0;
     }
     .pollWp .pollInner ul .checkmark,
     .pollWp .pollInner > table .checkmark {
@@ -1968,6 +1969,7 @@ footer {
     input[type=radio]:checked + label{
       position: relative;
       color: $golden-color !important;
+      
     }
     input[type=radio]:checked + label:before {
       border-color: $golden-color;
@@ -1976,14 +1978,22 @@ footer {
       content: "";
       display: inline-block;
       position: absolute;
-      top: 9px;
+      top: 7px;
       right: 3px;
       width: 10px;
       height: 10px;
       border-radius: 50%;
       background: $golden-color;
     }
-
+    input[type="radio"]:not(:checked) + label:after{
+      content: '';
+      width: 10px;
+      height: 10px;
+      background: #CCA079;
+      position: absolute;
+      top: 7px;
+      right: 3px;
+    }
   }
 }
 
@@ -1996,13 +2006,15 @@ footer {
 // about-hay2a
 .about-hayaa{
   // margin-top: 35px;
-  margin-bottom: 70px;
-  padding-top: 35px;
+  // margin-bottom: 70px;
+  // padding-top: 35px;
   // padding-bottom: 35px;
   // background-image: url(../images/dots.svg);
   // background-position: 3.5% top;
   // background-repeat: no-repeat;
- 
+  background-color: $headres-bg;
+  border-radius: 8px;
+  margin-bottom: 48px;
   .white-card{
     border-radius: 8px;
     box-shadow: 0 8px 16px rgba($color: #BBBBBB, $alpha: 0.15);
@@ -2058,9 +2070,11 @@ footer {
 // about-details
 .about-details{
   .white-card{
-    padding: 50px ;
-    padding-bottom: 55px;
-    margin-bottom: 70px;
+    padding: 24px ;
+    padding-#{$end-direction}: 22px;
+    margin-bottom: 24px;
+    box-shadow: 0 6px 16px rgba($color: #012D29, $alpha: 0.10);
+    border-radius: 10px;
   }
   .details-item{
     padding-bottom: 40px;
@@ -2079,15 +2093,18 @@ footer {
       flex-direction: column;
       height: 100%;
       justify-content: center;
-      padding-#{$start-direction}: 30px;
-      max-width: 768px;
+      // padding-#{$start-direction}: 30px;
+      // max-width: 768px;
 
       h3{
-        font-size: 2.187rem;
+        font-size: 1.75rem;
         font-weight: $w-medium;
-        line-height: 51px;
+        line-height: 42px;
         color: $dark-green;
-        margin-bottom: 30px;
+        margin-bottom: 24px;
+        img{
+          margin-#{$end-direction}:12px ;
+        }
       }
       p{
         font-size: 1.125rem;
@@ -2095,6 +2112,7 @@ footer {
         color: $p-color;
         line-height: 36px;
         margin-bottom: 0;
+        margin-top: 24px;
       }
       ul{
         list-style: none;
@@ -2158,20 +2176,24 @@ footer {
       margin-#{$end-direction}: 60px;
       padding-#{$end-direction}: 60px;
       h3{
-        font-size: 2.187rem;
+        font-size: 1.75rem;
         font-weight: $w-medium;
         color: $dark-green;
-        line-height: 50px;
+        line-height: 42px;
         margin-bottom: 24px;
-        text-align: right;
+        text-align: #{$start-direction};
+        img{
+          margin-#{$end-direction}:12px ;
+        }
       }
       p{
         font-size: 1.5rem;
         font-weight: $w-medium;
         color: #393939;
         line-height: 36px;
-        margin-bottom: 24px;
-        text-align: right;
+        margin-top: 24px;
+        margin-bottom: 12px;
+        text-align: #{$start-direction};
       }
       ol{
         padding-#{$start-direction}: 35px;
@@ -2186,7 +2208,7 @@ footer {
             color: $golden-color;
           }
           ul{
-            padding-#{$start-direction}: 0;
+            padding-#{$start-direction}: 20px;
             margin-top: 12px;
             list-style: none;
             li{
@@ -2203,7 +2225,7 @@ footer {
                 width: 14px;
                 height: 11px;
                 top: 15px;
-                right: -28px;
+                #{$start-direction}: -28px;
                 background-image: url(../images/arrow-gold.svg);
                 background-repeat: no-repeat;
                 background-size: contain;
@@ -2284,35 +2306,47 @@ p.on-space{
 
 .strategy{
   margin-bottom: 100px;
+  .white-card{
+    box-shadow: 0 6px 16px rgba($color: #012D29, $alpha: 0.10);
+    border-radius: 10px;
+    padding: 24px;
+    // margin-bottom: 24px;
+    
+  }
   .strategy-top{
-    background-image: url(../images/strategy.svg);
-    background-position: left center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    padding-bottom: 30px;
+    // background-image: url(../images/strategy.svg);
+    // background-position: left center;
+    // background-size: contain;
+    // background-repeat: no-repeat;
+    // padding-bottom: 30px;
     h2{
-      font-size: 2.0625rem;
+      font-size: 1.75rem;
       font-weight: $w-medium;
       color: $dark-green;
-      margin-bottom: 22px;
-      line-height: 49px;
+      margin-bottom: 24px;
+      line-height: 42px;
+      img{
+        margin-#{$end-direction}: 12px;
+      }
     }
     p{
       font-size: 1.25rem;
       font-weight: $w-normal;
-      color: $light-grey;
+      color: #393939;
       line-height: 36px;
       margin-bottom: 0;
+      margin-top: 24px;
 
     }
   }
   .strategy-goals{
+    margin-top: 48px;
     h2{
       font-size: 1.75rem;
       font-weight: $w-medium;
-      color: $golden-color;
+      color: $dark-green;
       line-height: 42px;
-      margin-bottom: 24px;
+      margin-bottom: 48px;
     }
     .st-goal{
       background-color: #fff;
@@ -2324,9 +2358,28 @@ p.on-space{
       display: inline-flex;
       flex-direction: column;
       justify-content: flex-start;
-      align-items: flex-start;
-      padding: 24px;
-      padding-#{$start-direction}: 12px;
+      align-items: center;
+      padding: 19px;
+      padding-bottom: 24px;
+      transition: 300ms;
+      .st-img{
+        transition: inherit;
+        &::after{
+          position: absolute;
+          #{$end-direction}: -17px;
+          top: 70px;
+          z-index: -1;
+          content: "";
+          background: radial-gradient(rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0) 60%);
+          opacity: 0;
+          -webkit-transition: all 0.4s ease;
+          transition: all 0.4s ease;
+          width: 92px;
+          height: 31px;
+          margin: 0;
+        }
+      }
+     
       
       &:last-child{
       margin-#{$end-direction}: 0 ;
@@ -2342,6 +2395,7 @@ p.on-space{
         margin-bottom: 6px;
         margin-top: 6px;
         letter-spacing: -1px;
+        transition: 500ms;
       }
       p{
         font-size: 1rem;
@@ -2351,6 +2405,22 @@ p.on-space{
         margin-bottom: 0px;
         height: calc(24px * 5);
         overflow: hidden;
+        text-align: center;
+      }
+
+      &:hover{
+        background-color: #DAFCF9;
+        .st-img{
+          transform: translateY(-50px) scale(1.2);
+          &::after{
+            opacity: 1;
+            display: block;
+          }
+        }
+        h4{
+          text-decoration: underline;
+          color: $dark-green;
+        }
       }
     }
   }
@@ -2761,14 +2831,14 @@ p.on-space{
       color: $black-color-two;
       margin-bottom: 30px;
       position: relative;
-      padding-right: 27px;
+      padding-#{$start-direction}: 27px;
       &::before{
         content: "";
         position: absolute;
         width: 10px;
         height: 10px;
         top: 12px;
-        right: 0;
+        #{$start-direction}: 0;
         background-image: url(../images/arrow.svg);
         background-repeat: no-repeat;
         background-size: contain;
@@ -3168,14 +3238,14 @@ p.on-space{
       color: $black-color-two;
       margin-bottom: 30px;
       position: relative;
-      padding-right: 27px;
+      padding-#{$start-direction}: 27px;
       &::before{
         content: "";
         position: absolute;
         width: 10px;
         height: 11px;
         top: 15px;
-        right: 0;
+        #{$start-direction}: 0;
         background-image: url(../images/arrow.svg);
         background-repeat: no-repeat;
         background-size: contain;
@@ -3348,14 +3418,14 @@ p.on-space{
             color: $p-color;
             margin-bottom: 8px;
             position: relative;
-            padding-right: 27px;
+            padding-#{$start-direction}: 27px;
             &::before{
               content: "";
               position: absolute;
               width: 10px;
               height: 12px;
               top: 10px;
-              right: 0;
+              #{$start-direction}: 0;
               background-image: url(../images/arrow.svg);
               background-repeat: no-repeat;
               background-size: contain;
@@ -3550,14 +3620,14 @@ p.on-space{
               color: $p-color;
               margin-bottom: 8px;
               position: relative;
-              padding-right: 27px;
+              padding-#{$start-direction}: 27px;
               &::before{
                 content: "";
                 position: absolute;
                 width: 10px;
                 height: 12px;
                 top: 10px;
-                right: 0;
+                #{$start-direction}: 0;
                 background-image: url(../images/arrow.svg);
                 background-repeat: no-repeat;
                 background-size: contain;
@@ -4007,6 +4077,45 @@ p.on-space{
   margin-#{$start-direction}: 0;
   margin-#{$end-direction}: 0;
 }
+
+.headers-border{
+  display: flex;
+  align-items: center;
+  div{
+    margin-#{$end-direction}: 22px;
+    border-radius: 10px;
+  }
+  .border-green{
+    width: 217px;
+    height: 7px;
+    background-color: #009F91;
+    
+  }
+  .border-gold{
+    width: 168px;
+    height: 6px;
+    background-color: $golden-color;
+  }
+  .border-gray-1{
+    width: 116px;
+    height: 5px;
+    background-color:#BBBBBB ;
+  }
+  .border-gray-2{
+    width: 98px;
+    height: 4px;
+    background-color: #EBEBEB;
+  }
+}
+
+
+
+
+
+
+
+
+
 
 // sharepoint styles
 .ms-webpartzone-cell {
