@@ -1667,7 +1667,7 @@ footer {
 
 .businessCouncilsNewXD {
   .businessCouncils {
-    margin-bottom: 105px;
+    // margin-bottom: 105px;
   }
   .previewReports2 {
     display: flex;
@@ -1675,11 +1675,14 @@ footer {
     min-height: 414px;
     border-radius: 8px;
     background-color: #fff;
-    margin: 27px 0;
+    margin: 56px 0 24px;
     box-shadow: 0 0 10px rgba(0,0,0,.1);
     .TextBCN {
       padding-#{$start-direction}: 24px;
       padding-#{$end-direction}: 145px;
+      .headerOfBoxFont35 {
+        color: $creenColor;
+      }
     }
     .imgBCN {
       border-radius: 8px;
@@ -1764,6 +1767,60 @@ footer {
   }
 
 }
+// business Councils new xd v3
+.businessCouncilsNewXD {
+  margin-bottom: 96px;
+  .headBusiness28 {
+    font-weight: $w-medium;
+    font-size: 1.75rem;
+    color: $creenColor;
+    margin: 28px 0 50px;
+    text-align: center;
+  }
+  .boxPuplictionsV2 {
+    margin-bottom: 30px;
+    .greenBox {
+      height: 300px;
+      background: #E5ECEC;
+      .boxG {
+        width: 60%;
+        display: flex;
+        justify-content: space-between;
+        img {
+          width: 175px;
+          height: 175px;
+          object-fit: contain;
+        }
+      }
+    }
+    .whiteBoxPupl {
+      .headerOfBox {
+        font-size: 1.75rem;
+        text-align: center;
+      }
+      .dateBox {
+        margin-bottom: 66px;
+       justify-content: #{$end-direction};
+       .viewBtn {
+        padding: 9px 39px;
+       }
+      }
+    }
+    &:hover {
+      box-shadow: 0px 0px 30px rgba($color: #000000, $alpha: 0.06);
+        .greenBox {
+          height: 300px;
+          .boxG {
+            img {
+              transform: scale(1.1);
+            }
+          }
+        }   
+    }
+  }
+
+}
+
 
 .ReportNewXD {
   .previewReports {
@@ -2461,6 +2518,7 @@ body .ui-widget-content a {
   .no-gutters {
     background: #fff;
     border-radius: 8px;
+    box-shadow: 0 0px 20px rgba($color: #000, $alpha: 0.05);
   }
   .BCDText {
     background: #fff;
@@ -2490,37 +2548,150 @@ body .ui-widget-content a {
     }
   }
 }
-.defalutTable .table .thead-dark th {
-  background-color: $mainColor;
-  border: unset;
-  font-size: $font24;
+
+.defalutTable.addingBottom {
+	margin-bottom: 120px;
 }
-.defalutTable .table td {
-  font-size: $font18;
-  color: $color666666;
+.defalutTable {
+	.table {
+		.thead-dark {
+			th {
+				background-color: $mainColor;
+				border: unset;
+				font-size: $font24;
+			}
+		}
+		td {
+			font-size: $font18;
+			color: $color666666;
+			padding: 33px 24px;
+			a {
+				color: #004094;
+			}
+		}
+		th {
+			padding: 33px 24px;
+			&:first-of-type {
+				width: 30px;
+				padding: 33px 24px 33px 0;
+			}
+		}
+		tbody {
+			background: #fff;
+			th {
+				&:first-of-type {
+					font-size: 1.25rem;
+					color: $creenColor;
+					font-weight: 500;
+				}
+			}
+			tr {
+				&:last-of-type {
+					th {
+						&:first-of-type {
+							border-radius: 0px 0px 8px 0px;
+						}
+					}
+					td {
+						&:last-of-type {
+							border-radius: 0px 0px 0px 8px;
+						}
+					}
+				}
+			}
+		}
+		thead {
+			th {
+				&:first-of-type {
+					border-radius: 0px 8px 0px 0px;
+				}
+				&:last-of-type {
+					border-radius: 8px 0px 0px 0px;
+					padding-right: 25px;
+				}
+			}
+		}
+	}
+	.table-bordered {
+		th {
+			border: unset;
+			border-bottom: 1px solid #dee2e65e;
+		}
+		td {
+			border: unset;
+			border-bottom: 1px solid #dee2e65e;
+		}
+	}
+	.table-responsive {
+		>.table-bordered {
+			margin-bottom: 24px;
+		}
+	}
+	.table-hover {
+		tbody {
+			tr {
+				&:hover {
+					background-color: #e5ecec52;
+				}
+			}
+		}
+	}
 }
-.defalutTable .table td a{
-  color: #004094;
-}
-.defalutTable .table th,.defalutTable .table td {
-  padding: 33px 24px;
-}
-.defalutTable .table th:first-of-type{
-  width: 30px;
-  padding: 33px 24px 33px 0;
+.newXDList {
+  .lineList {
+    padding-top: 15px;
+  }
+  .headList {
+    display: flex;
+    align-items: center;
+    img {
+      width: 48px;
+      height: 48px;
+      margin-left: 12px;
+    }
+    h3 {
+      font-size: 1.75rem;
+    }
+  }
+  .content-box {
+    .collapsed-sec {
+      ul {
+        li {
+          &::before {
+            background-image: url(../images/arrow-gold.svg) !important;
+          }
+        }
+      }
+    }
+  }
 
 }
-.defalutTable .table tbody {
-  background: #fff;
-}
-.defalutTable .table tbody th:first-of-type {
-  font-size: 1.25rem;
-  color: $creenColor;
-  font-weight: 500;
-}
-.defalutTable .table-bordered th,.defalutTable  .table-bordered td {
-   border: unset;
-    border-bottom: 1px solid #dee2e65e;
+.lineList {
+  .boxList {
+    display: inline-block;
+    border-radius: 50px;
+    margin-#{$end-direction}: 23px;
+    &.boxList1 {
+      width: 217px;
+      height: 7px;
+      background: #009F91;
+    }
+    &.boxList2 {
+      width: 217px;
+      height: 6px;
+      background: $mainColor;
+    }
+    &.boxList3 {
+      width: 116px;
+      height: 5px;
+      background: #BBBBBB;
+    }
+    &.boxList4 {
+      width: 98px;
+      height: 4px;
+      background: #EBEBEB;
+    }
+  }
 }
 // 5555555555555555555555555555555555555
 /* ----------- fixing global issue ----------- */
@@ -2770,6 +2941,7 @@ body .ui-widget-content a {
         width: 50%;
       }
       min-height: auto;
+
       .imgBCN {
         width: 50%;
         img {
@@ -3172,6 +3344,44 @@ body .ui-widget-content a {
     .supporContact {
       .Commissions-card.ForFloat {
         margin-left: 0;
+      }
+    }
+    .businessCouncilsDetails {
+      .imgBCD {
+        flex-direction: column;
+        img {
+          &:first-of-type {
+            margin-left: 0;
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+    .businessCouncilsNewXD {
+      .headBusiness28 {
+        font-size: 1.55rem;
+      }
+      .boxPuplictionsV2 {
+        .greenBox {
+          .boxG {
+            width: 80%;
+            img {
+              width: 120px;
+              height: 120px;
+            }
+          }
+        }
+        .whiteBoxPupl {
+          .dateBox {
+            margin: 25px 0 20px 0;
+          }
+          .viewBtn {
+            span {
+              font-size: .7rem;
+            }
+          }
+        }
+    
       }
     }
     // ------------ {END tablet 768 to 1024} --------
@@ -3868,7 +4078,86 @@ body .ui-widget-content a {
       margin-left: 0;
     }
   }
+
+  .businessCouncilsDetails {
+    .BCDText {
+      padding: 20px;
+      min-height: auto;
+    }
+    .imgBCD {
+      img {
+        height: 100px;
+        width: 100px;
+      }
+      min-height: 190px;
+    }
+  }
+  
+  .defalutTable {
+    .table {
+      .thead-dark {
+        th {
+          font-size: 1.3rem;
+        }
+      }
+      th {
+        &:first-of-type {
+          padding: 15px;
+          word-break: unset;
+          white-space: nowrap;
+        }
+        padding: 15px;
+        word-break: unset;
+        white-space: nowrap;
+      }
+      td {
+        padding: 15px;
+        word-break: unset;
+        white-space: nowrap;
+      }
+    }
+  }
+  
+  .businessCouncilsNewXD {
+    .headBusiness28 {
+      font-size: 1.55rem;
+    }
+    .boxPuplictionsV2 {
+      .greenBox {
+        .boxG {
+          width: 80%;
+          img {
+            width: 120px;
+            height: 120px;
+          }
+        }
+      }
+      .whiteBoxPupl {
+        .dateBox {
+          margin: 25px 0 20px 0;
+        }
+        .viewBtn {
+          span {
+            font-size: .7rem;
+          }
+        }
+      }
+  
+    }
+  }
+  
+  .newXDList {
+    .collapsed-sec {
+      ul {
+        max-height: 165px !important;
+      }
+    }
+  }
+
 //---------- END mobile
+.headerOfBoxFont35 {
+  font-size: 1.8rem;
+}
 }
 
 /* ----------- iPhone ----------- */
