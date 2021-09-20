@@ -17621,10 +17621,6 @@ footer .copySection {
   background-image: unset;
 }
 
-.businessCouncilsNewXD .businessCouncils {
-  margin-bottom: 105px;
-}
-
 .businessCouncilsNewXD .previewReports2 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -17635,7 +17631,7 @@ footer .copySection {
   min-height: 414px;
   border-radius: 8px;
   background-color: #fff;
-  margin: 27px 0;
+  margin: 56px 0 24px;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -17643,6 +17639,10 @@ footer .copySection {
 .businessCouncilsNewXD .previewReports2 .TextBCN {
   padding-right: 24px;
   padding-left: 145px;
+}
+
+.businessCouncilsNewXD .previewReports2 .TextBCN .headerOfBoxFont35 {
+  color: #007066;
 }
 
 .businessCouncilsNewXD .previewReports2 .imgBCN {
@@ -17726,6 +17726,74 @@ footer .copySection {
 
 .businessCouncilsNewXD .boxPuplictions:hover .whiteBoxPupl {
   height: auto;
+}
+
+.businessCouncilsNewXD {
+  margin-bottom: 96px;
+}
+
+.businessCouncilsNewXD .headBusiness28 {
+  font-weight: 500;
+  font-size: 1.75rem;
+  color: #007066;
+  margin: 28px 0 50px;
+  text-align: center;
+}
+
+.businessCouncilsNewXD .boxPuplictionsV2 {
+  margin-bottom: 30px;
+}
+
+.businessCouncilsNewXD .boxPuplictionsV2 .greenBox {
+  height: 300px;
+  background: #E5ECEC;
+}
+
+.businessCouncilsNewXD .boxPuplictionsV2 .greenBox .boxG {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.businessCouncilsNewXD .boxPuplictionsV2 .greenBox .boxG img {
+  width: 175px;
+  height: 175px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.businessCouncilsNewXD .boxPuplictionsV2 .whiteBoxPupl .headerOfBox, .businessCouncilsNewXD .boxPuplictionsV2 .whiteBoxPupl .systemSection .boxSearch .titleBox, .systemSection .boxSearch .businessCouncilsNewXD .boxPuplictionsV2 .whiteBoxPupl .titleBox {
+  font-size: 1.75rem;
+  text-align: center;
+}
+
+.businessCouncilsNewXD .boxPuplictionsV2 .whiteBoxPupl .dateBox {
+  margin-bottom: 66px;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
+.businessCouncilsNewXD .boxPuplictionsV2 .whiteBoxPupl .dateBox .viewBtn, .businessCouncilsNewXD .boxPuplictionsV2 .whiteBoxPupl .dateBox .showToggleBtn .showToggle, .showToggleBtn .businessCouncilsNewXD .boxPuplictionsV2 .whiteBoxPupl .dateBox .showToggle {
+  padding: 9px 39px;
+}
+
+.businessCouncilsNewXD .boxPuplictionsV2:hover {
+  -webkit-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.06);
+          box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.06);
+}
+
+.businessCouncilsNewXD .boxPuplictionsV2:hover .greenBox {
+  height: 300px;
+}
+
+.businessCouncilsNewXD .boxPuplictionsV2:hover .greenBox .boxG img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .ReportNewXD .previewReports {
@@ -18472,6 +18540,8 @@ body .ui-widget-content a {
 .businessCouncilsDetails .no-gutters {
   background: #fff;
   border-radius: 8px;
+  -webkit-box-shadow: 0 0px 20px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 0px 20px rgba(0, 0, 0, 0.05);
 }
 
 .businessCouncilsDetails .BCDText {
@@ -18510,6 +18580,10 @@ body .ui-widget-content a {
   margin-left: 50px;
 }
 
+.defalutTable.addingBottom {
+  margin-bottom: 120px;
+}
+
 .defalutTable .table .thead-dark th {
   background-color: #CCA079;
   border: unset;
@@ -18519,13 +18593,14 @@ body .ui-widget-content a {
 .defalutTable .table td {
   font-size: 1.125rem;
   color: #666666;
+  padding: 33px 24px;
 }
 
 .defalutTable .table td a {
   color: #004094;
 }
 
-.defalutTable .table th, .defalutTable .table td {
+.defalutTable .table th {
   padding: 33px 24px;
 }
 
@@ -18544,9 +18619,96 @@ body .ui-widget-content a {
   font-weight: 500;
 }
 
-.defalutTable .table-bordered th, .defalutTable .table-bordered td {
+.defalutTable .table tbody tr:last-of-type th:first-of-type {
+  border-radius: 0px 0px 8px 0px;
+}
+
+.defalutTable .table tbody tr:last-of-type td:last-of-type {
+  border-radius: 0px 0px 0px 8px;
+}
+
+.defalutTable .table thead th:first-of-type {
+  border-radius: 0px 8px 0px 0px;
+}
+
+.defalutTable .table thead th:last-of-type {
+  border-radius: 8px 0px 0px 0px;
+  padding-right: 25px;
+}
+
+.defalutTable .table-bordered th {
   border: unset;
   border-bottom: 1px solid #dee2e65e;
+}
+
+.defalutTable .table-bordered td {
+  border: unset;
+  border-bottom: 1px solid #dee2e65e;
+}
+
+.defalutTable .table-responsive > .table-bordered {
+  margin-bottom: 24px;
+}
+
+.defalutTable .table-hover tbody tr:hover {
+  background-color: #e5ecec52;
+}
+
+.newXDList .lineList {
+  padding-top: 15px;
+}
+
+.newXDList .headList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.newXDList .headList img {
+  width: 48px;
+  height: 48px;
+  margin-left: 12px;
+}
+
+.newXDList .headList h3 {
+  font-size: 1.75rem;
+}
+
+.newXDList .content-box .collapsed-sec ul li::before {
+  background-image: url(../images/arrow-gold.svg) !important;
+}
+
+.lineList .boxList {
+  display: inline-block;
+  border-radius: 50px;
+  margin-left: 23px;
+}
+
+.lineList .boxList.boxList1 {
+  width: 217px;
+  height: 7px;
+  background: #009F91;
+}
+
+.lineList .boxList.boxList2 {
+  width: 217px;
+  height: 6px;
+  background: #CCA079;
+}
+
+.lineList .boxList.boxList3 {
+  width: 116px;
+  height: 5px;
+  background: #BBBBBB;
+}
+
+.lineList .boxList.boxList4 {
+  width: 98px;
+  height: 4px;
+  background: #EBEBEB;
 }
 
 /* ----------- fixing global issue ----------- */
@@ -19039,6 +19201,32 @@ body .ui-widget-content a {
   }
   .supporContact .Commissions-card.ForFloat {
     margin-left: 0;
+  }
+  .businessCouncilsDetails .imgBCD {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .businessCouncilsDetails .imgBCD img:first-of-type {
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+  .businessCouncilsNewXD .headBusiness28 {
+    font-size: 1.55rem;
+  }
+  .businessCouncilsNewXD .boxPuplictionsV2 .greenBox .boxG {
+    width: 80%;
+  }
+  .businessCouncilsNewXD .boxPuplictionsV2 .greenBox .boxG img {
+    width: 120px;
+    height: 120px;
+  }
+  .businessCouncilsNewXD .boxPuplictionsV2 .whiteBoxPupl .dateBox {
+    margin: 25px 0 20px 0;
+  }
+  .businessCouncilsNewXD .boxPuplictionsV2 .whiteBoxPupl .viewBtn span, .businessCouncilsNewXD .boxPuplictionsV2 .whiteBoxPupl .showToggleBtn .showToggle span, .showToggleBtn .businessCouncilsNewXD .boxPuplictionsV2 .whiteBoxPupl .showToggle span {
+    font-size: .7rem;
   }
 }
 
@@ -19582,6 +19770,57 @@ body .ui-widget-content a {
   }
   .supporContact .Commissions-card.ForFloat {
     margin-left: 0;
+  }
+  .businessCouncilsDetails .BCDText {
+    padding: 20px;
+    min-height: auto;
+  }
+  .businessCouncilsDetails .imgBCD {
+    min-height: 190px;
+  }
+  .businessCouncilsDetails .imgBCD img {
+    height: 100px;
+    width: 100px;
+  }
+  .defalutTable .table .thead-dark th {
+    font-size: 1.3rem;
+  }
+  .defalutTable .table th {
+    padding: 15px;
+    word-break: unset;
+    white-space: nowrap;
+  }
+  .defalutTable .table th:first-of-type {
+    padding: 15px;
+    word-break: unset;
+    white-space: nowrap;
+  }
+  .defalutTable .table td {
+    padding: 15px;
+    word-break: unset;
+    white-space: nowrap;
+  }
+  .businessCouncilsNewXD .headBusiness28 {
+    font-size: 1.55rem;
+  }
+  .businessCouncilsNewXD .boxPuplictionsV2 .greenBox .boxG {
+    width: 80%;
+  }
+  .businessCouncilsNewXD .boxPuplictionsV2 .greenBox .boxG img {
+    width: 120px;
+    height: 120px;
+  }
+  .businessCouncilsNewXD .boxPuplictionsV2 .whiteBoxPupl .dateBox {
+    margin: 25px 0 20px 0;
+  }
+  .businessCouncilsNewXD .boxPuplictionsV2 .whiteBoxPupl .viewBtn span, .businessCouncilsNewXD .boxPuplictionsV2 .whiteBoxPupl .showToggleBtn .showToggle span, .showToggleBtn .businessCouncilsNewXD .boxPuplictionsV2 .whiteBoxPupl .showToggle span {
+    font-size: .7rem;
+  }
+  .newXDList .collapsed-sec ul {
+    max-height: 165px !important;
+  }
+  .headerOfBoxFont35 {
+    font-size: 1.8rem;
   }
 }
 
