@@ -16146,7 +16146,7 @@ label, .ForBGFrom .asLabel {
 }
 
 .DowloadBTn img {
-  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .DowloadBTn span {
@@ -16516,7 +16516,7 @@ body {
 
 .viewSystem .headOfView {
   text-align: center;
-  padding-top: 51px;
+  padding-top: 60px;
   font-family: "DINNextLTRegular";
 }
 
@@ -16541,10 +16541,10 @@ body {
 }
 
 .viewSystem .headOfView .title {
-  font-size: 1.75rem;
-  color: #012D29;
-  font-weight: 500;
-  margin: 0 0 28px 0;
+  font-size: 2.188rem;
+  color: #007066;
+  font-weight: 700;
+  margin: 0 0 25px 0;
 }
 
 .viewSystem .headOfView .paragraphOfBox, .viewSystem .headOfView .systemSection .boxSearch .praghBox, .systemSection .boxSearch .viewSystem .headOfView .praghBox {
@@ -16561,7 +16561,7 @@ body {
 }
 
 .viewSystem .card-body .faq-section {
-  margin-top: 50px !important;
+  margin-top: 48px !important;
 }
 
 .viewSystem .card-body .card {
@@ -16621,8 +16621,10 @@ body {
 }
 
 .reportPage .previewReports .headerOfBox, .reportPage .previewReports .systemSection .boxSearch .titleBox, .systemSection .boxSearch .reportPage .previewReports .titleBox {
-  margin: 50px 0 20px 0;
+  margin: 60px 0 20px 0;
   font-size: 2.188rem;
+  color: #007066;
+  font-weight: bold;
 }
 
 .reportPage .previewReports .paragraphOfBox, .reportPage .previewReports .systemSection .boxSearch .praghBox, .systemSection .boxSearch .reportPage .previewReports .praghBox {
@@ -16723,7 +16725,7 @@ body {
 }
 
 .backgroundOrImage {
-  padding: 84px 0 89px;
+  padding: 56px 0 89px;
 }
 
 .backgroundOrImage .container {
@@ -16737,7 +16739,7 @@ body {
   height: 300px;
   background-image: url(../images/innerPages/dots.svg);
   left: -52px;
-  top: -52px;
+  top: -26px;
 }
 
 .backgroundOrImage .formContactUs {
@@ -16852,6 +16854,8 @@ body {
 .backgroundOrImage .col-md-12 > .headerOfBoxFont35 {
   text-align: center;
   padding-bottom: 27px;
+  color: #007066;
+  font-weight: bold;
 }
 
 .backgroundOrImage .mapFrom {
@@ -16869,7 +16873,7 @@ body {
 }
 
 .NewsPage .formSearch {
-  margin: 0 0 44px;
+  margin: 0 0 48px;
 }
 
 .NewsPage .boxNewsPage {
@@ -17138,7 +17142,7 @@ body {
 }
 
 .bannerSliderSec {
-  padding: 48px 32px;
+  padding: 51px 0 24px;
 }
 
 .bannerSliderSec .bannerSwiperinner {
@@ -17367,7 +17371,7 @@ body {
 .tabsStyle .nav-tabs {
   border: unset;
   padding: 0;
-  background-color: #ebe4dd;
+  background-color: #ebe4dd85;
   border-radius: 50px;
 }
 
@@ -17390,8 +17394,8 @@ body {
 }
 
 .tabsStyle .nav-tabs li a.active {
-  color: #fff;
-  background: #CCA079;
+  color: #CCA079;
+  background: #fff;
 }
 
 .trainingPage {
@@ -17925,7 +17929,7 @@ footer .copySection {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 100px 48px;
-  margin-top: 112px;
+  margin-top: 56px;
 }
 
 .ReportNewXD .previewReports * {
@@ -17938,6 +17942,7 @@ footer .copySection {
   font-size: 2rem;
   color: #CCA079;
   margin: 0 0 25px 0;
+  font-weight: bold;
 }
 
 .ReportNewXD .previewReports .paragraphOfBox, .ReportNewXD .previewReports .systemSection .boxSearch .praghBox, .systemSection .boxSearch .ReportNewXD .previewReports .praghBox {
@@ -17948,11 +17953,10 @@ footer .copySection {
 
 .ReportNewXD .formSearch {
   margin-top: 0;
-  margin-bottom: 30px;
 }
 
 .newInnerPage .headNIP {
-  margin-top: 24px;
+  margin-top: 56px;
 }
 
 .newInnerPage .headNIP img {
@@ -18029,8 +18033,8 @@ footer .copySection {
 .JOPINNER {
   background: #E5ECEC;
   border-radius: 8px;
-  margin-top: 48px;
-  margin-bottom: 185px;
+  margin-top: 56px;
+  margin-bottom: 178px;
 }
 
 .JOPINNER .ForPadding {
@@ -18039,6 +18043,10 @@ footer .copySection {
 
 .JOPINNER .ForPadding .imgInnerJop {
   text-align: left;
+}
+
+.JOPINNER .ForPadding .imgInnerJop:not(.clearCircRaduis) img {
+  border-radius: 8px;
 }
 
 .JOPINNER .ForPadding .imgInnerJop img {
@@ -18332,10 +18340,6 @@ footer .copySection {
   color: #000000;
   margin-bottom: 12px;
   font-weight: 500;
-}
-
-.accordion.NewStyleAccordion.organizations {
-  margin-top: 70px;
 }
 
 .accordion.NewStyleAccordion.organizations .card .card-header .btn-link {
@@ -18767,8 +18771,8 @@ body .ui-widget-content a {
   background-color: #e5ecec52;
 }
 
-.newXDList .lineList {
-  padding-top: 15px;
+.newXDList .headers-border {
+  padding-top: 24px;
 }
 
 .newXDList .headList {
@@ -18822,6 +18826,10 @@ body .ui-widget-content a {
   width: 98px;
   height: 4px;
   background: #EBEBEB;
+}
+
+.col-md-12.d-flex.justify-content-center + .col-md-12 .formSearch {
+  margin-top: 24px;
 }
 
 /* ----------- fixing global issue ----------- */
@@ -19928,6 +19936,14 @@ body .ui-widget-content a {
   }
   .businessCouncilsNewXD .boxPuplictionsV2 .whiteBoxPupl .viewBtn span, .businessCouncilsNewXD .boxPuplictionsV2 .whiteBoxPupl .showToggleBtn .showToggle span, .showToggleBtn .businessCouncilsNewXD .boxPuplictionsV2 .whiteBoxPupl .showToggle span {
     font-size: .7rem;
+  }
+  .newXDList .headList {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .newXDList .headers-border {
+    padding-top: 10px;
   }
   .newXDList .collapsed-sec ul {
     max-height: 165px !important;

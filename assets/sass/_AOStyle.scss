@@ -274,7 +274,7 @@ font-size: 1.5rem;
   border: 2px solid $creenColor;
   color: $creenColor;
   img {
-    margin-#{$end-direction}: 10px;
+    margin-#{$start-direction}: 10px;
   }
   span {
     font-size: 14px;
@@ -594,7 +594,7 @@ body {
 .viewSystem {
   .headOfView {
     text-align: center;
-    padding-top: 51px;
+    padding-top: 60px;
     font-family: "DINNextLTRegular";
     .dateBox {
       display: flex;
@@ -610,10 +610,10 @@ body {
       }
     }
     .title {
-      font-size: 1.75rem;
-      color: #012D29;
-      font-weight: $w-medium;
-      margin: 0 0 28px 0;
+      font-size: 2.188rem;
+      color: $creenColor;
+      font-weight: $w-bold;
+      margin: 0 0 25px 0;
     }
     .paragraphOfBox {
       margin: 0 18%;
@@ -627,7 +627,7 @@ body {
  
   .card-body {
     .faq-section{
-      margin-top: 50px !important;
+      margin-top: 48px !important;
     }
     padding: 0 21px 27px 80px;
    .card {
@@ -681,8 +681,10 @@ body {
   .previewReports {
     text-align: center;
     .headerOfBox {
-      margin:50px 0 20px 0;
+      margin:60px 0 20px 0;
       font-size: $font35;
+      color: $creenColor;
+      font-weight: bold;
     }
     .paragraphOfBox {
       padding: 0 8%;
@@ -773,7 +775,7 @@ body {
 }
 
 .backgroundOrImage {
-  padding: 84px 0 89px;
+  padding: 56px 0 89px;
   .container {
     position: relative;
     &::before {
@@ -784,7 +786,7 @@ body {
       // background-color: green;
       background-image: url(../images/innerPages/dots.svg);
       left: -52px;
-      top: -52px;
+      top: -26px;
     }
   }
   .formContactUs {
@@ -885,6 +887,8 @@ body {
       .headerOfBoxFont35 {
         text-align: center;
         padding-bottom: 27px;
+        color: $creenColor;
+        font-weight: bold;
       }
     }
   }
@@ -903,7 +907,7 @@ body {
 
 .NewsPage {
   .formSearch {
-    margin: 0 0 44px;
+    margin: 0 0 48px;
   }
   .boxNewsPage {
     box-shadow: 0 0px 25px rgba($color: #332e2e, $alpha: 0.1);
@@ -1141,7 +1145,7 @@ body {
 
 
 .bannerSliderSec {
-  padding: 48px 32px; 
+  padding: 51px 0 24px;
   // height: 100vh;
   .bannerSwiperinner  {
     height: 495px;
@@ -1340,7 +1344,7 @@ body {
   .nav-tabs {
     border: unset;
     padding: 0;
-    background-color: #ebe4dd;
+    background-color: #ebe4dd85;
     border-radius: 50px;
     // padding-#{$start-direction}: 185px;
     li {
@@ -1358,8 +1362,8 @@ body {
         // border: 2px solid $mainColor;
         display: inline-block;
         &.active {
-          color: #fff;
-          background: $mainColor;
+          color: $mainColor;
+          background: #fff;
         }
       }
     }
@@ -1832,7 +1836,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     padding: 100px 48px;
-    margin-top: 112px;
+    margin-top: 56px;
     * {
       text-align: right;
       width: 65%;
@@ -1842,6 +1846,7 @@ footer {
       font-size: 2rem;
       color: $mainColor;
       margin:0 0 25px 0;
+      font-weight: bold;
     }
     .paragraphOfBox {
       line-height: 1.6;
@@ -1851,13 +1856,13 @@ footer {
   }
   .formSearch {
     margin-top: 0;
-    margin-bottom: 30px;
+    // margin-bottom: 30px;
   }
 }
 
 .newInnerPage {
   .headNIP {
-    margin-top: 24px;
+    margin-top: 56px;
     img {
       width: 100%;
       max-height: 555px;
@@ -1924,12 +1929,17 @@ footer {
 .JOPINNER  {
   background: #E5ECEC;
   border-radius: 8px;
-  margin-top: 48px;
-  margin-bottom: 185px;
+  margin-top: 56px;
+  margin-bottom: 178px;
   .ForPadding {
     padding: 81px 140px;
     .imgInnerJop {
       text-align: left;
+      &:not(.clearCircRaduis) {
+       img {
+        border-radius:8px;
+       }
+      }
       img {
         width: 388px;
         height: 388px;
@@ -2196,7 +2206,7 @@ footer {
 }
 
 .accordion.NewStyleAccordion.organizations {
-  margin-top: 70px;
+  // margin-top: 70px;
 	.card {
 		.card-header {
 			.btn-link {
@@ -2638,8 +2648,8 @@ body .ui-widget-content a {
 	}
 }
 .newXDList {
-  .lineList {
-    padding-top: 15px;
+  .headers-border {
+    padding-top: 24px;
   }
   .headList {
     display: flex;
@@ -2693,6 +2703,9 @@ body .ui-widget-content a {
     }
   }
 }
+.col-md-12.d-flex.justify-content-center + .col-md-12 .formSearch {
+  margin-top: 24px;
+} 
 // 5555555555555555555555555555555555555
 /* ----------- fixing global issue ----------- */
 @media (min-device-width: 1401px) and (max-device-width: 1500px) {
@@ -4147,6 +4160,12 @@ body .ui-widget-content a {
   }
   
   .newXDList {
+    .headList {
+      justify-content: center;
+    }
+    .headers-border {
+      padding-top: 10px;
+    }
     .collapsed-sec {
       ul {
         max-height: 165px !important;
