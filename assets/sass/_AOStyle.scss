@@ -62,8 +62,102 @@ $font16: 1rem;
   }
 }
 
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+table th {
+  background: $mainColor;
+  color: #fff;
+}
+table th:last-of-type {
+  border-radius: 8px 0px 0px 0px;
+  padding-right: 25px;
+}
+table th:first-of-type {
+  border-radius: 0px 8px 0px 0px;
+}
+table tr:last-of-type td:first-of-type {
+  border-radius: 0px 0px 8px 0px;
+}
+table tr:last-of-type td:last-of-type {
+  border-radius: 0px 0px 0px 8px;
+}
+table th, table td {
+  border: 0px solid #ccc;
+  padding: 33px 24px;
+  font-size: 1.5rem;
+}
+table td {
+  color: #666666;
+}
+table tr {
+  background-color: #fff;
+  border-bottom: 1px solid #dee2e65e;
+}
+table tr:last-of-type {
+  border-bottom: 0px solid #dee2e65e;
+}
+table tr:hover {
+  background-color: #e5ecec52;
+}
+h1 {
+  font-size: $font35;
+  color: $creenColor;
+  font-weight: $w-bold;
+}
 
+h2 {
+  font-size: 1.875rem;
+  color: $creenColor;
+  font-weight: $w-bold;
+}
 
+h3 {
+  font-size: $font24;
+  color: $creenColor;
+}
+
+h4 {
+  font-size: 1.25rem;
+  color: $creenColor;
+}
+
+h5,h6 {
+  font-size: $font18;
+  color: $creenColor;
+}
+
+p {
+  font-size: $font18;
+  color: $color666666;
+}
+a {
+  color: #004094;
+}
+.ul {
+  list-style: none;
+  padding: 0;
+  li {
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #9C9C9C;
+    margin-bottom: 8px;
+    position: relative;
+    padding-right: 27px;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 10px;
+      height: 12px;
+      top: 10px;
+      right: 0;
+      background-image: url(../images/arrow-gold.svg);
+      background-repeat: no-repeat;
+      background-size: contain
+    }
+  }
+}
 label {
   font-size: $font18;
   font-weight: $w-medium;
@@ -2492,6 +2586,10 @@ body .ui-widget-content a {
     height: 306px;
     max-width: 495px;
     border-radius: 8px;
+    margin-bottom: 55px;
+    .p-wrapper {
+      display: none;
+    }
     &.ForFloat {
       float: #{$end-direction};
       width: 100%;
@@ -2512,6 +2610,9 @@ body .ui-widget-content a {
       align-items: center;
     }
     &:hover {
+      .more {
+        transform: translateY(-24px);
+      }
       .icon-box {
         &::after {
           transition: all 0.4s ease,width  0.2s linear ;
@@ -2520,7 +2621,13 @@ body .ui-widget-content a {
           width: 92px;
         }
       }
+      transform-origin: 50% 170%;
     }
+  }
+}
+.Commissions {
+  .Commissions-card {
+    margin-bottom: 135px;
   }
 }
 .businessCouncilsDetails {
@@ -2703,9 +2810,73 @@ body .ui-widget-content a {
     }
   }
 }
-.col-md-12.d-flex.justify-content-center + .col-md-12 .formSearch {
-  margin-top: 24px;
-} 
+.col-md-12.d-flex.justify-content-center {
+	+ {
+		.col-md-12 {
+			.formSearch {
+				margin-top: 24px;
+			}
+		}
+	}
+}
+
+.AgencyTasks {
+  margin: 50px 0 120px;
+}
+.service_header {
+
+  .changeText {
+    margin-top: 13px;
+    min-width: 225px;
+    text-align: center;
+    span {
+      font-size: 16px;
+      &:last-of-type {
+        display: none;
+      }
+    }
+    &:hover {
+      span {
+        &:first-of-type {
+          display: none;
+        }
+        &:last-of-type {
+          display: block;
+        }
+      }
+    }
+  }
+
+}
+
+.servicesT1 {
+  .white-card {
+    margin: 54px 0 48px;
+  }
+}
+
+.servicesIsAvailable {
+  margin: 40px 0 120px;
+  .SIABox {
+    text-align: center;
+    img {
+      width: 56px;
+      height: 56px;
+    }
+    a {
+      span {
+        font-size: 16px;
+      }
+    }
+    p {
+      margin: 16px 0 18px;
+      font-size: 28px;
+      color: #007066;
+      font-weight: bold;
+    }
+  }
+}
+
 // 5555555555555555555555555555555555555
 /* ----------- fixing global issue ----------- */
 @media (min-device-width: 1401px) and (max-device-width: 1500px) {
@@ -2977,6 +3148,15 @@ body .ui-widget-content a {
     // .container  {
     //   background-color: red;
     // }
+
+  
+    .ul {
+      li {
+        font-size: 1rem;
+      }
+    }
+    
+    
     .breadcrumbScetion {
       .breadcrumbCustom {
         width: 150%;
@@ -3397,6 +3577,29 @@ body .ui-widget-content a {
     
       }
     }
+    .newXDList {
+      .headList{
+        justify-content: center;
+       }
+    }
+    .headers-border{
+      flex-direction: column;
+      div{
+        margin-bottom: 3px;
+      }
+      .border-green{
+        height: 5px;
+      }
+      .border-gold{
+        height: 4px;
+      }
+      .border-gray-1{
+        height: 3px;
+      }
+      .border-gray-2{
+        height: 2px;
+      }
+    }
     // ------------ {END tablet 768 to 1024} --------
 
 }
@@ -3415,6 +3618,39 @@ body .ui-widget-content a {
   .paragraphOfBox {
     line-height: 1.6;
     font-size: 16px;
+  }
+  .headerOfBoxFont35 {
+    font-size: 1.8rem;
+  }
+
+  .ul {
+    li {
+      font-size: 1rem;
+    }
+  }
+  
+  h1 {
+    font-size: 1.5rem;
+  }
+  
+  h2 {
+    font-size: 1.4rem;
+  }
+  
+  h3 {
+    font-size: 1.3rem;
+  }
+  
+  h4 {
+    font-size: 1.2rem;
+  }
+  
+  h5,h6 {
+    font-size: 1.1rem;
+  }
+  
+  p {
+    font-size: .875rem;
   }
   .pagentaaionCustom {
     a {
@@ -4172,11 +4408,68 @@ body .ui-widget-content a {
       }
     }
   }
+  .supporContact {
+    .Commissions-card {
+      h2 {
+        height: 75px;
+      }
+    }
+  }
+  .newXDList {
+    .headList{
+      justify-content: center;
+     }
+  }
+  .headers-border{
+    flex-direction: column;
+    div{
+      margin-bottom: 3px;
+    }
+    .border-green{
+      height: 5px;
+    }
+    .border-gold{
+      height: 4px;
+    }
+    .border-gray-1{
+      height: 3px;
+    }
+    .border-gray-2{
+      height: 2px;
+    }
+  }
+  .AgencyTasks {
+    margin: 50px 0 0px;
+  }
 
+
+  .servicesT1.about-details {
+    padding-bottom: 0;
+  }
+  .servicesIsAvailable {
+    margin: 40px 0 50px;
+    .SIABox {
+      p {
+        font-size: 20px;
+      }
+      a {
+        span {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  .service_header {
+    .service_img  {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 30px;
+    }
+  }
 //---------- END mobile
-.headerOfBoxFont35 {
-  font-size: 1.8rem;
-}
+
 }
 
 /* ----------- iPhone ----------- */
