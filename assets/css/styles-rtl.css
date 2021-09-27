@@ -19035,6 +19035,80 @@ body .ui-widget-content a {
   font-weight: bold;
 }
 
+.jobsNew {
+  height: 310px;
+}
+
+.jobsNew .greenBox {
+  height: 228px;
+}
+
+.jobsNew .whiteBoxPupl {
+  height: 82px;
+}
+
+.jobsNew:hover .whiteBoxPupl {
+  height: 125px;
+}
+
+.jobsNew:hover .greenBox {
+  height: 180px;
+}
+
+.jobsNew:hover .showBox {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.jobsNew .dateBox .headingNewJ {
+  font-size: 24px;
+  color: #012D29;
+}
+
+.jobsNew .dateBox .dateS {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.jobsNew .dateBox .dateS span {
+  font-size: 16px;
+  padding-right: 10px;
+  color: #CCA079;
+}
+
+.jobsNew .showBox .showToggleBtn p {
+  margin: 0;
+  height: 52px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 160px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.jobsNew .showBox .DowloadBTn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 160px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 /* ----------- fixing global issue ----------- */
 @media (min-device-width: 1401px) and (max-device-width: 1500px) {
   .backgroundOrImage .container::before {
@@ -19580,6 +19654,13 @@ body .ui-widget-content a {
   }
   .headers-border .border-gray-2 {
     height: 2px;
+  }
+  .jobsNew .showBox .DowloadBTn,
+  .jobsNew .showBox .showToggleBtn p {
+    width: auto;
+  }
+  .jobsNew .showBox .showToggleBtn p {
+    height: 45px;
   }
 }
 
@@ -20261,6 +20342,13 @@ body .ui-widget-content a {
         -ms-flex-align: center;
             align-items: center;
     margin-top: 30px;
+  }
+  .jobsNew .showBox .DowloadBTn,
+  .jobsNew .showBox .showToggleBtn p {
+    width: auto;
+  }
+  .jobsNew .showBox .showToggleBtn p {
+    height: 45px;
   }
 }
 

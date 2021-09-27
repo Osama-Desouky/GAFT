@@ -2876,6 +2876,59 @@ body .ui-widget-content a {
     }
   }
 }
+.jobsNew {
+	height: 310px;
+	.greenBox {
+		height: 228px;
+	}
+	.whiteBoxPupl {
+		height: 82px;
+	}
+	&:hover {
+		.whiteBoxPupl {
+			height: 125px;
+		}
+		.greenBox {
+			height: 180px;
+		}
+		.showBox {
+			justify-content: space-evenly;
+		}
+	}
+	.dateBox {
+		.headingNewJ {
+			font-size: 24px;
+			color: #012D29;
+		}
+		.dateS {
+			display: flex;
+			align-items: center;
+			span {
+				font-size: 16px;
+				padding-right: 10px;
+				color: #CCA079;
+			}
+		}
+	}
+	.showBox {
+		.showToggleBtn {
+			p {
+				margin: 0;
+				height: 52px;
+				display: flex;
+				align-items: center;
+				width: 160px;
+				justify-content: center;
+			}
+		}
+		.DowloadBTn {
+			display: flex;
+			align-items: center;
+			width: 160px;
+			justify-content: center;
+		}
+	}
+}
 
 // 5555555555555555555555555555555555555
 /* ----------- fixing global issue ----------- */
@@ -3599,6 +3652,13 @@ body .ui-widget-content a {
       .border-gray-2{
         height: 2px;
       }
+    }
+    .jobsNew .showBox .DowloadBTn,
+    .jobsNew .showBox .showToggleBtn p {
+      width: auto;
+    }
+    .jobsNew .showBox .showToggleBtn p {
+      height: 45px;
     }
     // ------------ {END tablet 768 to 1024} --------
 
@@ -4468,6 +4528,13 @@ body .ui-widget-content a {
       margin-top: 30px;
     }
   }
+  .jobsNew .showBox .DowloadBTn,
+  .jobsNew .showBox .showToggleBtn p {
+    width: auto;
+  }
+  .jobsNew .showBox .showToggleBtn p {
+    height: 45px;
+  }
 //---------- END mobile
 
 }
@@ -4580,6 +4647,7 @@ body .ui-widget-content a {
 		}
 	}
 }
+
 
 
 
