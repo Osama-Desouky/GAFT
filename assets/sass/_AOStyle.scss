@@ -62,8 +62,102 @@ $font16: 1rem;
   }
 }
 
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+table th {
+  background: $mainColor;
+  color: #fff;
+}
+table th:last-of-type {
+  border-radius: 8px 0px 0px 0px;
+  padding-right: 25px;
+}
+table th:first-of-type {
+  border-radius: 0px 8px 0px 0px;
+}
+table tr:last-of-type td:first-of-type {
+  border-radius: 0px 0px 8px 0px;
+}
+table tr:last-of-type td:last-of-type {
+  border-radius: 0px 0px 0px 8px;
+}
+table th, table td {
+  border: 0px solid #ccc;
+  padding: 33px 24px;
+  font-size: 1.5rem;
+}
+table td {
+  color: #666666;
+}
+table tr {
+  background-color: #fff;
+  border-bottom: 1px solid #dee2e65e;
+}
+table tr:last-of-type {
+  border-bottom: 0px solid #dee2e65e;
+}
+table tr:hover {
+  background-color: #e5ecec52;
+}
+h1 {
+  font-size: $font35;
+  color: $creenColor;
+  font-weight: $w-bold;
+}
 
+h2 {
+  font-size: 1.875rem;
+  color: $creenColor;
+  font-weight: $w-bold;
+}
 
+h3 {
+  font-size: $font24;
+  color: $creenColor;
+}
+
+h4 {
+  font-size: 1.25rem;
+  color: $creenColor;
+}
+
+h5,h6 {
+  font-size: $font18;
+  color: $creenColor;
+}
+
+p {
+  font-size: $font18;
+  color: $color666666;
+}
+a {
+  color: #004094;
+}
+.ul {
+  list-style: none;
+  padding: 0;
+  li {
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #9C9C9C;
+    margin-bottom: 8px;
+    position: relative;
+    padding-right: 27px;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 10px;
+      height: 12px;
+      top: 10px;
+      right: 0;
+      background-image: url(../images/arrow-gold.svg);
+      background-repeat: no-repeat;
+      background-size: contain
+    }
+  }
+}
 label {
   font-size: $font18;
   font-weight: $w-medium;
@@ -274,7 +368,7 @@ font-size: 1.5rem;
   border: 2px solid $creenColor;
   color: $creenColor;
   img {
-    margin-#{$end-direction}: 10px;
+    margin-#{$start-direction}: 10px;
   }
   span {
     font-size: 14px;
@@ -594,7 +688,7 @@ body {
 .viewSystem {
   .headOfView {
     text-align: center;
-    padding-top: 51px;
+    padding-top: 60px;
     font-family: "DINNextLTRegular";
     .dateBox {
       display: flex;
@@ -610,10 +704,10 @@ body {
       }
     }
     .title {
-      font-size: 1.75rem;
-      color: #012D29;
-      font-weight: $w-medium;
-      margin: 0 0 28px 0;
+      font-size: 2.188rem;
+      color: $creenColor;
+      font-weight: $w-bold;
+      margin: 0 0 25px 0;
     }
     .paragraphOfBox {
       margin: 0 18%;
@@ -627,7 +721,7 @@ body {
  
   .card-body {
     .faq-section{
-      margin-top: 50px !important;
+      margin-top: 48px !important;
     }
     padding: 0 21px 27px 80px;
    .card {
@@ -681,8 +775,10 @@ body {
   .previewReports {
     text-align: center;
     .headerOfBox {
-      margin:50px 0 20px 0;
+      margin:60px 0 20px 0;
       font-size: $font35;
+      color: $creenColor;
+      font-weight: bold;
     }
     .paragraphOfBox {
       padding: 0 8%;
@@ -773,7 +869,7 @@ body {
 }
 
 .backgroundOrImage {
-  padding: 84px 0 89px;
+  padding: 56px 0 89px;
   .container {
     position: relative;
     &::before {
@@ -784,7 +880,7 @@ body {
       // background-color: green;
       background-image: url(../images/innerPages/dots.svg);
       left: -52px;
-      top: -52px;
+      top: -26px;
     }
   }
   .formContactUs {
@@ -885,6 +981,8 @@ body {
       .headerOfBoxFont35 {
         text-align: center;
         padding-bottom: 27px;
+        color: $creenColor;
+        font-weight: bold;
       }
     }
   }
@@ -903,7 +1001,7 @@ body {
 
 .NewsPage {
   .formSearch {
-    margin: 0 0 44px;
+    margin: 0 0 48px;
   }
   .boxNewsPage {
     box-shadow: 0 0px 25px rgba($color: #332e2e, $alpha: 0.1);
@@ -1141,7 +1239,7 @@ body {
 
 
 .bannerSliderSec {
-  padding: 48px 32px; 
+  padding: 51px 0 24px;
   // height: 100vh;
   .bannerSwiperinner  {
     height: 495px;
@@ -1340,7 +1438,7 @@ body {
   .nav-tabs {
     border: unset;
     padding: 0;
-    background-color: #ebe4dd;
+    background-color: #ebe4dd85;
     border-radius: 50px;
     // padding-#{$start-direction}: 185px;
     li {
@@ -1358,8 +1456,8 @@ body {
         // border: 2px solid $mainColor;
         display: inline-block;
         &.active {
-          color: #fff;
-          background: $mainColor;
+          color: $mainColor;
+          background: #fff;
         }
       }
     }
@@ -1832,7 +1930,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     padding: 100px 48px;
-    margin-top: 112px;
+    margin-top: 56px;
     * {
       text-align: right;
       width: 65%;
@@ -1842,6 +1940,7 @@ footer {
       font-size: 2rem;
       color: $mainColor;
       margin:0 0 25px 0;
+      font-weight: bold;
     }
     .paragraphOfBox {
       line-height: 1.6;
@@ -1851,13 +1950,13 @@ footer {
   }
   .formSearch {
     margin-top: 0;
-    margin-bottom: 30px;
+    // margin-bottom: 30px;
   }
 }
 
 .newInnerPage {
   .headNIP {
-    margin-top: 24px;
+    margin-top: 56px;
     img {
       width: 100%;
       max-height: 555px;
@@ -1924,12 +2023,17 @@ footer {
 .JOPINNER  {
   background: #E5ECEC;
   border-radius: 8px;
-  margin-top: 48px;
-  margin-bottom: 185px;
+  margin-top: 56px;
+  margin-bottom: 178px;
   .ForPadding {
     padding: 81px 140px;
     .imgInnerJop {
       text-align: left;
+      &:not(.clearCircRaduis) {
+       img {
+        border-radius:8px;
+       }
+      }
       img {
         width: 388px;
         height: 388px;
@@ -2196,7 +2300,7 @@ footer {
 }
 
 .accordion.NewStyleAccordion.organizations {
-  margin-top: 70px;
+  // margin-top: 70px;
 	.card {
 		.card-header {
 			.btn-link {
@@ -2482,6 +2586,10 @@ body .ui-widget-content a {
     height: 306px;
     max-width: 495px;
     border-radius: 8px;
+    margin-bottom: 55px;
+    .p-wrapper {
+      display: none;
+    }
     &.ForFloat {
       float: #{$end-direction};
       width: 100%;
@@ -2502,6 +2610,9 @@ body .ui-widget-content a {
       align-items: center;
     }
     &:hover {
+      .more {
+        transform: translateY(-24px);
+      }
       .icon-box {
         &::after {
           transition: all 0.4s ease,width  0.2s linear ;
@@ -2510,7 +2621,13 @@ body .ui-widget-content a {
           width: 92px;
         }
       }
+      transform-origin: 50% 170%;
     }
+  }
+}
+.Commissions {
+  .Commissions-card {
+    margin-bottom: 135px;
   }
 }
 .businessCouncilsDetails {
@@ -2638,8 +2755,8 @@ body .ui-widget-content a {
 	}
 }
 .newXDList {
-  .lineList {
-    padding-top: 15px;
+  .headers-border {
+    padding-top: 24px;
   }
   .headList {
     display: flex;
@@ -2693,6 +2810,126 @@ body .ui-widget-content a {
     }
   }
 }
+.col-md-12.d-flex.justify-content-center {
+	+ {
+		.col-md-12 {
+			.formSearch {
+				margin-top: 24px;
+			}
+		}
+	}
+}
+
+.AgencyTasks {
+  margin: 50px 0 120px;
+}
+.service_header {
+
+  .changeText {
+    margin-top: 13px;
+    min-width: 225px;
+    text-align: center;
+    span {
+      font-size: 16px;
+      &:last-of-type {
+        display: none;
+      }
+    }
+    &:hover {
+      span {
+        &:first-of-type {
+          display: none;
+        }
+        &:last-of-type {
+          display: block;
+        }
+      }
+    }
+  }
+
+}
+
+.servicesT1 {
+  .white-card {
+    margin: 54px 0 48px;
+  }
+}
+
+.servicesIsAvailable {
+  margin: 40px 0 120px;
+  .SIABox {
+    text-align: center;
+    img {
+      width: 56px;
+      height: 56px;
+    }
+    a {
+      span {
+        font-size: 16px;
+      }
+    }
+    p {
+      margin: 16px 0 18px;
+      font-size: 28px;
+      color: #007066;
+      font-weight: bold;
+    }
+  }
+}
+.jobsNew {
+	height: 310px;
+	.greenBox {
+		height: 228px;
+	}
+	.whiteBoxPupl {
+		height: 82px;
+	}
+	&:hover {
+		.whiteBoxPupl {
+			height: 125px;
+		}
+		.greenBox {
+			height: 180px;
+		}
+		.showBox {
+			justify-content: space-evenly;
+		}
+	}
+	.dateBox {
+		.headingNewJ {
+			font-size: 24px;
+			color: #012D29;
+		}
+		.dateS {
+			display: flex;
+			align-items: center;
+			span {
+				font-size: 16px;
+				padding-right: 10px;
+				color: #CCA079;
+			}
+		}
+	}
+	.showBox {
+		.showToggleBtn {
+			p {
+				margin: 0;
+				height: 52px;
+				display: flex;
+				align-items: center;
+				width: 160px;
+				justify-content: center;
+			}
+		}
+		.DowloadBTn {
+			display: flex;
+			align-items: center;
+			width: 160px;
+			justify-content: center;
+		}
+	}
+}
+
 // 5555555555555555555555555555555555555
 /* ----------- fixing global issue ----------- */
 @media (min-device-width: 1401px) and (max-device-width: 1500px) {
@@ -2964,6 +3201,15 @@ body .ui-widget-content a {
     // .container  {
     //   background-color: red;
     // }
+
+  
+    .ul {
+      li {
+        font-size: 1rem;
+      }
+    }
+    
+    
     .breadcrumbScetion {
       .breadcrumbCustom {
         width: 150%;
@@ -3384,6 +3630,36 @@ body .ui-widget-content a {
     
       }
     }
+    .newXDList {
+      .headList{
+        justify-content: center;
+       }
+    }
+    .headers-border{
+      flex-direction: column;
+      div{
+        margin-bottom: 3px;
+      }
+      .border-green{
+        height: 5px;
+      }
+      .border-gold{
+        height: 4px;
+      }
+      .border-gray-1{
+        height: 3px;
+      }
+      .border-gray-2{
+        height: 2px;
+      }
+    }
+    .jobsNew .showBox .DowloadBTn,
+    .jobsNew .showBox .showToggleBtn p {
+      width: auto;
+    }
+    .jobsNew .showBox .showToggleBtn p {
+      height: 45px;
+    }
     // ------------ {END tablet 768 to 1024} --------
 
 }
@@ -3402,6 +3678,39 @@ body .ui-widget-content a {
   .paragraphOfBox {
     line-height: 1.6;
     font-size: 16px;
+  }
+  .headerOfBoxFont35 {
+    font-size: 1.8rem;
+  }
+
+  .ul {
+    li {
+      font-size: 1rem;
+    }
+  }
+  
+  h1 {
+    font-size: 1.5rem;
+  }
+  
+  h2 {
+    font-size: 1.4rem;
+  }
+  
+  h3 {
+    font-size: 1.3rem;
+  }
+  
+  h4 {
+    font-size: 1.2rem;
+  }
+  
+  h5,h6 {
+    font-size: 1.1rem;
+  }
+  
+  p {
+    font-size: .875rem;
   }
   .pagentaaionCustom {
     a {
@@ -4147,17 +4456,87 @@ body .ui-widget-content a {
   }
   
   .newXDList {
+    .headList {
+      justify-content: center;
+    }
+    .headers-border {
+      padding-top: 10px;
+    }
     .collapsed-sec {
       ul {
         max-height: 165px !important;
       }
     }
   }
+  .supporContact {
+    .Commissions-card {
+      h2 {
+        height: 75px;
+      }
+    }
+  }
+  .newXDList {
+    .headList{
+      justify-content: center;
+     }
+  }
+  .headers-border{
+    flex-direction: column;
+    div{
+      margin-bottom: 3px;
+    }
+    .border-green{
+      height: 5px;
+    }
+    .border-gold{
+      height: 4px;
+    }
+    .border-gray-1{
+      height: 3px;
+    }
+    .border-gray-2{
+      height: 2px;
+    }
+  }
+  .AgencyTasks {
+    margin: 50px 0 0px;
+  }
 
+
+  .servicesT1.about-details {
+    padding-bottom: 0;
+  }
+  .servicesIsAvailable {
+    margin: 40px 0 50px;
+    .SIABox {
+      p {
+        font-size: 20px;
+      }
+      a {
+        span {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  .service_header {
+    .service_img  {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 30px;
+    }
+  }
+  .jobsNew .showBox .DowloadBTn,
+  .jobsNew .showBox .showToggleBtn p {
+    width: auto;
+  }
+  .jobsNew .showBox .showToggleBtn p {
+    height: 45px;
+  }
 //---------- END mobile
-.headerOfBoxFont35 {
-  font-size: 1.8rem;
-}
+
 }
 
 /* ----------- iPhone ----------- */
@@ -4268,6 +4647,7 @@ body .ui-widget-content a {
 		}
 	}
 }
+
 
 
 

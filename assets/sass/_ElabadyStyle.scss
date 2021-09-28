@@ -105,7 +105,8 @@
     &_header{
 
         background-color: $headres-bg;
-        padding: 130px 0;
+        // padding: 130px 0;
+        padding: 60px 0 56px;
 
     }
 
@@ -197,6 +198,7 @@
 
         .text{
             font-size: 14px;
+            margin: 0;
             font-weight: 400 ;
 
             .number{
