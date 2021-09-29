@@ -12092,7 +12092,6 @@ footer .copySection a:last-child {
 
 .our-partners .owl-carousel .item .partner-card {
   height: 210px;
-  padding: 60px 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -13854,8 +13853,8 @@ p.on-space {
 }
 
 .main-member {
-  margin-top: 40px;
-  margin-bottom: 60px;
+  margin-top: 56px;
+  margin-bottom: 80px;
 }
 
 .main-member .main-one .content-box, .main-member .main-two .content-box {
