@@ -137,6 +137,12 @@ this UI is made desktop first.
     .swiper-container{
       width: auto;
     }
+    .swiper-button-next {
+      right: calc(50% - 18px);
+    }
+    .swiper-button-prev{
+      right: calc(50% - 18px);
+    }
   }
   .main-navbar {
     .navbar-brand{
@@ -2538,6 +2544,10 @@ this UI is made desktop first.
       height: 2px;
     }
   }
+  .versions .versions-card .content-box .new-version-content{
+    // flex-direction: column;
+    margin-bottom: 10px;
+  }
 }
 
 
@@ -2559,5 +2569,20 @@ this UI is made desktop first.
     #{$end-direction}: 10px;
     top: 28px;
     padding: 3px 5px;
+  }
+  .versions .versions-card .content-box{
+    margin-#{$start-direction}:20px ;
+    .new-version-content{
+      margin-bottom: 10px;
+      .date{
+        margin-#{$end-direction}:7px ;
+        font-size: 12px;
+      }
+      .green-badge{
+        font-size: 12px;
+        border-radius: 15px;
+        padding: 4px 7px;
+      }
+    }
   }
 }

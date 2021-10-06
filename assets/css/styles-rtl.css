@@ -12092,7 +12092,6 @@ footer .copySection a:last-child {
 
 .our-partners .owl-carousel .item .partner-card {
   height: 210px;
-  padding: 60px 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -12461,7 +12460,6 @@ footer .copySection a:last-child {
           flex: 0 0 134px;
   background-color: #007066;
   overflow: hidden;
-  padding: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -12479,6 +12477,8 @@ footer .copySection a:last-child {
   max-width: 100%;
   -webkit-transition: 500ms;
   transition: 500ms;
+  width: 100%;
+  height: 100%;
 }
 
 .ads .tabs .tab-content .tab-pane .ads-card .content-box {
@@ -12613,7 +12613,7 @@ footer .copySection a:last-child {
   background: white;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(#f1f1f1));
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #f1f1f1 100%);
-  z-index: 99999;
+  z-index: 99;
 }
 
 .versions .heading h2 {
@@ -12683,6 +12683,10 @@ footer .copySection a:last-child {
   max-width: 100%;
   -webkit-transition: 500ms;
   transition: 500ms;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .versions .versions-card .content-box {
@@ -12706,6 +12710,36 @@ footer .copySection a:last-child {
   margin-bottom: 25px;
   height: calc(30px * 2);
   overflow: hidden;
+}
+
+.versions .versions-card .content-box .new-version-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 25px;
+}
+
+.versions .versions-card .content-box .new-version-content .date {
+  color: #CCA079;
+  font-size: 14px;
+  margin-left: 20px;
+}
+
+.versions .versions-card .content-box .new-version-content .date img {
+  vertical-align: sub;
+  max-width: 100%;
+}
+
+.versions .versions-card .content-box .new-version-content .green-badge {
+  background-color: #007066;
+  border-radius: 20px;
+  padding: 7px 15px;
+  overflow: hidden;
+  font-size: 14px;
+  color: #fff;
 }
 
 .versions .versions-card .content-box .actions .view {
@@ -12795,7 +12829,7 @@ footer .copySection a:last-child {
 }
 
 .versions .swiper-button-prev {
-  right: calc(50% - 18px);
+  right: calc(1342px / 2 - 18px);
   top: 5px;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
@@ -12822,7 +12856,7 @@ footer .copySection a:last-child {
 }
 
 .versions .swiper-button-next {
-  right: calc(50% - 18px);
+  right: calc(1342px / 2 - 18px);
   top: calc(100% + 36px);
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
@@ -12838,7 +12872,7 @@ footer .copySection a:last-child {
   border: 2px solid #CCA079;
   -webkit-transition: 400ms;
   transition: 400ms;
-  z-index: 99999999999;
+  z-index: 991;
 }
 
 .versions .swiper-button-next::after {
@@ -13114,6 +13148,7 @@ footer .copySection a:last-child {
   font-size: 18px;
   font-weight: 400;
   margin-left: 17px;
+  font-family: inherit;
 }
 
 .sharekna-elraay .servay .pollWp .pollbtns .voteresult {
@@ -13126,6 +13161,7 @@ footer .copySection a:last-child {
   background-image: url(../images/result-arrow.svg);
   background-repeat: no-repeat;
   background-position: 15px 17px;
+  font-family: inherit;
 }
 
 .sharekna-elraay .servay .pollWp .pollbtns .more {
@@ -13817,8 +13853,8 @@ p.on-space {
 }
 
 .main-member {
-  margin-top: 40px;
-  margin-bottom: 60px;
+  margin-top: 56px;
+  margin-bottom: 80px;
 }
 
 .main-member .main-one .content-box, .main-member .main-two .content-box {
@@ -20986,6 +21022,12 @@ this UI is made desktop first.
   .versions .swiper-container {
     width: auto;
   }
+  .versions .swiper-button-next {
+    right: calc(50% - 18px);
+  }
+  .versions .swiper-button-prev {
+    right: calc(50% - 18px);
+  }
   .main-navbar .navbar-brand {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 225px;
@@ -22896,6 +22938,9 @@ this UI is made desktop first.
   .headers-border .border-gray-2 {
     height: 2px;
   }
+  .versions .versions-card .content-box .new-version-content {
+    margin-bottom: 10px;
+  }
 }
 
 @media (max-width: 349.97px) {
@@ -22912,6 +22957,21 @@ this UI is made desktop first.
     left: 10px;
     top: 28px;
     padding: 3px 5px;
+  }
+  .versions .versions-card .content-box {
+    margin-right: 20px;
+  }
+  .versions .versions-card .content-box .new-version-content {
+    margin-bottom: 10px;
+  }
+  .versions .versions-card .content-box .new-version-content .date {
+    margin-left: 7px;
+    font-size: 12px;
+  }
+  .versions .versions-card .content-box .new-version-content .green-badge {
+    font-size: 12px;
+    border-radius: 15px;
+    padding: 4px 7px;
   }
 }
 /*# sourceMappingURL=styles-rtl.css.map */
