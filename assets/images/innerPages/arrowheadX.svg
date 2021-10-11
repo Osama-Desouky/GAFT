@@ -1,0 +1,9 @@
+<svg id="arrowheadX" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="arrowhead-right">
+    <g id="arrowhead-right-2" data-name="arrowhead-right">
+      <rect id="Rectangle_16192" data-name="Rectangle 16192" width="24" height="24" transform="translate(0 24) rotate(-90)" fill="#cca079" opacity="0"/>
+      <path id="Path_65874" data-name="Path 65874" d="M12.221,11.37l4.78-6a1,1,0,1,1,1.56,1.26L14.291,12l4.48,5.37a1,1,0,0,1-1.54,1.27l-5-6a1,1,0,0,1-.01-1.27Z" transform="translate(-7.001)" fill="#cca079"/>
+      <path id="Path_65875" data-name="Path 65875" d="M10,5.37a1.022,1.022,0,1,1,1.61,1.26L7.286,12l4.48,5.36a1,1,0,0,1-1.54,1.28l-5-6a1,1,0,0,1,0-1.27Z" transform="translate(7.004)" fill="#cca079"/>
+    </g>
+  </g>
+</svg>
