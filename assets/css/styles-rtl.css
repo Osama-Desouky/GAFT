@@ -19331,13 +19331,11 @@ body .ui-widget-content a {
   direction: ltr;
 }
 
-.inner-tabs2 .swiper-slide {
-  width: auto !important;
-}
-
 .inner-tabs2 .MapXD {
   height: 719px;
   margin-bottom: 24px;
+  overflow: hidden;
+  border-radius: 8px;
 }
 
 .inner-tabs2 .MapXD img {
@@ -19382,6 +19380,13 @@ body .ui-widget-content a {
 
 .inner-tabs2 .barBGWhite .item .img-boxx {
   margin-left: 12px;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.inner-tabs2 .barBGWhite .item .content-boxx {
+  font-size: 18px;
+  color: #666666;
 }
 
 .inner-tabs2 .swiper-button-prev,
@@ -19418,6 +19423,9 @@ body .ui-widget-content a {
 .inner-tabs2 .col-md-12 {
   -webkit-transition: max-width .5s;
   transition: max-width .5s;
+  padding: 0 48px;
+  -webkit-transition: 500ms;
+  transition: 500ms;
 }
 
 .inner-tabs2 .col-md-9 {
@@ -19427,37 +19435,343 @@ body .ui-widget-content a {
       -ms-flex: 0 0 75% !important;
           flex: 0 0 75% !important;
   max-width: 75% !important;
+  padding: 0 15px;
+  -webkit-transition: 500ms;
+  transition: 500ms;
 }
 
 .inner-tabs2 .listOFcontries .contryExpand .toOpen {
   width: 100%;
-  background: #fff;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  padding: 8px;
+  padding: 0 8px;
   border-radius: 8px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   font-size: 20px;
-  color: #012D29;
+  color: #007066;
   margin-bottom: 12px;
+  direction: rtl;
+  font-size: 24px;
 }
 
 .inner-tabs2 .listOFcontries .contryExpand .toOpen i {
+  color: #007066;
+  margin-left: 13px;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.inner-tabs2 .about-molhaqia {
+  direction: rtl;
+}
+
+.inner-tabs2 .about-molhaqia h4 {
+  font-size: 20px;
+  font-weight: 400;
   color: #CCA079;
+  margin-bottom: 12px;
 }
 
-.inner-tabs2 .listOFcontries .contryExpand .toOpen:hover {
-  color: #007066;
+.inner-tabs2 .about-molhaqia .molhaqia-details {
+  background-color: #fff;
+  border-radius: 4px;
+  padding-top: 9px;
+  padding-bottom: 15px;
+  padding-right: 12px;
+  padding-left: 35px;
 }
 
-.inner-tabs2 .listOFcontries .contryExpand .toOpen:hover i {
+.inner-tabs2 .about-molhaqia .molhaqia-details .title {
+  font-size: 16px;
+  font-weight: 400;
   color: #007066;
+  margin-bottom: 6px;
+}
+
+.inner-tabs2 .about-molhaqia .molhaqia-details .adress {
+  font-size: 14px;
+  color: #666666;
+  margin-bottom: 8px;
+  text-align: start;
+  line-height: 22px;
+}
+
+.inner-tabs2 .about-molhaqia .molhaqia-details .name {
+  font-size: 16px;
+  font-weight: 400;
+  color: #007066;
+  margin-bottom: 6px;
+  text-align: start;
+}
+
+.inner-tabs2 .about-molhaqia .molhaqia-details .name-details {
+  font-size: 14px;
+  color: #666666;
+  margin-bottom: 8px;
+  text-align: start;
+}
+
+.inner-tabs2 .about-molhaqia .molhaqia-details .phone-one {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 22px;
+  margin-bottom: 8px;
+}
+
+.inner-tabs2 .about-molhaqia .molhaqia-details .phone-one h5 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #007066;
+  margin-bottom: 6px;
+  text-align: start;
+}
+
+.inner-tabs2 .about-molhaqia .molhaqia-details .phone-one p {
+  font-size: 14px;
+  color: #666666;
+  margin-bottom: 0;
+  text-align: start;
+  line-height: 20px;
+  position: relative;
+}
+
+.inner-tabs2 .about-molhaqia .molhaqia-details .phone-one p img {
+  vertical-align: sub;
+}
+
+.inner-tabs2 .about-molhaqia .molhaqia-details .phone-two {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 8px;
+}
+
+.inner-tabs2 .about-molhaqia .molhaqia-details .phone-two h5 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #007066;
+  margin-bottom: 6px;
+  text-align: start;
+}
+
+.inner-tabs2 .about-molhaqia .molhaqia-details .phone-two p {
+  font-size: 14px;
+  color: #666666;
+  margin-bottom: 0;
+  text-align: start;
+  line-height: 20px;
+  position: relative;
+}
+
+.inner-tabs2 .about-molhaqia .molhaqia-details .phone-two p img {
+  vertical-align: sub;
+}
+
+.inner-tabs2 .about-molhaqia .molhaqia-details .mail {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.inner-tabs2 .about-molhaqia .molhaqia-details .mail h5 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #007066;
+  margin-bottom: 6px;
+  text-align: start;
+}
+
+.inner-tabs2 .about-molhaqia .molhaqia-details .mail p {
+  font-size: 14px;
+  color: #666666;
+  margin-bottom: 0;
+  text-align: start;
+  line-height: 20px;
+  position: relative;
+}
+
+.inner-tabs2 .about-molhaqia .molhaqia-details .mail p img {
+  vertical-align: sub;
+}
+
+.inner-tabs2 .Coverage-range {
+  margin-top: 24px;
+}
+
+.inner-tabs2 .Coverage-range h4 {
+  font-size: 20px;
+  font-weight: 400;
+  color: #CCA079;
+  margin-bottom: 12px;
+}
+
+.inner-tabs2 .Coverage-range .range-details #accordion .card {
+  background-color: #fff;
+  border-radius: 4px;
+  direction: rtl;
+  text-align: right;
+  border: 0;
+  margin-bottom: 24px;
+  overflow: hidden;
+}
+
+.inner-tabs2 .Coverage-range .range-details #accordion .card .card-header {
+  padding: 0;
+  background-color: #fff;
+  border: 0;
+}
+
+.inner-tabs2 .Coverage-range .range-details #accordion .card .card-header a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 18px;
+  font-weight: 400;
+  color: #666666;
+  padding-top: 9px;
+  padding-bottom: 6px;
+  padding-right: 8px;
+  padding-left: 11px;
+}
+
+.inner-tabs2 .Coverage-range .range-details #accordion .card .card-header a::after {
+  content: "";
+  position: absolute;
+  left: 8px;
+  background-image: url(../images/gold-down-arrow.svg);
+  height: 40px;
+  width: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.inner-tabs2 .Coverage-range .range-details #accordion .card .card-header a img {
+  margin-left: 12px;
+  border-radius: 2px;
+}
+
+.inner-tabs2 .Coverage-range .range-details #accordion .card .card-header a[aria-expanded="true"]:after {
+  content: "";
+  -webkit-transition: .4s;
+  transition: .4s;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.inner-tabs2 .Coverage-range .range-details #accordion .card .card-body {
+  padding-right: 8px;
+  padding-left: 8px;
+  padding-top: 10px;
+  padding-bottom: 24px;
+  border-top: 1px solid #bbbbbb4d;
+}
+
+.inner-tabs2 .Coverage-range .range-details #accordion .card .card-body .important-links {
+  direction: rtl;
+}
+
+.inner-tabs2 .Coverage-range .range-details #accordion .card .card-body .important-links .links-area .imp-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 6px;
+  padding-top: 3px;
+  border-bottom: 1px solid #bbbbbb14;
+}
+
+.inner-tabs2 .Coverage-range .range-details #accordion .card .card-body .important-links .links-area .imp-link:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.inner-tabs2 .Coverage-range .range-details #accordion .card .card-body .important-links .links-area .imp-link:first-child {
+  padding-top: 0;
+}
+
+.inner-tabs2 .Coverage-range .range-details #accordion .card .card-body .important-links .links-area .imp-link p {
+  margin-bottom: 0;
+  color: #012D29;
+  font-size: 14px;
+}
+
+.inner-tabs2 .Coverage-range .range-details #accordion .card .card-body .important-links .links-area .imp-link a {
+  display: block;
+  color: #437BFF;
+  text-decoration: underline;
+  font-size: 14px;
+  text-align: left;
+  direction: ltr;
+}
+
+.map-location-img.selected #capital .circle-mid {
+  -webkit-animation-delay: 10ms;
+          animation-delay: 10ms;
+}
+
+.map-location-img.selected #capital .circle-one {
+  -webkit-animation-delay: 100ms;
+          animation-delay: 100ms;
+}
+
+.map-location-img.selected #capital .circle-two {
+  -webkit-animation-delay: 200ms;
+          animation-delay: 200ms;
+}
+
+@-webkit-keyframes flickerAnimation {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes flickerAnimation {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.animate-flicker {
+  -webkit-animation: flickerAnimation 2s infinite;
+          animation: flickerAnimation 2s infinite;
 }
 
 /* ----------- fixing global issue ----------- */
@@ -19647,6 +19961,29 @@ body .ui-widget-content a {
   }
   .bannerSliderSecNewXD .bannerSwiperinner .BoxBannerInner .boxTextNew {
     padding-left: 65px;
+  }
+  .inner-tabs2 .listOFcontries .contryExpand .toOpen {
+    font-size: 19px;
+  }
+  .inner-tabs2 .about-molhaqia .molhaqia-details .phone-one {
+    margin-left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .inner-tabs2 .about-molhaqia .molhaqia-details .phone-two, .inner-tabs2 .about-molhaqia .molhaqia-details .mail {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .inner-tabs2 .Coverage-range .range-details #accordion .card .card-body .important-links .links-area .imp-link {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
@@ -20050,6 +20387,95 @@ body .ui-widget-content a {
   }
   .bannerSliderSecNewXD .MainColor {
     padding-top: 30px;
+  }
+  /*
+     الملحقيات التجارية جزء الخريطة
+    */
+}
+
+@media (max-width: 1024.98px) {
+  .inner-tabs2 .listOFcontries .contryExpand .toOpen {
+    font-size: 17px;
+    margin-bottom: 6px;
+  }
+  .inner-tabs2 .listOFcontries .contryExpand .toOpen i {
+    margin-left: 7px;
+    font-size: 12px;
+  }
+  .inner-tabs2 .about-molhaqia h4 {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+  .inner-tabs2 .about-molhaqia .molhaqia-details {
+    padding-left: 20px;
+  }
+  .inner-tabs2 .about-molhaqia .molhaqia-details .title, .inner-tabs2 .about-molhaqia .molhaqia-details .name {
+    font-size: 15px;
+    margin-bottom: 6px;
+  }
+  .inner-tabs2 .about-molhaqia .molhaqia-details .adress, .inner-tabs2 .about-molhaqia .molhaqia-details .name-details {
+    font-size: 13px;
+    line-height: 20px;
+  }
+  .inner-tabs2 .about-molhaqia .molhaqia-details .phone-one, .inner-tabs2 .about-molhaqia .molhaqia-details .phone-two, .inner-tabs2 .about-molhaqia .molhaqia-details .mail {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 0;
+  }
+  .inner-tabs2 .about-molhaqia .molhaqia-details .phone-one h5, .inner-tabs2 .about-molhaqia .molhaqia-details .phone-two h5, .inner-tabs2 .about-molhaqia .molhaqia-details .mail h5 {
+    font-size: 15px;
+  }
+  .inner-tabs2 .about-molhaqia .molhaqia-details .phone-one p, .inner-tabs2 .about-molhaqia .molhaqia-details .phone-two p, .inner-tabs2 .about-molhaqia .molhaqia-details .mail p {
+    font-size: 13px;
+  }
+  .inner-tabs2 .Coverage-range {
+    margin-top: 12px;
+  }
+  .inner-tabs2 .Coverage-range h4 {
+    font-size: 16px;
+    margin-bottom: 7px;
+  }
+  .inner-tabs2 .Coverage-range .range-details #accordion .card {
+    margin-bottom: 12px;
+  }
+  .inner-tabs2 .Coverage-range .range-details #accordion .card .card-header a {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 14px;
+  }
+  .inner-tabs2 .Coverage-range .range-details #accordion .card .card-body .important-links .links-area .imp-link {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .inner-tabs2 .Coverage-range .range-details #accordion .card .card-body .important-links .links-area .imp-link p {
+    font-size: 13px;
+    line-height: 20px;
+  }
+  .inner-tabs2 .Coverage-range .range-details #accordion .card .card-body .important-links .links-area .imp-link a {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .inner-tabs2 .col-md-12 {
+    padding: 0 15px;
+  }
+  .inner-tabs2 .MapXD {
+    height: 600px;
+  }
+  .inner-tabs2 .barBGWhite {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+  .inner-tabs2 .listOFcontries {
+    padding-top: 48px;
   }
 }
 
@@ -20773,6 +21199,35 @@ body .ui-widget-content a {
   }
   .bannerSliderSecNewXD .MainColor {
     padding-top: 30px;
+  }
+}
+
+@media (min-width: 575px) {
+  .inner-tabs2 .swiper-slide {
+    width: auto !important;
+  }
+}
+
+@media (max-width: 575px) {
+  .inner-tabs2 .swiper-slide .item {
+    width: 100%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .inner-tabs2 .barBGWhite .item .content-boxx {
+    font-size: 15px;
+  }
+  .inner-tabs2 .MapXD {
+    height: 400px;
+  }
+}
+
+@media (max-width: 400px) {
+  .inner-tabs2 .swiper-slide .item {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 

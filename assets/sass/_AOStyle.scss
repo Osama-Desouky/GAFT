@@ -3091,12 +3091,14 @@ body .ui-widget-content a {
   .row {
     direction: ltr;
   }
-  .swiper-slide {
-    width: auto !important;
-  }
+  // .swiper-slide {
+  //   width: auto !important;
+  // }
   .MapXD {
     height: 719px;
     margin-bottom: 24px;
+    overflow: hidden;
+    border-radius: 8px;
     img {
       width: 100%;
       height: 100%;
@@ -3130,6 +3132,12 @@ body .ui-widget-content a {
       }
       .img-boxx{
         margin-#{$end-direction}: 12px;
+        border-radius: 2px;
+        overflow: hidden;
+      }
+      .content-boxx{
+        font-size: 18px;
+        color: $p-color;
       }
     }
   }
@@ -3166,42 +3174,305 @@ body .ui-widget-content a {
   }
   .col-md-12 {
     transition: max-width .5s;
+    padding: 0 48px;
+    transition: 500ms;
+
   }
   .col-md-9 {
     transition: max-width .5s;
     flex: 0 0 75% !important;
     max-width: 75% !important;
+    padding: 0 15px;
+    transition: 500ms;
   }
 
   .listOFcontries {
     .contryExpand {
       .toOpen {
         width: 100%;
-        background: #fff;
+        // background: #fff;
         display: inline-flex;
-        padding: 8px;
+        padding: 0 8px;
         border-radius: 8px;
-        justify-content: space-between;
+        justify-content: flex-start;
         align-items: center;
         font-size: 20px;
-        color: #012D29;
+        color: $dark-green;
         margin-bottom: 12px;
+        direction: rtl;
+        font-size: 24px;
+        // transition: 200ms;
         i {
-          color: $mainColor;
+          color: $dark-green;
+          // transition: 200ms;
+          margin-#{$end-direction}: 13px;
+          font-size: 14px;
+          margin-top: 5px;
+
         }
-        &:hover {
-          color: $creenColor;
-          i {
-            color: $creenColor;
-          }
-        }
+        // &:hover {
+        //   color: $creenColor;
+        //   i {
+        //     color: $creenColor;
+        //   }
+        // }
       }
 
     }
   }
+  .about-molhaqia {
+    direction: rtl;
+    h4{
+      font-size: 20px;
+      font-weight: $w-normal;
+      color: $golden-color;
+      margin-bottom: 12px;
+    }
+    .molhaqia-details{
+      background-color: #fff;
+      border-radius: 4px;
+      // padding: 10px 12px 15px 25px;
+      padding-top: 9px;
+      padding-bottom: 15px;
+      padding-#{$start-direction}: 12px ;
+      padding-#{$end-direction}: 35px ;
+      .title{
+        font-size: 16px;
+        font-weight: $w-normal;
+        color: $dark-green;
+        margin-bottom: 6px;
+      }
+      .adress{
+        font-size: 14px;
+        color: $p-color;
+        margin-bottom: 8px;
+        text-align: start;
+        line-height: 22px;
+      }
+      .name{
+        font-size: 16px;
+        font-weight: $w-normal;
+        color: $dark-green;
+        margin-bottom: 6px;
+        text-align: start;
+      }
+      .name-details{
+        font-size: 14px;
+        color: $p-color;
+        margin-bottom: 8px;
+        text-align: start;
+      }
+      .phone-one{
+        display: inline-flex;
+        flex-direction: column;
+        margin-#{$end-direction}:22px ;
+        margin-bottom: 8px;
+        h5{
+          font-size: 16px;
+          font-weight: $w-normal;
+          color: $dark-green;
+          margin-bottom: 6px;
+          text-align: start;
+        }
+        p{
+          font-size: 14px;
+          color: $p-color;
+          margin-bottom: 0;
+          text-align: start;
+          line-height: 20px;
+          position: relative;
+          img{
+            vertical-align: sub;
+          }
+        }
+      }
+      .phone-two{
+        display: inline-flex;
+        flex-direction: column;
+        margin-bottom: 8px;
+        h5{
+          font-size: 16px;
+          font-weight: $w-normal;
+          color: $dark-green;
+          margin-bottom: 6px;
+          text-align: start;
+        }
+        p{
+          font-size: 14px;
+          color: $p-color;
+          margin-bottom: 0;
+          text-align: start;
+          line-height: 20px;
+          position: relative;
 
+          img{
+            vertical-align: sub;
+          }
+        }
+      }
+      .mail{
+        display: inline-flex;
+        flex-direction: column;
+        h5{
+          font-size: 16px;
+          font-weight: $w-normal;
+          color: $dark-green;
+          margin-bottom: 6px;
+          text-align: start;
+        }
+        p{
+          font-size: 14px;
+          color: $p-color;
+          margin-bottom: 0;
+          text-align: start;
+          line-height: 20px;
+          position: relative;
+          img{
+            vertical-align: sub;
+          }
+        }
+      }
+    }
+}
+.Coverage-range{
+  margin-top: 24px;
+  h4{
+    font-size: 20px;
+    font-weight: $w-normal;
+    color: $golden-color;
+    margin-bottom: 12px;
+  }
+  .range-details{
+    #accordion{
+      .card{
+        background-color: #fff;
+        border-radius: 4px;
+        direction: rtl;
+        text-align: right;
+        border: 0;
+        margin-bottom: 24px;
+        overflow: hidden;
+        .card-header{
+          padding: 0;
+          background-color: #fff;
+          border: 0;
 
+            a{
+              display: flex;
+              font-size: 18px;
+              font-weight: $w-normal;
+              color: $p-color;
+              padding-top: 9px;
+              padding-bottom: 6px;
+              padding-#{$start-direction}: 8px ;
+              padding-#{$end-direction}: 11px ;
+              &::after{
+                content: "";
+                position: absolute;
+                #{$end-direction}: 8px;
+                background-image: url(../images/gold-down-arrow.svg);
+                height: 40px;
+                width: 40px;
+                background-repeat: no-repeat;
+                background-position: center;
+                transition: .4s
+              }
+            
+           
+              img{
+                margin-#{$end-direction}: 12px ;
+                border-radius: 2px;
+              }
+            }
+            a[aria-expanded="true"]:after {
+              content: "";
+              -webkit-transition: .4s;
+              transition: .4s;
+              transform: rotate(180deg);
+            }
+        }
+        .card-body{
+          padding-#{$start-direction}: 8px ;
+          padding-#{$end-direction}: 8px ;
+          padding-top: 10px;
+          padding-bottom: 24px;
+          border-top: 1px solid #bbbbbb4d;
+          .important-links{
+            direction: rtl;
+            .links-area{
+              .imp-link{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding-bottom: 6px;
+                padding-top: 3px;
+                border-bottom: 1px solid #bbbbbb14;
+                &:last-child{
+                  border-bottom: 0;
+                  padding-bottom: 0;
+                }
+                &:first-child{
+                  padding-top: 0;
+                }
+                p{
+                  margin-bottom: 0;
+                  color: $black-color;
+                  font-size: 14px;
+                }
+                a{
+                  display: block;
+                  color: #437BFF;
+                  text-decoration: underline;
+                  font-size: 14px;
+                  text-align: left;
+                  direction: ltr;
 
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+}
+.map-location-img.selected {
+  // width: 500px;
+  // height: 500px;
+  // margin: 0 auto;
+  // svg{
+  //   width: 100%;
+  //   height: 100%;
+  // }
+  #capital{
+
+    .circle-mid{
+      // animation-duration: 5s;
+      animation-delay: 10ms;
+    }
+    .circle-one{
+      // animation-duration: 4s;
+      animation-delay: 100ms;
+    }
+    .circle-two{
+      // animation-duration: 3s;
+      animation-delay: 200ms;
+    }
+  }
+}
+@keyframes flickerAnimation {
+  0%   { opacity:1; }
+  50%  { opacity:0.2; }
+  100% { opacity:1; }
+}
+
+.animate-flicker {
+  //  -webkit-animation: flickerAnimation 1s infinite;
+  //  -moz-animation: flickerAnimation 1s infinite;
+  //  -o-animation: flickerAnimation 1s infinite;
+    animation: flickerAnimation 2s infinite;
 }
 
 // 5555555555555555555555555555555555555
@@ -3479,6 +3750,45 @@ body .ui-widget-content a {
     }
   }
   
+
+  .inner-tabs2 {
+    .listOFcontries {
+      .contryExpand {
+        .toOpen{
+          font-size: 19px;
+        }
+      }
+    }
+    .about-molhaqia {
+      .molhaqia-details {
+        .phone-one{
+          margin-#{$end-direction}:0 ;
+          display: flex;
+        }
+        .phone-two , .mail{
+          display: flex;
+        }
+      }
+    }
+    .Coverage-range {
+      .range-details {
+        #accordion {
+          .card {
+            .card-body {
+              .important-links {
+                .links-area {
+                  .imp-link{
+                    align-items: center;
+                    flex-direction: column;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 // ----- {END 1025px to 1400px} ----------
 }
 
@@ -3987,10 +4297,190 @@ body .ui-widget-content a {
   
       }
     }
+
+    // mmousa
+    /*
+     الملحقيات التجارية جزء الخريطة
+    */
+
+    // .inner-tabs2 {
+    //   .listOFcontries {
+    //     .contryExpand {
+    //       .toOpen{
+    //         font-size: 17px ;
+    //         margin-bottom: 6px;
+    //         i{
+    //           margin-#{$end-direction}: 7px;
+    //           font-size: 12px;
+    //         }
+    //       }
+    //     }
+    //   }
+    //   .about-molhaqia {
+    //     h4{
+    //       font-size: 16px;
+    //       margin-bottom: 8px;
+    //     }
+    //     .molhaqia-details{
+    //       padding-#{$end-direction}: 20px;
+    //       .title , .name {
+    //         font-size: 15px;
+    //         margin-bottom: 6px;
+    //       }
+    //       .adress ,.name-details{
+    //         font-size: 13px;
+    //         line-height: 20px;
+    //       }
+    //       .phone-one , .phone-two , .mail{
+    //         display: flex;
+    //         margin-#{$end-direction}: 0;
+    //         h5{
+    //           font-size: 15px;
+    //         }
+    //         p{
+    //           font-size: 13px;
+    //         }
+    //       }
+    //     }
+    //   }
+    //   .Coverage-range {
+    //     margin-top: 12px;
+    //     h4{
+    //       font-size: 16px;
+    //       margin-bottom: 7px;
+    //     }
+    //     .range-details {
+    //       #accordion {
+    //         .card {
+    //           margin-bottom: 12px;
+    //           .card-header {
+    //             a{
+    //               align-items: center;
+    //               font-size: 14px;
+    //             }
+    //           }
+    //           .card-body{
+    //             .important-links {
+    //               .links-area {
+    //                 .imp-link{
+    //                   flex-direction: column;
+    //                   align-items: flex-start;
+    //                   p{
+    //                     font-size: 13px;
+    //                     line-height: 20px;
+    //                   }
+    //                   a{
+    //                     font-size: 13px;
+    //                   }
+    //                 }
+    //               }
+    //             }
+    //           }
+    //         }
+    //       }
+    //     }
+    //   }
+    // }
     // ------------ {END tablet 768 to 1024} --------
 
 }
-
+@media (max-width:1024.98px){
+  .inner-tabs2 {
+    .listOFcontries {
+      .contryExpand {
+        .toOpen{
+          font-size: 17px ;
+          margin-bottom: 6px;
+          i{
+            margin-#{$end-direction}: 7px;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+    .about-molhaqia {
+      h4{
+        font-size: 16px;
+        margin-bottom: 8px;
+      }
+      .molhaqia-details{
+        padding-#{$end-direction}: 20px;
+        .title , .name {
+          font-size: 15px;
+          margin-bottom: 6px;
+        }
+        .adress ,.name-details{
+          font-size: 13px;
+          line-height: 20px;
+        }
+        .phone-one , .phone-two , .mail{
+          display: flex;
+          margin-#{$end-direction}: 0;
+          h5{
+            font-size: 15px;
+          }
+          p{
+            font-size: 13px;
+          }
+        }
+      }
+    }
+    .Coverage-range {
+      margin-top: 12px;
+      h4{
+        font-size: 16px;
+        margin-bottom: 7px;
+      }
+      .range-details {
+        #accordion {
+          .card {
+            margin-bottom: 12px;
+            .card-header {
+              a{
+                align-items: center;
+                font-size: 14px;
+              }
+            }
+            .card-body{
+              .important-links {
+                .links-area {
+                  .imp-link{
+                    flex-direction: column;
+                    align-items: flex-start;
+                    p{
+                      font-size: 13px;
+                      line-height: 20px;
+                    }
+                    a{
+                      font-size: 13px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width:991.98px){
+  .inner-tabs2 {
+    .col-md-12{
+      padding: 0 15px;
+    }
+    .MapXD{
+      height: 600px;
+    }
+    .barBGWhite{
+      padding-top: 12px;
+      padding-bottom: 12px;
+    }
+    .listOFcontries{
+      padding-top: 48px;
+    }
+  }
+}
 .reportPage .tab-pane.active {
   animation: slide-down 1s ;
 }
@@ -4911,6 +5401,43 @@ body .ui-widget-content a {
 
 }
 
+@media (min-width:575px){
+  .inner-tabs2 {
+    .swiper-slide{
+      width: auto !important;
+    }
+  }
+}
+@media (max-width:575px){
+  .inner-tabs2 {
+    .swiper-slide{
+      .item{
+        width: 100%;
+        justify-content: flex-start;
+      }
+    }
+    .barBGWhite {
+      .item {
+        .content-boxx{
+          font-size: 15px;
+        }
+      }
+    }
+    .MapXD {
+      height: 400px;
+  }
+  }
+}
+
+@media (max-width:400px){
+  .inner-tabs2 {
+    .swiper-slide {
+      .item{
+        justify-content: center;
+      }
+    }
+  }
+}
 /* ----------- iPhone ----------- */
 @media (max-width:374px) {
 	.breadcrumbScetion {
