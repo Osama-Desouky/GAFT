@@ -397,9 +397,10 @@ body.header-popup-open {
           transition: all 8s;
         }
         > img {
-          min-width: 100%;
-          min-height: 100%;
+          width: 100%;
+          height: 100%;
           transition: all 8s;
+          object-fit: cover;
         }
         .play-vid{
           position: absolute;
@@ -808,6 +809,10 @@ footer {
   .owl-carousel{
     .owl-stage-outer{
       padding-top: 80px;
+      margin-#{$start-direction}: -20px;
+      padding-#{$start-direction}: 20px;
+      margin-#{$end-direction}: -20px;
+      padding-#{$end-direction}: 20px;
     }
     .item{
       img{
@@ -816,8 +821,8 @@ footer {
         height: 100%;
       }
       .service-card{
-        display: flex;
-        flex-direction: column;
+        // display: flex;
+        // flex-direction: column;
         position: relative;
         box-shadow: 0 3px 60px rgba(0, 0, 0,  0.15);
         // box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -851,18 +856,23 @@ footer {
         p{
           font-size: 18px;
           font-weight: $w-normal;
-          line-height: 36px;
+          line-height: 30px;
           color: $p-color;
           margin-bottom: 30px;
           transition: 400ms;
+          max-height: calc(30px * 2);
+          overflow: hidden;
+          text-align: center;
         }
         h2{
           font-size: 25px;
           font-weight: $w-medium;
-          line-height: 36px;
+          line-height: 32px;
           color: $black-color;
-          margin-bottom: 25px;
+          margin-bottom: 15px;
           transition: 400ms;
+          max-height: calc(32px * 2);
+          overflow: hidden;
 
         }
         .more{
@@ -878,6 +888,10 @@ footer {
           width: 160px;
           height: 52px;
           margin: 0 auto;
+          display: block;
+          position: absolute;
+          #{$start-direction}: calc(50% - 80px);
+          bottom: 15px;
           img{
             margin-#{$start-direction}:13px ;
             width: 10px;
@@ -889,6 +903,7 @@ footer {
           background-color: #DAFCF9;
           box-shadow: 0 3px 60px rgba(0, 91, 83,  0.40);
           transform: scale(1.07);
+          padding: 20px 15px;
           .icon-box{
             transform: translateY(-50px) scale(1.2);
             &::after{
@@ -1969,7 +1984,25 @@ footer {
       margin: 0 10px;
     }
   
+    .sharekna-elraay .servay .pollWp .singlePollResult .poll-percent{
+      font-size:16px
+  }
+  .sharekna-elraay .servay .pollWp .singlePollResult .resultbarbase{
+      height: 10px !important;
+  }
   
+  .sharekna-elraay .servay .pollWp .singlePollResult .resultbarbase div{
+          height: 10px !important;
+  }
+  .poll-form table tr td{
+      padding: 0;
+      box-shadow: none;
+      padding-bottom: 10px;
+  }
+  .poll-form table tr {
+      background: transparent;
+      /* margin-bottom: 10px; */
+  }
   
   
   

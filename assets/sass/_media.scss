@@ -104,12 +104,12 @@ this UI is made desktop first.
           }
           h2{
             font-size: 23px;
-            line-height: 33px;
-            margin-bottom: 10px;
+            // line-height: 33px;
+            // margin-bottom: 10px;
           }
-          p{
-            line-height: 32px;
-          }
+          // p{
+          //   line-height: 32px;
+          // }
           &:hover{
             .icon-box{
               transform: translateY(-30px) scale(1.2);
@@ -160,6 +160,10 @@ this UI is made desktop first.
       margin-#{$start-direction}: 20px ;
     }
   }
+  .versions::after{
+    height: 80px;
+    bottom: 111px;
+  }
 }
 
 @media (max-width: 1399.97px) {
@@ -172,9 +176,9 @@ this UI is made desktop first.
   .main-header .slider-wrapper .social {
     #{$end-direction}: calc((100vw - 1140px + 30px) / 2);
   }
-  .main-header .slider-wrapper .actions {
-    #{$start-direction}: calc((100vw - 1140px + 30px) / 2);
-  }
+  // .main-header .slider-wrapper .actions {
+  //   #{$start-direction}: calc((100vw - 1140px + 30px) / 2);
+  // }
 
   .about-hayaa{
     .about-hay2a-content{
@@ -326,6 +330,9 @@ this UI is made desktop first.
     .navbar .dropdown-menu{
       top: 99px !important;
     }
+    .our-services .owl-carousel .item .service-card:hover{
+      transform: scale(1.03);
+    }
   }
 
 // Large devices (desktops, 992px and up)
@@ -384,7 +391,7 @@ this UI is made desktop first.
     #{$end-direction}: calc((100vw - 960px + 30px) / 2);
   }
   .main-header .slider-wrapper .actions {
-    #{$start-direction}: calc((100vw - 960px + 30px) / 2);
+    // #{$start-direction}: calc((100vw - 960px + 30px) / 2);
   }
 
   .media-list {
@@ -740,6 +747,15 @@ this UI is made desktop first.
       width: 950px;
     }
   }
+  .main-header .slider-wrapper .owl-carousel .owl-nav button.owl-prev{
+    #{$end-direction}: 71vw;
+  }
+  .main-header .slider-wrapper .owl-carousel .owl-nav button.owl-next{
+    #{$end-direction}: 67vw;
+  }
+  .main-header .slider-wrapper .actions{
+    #{$end-direction}: 21vw;
+  }
 }
 // Medium devices (tablets, less than 992px)
 @include media-breakpoint-down(md) {
@@ -843,7 +859,7 @@ this UI is made desktop first.
     #{$end-direction}: calc((100vw - 720px + 30px) / 2);
   }
   .main-header .slider-wrapper .actions {
-    #{$start-direction}: calc((100vw - 720px + 30px) / 2);
+    // #{$start-direction}: calc((100vw - 720px + 30px) / 2);
   }
 
 
@@ -1302,12 +1318,14 @@ this UI is made desktop first.
             // height: auto;
             // padding-bottom: 35px;
             box-shadow: 0 -5px 15px rgba($color: #000, $alpha: 0.10);
+            height: 340px;
             &:hover{
               box-shadow: 0 -5px 20px rgba(0, 91, 83,  0.40);
             }
             p{
               line-height: 25px;
               font-size: 16px;
+              max-height: calc(25px * 2);
             }
           }
         }
@@ -1392,6 +1410,12 @@ this UI is made desktop first.
       }
     }
   }
+  .main-header .slider-wrapper .owl-carousel .owl-nav button.owl-prev{
+    #{$end-direction}: 71vw;
+  }
+  .main-header .slider-wrapper .owl-carousel .owl-nav button.owl-next{
+    #{$end-direction}: 66vw;
+  }
 }
 
 // Small devices (landscape phones, less than 768px)
@@ -1447,7 +1471,7 @@ this UI is made desktop first.
     #{$end-direction}: calc((100vw - 540px + 30px) / 2);
   }
   .main-header .slider-wrapper .actions {
-    #{$start-direction}: calc((100vw - 540px + 30px) / 2);
+    // #{$start-direction}: calc((100vw - 540px + 30px) / 2);
     bottom: 20px;
   }
   .main-header .slider-wrapper .owl-carousel .item .caption {
@@ -2119,8 +2143,15 @@ this UI is made desktop first.
 
     }
 
-    
-
+    .main-header .slider-wrapper .owl-carousel .owl-nav button.owl-prev{
+      #{$end-direction}: 76vw;
+    }
+    .main-header .slider-wrapper .owl-carousel .owl-nav button.owl-next{
+      #{$end-direction}: 69vw;
+    }
+    .main-header .slider-wrapper .actions {
+      #{$end-direction}: 5%;
+  }
 
 
 }
@@ -2548,6 +2579,16 @@ this UI is made desktop first.
     // flex-direction: column;
     margin-bottom: 10px;
   }
+  .main-header .slider-wrapper .owl-carousel .owl-nav button.owl-prev{
+    #{$end-direction}: auto;
+    #{$start-direction}: 8%;
+
+  }
+  .main-header .slider-wrapper .owl-carousel .owl-nav button.owl-next{
+    #{$end-direction}: auto;
+    #{$start-direction}: 19%;
+
+  }
 }
 
 
@@ -2584,5 +2625,47 @@ this UI is made desktop first.
         padding: 4px 7px;
       }
     }
+  }
+  .main-header .slider-wrapper .owl-carousel .owl-nav button.owl-next{
+    #{$end-direction}: auto;
+    #{$start-direction}: 22%;
+
+  }
+}
+
+
+
+
+// meedia max height
+@media (max-height: 850px) {
+  .main-header .slider-wrapper .actions{
+    top: auto;
+    bottom: 22%;
+  }
+  .main-header .slider-wrapper .owl-carousel .owl-nav button.owl-next, .main-header .slider-wrapper .owl-carousel .owl-nav button.owl-prev{
+    top: auto;
+    bottom: 20%;
+  }
+  .main-header .slider-wrapper .owl-carousel .item .caption{
+    top: auto;
+    bottom: 30%;
+  }
+}
+@media (max-height: 700px) {
+  .main-header .slider-wrapper .actions{
+    top: auto;
+    bottom: 12%;
+  }
+  .main-header .slider-wrapper .owl-carousel .owl-nav button.owl-next, .main-header .slider-wrapper .owl-carousel .owl-nav button.owl-prev{
+    top: auto;
+    bottom: 10%;
+  }
+  .main-header .slider-wrapper .owl-carousel .item .caption{
+    top: auto;
+    bottom: 20%;
+  }
+
+  .main-header .scroll-mouse{
+    bottom: 2%;
   }
 }
