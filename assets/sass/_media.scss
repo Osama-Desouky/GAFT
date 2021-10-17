@@ -164,6 +164,37 @@ this UI is made desktop first.
     height: 80px;
     bottom: 111px;
   }
+  .main-navbar {
+    .top-nav {
+      margin-top: 10px;
+      margin-bottom: 5px;
+      .nav-item.contact-us{
+        a{
+          padding: 0 25px;
+        }
+      }
+    }
+    #navbarSupportedContent > {
+      .navbar-nav  {
+        .dropdown-menu{
+          top: 89px;
+        }
+        > .nav-item{
+         > .nav-link{
+            padding: 18px 0 ;
+          }
+          &:last-child{
+            a{
+              padding-bottom: 10px;
+            }
+          }
+        }
+      }
+    }
+    .search-box{
+      top: 89px !important;
+    }
+  }
 }
 
 @media (max-width: 1399.97px) {
@@ -324,11 +355,11 @@ this UI is made desktop first.
         font-size: 14px;
       }
       .search-box{
-        top: 99px !important;
+        top: 89px !important;
       }
     }
     .navbar .dropdown-menu{
-      top: 99px !important;
+      top: 89px !important;
     }
     .our-services .owl-carousel .item .service-card:hover{
       transform: scale(1.03);
