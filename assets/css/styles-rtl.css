@@ -11167,6 +11167,8 @@ body.header-popup-open {
   width: 10px;
   height: 6px;
   background: transparent url("../images/top-nav-down-arrow.svg") 0% 0% no-repeat padding-box;
+  margin-left: 0;
+  margin-right: 0.255em;
 }
 
 .main-navbar #navbarSupportedContent > .navbar-nav > .nav-item > .nav-link.dropdown-toggle::before {

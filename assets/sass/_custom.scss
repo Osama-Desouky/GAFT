@@ -141,6 +141,8 @@ body.header-popup-open {
               height: 6px;
               background: transparent url($img-path + "top-nav-down-arrow.svg") 0% 0%
                 no-repeat padding-box;
+                margin-#{$end-direction}: 0;
+                margin-#{$start-direction}: 0.255em;
             }
             &::before {
               content: "";
