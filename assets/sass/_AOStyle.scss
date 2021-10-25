@@ -3438,42 +3438,42 @@ body .ui-widget-content a {
 }
 
 }
-.map-location-img.selected {
-  // width: 500px;
-  // height: 500px;
-  // margin: 0 auto;
-  // svg{
-  //   width: 100%;
-  //   height: 100%;
-  // }
-  #capital{
+// .map-location-img.selected {
+//   // width: 500px;
+//   // height: 500px;
+//   // margin: 0 auto;
+//   // svg{
+//   //   width: 100%;
+//   //   height: 100%;
+//   // }
+//   #capital{
 
-    .circle-mid{
-      // animation-duration: 5s;
-      animation-delay: 10ms;
-    }
-    .circle-one{
-      // animation-duration: 4s;
-      animation-delay: 100ms;
-    }
-    .circle-two{
-      // animation-duration: 3s;
-      animation-delay: 200ms;
-    }
-  }
-}
-@keyframes flickerAnimation {
-  0%   { opacity:1; }
-  50%  { opacity:0.2; }
-  100% { opacity:1; }
-}
+//     .circle-mid{
+//       // animation-duration: 5s;
+//       animation-delay: 10ms;
+//     }
+//     .circle-one{
+//       // animation-duration: 4s;
+//       animation-delay: 100ms;
+//     }
+//     .circle-two{
+//       // animation-duration: 3s;
+//       animation-delay: 200ms;
+//     }
+//   }
+// }
+// @keyframes flickerAnimation {
+//   0%   { opacity:1; }
+//   50%  { opacity:0.2; }
+//   100% { opacity:1; }
+// }
 
-.animate-flicker {
-  //  -webkit-animation: flickerAnimation 1s infinite;
-  //  -moz-animation: flickerAnimation 1s infinite;
-  //  -o-animation: flickerAnimation 1s infinite;
-    animation: flickerAnimation 2s infinite;
-}
+// .animate-flicker {
+//   //  -webkit-animation: flickerAnimation 1s infinite;
+//   //  -moz-animation: flickerAnimation 1s infinite;
+//   //  -o-animation: flickerAnimation 1s infinite;
+//     animation: flickerAnimation 2s infinite;
+// }
 
 // 5555555555555555555555555555555555555
 /* ----------- fixing global issue ----------- */
