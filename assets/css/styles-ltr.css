@@ -15785,6 +15785,10 @@ p.on-space {
   margin-right: 0;
 }
 
+.white-bg {
+  background-color: #fff;
+}
+
 .headers-border {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -15821,6 +15825,510 @@ p.on-space {
   width: 98px;
   height: 4px;
   background-color: #EBEBEB;
+}
+
+.grey-sec {
+  background-color: #E5ECEC;
+}
+
+.organize-top {
+  margin: 0 auto;
+  margin-top: 56px;
+  margin-bottom: 59px;
+  max-width: 1360px;
+  text-align: center;
+}
+
+.organize-top h3 {
+  text-align: center;
+  font-size: 35px;
+  font-weight: 700;
+  color: #007066;
+  margin-bottom: 12px;
+}
+
+.organize-top p {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  color: #666666;
+  margin-bottom: 0;
+}
+
+.organizational-chart {
+  min-height: 200px;
+  padding-top: 49px;
+  padding-bottom: 100px;
+}
+
+.organizational-chart .inner-container {
+  max-width: 1700px !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  margin: 0 auto;
+}
+
+.organizational-chart .structure-container {
+  width: 1670px;
+  min-height: 1660px;
+}
+
+.organizational-chart .structure-container .structure-head {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.organizational-chart .structure-container .structure-head img {
+  max-width: 100%;
+  height: auto;
+}
+
+.organizational-chart .structure-container .structure-head h3 {
+  color: #CCA079;
+  font-size: 40px;
+  font-weight: 500;
+  margin-top: 17px;
+  margin-bottom: 0;
+}
+
+.organizational-chart .structure-container .level-one {
+  position: relative;
+  height: 200px;
+}
+
+.organizational-chart .structure-container .level-one::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: calc(50% - 654px);
+  width: 1360px;
+  height: 2px;
+  border-bottom: 2px solid #B2DBD7;
+}
+
+.organizational-chart .structure-container .level-one::after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  right: calc(50% - 7px);
+  width: 14px;
+  height: 14px;
+  background-color: #CCA079;
+  border-radius: 50%;
+}
+
+.organizational-chart .structure-container .level-one .main {
+  background-color: #007066;
+  color: #CCA079;
+  font-size: 35px;
+  font-weight: 700;
+  border-radius: 4px;
+  width: 234px;
+  height: 65px;
+  position: absolute;
+  top: 115px;
+  right: calc(50% - 117px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.organizational-chart .structure-container .level-one .main::before {
+  content: "";
+  position: absolute;
+  top: -117px;
+  right: calc(50% - 1px);
+  width: 2px;
+  height: 122px;
+  border-left: 2px solid #B2DBD7;
+  z-index: -1;
+}
+
+.organizational-chart .structure-container .level-one .main::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  right: calc(50% - 1px);
+  width: 2px;
+  height: 480px;
+  border-left: 2px solid #B2DBD7;
+  z-index: -1;
+}
+
+.organizational-chart .structure-container .level-one .sub1 {
+  background-color: #fff;
+  color: #CCA079;
+  border: 3px solid #007066;
+  font-size: 28px;
+  line-height: 36px;
+  padding: 0px 27px 6px;
+  border-radius: 4px;
+  top: 120px;
+}
+
+.organizational-chart .structure-container .level-one .sub1::before {
+  content: "";
+  position: absolute;
+  top: -123px;
+  right: calc(50% - 1px);
+  width: 2px;
+  height: 120px;
+  border-left: 2px solid #B2DBD7;
+  z-index: -1;
+}
+
+.organizational-chart .structure-container .level-one .sub1.sub1-a {
+  border-style: dashed;
+  position: absolute;
+  right: 2px;
+}
+
+.organizational-chart .structure-container .level-one .sub1.sub1-a::after {
+  content: "";
+  position: absolute;
+  top: 24px;
+  right: 99%;
+  width: 410px;
+  height: 2px;
+  border-top: 2px dashed #BBBBBB;
+  z-index: -1;
+}
+
+.organizational-chart .structure-container .level-one .sub1.sub1-b {
+  position: absolute;
+  right: 1075px;
+}
+
+.organizational-chart .structure-container .level-one .sub1.sub1-c {
+  position: absolute;
+  right: 1431px;
+}
+
+.organizational-chart .structure-container .level-one-2 {
+  position: relative;
+  height: 400px;
+}
+
+.organizational-chart .structure-container .level-one-2 .sub1-two {
+  color: #013430;
+  font-size: 24px;
+  font-weight: 500;
+  background-color: #CCA079;
+  border-radius: 4px;
+  padding: 2px 30px 6px;
+  text-align: center;
+  width: 302px;
+  min-height: 55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+}
+
+.organizational-chart .structure-container .level-one-2 .sub1-two.sub1-two-a1 {
+  top: 55px;
+  right: 360px;
+}
+
+.organizational-chart .structure-container .level-one-2 .sub1-two.sub1-two-a1::before {
+  content: "";
+  position: absolute;
+  top: 27.5px;
+  right: 100%;
+  width: 172.5px;
+  height: 2px;
+  border-top: 2px solid #B2DBD7;
+  z-index: -1;
+}
+
+.organizational-chart .structure-container .level-one-2 .sub1-two.sub1-two-a2 {
+  top: 55px;
+  right: 1007px;
+}
+
+.organizational-chart .structure-container .level-one-2 .sub1-two.sub1-two-a2::before {
+  content: "";
+  position: absolute;
+  top: 27.5px;
+  left: 100%;
+  width: 172.5px;
+  height: 2px;
+  border-top: 2px solid #B2DBD7;
+  z-index: -1;
+}
+
+.organizational-chart .structure-container .level-one-2 .sub1-two.sub1-two-a2::after {
+  content: "";
+  position: absolute;
+  top: calc(50% - 7px);
+  right: -179.5px;
+  width: 14px;
+  height: 14px;
+  background-color: #CCA079;
+  border-radius: 50%;
+}
+
+.organizational-chart .structure-container .level-one-2 .sub1-two.sub1-two-b1 {
+  top: 183px;
+  right: 360px;
+}
+
+.organizational-chart .structure-container .level-one-2 .sub1-two.sub1-two-b1::before {
+  content: "";
+  position: absolute;
+  top: 27.5px;
+  right: 100%;
+  width: 172.5px;
+  height: 2px;
+  border-top: 2px solid #B2DBD7;
+  z-index: -1;
+}
+
+.organizational-chart .structure-container .level-one-2 .sub1-two.sub1-two-b2 {
+  top: 250px;
+  right: 25px;
+}
+
+.organizational-chart .structure-container .level-one-2 .sub1-two.sub1-two-b2::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  width: 413px;
+  height: 2px;
+  border-top: 2px solid #B2DBD7;
+  z-index: -1;
+}
+
+.organizational-chart .structure-container .level-one-2 .sub1-two.sub1-two-b3 {
+  top: 335px;
+  right: 360px;
+}
+
+.organizational-chart .structure-container .level-one-2 .sub1-two.sub1-two-b3::before {
+  content: "";
+  position: absolute;
+  top: 27.5px;
+  right: 100%;
+  width: 77px;
+  height: 2px;
+  border-top: 2px solid #B2DBD7;
+  z-index: -1;
+}
+
+.organizational-chart .structure-container .level-one-2 .sub1-two.sub1-two-b3::after {
+  content: "";
+  position: absolute;
+  bottom: 48%;
+  right: 379px;
+  width: 2px;
+  height: 153px;
+  border-left: 2px solid #B2DBD7;
+  z-index: -1;
+}
+
+.organizational-chart .structure-container .level-one-2 .sub1-two.sub1-two-b4 {
+  top: 183px;
+  right: 1007px;
+}
+
+.organizational-chart .structure-container .level-one-2 .sub1-two.sub1-two-b4::before {
+  content: "";
+  position: absolute;
+  top: 27.5px;
+  left: 100%;
+  width: 172.5px;
+  height: 2px;
+  border-top: 2px solid #B2DBD7;
+  z-index: -1;
+}
+
+.organizational-chart .structure-container .level-one-2 .sub1-two.sub1-two-b4::after {
+  content: "";
+  position: absolute;
+  top: calc(50% - 7px);
+  right: -179.5px;
+  width: 14px;
+  height: 14px;
+  background-color: #CCA079;
+  border-radius: 50%;
+}
+
+.organizational-chart .structure-container .level-one-2 .sub1-two.sub1-two-b5 {
+  top: 335px;
+  right: 1007px;
+}
+
+.organizational-chart .structure-container .level-one-2 .sub1-two.sub1-two-b5::before {
+  content: "";
+  position: absolute;
+  top: 27.5px;
+  left: 100%;
+  width: 77px;
+  height: 2px;
+  border-top: 2px solid #B2DBD7;
+  z-index: -1;
+}
+
+.organizational-chart .structure-container .level-one-2 .sub1-two.sub1-two-b5::after {
+  content: "";
+  position: absolute;
+  bottom: 48%;
+  left: 379px;
+  width: 2px;
+  height: 153px;
+  border-left: 2px solid #B2DBD7;
+  z-index: -1;
+}
+
+.organizational-chart .structure-container .level-one-3 {
+  position: relative;
+  height: 500px;
+  top: 60px;
+}
+
+.organizational-chart .structure-container .level-one-3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: calc(50% - 654px);
+  width: 1350px;
+  height: 2px;
+  border-bottom: 2px solid #B2DBD7;
+}
+
+.organizational-chart .structure-container .level-one-3::after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  right: calc(50% - 7px);
+  width: 14px;
+  height: 14px;
+  background-color: #CCA079;
+  border-radius: 50%;
+}
+
+.organizational-chart .structure-container .level-one-3 .sub1-three {
+  position: absolute;
+}
+
+.organizational-chart .structure-container .level-one-3 .sub1-three .main-card {
+  background-color: #686868;
+  color: #fff;
+  border-radius: 4px;
+  padding-top: 0;
+  padding-bottom: 6px;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 400;
+  width: 264px;
+  min-height: 79px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.organizational-chart .structure-container .level-one-3 .sub1-three .main-card::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 130px;
+  border-left: 2px solid #B2DBD7;
+  left: 50%;
+  bottom: 100%;
+}
+
+.organizational-chart .structure-container .level-one-3 .sub1-three ul {
+  list-style: none;
+  padding: 0;
+  position: relative;
+  top: 47px;
+}
+
+.organizational-chart .structure-container .level-one-3 .sub1-three ul::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 48px;
+  border-left: 2px solid #B2DBD7;
+  left: 50%;
+  bottom: 100%;
+  z-index: -1;
+}
+
+.organizational-chart .structure-container .level-one-3 .sub1-three ul li {
+  background-color: #F8F8F8;
+  color: #012D29;
+  border-radius: 4px;
+  padding-top: 0;
+  padding-bottom: 9px;
+  padding-left: 13px;
+  padding-right: 15px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 400;
+  width: 264px;
+  height: 79px;
+  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.organizational-chart .structure-container .level-one-3 .sub1-three ul li.borderd-card {
+  border: 3px dashed #BBBBBB;
+  background-color: #fff;
+}
+
+.organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a1 {
+  right: 50px;
+  top: 130px;
+}
+
+.organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a2 {
+  right: 375px;
+  top: 130px;
+}
+
+.organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a3 {
+  right: 704px;
+  top: 130px;
+}
+
+.organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a4 {
+  right: 1060px;
+  top: 130px;
+}
+
+.organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a5 {
+  right: 1400px;
+  top: 130px;
 }
 
 .ms-webpartzone-cell {
@@ -19765,50 +20273,6 @@ body .ui-widget-content a {
   direction: ltr;
 }
 
-.map-location-img.selected #capital .circle-mid {
-  -webkit-animation-delay: 10ms;
-          animation-delay: 10ms;
-}
-
-.map-location-img.selected #capital .circle-one {
-  -webkit-animation-delay: 100ms;
-          animation-delay: 100ms;
-}
-
-.map-location-img.selected #capital .circle-two {
-  -webkit-animation-delay: 200ms;
-          animation-delay: 200ms;
-}
-
-@-webkit-keyframes flickerAnimation {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.2;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes flickerAnimation {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.2;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-.animate-flicker {
-  -webkit-animation: flickerAnimation 2s infinite;
-          animation: flickerAnimation 2s infinite;
-}
-
 /* ----------- fixing global issue ----------- */
 @media (min-device-width: 1401px) and (max-device-width: 1500px) {
   .backgroundOrImage .container::before {
@@ -22564,6 +23028,163 @@ this UI is made desktop first.
   }
   .main-header .slider-wrapper .owl-carousel .owl-nav button.owl-next {
     right: 66vw;
+  }
+  .organizational-chart .structure-container .structure-head {
+    margin-bottom: 20px;
+  }
+  .organizational-chart .structure-container .structure-head h3 {
+    font-size: 25px;
+    margin-top: 10px;
+  }
+  .organizational-chart .inner-container {
+    max-width: 1000px !important;
+  }
+  .organizational-chart .structure-container {
+    width: 1000px;
+  }
+  .organizational-chart .structure-container .level-one {
+    height: 150px;
+  }
+  .organizational-chart .structure-container .level-one::before {
+    left: calc(50% - 391px);
+    width: 821px;
+  }
+  .organizational-chart .structure-container .level-one::after {
+    left: calc(50% - 7.5px);
+  }
+  .organizational-chart .structure-container .level-one .main {
+    width: 175px;
+    height: 55px;
+    top: 90px;
+    font-size: 25px;
+    left: calc(50% - 88px);
+  }
+  .organizational-chart .structure-container .level-one .main::before {
+    top: -90px;
+    height: 90px;
+  }
+  .organizational-chart .structure-container .level-one .main::after {
+    height: 465px;
+  }
+  .organizational-chart .structure-container .level-one .sub1 {
+    font-size: 17px;
+    line-height: 32px;
+    top: 95px;
+    padding: 0px 15px 6px;
+    min-width: 140px;
+    text-align: center;
+  }
+  .organizational-chart .structure-container .level-one .sub1::before {
+    top: -96px;
+    height: 97px;
+  }
+  .organizational-chart .structure-container .level-one .sub1.sub1-a::after {
+    width: 205px;
+  }
+  .organizational-chart .structure-container .level-one .sub1.sub1-b {
+    left: 655px;
+  }
+  .organizational-chart .structure-container .level-one .sub1.sub1-c {
+    left: 859px;
+  }
+  .organizational-chart .structure-container .level-one-2 .sub1-two {
+    font-size: 16px;
+    padding: 7px 15px 7px;
+    width: 200px;
+  }
+  .organizational-chart .structure-container .level-one-2 .sub1-two.sub1-two-a1 {
+    left: 225px;
+  }
+  .organizational-chart .structure-container .level-one-2 .sub1-two.sub1-two-a1::before {
+    width: 75px;
+  }
+  .organizational-chart .structure-container .level-one-2 .sub1-two.sub1-two-a2 {
+    left: 575px;
+  }
+  .organizational-chart .structure-container .level-one-2 .sub1-two.sub1-two-a2::before {
+    width: 75px;
+  }
+  .organizational-chart .structure-container .level-one-2 .sub1-two.sub1-two-a2::after {
+    left: -82.5px;
+  }
+  .organizational-chart .structure-container .level-one-2 .sub1-two.sub1-two-b1 {
+    left: 225px;
+  }
+  .organizational-chart .structure-container .level-one-2 .sub1-two.sub1-two-b1::before {
+    width: 75px;
+  }
+  .organizational-chart .structure-container .level-one-2 .sub1-two.sub1-two-b4 {
+    left: 575px;
+  }
+  .organizational-chart .structure-container .level-one-2 .sub1-two.sub1-two-b4::before {
+    width: 75px;
+  }
+  .organizational-chart .structure-container .level-one-2 .sub1-two.sub1-two-b4::after {
+    left: -82.5px;
+  }
+  .organizational-chart .structure-container .level-one-2 .sub1-two.sub1-two-b2::before {
+    width: 225px;
+  }
+  .organizational-chart .structure-container .level-one-2 .sub1-two.sub1-two-b3 {
+    left: 225px;
+    top: 325px;
+  }
+  .organizational-chart .structure-container .level-one-2 .sub1-two.sub1-two-b3::before {
+    width: 23px;
+  }
+  .organizational-chart .structure-container .level-one-2 .sub1-two.sub1-two-b3::after {
+    left: 223px;
+    height: 144px;
+  }
+  .organizational-chart .structure-container .level-one-2 .sub1-two.sub1-two-b5 {
+    left: 575px;
+    top: 325px;
+  }
+  .organizational-chart .structure-container .level-one-2 .sub1-two.sub1-two-b5::before {
+    width: 23px;
+  }
+  .organizational-chart .structure-container .level-one-2 .sub1-two.sub1-two-b5::after {
+    right: 223px;
+    height: 144px;
+  }
+  .organizational-chart .structure-container .level-one-3::before {
+    left: calc(50% - 417px);
+    width: 830px;
+  }
+  .organizational-chart .structure-container .level-one-3 .sub1-three .main-card {
+    padding-right: 15px;
+    padding-left: 15px;
+    font-size: 16px;
+    width: 170px;
+  }
+  .organizational-chart .structure-container .level-one-3 .sub1-three .main-card::before {
+    height: 89px;
+  }
+  .organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a1 {
+    left: 0;
+    top: 90px;
+  }
+  .organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a2 {
+    left: 205px;
+    top: 90px;
+  }
+  .organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a3 {
+    left: 415px;
+    top: 90px;
+  }
+  .organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a4 {
+    left: 620px;
+    top: 90px;
+  }
+  .organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a5 {
+    left: 828px;
+    top: 90px;
+  }
+  .organizational-chart .structure-container .level-one-3 .sub1-three ul li {
+    font-size: 15px;
+    width: 170px;
+    height: auto;
+    min-height: 79px;
   }
 }
 

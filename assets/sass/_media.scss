@@ -197,6 +197,7 @@ this UI is made desktop first.
   }
 }
 
+
 @media (max-width: 1399.97px) {
   .main-navbar #navbarSupportedContent > .navbar-nav > .nav-item {
     margin-left: auto;
@@ -1446,6 +1447,184 @@ this UI is made desktop first.
   }
   .main-header .slider-wrapper .owl-carousel .owl-nav button.owl-next{
     #{$end-direction}: 66vw;
+  }
+
+
+  // مجلس الادارة
+  .organizational-chart .structure-container .structure-head {
+    margin-bottom: 20px;
+    h3{
+      font-size: 25px;
+      margin-top: 10px;
+    }
+  }
+  .organizational-chart {
+    .inner-container{
+      max-width: 1000px !important;
+    }
+    .structure-container {
+      width: 1000px;
+      .level-one {
+        height: 150px;
+        &::before{
+          #{$start-direction}: calc(50% - 391px);
+          width: 821px;
+        }
+        &::after{
+          #{$start-direction}: calc(50% - 7.5px);
+        }
+        .main{
+          width: 175px;
+          height: 55px;
+          top: 90px;
+          font-size: 25px;
+          #{$start-direction}: calc(50% - 88px);
+          &::before{
+            top: -90px;
+            height: 90px;
+           
+          }
+          &::after{
+            height: 465px;
+          }
+        }
+        .sub1{
+          font-size: 17px;
+          line-height: 32px;
+          top: 95px;
+          padding: 0px 15px 6px;
+          min-width: 140px;
+          text-align: center;
+          &::before{
+            top: -96px;
+            height: 97px;
+          }
+          &.sub1-a{
+            &::after{
+              width: 205px;
+            }
+          }
+          &.sub1-b{
+            #{$start-direction}: 655px
+          }
+          &.sub1-c{
+            #{$start-direction}: 859px
+          }
+        }
+      }
+
+      .level-one-2 {
+        .sub1-two{
+          font-size: 16px;
+          padding: 7px 15px 7px;
+          width: 200px;
+
+          &.sub1-two-a1{
+            #{$start-direction}: 225px;
+            &::before{
+              width: 75px;
+            }
+          }
+          &.sub1-two-a2{
+            #{$start-direction}: 575px;
+            &::before{
+              width: 75px;
+            }
+            &::after{
+              #{$start-direction}: -82.5px;
+            }
+          }
+          &.sub1-two-b1{
+            #{$start-direction}: 225px;
+            &::before{
+              width: 75px;
+            }
+          }
+          &.sub1-two-b4{
+            #{$start-direction}: 575px;
+            &::before{
+              width: 75px;
+            }
+            &::after{
+              #{$start-direction}: -82.5px;
+            }
+          }
+          &.sub1-two-b2{
+            &::before{
+              width: 225px;
+            }
+          }
+          &.sub1-two-b3{
+            #{$start-direction}: 225px;
+            top: 325px;
+            &::before{
+              width: 23px;
+            }
+            &::after{
+              #{$start-direction}: 223px;
+              height: 144px;
+            }
+          }
+          &.sub1-two-b5{
+            #{$start-direction}: 575px;
+            top: 325px;
+            &::before{
+              width: 23px;
+            }
+            &::after{
+              #{$end-direction}: 223px;
+              height: 144px;
+            }
+          }
+        }
+      }
+      .level-one-3 {
+        &::before{
+          #{$start-direction}: calc(50% - 417px);
+          width: 830px;
+        }
+        .sub1-three {
+          .main-card{
+            padding-right: 15px;
+            padding-left: 15px;
+            font-size: 16px;
+            width: 170px;
+            &::before{
+              height: 89px;
+            }
+          }
+          &.sub1-three-a1{
+            #{$start-direction}: 0;
+            top: 90px;
+          }
+          &.sub1-three-a2{
+            #{$start-direction}: 205px;
+            top: 90px;
+          }
+          &.sub1-three-a3{
+            #{$start-direction}: 415px;
+            top: 90px;
+          }
+          &.sub1-three-a4{
+            #{$start-direction}: 620px;
+            top: 90px;
+          }
+          &.sub1-three-a5{
+            #{$start-direction}: 828px;
+            top: 90px;
+          }
+          
+          ul{
+            li{
+              font-size: 15px;
+              width: 170px;
+              height: auto;
+              min-height: 79px;
+            }
+          }
+        }
+      }
+    }
   }
 }
 
