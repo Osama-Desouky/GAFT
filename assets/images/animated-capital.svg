@@ -1,0 +1,39 @@
+   <svg xmlns="http://www.w3.org/2000/svg" width="49.39" height="69.403" viewBox="0 0 49.39 69.403">
+      <style>
+        
+        @keyframes flickerAnimation {
+          0%   { opacity:1; }
+          50%  { opacity:0.2; }
+          100% { opacity:1; }
+        }
+
+        .animate-flicker {
+            animation: flickerAnimation 2s infinite;
+        }
+
+         #capital .circle-mid{
+          animation-delay: 10ms;
+        }
+         #capital .circle-one{
+          animation-delay: 100ms;
+        }
+         #capital .circle-two{
+          animation-delay: 200ms;
+        }
+
+      </style>
+        <g id="Group_26022" data-name="Group 26022" transform="translate(-1358.231 -485.521)">
+          <path id="ic_location_on_24px" d="M20.648,2A15.636,15.636,0,0,0,5,17.648c0,11.736,15.648,29.06,15.648,29.06S36.3,29.384,36.3,17.648A15.636,15.636,0,0,0,20.648,2Zm0,21.236a5.589,5.589,0,1,1,5.589-5.589A5.591,5.591,0,0,1,20.648,23.236Z" transform="translate(1362.278 483.521)" fill="#cca079"/>
+          <g id="capital" transform="translate(1358.231 505.533)" opacity="0.5">
+            <circle id="Ellipse_11715" class="circle-mid animate-flicker" data-name="Ellipse 11715" cx="8.024" cy="8.024" r="8.024" transform="translate(16.674 16.671)" fill="#cca079"/>
+            <g id="cr1" transform="translate(8.009 8.009)" fill="none" stroke="#cca079" stroke-width="1.5" class="circle-one animate-flicker">
+              <circle cx="16.686" cy="16.686" r="16.686" stroke="none"/>
+              <circle cx="16.686" cy="16.686" r="15.936" fill="none"/>
+            </g>
+            <g id="cr2" fill="none" stroke="#cca079" stroke-width="1" class="circle-two animate-flicker">
+              <circle cx="24.695" cy="24.695" r="24.695" stroke="none"/>
+              <circle cx="24.695" cy="24.695" r="24.195" fill="none"/>
+            </g>
+          </g>
+        </g>
+      </svg>
