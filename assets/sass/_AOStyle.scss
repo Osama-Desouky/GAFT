@@ -1535,6 +1535,10 @@ body {
     }
     .titleBox {
       height: 40px;
+      line-height: 40px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
     }
     .praghBox {
       height: 100px;
@@ -1727,7 +1731,7 @@ body {
     }
     .ransforSec {
       transform: translateY(34px);
-      transition: transform .3s;
+      transition: transform .6s;
     }
     .iconRuleBX {
       padding-bottom: 18px;
@@ -1756,7 +1760,7 @@ body {
     }
     .showBox {
       visibility: hidden;
-      transition: transform .28s , visibility .28s;
+      transition: transform .6s , visibility .5s;
       height: 0;
       transform: translateY(30px);
       .viewBtn {
@@ -2930,6 +2934,10 @@ body .ui-widget-content a {
 		.headingNewJ {
 			font-size: 24px;
 			color: #012D29;
+      height: 40px;
+      line-height: 1;
+      display: flex;
+      align-items: center;
 		}
 		.dateS {
 			display: flex;
@@ -2959,6 +2967,9 @@ body .ui-widget-content a {
 			justify-content: center;
 		}
 	}
+  .showBox {
+    padding-top: 7px;
+  }
 }
 
 .bannerSliderSecNewXD {
@@ -2993,10 +3004,13 @@ body .ui-widget-content a {
       .boxTextNew {
         padding-#{$end-direction}: 290px;
         .titleNews {
-          font-size: 28px;
-          margin-bottom: 11px;
-          color: $mainColor;
-          font-weight: 500;
+          a {
+            font-size: 28px;
+            margin-bottom: 11px;
+            color: $mainColor;
+            font-weight: 500; 
+            font-family: "DINNextLT";
+          }
         }
         .PraghTextBNR {
           font-size: 1.5rem;
@@ -3005,6 +3019,7 @@ body .ui-widget-content a {
           margin-bottom: 17px;
           max-height: 150px;
           overflow: hidden;
+          font-family: "DINNextLT";
         }
         .btnForm {
           padding: 10px 38px !important;
