@@ -15857,7 +15857,7 @@ p.on-space {
 
 .organizational-chart {
   min-height: 200px;
-  padding-top: 49px;
+  padding-top: 60px;
   padding-bottom: 100px;
 }
 
@@ -15871,11 +15871,17 @@ p.on-space {
 .organizational-chart .structure-container {
   width: 1670px;
   min-height: 1660px;
+  padding-top: 100px;
 }
 
 .organizational-chart .structure-container .structure-head {
-  text-align: center;
-  margin-bottom: 35px;
+  position: absolute;
+  left: calc(50% - 137px);
+  top: -30px;
+  background-color: #cca079;
+  border-radius: 4px;
+  height: 65px;
+  width: 275px;
 }
 
 .organizational-chart .structure-container .structure-head img {
@@ -15884,24 +15890,27 @@ p.on-space {
 }
 
 .organizational-chart .structure-container .structure-head h3 {
-  color: #CCA079;
+  color: #fff;
   font-size: 40px;
   font-weight: 500;
-  margin-top: 17px;
   margin-bottom: 0;
+  line-height: 54px;
+  margin-bottom: 0;
+  padding: 0 15px 6px;
+  text-align: center;
 }
 
 .organizational-chart .structure-container .level-one {
   position: relative;
-  height: 200px;
+  height: 290px;
 }
 
 .organizational-chart .structure-container .level-one::before {
   content: "";
   position: absolute;
   top: 0;
-  right: calc(50% - 654px);
-  width: 1360px;
+  left: calc(50% - 287px);
+  width: 150px;
   height: 2px;
   border-bottom: 2px solid #B2DBD7;
 }
@@ -15910,11 +15919,12 @@ p.on-space {
   content: "";
   position: absolute;
   top: -5px;
-  right: calc(50% - 7px);
+  left: calc(50% - 7px);
   width: 14px;
   height: 14px;
   background-color: #CCA079;
   border-radius: 50%;
+  display: none;
 }
 
 .organizational-chart .structure-container .level-one .main {
@@ -15926,8 +15936,8 @@ p.on-space {
   width: 234px;
   height: 65px;
   position: absolute;
-  top: 115px;
-  right: calc(50% - 117px);
+  top: 214px;
+  left: calc(50% - 117px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -15942,10 +15952,10 @@ p.on-space {
 .organizational-chart .structure-container .level-one .main::before {
   content: "";
   position: absolute;
-  top: -117px;
-  right: calc(50% - 1px);
+  top: -185px;
+  left: calc(50% - 1px);
   width: 2px;
-  height: 122px;
+  height: 190px;
   border-left: 2px solid #B2DBD7;
   z-index: -1;
 }
@@ -15954,9 +15964,9 @@ p.on-space {
   content: "";
   position: absolute;
   top: 100%;
-  right: calc(50% - 1px);
+  left: calc(50% - 1px);
   width: 2px;
-  height: 480px;
+  height: 395px;
   border-left: 2px solid #B2DBD7;
   z-index: -1;
 }
@@ -15970,31 +15980,33 @@ p.on-space {
   padding: 0px 27px 6px;
   border-radius: 4px;
   top: 120px;
-}
-
-.organizational-chart .structure-container .level-one .sub1::before {
-  content: "";
-  position: absolute;
-  top: -123px;
-  right: calc(50% - 1px);
-  width: 2px;
-  height: 120px;
-  border-left: 2px solid #B2DBD7;
-  z-index: -1;
+  text-align: center;
 }
 
 .organizational-chart .structure-container .level-one .sub1.sub1-a {
   border-style: dashed;
   position: absolute;
-  right: 2px;
+  left: 190px;
+  top: -25px;
+}
+
+.organizational-chart .structure-container .level-one .sub1.sub1-a::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: calc(50% - 1px);
+  width: 2px;
+  height: 230px;
+  border-left: 2px dashed #BBBBBB;
+  z-index: -1;
 }
 
 .organizational-chart .structure-container .level-one .sub1.sub1-a::after {
   content: "";
   position: absolute;
-  top: 24px;
-  right: 99%;
-  width: 410px;
+  top: 270px;
+  left: 175px;
+  width: 355px;
   height: 2px;
   border-top: 2px dashed #BBBBBB;
   z-index: -1;
@@ -16002,28 +16014,56 @@ p.on-space {
 
 .organizational-chart .structure-container .level-one .sub1.sub1-b {
   position: absolute;
-  right: 1075px;
+  left: 1124px;
+  top: 70px;
+  width: 238px;
+  height: 48px;
+}
+
+.organizational-chart .structure-container .level-one .sub1.sub1-b::before {
+  content: "";
+  position: absolute;
+  top: 22px;
+  right: 100%;
+  width: 293px;
+  height: 2px;
+  border-top: 2px solid #B2DBD7;
+  z-index: -1;
 }
 
 .organizational-chart .structure-container .level-one .sub1.sub1-c {
   position: absolute;
-  right: 1431px;
+  left: 1124px;
+  top: 145px;
+  width: 238px;
+  height: 48px;
+}
+
+.organizational-chart .structure-container .level-one .sub1.sub1-c::before {
+  content: "";
+  position: absolute;
+  top: 22px;
+  right: 100%;
+  width: 293px;
+  height: 2px;
+  border-top: 2px solid #B2DBD7;
+  z-index: -1;
 }
 
 .organizational-chart .structure-container .level-one-2 {
   position: relative;
-  height: 400px;
+  height: 320px;
 }
 
 .organizational-chart .structure-container .level-one-2 .sub1-two {
   color: #013430;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 500;
   background-color: #CCA079;
   border-radius: 4px;
-  padding: 2px 30px 6px;
+  padding: 8px 18px 10px;
   text-align: center;
-  width: 302px;
+  width: 238px;
   min-height: 55px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -16039,31 +16079,31 @@ p.on-space {
 
 .organizational-chart .structure-container .level-one-2 .sub1-two.sub1-two-a1 {
   top: 55px;
-  right: 360px;
+  left: 1124px;
 }
 
 .organizational-chart .structure-container .level-one-2 .sub1-two.sub1-two-a1::before {
   content: "";
   position: absolute;
   top: 27.5px;
-  right: 100%;
-  width: 172.5px;
+  right: 99%;
+  width: 293px;
   height: 2px;
   border-top: 2px solid #B2DBD7;
   z-index: -1;
 }
 
 .organizational-chart .structure-container .level-one-2 .sub1-two.sub1-two-a2 {
-  top: 55px;
-  right: 1007px;
+  top: 161px;
+  left: 1124px;
 }
 
 .organizational-chart .structure-container .level-one-2 .sub1-two.sub1-two-a2::before {
   content: "";
   position: absolute;
   top: 27.5px;
-  left: 100%;
-  width: 172.5px;
+  right: 99%;
+  width: 293px;
   height: 2px;
   border-top: 2px solid #B2DBD7;
   z-index: -1;
@@ -16073,58 +16113,59 @@ p.on-space {
   content: "";
   position: absolute;
   top: calc(50% - 7px);
-  right: -179.5px;
+  left: -179.5px;
   width: 14px;
   height: 14px;
   background-color: #CCA079;
   border-radius: 50%;
+  display: none;
 }
 
 .organizational-chart .structure-container .level-one-2 .sub1-two.sub1-two-b1 {
-  top: 183px;
-  right: 360px;
+  top: 109px;
+  left: 560px;
 }
 
 .organizational-chart .structure-container .level-one-2 .sub1-two.sub1-two-b1::before {
   content: "";
   position: absolute;
-  top: 27.5px;
-  right: 100%;
-  width: 172.5px;
-  height: 2px;
-  border-top: 2px solid #B2DBD7;
+  top: 100%;
+  left: 50%;
+  width: 2px;
+  height: 25px;
+  border-left: 2px solid #B2DBD7;
   z-index: -1;
 }
 
 .organizational-chart .structure-container .level-one-2 .sub1-two.sub1-two-b2 {
-  top: 250px;
-  right: 25px;
+  top: 149.5px;
+  left: 13px;
 }
 
 .organizational-chart .structure-container .level-one-2 .sub1-two.sub1-two-b2::before {
   content: "";
   position: absolute;
   top: 50%;
-  right: 100%;
-  width: 413px;
+  left: 100%;
+  width: 585px;
   height: 2px;
   border-top: 2px solid #B2DBD7;
   z-index: -1;
 }
 
 .organizational-chart .structure-container .level-one-2 .sub1-two.sub1-two-b3 {
-  top: 335px;
-  right: 360px;
+  top: 109px;
+  left: 290px;
 }
 
 .organizational-chart .structure-container .level-one-2 .sub1-two.sub1-two-b3::before {
   content: "";
   position: absolute;
-  top: 27.5px;
-  right: 100%;
-  width: 77px;
-  height: 2px;
-  border-top: 2px solid #B2DBD7;
+  top: 100%;
+  left: 50%;
+  width: 2px;
+  height: 25px;
+  border-left: 2px solid #B2DBD7;
   z-index: -1;
 }
 
@@ -16132,26 +16173,27 @@ p.on-space {
   content: "";
   position: absolute;
   bottom: 48%;
-  right: 379px;
+  left: 379px;
   width: 2px;
   height: 153px;
-  border-left: 2px solid #B2DBD7;
+  border-right: 2px solid #B2DBD7;
   z-index: -1;
+  display: none;
 }
 
 .organizational-chart .structure-container .level-one-2 .sub1-two.sub1-two-b4 {
-  top: 183px;
-  right: 1007px;
+  top: 214px;
+  left: 560px;
 }
 
 .organizational-chart .structure-container .level-one-2 .sub1-two.sub1-two-b4::before {
   content: "";
   position: absolute;
-  top: 27.5px;
-  left: 100%;
-  width: 172.5px;
-  height: 2px;
-  border-top: 2px solid #B2DBD7;
+  bottom: 100%;
+  left: 50%;
+  width: 2px;
+  height: 25px;
+  border-left: 2px solid #B2DBD7;
   z-index: -1;
 }
 
@@ -16159,26 +16201,27 @@ p.on-space {
   content: "";
   position: absolute;
   top: calc(50% - 7px);
-  right: -179.5px;
+  left: -179.5px;
   width: 14px;
   height: 14px;
   background-color: #CCA079;
   border-radius: 50%;
+  display: none;
 }
 
 .organizational-chart .structure-container .level-one-2 .sub1-two.sub1-two-b5 {
-  top: 335px;
-  right: 1007px;
+  top: 214px;
+  left: 290px;
 }
 
 .organizational-chart .structure-container .level-one-2 .sub1-two.sub1-two-b5::before {
   content: "";
   position: absolute;
-  top: 27.5px;
-  left: 100%;
-  width: 77px;
-  height: 2px;
-  border-top: 2px solid #B2DBD7;
+  bottom: 100%;
+  left: 50%;
+  width: 2px;
+  height: 25px;
+  border-left: 2px solid #B2DBD7;
   z-index: -1;
 }
 
@@ -16186,11 +16229,12 @@ p.on-space {
   content: "";
   position: absolute;
   bottom: 48%;
-  left: 379px;
+  right: 379px;
   width: 2px;
   height: 153px;
-  border-left: 2px solid #B2DBD7;
+  border-right: 2px solid #B2DBD7;
   z-index: -1;
+  display: none;
 }
 
 .organizational-chart .structure-container .level-one-3 {
@@ -16203,7 +16247,7 @@ p.on-space {
   content: "";
   position: absolute;
   top: 0;
-  right: calc(50% - 654px);
+  left: calc(50% - 654px);
   width: 1350px;
   height: 2px;
   border-bottom: 2px solid #B2DBD7;
@@ -16213,7 +16257,7 @@ p.on-space {
   content: "";
   position: absolute;
   top: -5px;
-  right: calc(50% - 7px);
+  left: calc(50% - 7px);
   width: 14px;
   height: 14px;
   background-color: #CCA079;
@@ -16253,8 +16297,8 @@ p.on-space {
   position: absolute;
   width: 2px;
   height: 130px;
-  border-left: 2px solid #B2DBD7;
-  left: 50%;
+  border-right: 2px solid #B2DBD7;
+  right: 50%;
   bottom: 100%;
 }
 
@@ -16270,8 +16314,8 @@ p.on-space {
   position: absolute;
   width: 2px;
   height: 48px;
-  border-left: 2px solid #B2DBD7;
-  left: 50%;
+  border-right: 2px solid #B2DBD7;
+  right: 50%;
   bottom: 100%;
   z-index: -1;
 }
@@ -16307,27 +16351,27 @@ p.on-space {
 }
 
 .organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a1 {
-  right: 50px;
+  left: 50px;
   top: 130px;
 }
 
 .organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a2 {
-  right: 375px;
+  left: 375px;
   top: 130px;
 }
 
 .organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a3 {
-  right: 704px;
+  left: 704px;
   top: 130px;
 }
 
 .organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a4 {
-  right: 1060px;
+  left: 1060px;
   top: 130px;
 }
 
 .organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a5 {
-  right: 1400px;
+  left: 1400px;
   top: 130px;
 }
 
@@ -23048,11 +23092,12 @@ this UI is made desktop first.
     right: 66vw;
   }
   .organizational-chart .structure-container .structure-head {
-    margin-bottom: 20px;
+    height: 57px;
+    width: 225px;
+    left: calc(50% + 16px);
   }
   .organizational-chart .structure-container .structure-head h3 {
     font-size: 25px;
-    margin-top: 10px;
   }
   .organizational-chart .inner-container {
     max-width: 1000px !important;
@@ -23061,11 +23106,10 @@ this UI is made desktop first.
     width: 1000px;
   }
   .organizational-chart .structure-container .level-one {
-    height: 150px;
+    height: 255px;
   }
   .organizational-chart .structure-container .level-one::before {
-    left: calc(50% - 391px);
-    width: 821px;
+    left: calc(50% - 132px);
   }
   .organizational-chart .structure-container .level-one::after {
     left: calc(50% - 7.5px);
@@ -23073,16 +23117,15 @@ this UI is made desktop first.
   .organizational-chart .structure-container .level-one .main {
     width: 175px;
     height: 55px;
-    top: 90px;
+    top: 180px;
     font-size: 25px;
-    left: calc(50% - 88px);
+    left: calc(50% + 40px);
   }
   .organizational-chart .structure-container .level-one .main::before {
-    top: -90px;
-    height: 90px;
+    top: -189px;
   }
   .organizational-chart .structure-container .level-one .main::after {
-    height: 465px;
+    height: 345px;
   }
   .organizational-chart .structure-container .level-one .sub1 {
     font-size: 17px;
@@ -23092,78 +23135,83 @@ this UI is made desktop first.
     min-width: 140px;
     text-align: center;
   }
-  .organizational-chart .structure-container .level-one .sub1::before {
-    top: -96px;
-    height: 97px;
+  .organizational-chart .structure-container .level-one .sub1.sub1-a {
+    left: 173px;
+  }
+  .organizational-chart .structure-container .level-one .sub1.sub1-a::before {
+    height: 192px;
   }
   .organizational-chart .structure-container .level-one .sub1.sub1-a::after {
-    width: 205px;
+    width: 265px;
+    left: 104px;
+    top: 230px;
   }
   .organizational-chart .structure-container .level-one .sub1.sub1-b {
-    left: 655px;
+    left: 783px;
+    width: 195px;
+    height: 42px;
+    top: 50px;
+  }
+  .organizational-chart .structure-container .level-one .sub1.sub1-b::before {
+    width: 160px;
+    top: 18px;
   }
   .organizational-chart .structure-container .level-one .sub1.sub1-c {
-    left: 859px;
+    left: 783px;
+    width: 195px;
+    height: 42px;
+    height: 42px;
+    top: 125px;
+  }
+  .organizational-chart .structure-container .level-one .sub1.sub1-c::before {
+    width: 160px;
+    top: 18px;
+  }
+  .organizational-chart .structure-container .level-one-2 {
+    height: 265px;
   }
   .organizational-chart .structure-container .level-one-2 .sub1-two {
-    font-size: 16px;
-    padding: 7px 15px 7px;
-    width: 200px;
+    font-size: 15px;
+    padding: 7px 8px 7px;
+    width: 175px;
   }
   .organizational-chart .structure-container .level-one-2 .sub1-two.sub1-two-a1 {
-    left: 225px;
+    left: 783px;
   }
   .organizational-chart .structure-container .level-one-2 .sub1-two.sub1-two-a1::before {
-    width: 75px;
+    width: 158px;
   }
   .organizational-chart .structure-container .level-one-2 .sub1-two.sub1-two-a2 {
-    left: 575px;
+    left: 783px;
+    top: 151px;
   }
   .organizational-chart .structure-container .level-one-2 .sub1-two.sub1-two-a2::before {
-    width: 75px;
-  }
-  .organizational-chart .structure-container .level-one-2 .sub1-two.sub1-two-a2::after {
-    left: -82.5px;
+    width: 158px;
   }
   .organizational-chart .structure-container .level-one-2 .sub1-two.sub1-two-b1 {
-    left: 225px;
-  }
-  .organizational-chart .structure-container .level-one-2 .sub1-two.sub1-two-b1::before {
-    width: 75px;
+    left: 400px;
+    top: 100px;
   }
   .organizational-chart .structure-container .level-one-2 .sub1-two.sub1-two-b4 {
-    left: 575px;
+    left: 400px;
+    top: 204px;
   }
-  .organizational-chart .structure-container .level-one-2 .sub1-two.sub1-two-b4::before {
-    width: 75px;
-  }
-  .organizational-chart .structure-container .level-one-2 .sub1-two.sub1-two-b4::after {
-    left: -82.5px;
+  .organizational-chart .structure-container .level-one-2 .sub1-two.sub1-two-b2 {
+    left: 0px;
   }
   .organizational-chart .structure-container .level-one-2 .sub1-two.sub1-two-b2::before {
-    width: 225px;
+    width: 452px;
   }
   .organizational-chart .structure-container .level-one-2 .sub1-two.sub1-two-b3 {
-    left: 225px;
-    top: 325px;
-  }
-  .organizational-chart .structure-container .level-one-2 .sub1-two.sub1-two-b3::before {
-    width: 23px;
-  }
-  .organizational-chart .structure-container .level-one-2 .sub1-two.sub1-two-b3::after {
-    left: 223px;
-    height: 144px;
+    left: 200px;
+    top: 100px;
   }
   .organizational-chart .structure-container .level-one-2 .sub1-two.sub1-two-b5 {
-    left: 575px;
-    top: 325px;
+    left: 200px;
+    top: 204px;
   }
-  .organizational-chart .structure-container .level-one-2 .sub1-two.sub1-two-b5::before {
-    width: 23px;
-  }
-  .organizational-chart .structure-container .level-one-2 .sub1-two.sub1-two-b5::after {
-    right: 223px;
-    height: 144px;
+  .organizational-chart .structure-container .level-one-3 {
+    left: 128px;
   }
   .organizational-chart .structure-container .level-one-3::before {
     left: calc(50% - 417px);
