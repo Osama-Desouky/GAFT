@@ -15870,7 +15870,7 @@ p.on-space {
 
 .organizational-chart .structure-container {
   width: 1670px;
-  min-height: 1660px;
+  min-height: 2186px;
   padding-top: 100px;
 }
 
@@ -16281,8 +16281,8 @@ p.on-space {
   content: "";
   position: absolute;
   top: 0;
-  right: calc(50% - 654px);
-  width: 1350px;
+  right: calc(50% - 556px);
+  width: 1133px;
   height: 2px;
   border-bottom: 2px solid #B2DBD7;
 }
@@ -16302,18 +16302,59 @@ p.on-space {
   position: absolute;
 }
 
+.organizational-chart .structure-container .level-one-3 .sub1-three .level2sub2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 43px;
+}
+
+.organizational-chart .structure-container .level-one-3 .sub1-three .level2sub2::after {
+  position: absolute;
+  content: "";
+  width: 270px;
+  height: 2px;
+  border-top: 2px solid #B2DBD7;
+  right: 108px;
+}
+
+.organizational-chart .structure-container .level-one-3 .sub1-three .level2sub2 .headLevel {
+  background: #E5E5E5;
+  padding: 0 5px;
+}
+
+.organizational-chart .structure-container .level-one-3 .sub1-three .level2sub2 li {
+  margin-bottom: 22px;
+  position: relative;
+  z-index: 2;
+}
+
+.organizational-chart .structure-container .level-one-3 .sub1-three .level2sub2 li:not(:last-of-type)::after {
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 22px;
+  border-left: 2px solid #B2DBD7;
+  bottom: -22px;
+  z-index: 2;
+}
+
+.organizational-chart .structure-container .level-one-3 .sub1-three .level2sub2 ul:not(:first-of-type) {
+  margin-right: 55px;
+}
+
 .organizational-chart .structure-container .level-one-3 .sub1-three .main-card {
   background-color: #686868;
   color: #fff;
   border-radius: 4px;
   padding-top: 0;
   padding-bottom: 6px;
-  padding-right: 30px;
-  padding-left: 30px;
+  padding-right: 19px;
+  padding-left: 19px;
   text-align: center;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 400;
-  width: 264px;
+  width: 226px;
   min-height: 79px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -16324,6 +16365,7 @@ p.on-space {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin: 0 auto;
 }
 
 .organizational-chart .structure-container .level-one-3 .sub1-three .main-card::before {
@@ -16334,6 +16376,16 @@ p.on-space {
   border-left: 2px solid #B2DBD7;
   left: 50%;
   bottom: 100%;
+}
+
+.organizational-chart .structure-container .level-one-3 .sub1-three .main-card::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 45px;
+  border-left: 2px solid #B2DBD7;
+  left: 50%;
+  top: 77px;
 }
 
 .organizational-chart .structure-container .level-one-3 .sub1-three ul {
@@ -16359,14 +16411,14 @@ p.on-space {
   color: #012D29;
   border-radius: 4px;
   padding-top: 0;
-  padding-bottom: 9px;
+  padding-bottom: 0px;
   padding-right: 13px;
   padding-left: 15px;
   text-align: center;
-  font-size: 24px;
+  font-size: 16px;
   font-weight: 400;
-  width: 264px;
-  height: 79px;
+  width: 216px;
+  height: 65px;
   margin-bottom: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -16384,29 +16436,246 @@ p.on-space {
   background-color: #fff;
 }
 
+.organizational-chart .structure-container .level-one-3 .sub1-three .forAbsoPostion {
+  position: absolute;
+  margin: 0;
+  top: 96px;
+  right: 128px;
+}
+
+.organizational-chart .structure-container .level-one-3 .sub1-three .forAbsoPostion::before {
+  height: 2px;
+  width: 35px;
+  border-bottom: 2px solid #B2DBD7;
+  right: 100%;
+  bottom: 65%;
+}
+
+.organizational-chart .structure-container .level-one-3 .sub1-three .headLevel {
+  background: #E5E5E5;
+}
+
 .organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a1 {
-  right: 50px;
+  right: 36px;
   top: 130px;
 }
 
 .organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a2 {
-  right: 375px;
-  top: 130px;
+  right: 180px;
+  top: 819px;
+}
+
+.organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a2 .level2sub2 {
+  margin-top: 100px;
+}
+
+.organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a2 .level2sub2::after {
+  right: 108px;
+  width: 541px;
+}
+
+.organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a2 .level2sub2 .crearMargin {
+  margin-right: 0;
+}
+
+.organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a2 .main-card::before {
+  height: 820px;
+}
+
+.organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a2 .main-card::after {
+  height: 100px;
+  top: 77px;
 }
 
 .organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a3 {
-  right: 704px;
+  right: 586px;
   top: 130px;
+  width: 500px;
+}
+
+.organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a3 .level2sub2B {
+  margin-top: 42px;
+}
+
+.organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a3 .level2sub2B .forAbsoPostion {
+  top: 92px;
+  right: -3px;
+}
+
+.organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a3 .level2sub2B ul:not(.forAbsoPostion)::after {
+  position: absolute;
+  content: "";
+  border-left: 2px solid #B2DBD7;
+  width: 2px;
+  height: 286px;
+  top: 63px;
+  left: 250px;
+}
+
+.organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a3 .level2sub2B ul:not(.forAbsoPostion) .headLevel {
+  margin-bottom: 22px !important;
+}
+
+.organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a3 .level2sub2B ul:not(.forAbsoPostion) li {
+  width: 216px;
+  float: left;
+  margin-bottom: 22px;
+  -webkit-transform: translateX(6px);
+          transform: translateX(6px);
+}
+
+.organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a3 .level2sub2B ul:not(.forAbsoPostion) li:nth-of-type(even) {
+  margin-right: 55px;
+  position: relative;
+}
+
+.organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a3 .level2sub2B ul:not(.forAbsoPostion) li:nth-of-type(even)::before {
+  position: absolute;
+  content: "";
+  border-bottom: 2px solid #B2DBD7;
+  width: 55px;
+  height: 2px;
+  right: -55px;
+  top: 35px;
+}
+
+.organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a3 .level2sub2B ul:not(.forAbsoPostion) li:last-of-type, .organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a3 .level2sub2B ul:not(.forAbsoPostion) li:first-of-type {
+  width: 50%;
+  float: unset;
+  margin-right: unset;
+  margin: 0 auto;
+}
+
+.organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a3 .level2sub2B ul:not(.forAbsoPostion) li:last-of-type::before {
+  content: unset;
 }
 
 .organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a4 {
-  right: 1060px;
-  top: 130px;
+  right: 1000px;
+  top: 819px;
+  width: 500px;
+}
+
+.organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a4 .main-card {
+  margin: unset;
+  margin-right: 10px;
+}
+
+.organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a4 .main-card::after {
+  left: 75%;
+}
+
+.organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a4 .main-card::before {
+  height: 820px;
+  left: 75%;
+}
+
+.organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a4 .level2sub2B {
+  margin-top: 42px;
+}
+
+.organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a4 .level2sub2B ul:not(.forAbsoPostion)::after {
+  position: absolute;
+  content: "";
+  border-left: 2px solid #B2DBD7;
+  width: 2px;
+  height: 257px;
+  top: -47px;
+  left: 245px;
+}
+
+.organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a4 .level2sub2B ul:not(.forAbsoPostion)::before {
+  width: 132px;
+  height: 2px;
+  border-bottom: 2px solid #B2DBD7;
+  left: 49%;
+  bottom: unset;
+  z-index: -1;
+  top: -47px;
+}
+
+.organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a4 .level2sub2B ul:not(.forAbsoPostion) .headLevel {
+  margin-bottom: 22px !important;
+}
+
+.organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a4 .level2sub2B ul:not(.forAbsoPostion) li {
+  width: 216px;
+  float: left;
+  margin-bottom: 22px;
+}
+
+.organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a4 .level2sub2B ul:not(.forAbsoPostion) li:nth-of-type(odd) {
+  margin-right: 55px;
+  position: relative;
+}
+
+.organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a4 .level2sub2B ul:not(.forAbsoPostion) li:nth-of-type(odd)::before {
+  position: absolute;
+  content: "";
+  border-bottom: 2px solid #B2DBD7;
+  width: 55px;
+  height: 2px;
+  right: -55px;
+  top: 35px;
+}
+
+.organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a4 .level2sub2B ul:not(.forAbsoPostion) li:last-of-type::before {
+  width: 31px;
+  right: -31px;
 }
 
 .organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a5 {
-  right: 1400px;
+  right: 1155px;
   top: 130px;
+}
+
+.organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a5 .main-card::after {
+  content: unset;
+}
+
+.organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a5 .level2sub2B {
+  margin-top: 42px;
+  -webkit-transform: translateX(16px);
+          transform: translateX(16px);
+}
+
+.organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a5 .level2sub2B ul:not(.forAbsoPostion)::before {
+  position: absolute;
+  content: "";
+  border-left: 2px solid #B2DBD7;
+  width: 2px;
+  height: 215px;
+  top: -90px;
+  left: 243px;
+}
+
+.organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a5 .level2sub2B ul:not(.forAbsoPostion) .headLevel {
+  margin-bottom: 22px !important;
+}
+
+.organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a5 .level2sub2B ul:not(.forAbsoPostion) li {
+  width: 216px;
+  float: left;
+  margin-bottom: 22px;
+}
+
+.organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a5 .level2sub2B ul:not(.forAbsoPostion) li:nth-of-type(odd) {
+  margin-right: 55px;
+  position: relative;
+}
+
+.organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a5 .level2sub2B ul:not(.forAbsoPostion) li:nth-of-type(odd)::before {
+  position: absolute;
+  content: "";
+  border-bottom: 2px solid #B2DBD7;
+  width: 55px;
+  height: 2px;
+  right: -55px;
+  top: 35px;
+}
+
+.organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a5 .level2sub2B ul:not(.forAbsoPostion) li:last-of-type::before {
+  content: unset;
 }
 
 .ms-webpartzone-cell {
@@ -23277,6 +23546,8 @@ this UI is made desktop first.
   }
   .organizational-chart .structure-container .level-one {
     height: 255px;
+    -webkit-transform: translateX(-32px);
+            transform: translateX(-32px);
   }
   .organizational-chart .structure-container .level-one::before {
     left: 140px;
@@ -23345,6 +23616,8 @@ this UI is made desktop first.
   }
   .organizational-chart .structure-container .level-one-2 {
     height: 265px;
+    -webkit-transform: translateX(-32px);
+            transform: translateX(-32px);
   }
   .organizational-chart .structure-container .level-one-2 .sub1-two {
     font-size: 15px;
@@ -23392,9 +23665,13 @@ this UI is made desktop first.
   .organizational-chart .structure-container .level-one-3 {
     right: 128px;
   }
+  .organizational-chart .structure-container .level-one-3::after {
+    -webkit-transform: translateX(-31px);
+            transform: translateX(-31px);
+  }
   .organizational-chart .structure-container .level-one-3::before {
     right: calc(50% - 417px);
-    width: 830px;
+    width: 891px;
   }
   .organizational-chart .structure-container .level-one-3 .sub1-three .main-card {
     padding-right: 15px;
@@ -23406,30 +23683,73 @@ this UI is made desktop first.
     height: 89px;
   }
   .organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a1 {
-    right: 0;
+    right: -112px;
     top: 90px;
+  }
+  .organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a1 .level2sub2 ul::before {
+    height: 47px;
+  }
+  .organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a1 .level2sub2::after {
+    right: 84px;
+    width: 226px;
   }
   .organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a2 {
-    right: 205px;
+    right: 0px;
+    top: 819px;
+  }
+  .organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a2 .level2sub2 .forAbsoPostion {
     top: 90px;
+    right: 104px;
+  }
+  .organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a2 .level2sub2::after {
+    right: 83px;
+    width: 452px;
   }
   .organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a3 {
-    right: 415px;
+    right: 322px;
     top: 90px;
+    width: 420px;
+  }
+  .organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a3 .level2sub2B .forAbsoPostion {
+    right: 4px;
+  }
+  .organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a3 .level2sub2B ul:not(.forAbsoPostion) li {
+    width: 180px;
+  }
+  .organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a3 .level2sub2B ul:not(.forAbsoPostion)::after {
+    left: 210px;
   }
   .organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a4 {
     right: 620px;
-    top: 90px;
+    top: 819px;
+  }
+  .organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a4 .main-card {
+    margin-right: 13px;
+    width: 216px;
   }
   .organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a5 {
-    right: 828px;
+    right: 772px;
     top: 90px;
+    width: 420px;
+  }
+  .organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a5 .main-card::before {
+    left: 52%;
+  }
+  .organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a5 .level2sub2B .forAbsoPostion {
+    right: 4px;
+  }
+  .organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a5 .level2sub2B ul:not(.forAbsoPostion) li {
+    width: 180px;
+  }
+  .organizational-chart .structure-container .level-one-3 .sub1-three.sub1-three-a5 .level2sub2B ul::before {
+    left: 206px !important;
+    height: 212px !important;
   }
   .organizational-chart .structure-container .level-one-3 .sub1-three ul li {
     font-size: 15px;
     width: 170px;
     height: auto;
-    min-height: 79px;
+    min-height: 65px;
   }
 }
 

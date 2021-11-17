@@ -1469,6 +1469,7 @@ this UI is made desktop first.
       width: 1000px;
       .level-one {
         height: 255px;
+        transform: translateX(-32px);
         &::before{
           // #{$end-direction}: calc(50% - 132px);
           #{$end-direction}: 140px;
@@ -1546,6 +1547,7 @@ this UI is made desktop first.
 
       .level-one-2 {
         height: 265px;
+        transform: translateX(-32px);
         .sub1-two{
           font-size: 15px;
           padding: 7px 8px 7px;
@@ -1594,10 +1596,13 @@ this UI is made desktop first.
         }
       }
       .level-one-3 {
+        &::after {
+          transform: translateX(-31px);
+        }
         #{$start-direction} :128px;
         &::before{
           #{$start-direction}: calc(50% - 417px);
-          width: 830px;
+          width: 891px;
         }
         .sub1-three {
           .main-card{
@@ -1610,24 +1615,89 @@ this UI is made desktop first.
             }
           }
           &.sub1-three-a1{
-            #{$start-direction}: 0;
+            #{$start-direction}: -112px;
             top: 90px;
+            .level2sub2 {
+              ul {
+                &::before {
+                  height: 47px;
+                }
+              }
+              &::after {
+                right: 84px;
+                width: 226px;
+              }
+            }
           }
           &.sub1-three-a2{
-            #{$start-direction}: 205px;
-            top: 90px;
+            #{$start-direction}: 0px;
+            top: 819px;
+            .level2sub2 {
+              .forAbsoPostion {
+                top: 90px;
+                 right: 104px;
+              }
+              &::after {
+                right: 83px;
+                width: 452px;
+              }
+            }
           }
           &.sub1-three-a3{
-            #{$start-direction}: 415px;
+            #{$start-direction}: 322px;
             top: 90px;
+            width: 420px;
+            .level2sub2B {
+              .forAbsoPostion {
+                right: 4px;
+              }
+              ul {
+                &:not(.forAbsoPostion){ 
+                  li {
+                    width: 180px;
+                  }
+                  &::after {
+                    left: 210px;
+                  }
+                }
+              }
+
+            }
           }
           &.sub1-three-a4{
             #{$start-direction}: 620px;
-            top: 90px;
+            top: 819px;
+            .main-card {
+              margin-right: 13px;
+               width: 216px;
+            }
           }
           &.sub1-three-a5{
-            #{$start-direction}: 828px;
+            #{$start-direction}: 772px;
             top: 90px;
+            width: 420px;
+            .main-card {
+              &::before {
+                left: 52%;
+              }
+            }
+            .level2sub2B {
+              .forAbsoPostion {
+                right: 4px;
+              }
+              ul {
+                &:not(.forAbsoPostion){ 
+                  li {
+                    width: 180px;
+                  }
+                }
+                &::before {
+                  left: 206px !important;
+                  height: 212px !important;
+                }
+              }
+
+            }
           }
           
           ul{
@@ -1635,7 +1705,7 @@ this UI is made desktop first.
               font-size: 15px;
               width: 170px;
               height: auto;
-              min-height: 79px;
+              min-height: 65px;
             }
           }
         }
