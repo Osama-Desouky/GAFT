@@ -1470,7 +1470,8 @@ this UI is made desktop first.
       .level-one {
         height: 255px;
         &::before{
-          #{$start-direction}: calc(50% - 132px);
+          // #{$end-direction}: calc(50% - 132px);
+          #{$end-direction}: 140px;
           // width: 821px;
         }
         &::after{
@@ -1506,32 +1507,38 @@ this UI is made desktop first.
               // top: -96px;
               height: 192px;
             }
-            #{$start-direction}: 173px;
+            #{$end-direction}: -26px;
             &::after{
-              width: 265px;
-              #{$start-direction}: 104px;
+              width: 425px;
+              #{$end-direction}: 104px;
               top: 230px;
             }
           }
           &.sub1-b{
-            #{$start-direction}: 783px;
-            width: 195px;
+            #{$end-direction}: 585px;
+            width: 245px;
             height: 42px;
-            top: 50px;
+            top: 25px;
             &::before{
-              width: 160px;
+              width: 215px;
               top: 18px;
             }
           }
+          &.sub1-bb {
+            top: 83px;
+          }
           &.sub1-c{
-            #{$start-direction}: 783px;
-            width: 195px;
+            #{$end-direction}: 585px;
+            width: 245px;
             height: 42px;
             height: 42px;
-            top: 125px;
+            top: 140px;
             &::before{
-              width: 160px;
+              width: 215px;
               top: 18px;
+            }
+            &::after{
+              right: 115px;
             }
           }
         }
@@ -1551,6 +1558,11 @@ this UI is made desktop first.
             }
           }
           &.sub1-two-a2{
+            &:not(.sub1-two-a3a) {
+              &::before{ 
+                width: 580px
+              }
+            }
             #{$start-direction}: 783px;
             top: 151px;
             &::before{
@@ -1566,9 +1578,9 @@ this UI is made desktop first.
             top: 204px;
           }
           &.sub1-two-b2{
-            #{$start-direction}: 0px;
+            #{$start-direction}: 200px;
             &::before{
-              width: 452px;
+              width: 115px;
             }
           }
           &.sub1-two-b3{
