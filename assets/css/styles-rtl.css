@@ -22171,6 +22171,57 @@ body .ui-widget-content a {
   }
 }
 
+.organizational-chart .structure-container {
+  min-height: 2282px;
+}
+
+.organizational-chart .structure-container .level-one .main::after {
+  height: 480px;
+}
+
+.organizational-chart .structure-container .level-one-3 {
+  top: 140px;
+}
+
+.organizational-chart .structure-container .level-one-2 .sub1-two.sub1-two-a2.new-sub2-two {
+  top: 348px;
+}
+
+.organizational-chart .structure-container .level-one-3 .sub1-three .forAbsoPostion.headLevenew {
+  top: -31px;
+  right: unset;
+  left: 0;
+}
+
+.organizational-chart .structure-container .level-one-3 .sub1-three .forAbsoPostion.headLevenew::before {
+  right: unset;
+  left: 95%;
+}
+
+@media (max-width: 991.98px) {
+  .organizational-chart .structure-container .level-one-3 .sub1-three .forAbsoPostion.headLevenew {
+    right: unset !important;
+    left: 0px;
+  }
+  .organizational-chart .inner-container .structure-container .level-one-3 .sub1-three .forAbsoPostion.headLevenew::before {
+    right: unset !important;
+    left: 96% !important;
+    height: unset !important;
+  }
+  .organizational-chart .inner-container .structure-container .level-one-3 .sub1-three .forAbsoPostion.headLevenew .headLevel {
+    width: 179px;
+  }
+  .organizational-chart .inner-container .structure-container .level-one-2 .sub1-two-a3a:not(.new-sub2-two) {
+    top: 235px;
+  }
+  .organizational-chart .inner-container .structure-container .level-one-2 .sub1-two.sub1-two-a2.new-sub2-two {
+    top: 315px;
+  }
+  .organizational-chart .inner-container .structure-container .level-one .main::after {
+    height: 430px;
+  }
+}
+
 .not-found-state {
   margin-top: 48px;
   margin-bottom: 120px;
